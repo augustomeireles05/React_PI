@@ -22,14 +22,14 @@ function Home() {
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <img src="./img/img-home/Koenigsegg_Gemera.jpg" class="d-block w-100" alt="..."></img>
+                                    {/* <img src="./img/img-home/Koenigsegg_Gemera.jpg" class="d-block w-100" alt="..."></img> */}
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Koenigsegg Gemera</h5>
                                         <p>DevCar sera unica e exclusiva importadora Koenigsegg Gemera</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item  carousel-tamanho" data-bs-interval="2000">
-                                    <img src="./img/img-home/Ferarri-monza.jpg" class="d-block w-100 stf2" alt="..."></img>
+                                    {/* <img src="./img/img-home/Ferarri-monza.jpg" class="d-block w-100 stf2" alt="..."></img> */}
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Ferrari MONZA</h5>
                                         <p> Velocidade Máx: 350 Km/h</p>
@@ -37,7 +37,7 @@ function Home() {
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./img/img-home/Koenigsegg_Gemera.jpg" class="d-block w-100" alt="" width="100%"></img>
+                                    {/* <img src="./img/img-home/Koenigsegg_Gemera.jpg" class="d-block w-100" alt="" width="100%"></img> */}
                                     <div class="carousel-caption d-none d-md-block">
                                         <font color="white">
                                             <h5> Bugatti Chiron </h5>
@@ -46,7 +46,7 @@ function Home() {
                                     </div>
                                 </div>
                                 <div class="carousel-item carousel-tamanho" data-bs-interval="1000">
-                                    <img src="./img/img-home/home2.jpeg" class="d-block w-100" alt="..." width="100%"></img>
+                                    {/* <img src="./img/img-home/home2.jpeg" class="d-block w-100" alt="..." width="100%"></img> */}
                                     <div class="carousel-caption d-none d-md-block">
                                         <font color="white">
                                             <h5>DevCar's</h5>
@@ -77,30 +77,30 @@ function Home() {
                             <div id="carousel-marcas" class="carousel slide logo_marcas" data-bs-ride="carousel-marcas">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active logo-centralizado">
-                                        <img class="icons-marcas" src="./img/img-home/astom martin.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/audi.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/bmw.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/bugatti.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/chrysler.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/ferrari (2).png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/ford.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/jaguar.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/lambor.png" height="50px" />
+                                        {/*{/* <img class="icons-marcas" src="./img/img-home/astom martin.png" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/audi.png" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/bmw.png" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/bugatti.png" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/chrysler.png" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/ferrari (2).png" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/ford.png" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/jaguar.png" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/lambor.png" height="50px" /> */}
 
 
                                     </div>
                                     <div class="carousel-item fundo-marcas logo-centralizado2  logo-centralizado">
-                                        <img class="icons-marcas" src="./img/img-home/Mclaren.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/mercedes.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/opel.jpg" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/pagani.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/bmw.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/rolls royce.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/subaru.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/volvo.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/ferrari (2).png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/volvo.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/pagani.png" height="50px" />
+                                        {/* {/* <img class="icons-marcas" src="./img/img-home/Mclaren.png" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/mercedes.png" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/opel.jpg" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/pagani.png" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/bmw.png" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/rolls royce.png" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/subaru.png" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/volvo.png" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/ferrari (2).png" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/volvo.png" height="50px" />
+                                        {/* <img class="icons-marcas" src="./img/img-home/pagani.png" height="50px" /> */}
 
                                     </div>
                                 </div>
@@ -195,8 +195,8 @@ function Home() {
                                     {/* link entre Modal e Card */}
                                     <a href="#" class="text-decoration-none">
                                         <div class="card h-100 mb-5">
-                                            <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg" class="card-img"
-                                                alt="..."></img>
+                                            {/* <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg" class="card-img"
+                                                alt="..."></img> */}
                                             <div class="card-body">
                                                 <h5 class="card-title">Mercedes AMG F1</h5>
                                                 <p class="card-text">R$19.000.000,00</p>
@@ -236,8 +236,8 @@ function Home() {
                                                         Your browser does not support the video tag.
                                                     </video> */}
 
-                                                            <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg"
-                                                                class="card-img img-modal" alt="..."></img>
+                                                            {/* <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg"
+                                                                class="card-img img-modal" alt="..."></img> */}
                                                         </div>
 
                                                         <div class="col-7 modal-mobily2">
@@ -292,24 +292,24 @@ function Home() {
                                                                             class="carousel-inner carosel-modal  row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4">
                                                                             <div class="carousel-item active">
 
-                                                                                <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg"
-                                                                                    class="d-block w-100" alt="..." width="5%"></img>
+                                                                                {/* <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg"
+                                                                                    class="d-block w-100" alt="..." width="5%"></img> */}
                                                                             </div>
                                                                             <div class="carousel-item">
-                                                                                <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg"
-                                                                                    class="d-block w-100" alt="10px"></img>
+                                                                                {/* <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg"
+                                                                                    class="d-block w-100" alt="10px"></img> */}
                                                                             </div>
                                                                             <div class="carousel-item">
-                                                                                <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg"
-                                                                                    class="d-block w-100" alt="10px"></img>
+                                                                                {/* <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg"
+                                                                                    class="d-block w-100" alt="10px"></img> */}
                                                                             </div>
                                                                             <div class="carousel-item">
-                                                                                <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg"
-                                                                                    class="d-block w-100" alt="10px"></img>
+                                                                                {/* <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg"
+                                                                                    class="d-block w-100" alt="10px"></img> */}
                                                                             </div>
                                                                             <div class="carousel-item">
-                                                                                <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg"
-                                                                                    class="d-block w-100" alt="10px"></img>
+                                                                                {/* <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg"
+                                                                                    class="d-block w-100" alt="10px"></img> */}
                                                                             </div>
                                                                         </div>
                                                                         <button class="carousel-control-prev" type="button"
@@ -336,7 +336,7 @@ function Home() {
                                             <div class="modal-footer modalfooter">
                                                 <div class="row">
                                                     <div class="col-10 modal-mobily3">
-                                                        <img class="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                                        {/* <img class="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img> */}
                                                     </div>
                                                     <div class="col-1 modal-mobily3">
                                                         <a href="./agendamento.html" class="nav-link text-black">
@@ -361,7 +361,7 @@ function Home() {
                                     {/* link entre Modal e Card */}
                                     <a href="#" class="text-decoration-none">
                                         <div class="card h-100 mb-5">
-                                            <img src="./img/img-estoque/Bugatti Chiron.jpg" class="card-img" alt="..."></img>
+                                            {/* <img src="./img/img-estoque/Bugatti Chiron.jpg" class="card-img" alt="..."></img> */}
                                             <div class="card-body">
                                                 <h5 class="card-title">BUGATTI CHIRON</h5>
                                                 <p class="card-text">R$21.000.000,00</p>
@@ -397,8 +397,8 @@ function Home() {
                                                         Your browser does not support the video tag.
                                                     </video> */}
 
-                                                            <img src="./img/img-estoque/Bugatti Chiron.jpg"
-                                                                class="card-img img-modal" alt="..."></img>
+                                                        {/* <img src="./img/img-estoque/Bugatti Chiron.jpg"
+                                                                class="card-img img-modal" alt="..."></img> */} 
                                                         </div>
 
                                                         <div class="col-7">
@@ -451,24 +451,24 @@ function Home() {
                                                                         data-bs-ride="carousel">
                                                                         <div class="carousel-inner carosel-modal">
                                                                             <div class="carousel-item active">
-                                                                                <img src="./img/img-estoque/Bugatti Chiron.jpg"
-                                                                                    class="d-block w-100" alt="..." width="5%"></img>
+                                                                                {/* <img src="./img/img-estoque/Bugatti Chiron.jpg"
+                                                                                    class="d-block w-100" alt="..." width="5%"></img> */}
                                                                             </div>
                                                                             <div class="carousel-item">
-                                                                                <img src="./img/img-estoque/Bugatti Chiron.jpg"
-                                                                                    class="d-block w-100" alt="10px"></img>
+                                                                                {/* <img src="./img/img-estoque/Bugatti Chiron.jpg"
+                                                                                    class="d-block w-100" alt="10px"></img> */}
                                                                             </div>
                                                                             <div class="carousel-item">
-                                                                                <img src="../img/img-estoque/Bugatti Chiron.jpg"
-                                                                                    class="d-block w-100" alt="10px"></img>
+                                                                                {/* <img src="../img/img-estoque/Bugatti Chiron.jpg"
+                                                                                    class="d-block w-100" alt="10px"></img> */}
                                                                             </div>
                                                                             <div class="carousel-item">
-                                                                                <img src="./img/img-estoque/Bugatti Chiron.jpg"
-                                                                                    class="d-block w-100" alt="10px"></img>
+                                                                                {/* <img src="./img/img-estoque/Bugatti Chiron.jpg"
+                                                                                    class="d-block w-100" alt="10px"></img> */}
                                                                             </div>
                                                                             <div class="carousel-item">
-                                                                                <img src="./img/img-estoque/Bugatti Chiron.jpg"
-                                                                                    class="d-block w-100" alt="10px"></img>
+                                                                                {/* <img src="./img/img-estoque/Bugatti Chiron.jpg"
+                                                                                    class="d-block w-100" alt="10px"></img> */}
                                                                             </div>
                                                                         </div>
                                                                         <button class="carousel-control-prev" type="button"
@@ -495,7 +495,7 @@ function Home() {
                                             <div class="modal-footer modalfooter">
                                                 <div class="row">
                                                     <div class="col-10">
-                                                        <img class="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                                        {/* <img class="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img> */}
                                                     </div>
                                                     <div class="col-1">
                                                         <a href="./agendamento.html"><button type="button"
@@ -516,7 +516,7 @@ function Home() {
                                     {/* link entre Modal e Card */}
                                     <a href="#" class="text-decoration-none">
                                         <div class="card h-100 mb-5">
-                                            <img src="./img/img-estoque/Lamborghini Huracan.jpg" class="card-img" alt="..."></img>
+                                            {/* <img src="./img/img-estoque/Lamborghini Huracan.jpg" class="card-img" alt="..."></img> */}
                                             <div class="card-body">
                                                 <h5 class="card-title">Lamborghini Huracan</h5>
                                                 <p class="card-text">R$4.300.000,00</p>
@@ -551,8 +551,8 @@ function Home() {
                                                         Your browser does not support the video tag.
                                                     </video> */}
 
-                                                            <img src="./img/img-estoque/Lamborghini Huracan.jpg"
-                                                                class="card-img img-modal" alt="..."></img>
+                                                            {/* <img src="./img/img-estoque/Lamborghini Huracan.jpg"
+                                                                class="card-img img-modal" alt="..."></img> */}
                                                         </div>
 
                                                         <div class="col-7">
@@ -604,24 +604,24 @@ function Home() {
                                                                         data-bs-ride="carousel">
                                                                         <div class="carousel-inner carosel-modal">
                                                                             <div class="carousel-item active">
-                                                                                <img src="./img/img-estoque/Lamborghini Huracan.jpg"
-                                                                                    class="d-block w-100" alt="..." width="5%"></img>
+                                                                                {/* <img src="./img/img-estoque/Lamborghini Huracan.jpg"
+                                                                                    class="d-block w-100" alt="..." width="5%"></img> */}
                                                                             </div>
                                                                             <div class="carousel-item">
-                                                                                <img src="./img/img-estoque/Lamborghini Huracan.jpg"
-                                                                                    class="d-block w-100" alt="10px"></img>
+                                                                                {/* <img src="./img/img-estoque/Lamborghini Huracan.jpg"
+                                                                                    class="d-block w-100" alt="10px"></img> */}
                                                                             </div>
                                                                             <div class="carousel-item">
-                                                                                <img src="./img/img-estoque/Lamborghini Huracan.jpg"
-                                                                                    class="d-block w-100" alt="10px"></img>
+                                                                                {/* <img src="./img/img-estoque/Lamborghini Huracan.jpg"
+                                                                                    class="d-block w-100" alt="10px"></img> */}
                                                                             </div>
                                                                             <div class="carousel-item">
-                                                                                <img src="./img/img-estoque/Lamborghini Huracan.jpg"
-                                                                                    class="d-block w-100" alt="10px"></img>
+                                                                                {/* <img src="./img/img-estoque/Lamborghini Huracan.jpg"
+                                                                                    class="d-block w-100" alt="10px"></img> */}
                                                                             </div>
                                                                             <div class="carousel-item">
-                                                                                <img src="./img/img-estoque/Lamborghini Huracan.jpg"
-                                                                                    class="d-block w-100" alt="10px"></img>
+                                                                                {/* <img src="./img/img-estoque/Lamborghini Huracan.jpg"
+                                                                                    class="d-block w-100" alt="10px"></img> */}
                                                                             </div>
                                                                         </div>
                                                                         <button class="carousel-control-prev" type="button"
@@ -648,7 +648,7 @@ function Home() {
                                             <div class="modal-footer modalfooter">
                                                 <div class="row">
                                                     <div class="col-10">
-                                                        <img class="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                                        {/* <img class="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img> */}
                                                     </div>
                                                     <div class="col-1">
                                                         <a href="./agendamento.html"><button type="button"
@@ -668,7 +668,7 @@ function Home() {
                             <div class="carousel-item">
                             </div>
                             <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="..."></img>
+                                {/* <img src="..." class="d-block w-100" alt="..."></img> */}
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
@@ -705,7 +705,7 @@ function Home() {
 
                         </div>
                         <div class="col-4 imagens-midia">
-                            <img src="./img/img-home/SSC Tuatara.jpg" alt="" width="100%"></img>
+                            {/* <img src="./img/img-home/SSC Tuatara.jpg" alt="" width="100%"></img> */}
                         </div>
                     </div>
                 </div>
