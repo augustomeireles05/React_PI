@@ -1,6 +1,7 @@
 import './Home.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
+import { Link } from "react-router-dom";
 
 function Home() {
     return (
@@ -193,7 +194,7 @@ function Home() {
                                 <div class="col text-center btn" type="button" data-bs-toggle="modal"
                                     data-bs-target="#modal-produto-1">
                                     {/* link entre Modal e Card */}
-                                    <a href="#" class="text-decoration-none">
+                                    <Link to="" class="text-decoration-none">
                                         <div class="card h-100 mb-5">
                                             {/* <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg" class="card-img"
                                                 alt="..."></img> */}
@@ -202,12 +203,12 @@ function Home() {
                                                 <p class="card-text">R$19.000.000,00</p>
                                                 <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
                                                 <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                                <a class="btn mt-3 botao-buscar btn-detalhes" href="#" role="button">VER
-                                                    DETALHES</a>
+                                                <Link class="btn mt-3 botao-buscar btn-detalhes" to="" role="button">VER
+                                                    DETALHES</Link>
                                             </div>
 
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
 
 
@@ -339,11 +340,11 @@ function Home() {
                                                         {/* <img class="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img> */}
                                                     </div>
                                                     <div class="col-1 modal-mobily3">
-                                                        <a href="./agendamento.html" class="nav-link text-black">
-                                                            <a href="./agendamento.html"><button type="button"
+                                                        <Link to="" class="nav-link text-black">
+                                                            <Link to=""><button type="button"
                                                                 class="btn btn-secondary btn-modal-footer">Agendar
-                                                                visita</button></a>
-                                                        </a>
+                                                                visita</button></Link>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -359,7 +360,7 @@ function Home() {
                                 <div class="col text-center btn" type="button" data-bs-toggle="modal"
                                     data-bs-target="#modal-produto-2">
                                     {/* link entre Modal e Card */}
-                                    <a href="#" class="text-decoration-none">
+                                    <Link to="#" class="text-decoration-none">
                                         <div class="card h-100 mb-5">
                                             {/* <img src="./img/img-estoque/Bugatti Chiron.jpg" class="card-img" alt="..."></img> */}
                                             <div class="card-body">
@@ -367,11 +368,11 @@ function Home() {
                                                 <p class="card-text">R$21.000.000,00</p>
                                                 <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
                                                 <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                                <a class="btn mt-3 botao-buscar btn-detalhes" href="#" role="button">VER
-                                                    DETALHES</a>
+                                                <Link class="btn mt-3 botao-buscar btn-detalhes" to="#" role="button">VER
+                                                    DETALHES</Link>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
 
                                 {/* Modal */}
@@ -498,9 +499,9 @@ function Home() {
                                                         {/* <img class="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img> */}
                                                     </div>
                                                     <div class="col-1">
-                                                        <a href="./agendamento.html"><button type="button"
+                                                        <Link to="./agendamento.html"><button type="button"
                                                             class="btn btn-secondary btn-modal-footer">Agendar
-                                                            visita</button></a>
+                                                            visita</button></Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -514,7 +515,7 @@ function Home() {
                                 <div class="col text-center btn" type="button" data-bs-toggle="modal"
                                     data-bs-target="#modal-produto-3">
                                     {/* link entre Modal e Card */}
-                                    <a href="#" class="text-decoration-none">
+                                    <Link to="#" class="text-decoration-none">
                                         <div class="card h-100 mb-5">
                                             {/* <img src="./img/img-estoque/Lamborghini Huracan.jpg" class="card-img" alt="..."></img> */}
                                             <div class="card-body">
@@ -522,11 +523,11 @@ function Home() {
                                                 <p class="card-text">R$4.300.000,00</p>
                                                 <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
                                                 <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                                <a class="btn mt-3 botao-buscar btn-detalhes" href="#" role="button">VER
-                                                    DETALHES</a>
+                                                <Link class="btn mt-3 botao-buscar btn-detalhes" to="#" role="button">VER
+                                                    DETALHES</Link>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
 
                                 {/* Modal */}
@@ -651,9 +652,9 @@ function Home() {
                                                         {/* <img class="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img> */}
                                                     </div>
                                                     <div class="col-1">
-                                                        <a href="./agendamento.html"><button type="button"
+                                                        <Link to="./agendamento.html"><button type="button"
                                                             class="btn btn-secondary btn-modal-footer">Agendar
-                                                            visita</button></a>
+                                                            visita</button></Link>
                                                     </div>
                                                 </div>
                                             </div>
