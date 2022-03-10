@@ -1,0 +1,19 @@
+.titulo-pagina {
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+    background: black;
+    color:white;
+    font-family: 'Questrial', sans-serif;
+    height: 60px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+@media (max-width: 767px) {
+    .titulo-pagina {
+        padding: 10px;
+        width: 80%;
+        height: 50%;
+    }
+}
