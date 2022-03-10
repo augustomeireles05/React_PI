@@ -31,7 +31,7 @@ export const Routes = () => {
             <Route path="/login" component={Login} />
             <Route path="/myData" component={MyData} />
             <Route path="/myOrder" component={MyOrder} />
-            <Route path="/orderResume" component={OrderResume} />
+            <Route path="/orderResume" component={OrderResume} /> 
             <Route path="/recoveryPassword" component={RecoveryPassword} />
             <Route path="/register" component={Register} />
             <Route path="/schedulingDetails" component={SchedulingDetails} />
