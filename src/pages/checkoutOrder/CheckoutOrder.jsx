@@ -4,6 +4,7 @@ import React from 'react';
 
 
 import Button from '../../components/Button/Button.jsx';
+import { Link } from 'react-router-dom';
 
 function CheckoutOrder() {
 
@@ -608,8 +609,12 @@ function CheckoutOrder() {
             </form>
 
             <div className="d-grid gap-2 d-md-block pt-2">
-              <Button type="button" name="Voltar para Carrinho"/>
-              <Button type="submit" name="Finalizar Compra"/>
+              <Button type="button" name="Voltar para Carrinho">
+                <Link to="/"></Link>
+              </Button>
+              <Button type="submit" name="Finalizar Compra">
+                <Link to="/"></Link>
+              </Button>
             </div>
           </div>
           {/* FIM DO CARD DO RESUMO  */}

@@ -2,7 +2,6 @@ import './AboutUs.css';
 
 import React from 'react';
 
-
 import Tittle from '../../components/Tittle/MainTittle';
 
 function AboutUs() {
