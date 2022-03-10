@@ -332,7 +332,7 @@ function CheckoutScheduling() {
                 <div className="col-8 btn-responsividade">
                   <div className="d-grid gap-2 pt-3 ">
                     <Button type="submit" name="Confirmar Agendamento">
-                        <Link to="/"></Link>
+                      <Link to="/schedulingDetails"></Link>
                     </Button>
                   </div>
                 </div>
