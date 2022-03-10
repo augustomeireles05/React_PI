@@ -62,18 +62,17 @@ function Contact() {
 
                                         <div className="col-md-12">
 
-                                            <input className="form-control" type="text" placeholder="Nome" aria-label="nome" input example></input>
+                                            <input className="form-control" type="text" placeholder="Nome" aria-label="nome"  ></input>
                                             <br></br>
 
-                                            <input className="form-control" type="text" placeholder="E-mail" aria-label="email"
-                                                input example></input>
+                                            <input className="form-control" type="text" placeholder="E-mail" ></input>
                                                 <br></br>
 
                                             <input className="form-control" type="text" placeholder="Telefone" aria-label="telefone"
-                                                input example></input>
+                                                 ></input>
                                                 <br></br>
 
-                                            <input className="form-control" type="text" placeholder="Assunto" aria-label="assunto" input example></input>
+                                            <input className="form-control" type="text" placeholder="Assunto" aria-label="assunto"  ></input>
                                                 <br></br>
 
 
@@ -120,7 +119,7 @@ function Contact() {
                                             <div className="accordion-item">
                                                 <h2 className="accordion-header" id="headingOne">
                                                     <button className="accordion-button" type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#collapseOne" aria-expanded="true"
+                                                        data-bs-target="#collapseOne" aria-expanded={"true"}
                                                         aria-controls="collapseOne">
                                                         <span className="fonte-pagina-contato">O veículo já possui revisão?</span>
                                                     </button>
