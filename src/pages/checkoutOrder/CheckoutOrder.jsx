@@ -608,8 +608,8 @@ function CheckoutOrder() {
             </form>
 
             <div className="d-grid gap-2 d-md-block pt-2">
-              <Button type="button" href="/" name="Voltar para Carrinho"/>
-              <Button type="submit" href="/" name="Finalizar Compra"/>
+              <Button type="button" name="Voltar para Carrinho"/>
+              <Button type="submit" name="Finalizar Compra"/>
             </div>
           </div>
           {/* FIM DO CARD DO RESUMO  */}

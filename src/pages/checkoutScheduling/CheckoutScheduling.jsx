@@ -2,7 +2,6 @@ import './CheckoutScheduling.css';
 
 import React from 'react';
 
-
 import Button from '../../components/Button/Button.jsx'
 
 function CheckoutScheduling() {
@@ -256,7 +255,7 @@ function CheckoutScheduling() {
                             </div>
                             <div className="col-8 btn-responsividade">
                                 <div className="d-grid gap-2 pt-3 ">               
-                                    <Button type="submit" href="/resumo-agendamento" name="Confirmar Agendamento" />
+                                    <Button type="submit" name="Confirmar Agendamento" />
                                 </div>
                             </div>
                         </div>
