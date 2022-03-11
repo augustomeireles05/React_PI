@@ -610,10 +610,10 @@ function CheckoutOrder() {
 
             <div className="d-grid gap-2 d-md-block pt-2">
               <Button type="button" name="Voltar para Carrinho">
-                <Link to="/"></Link>
+                <Link to="/cart"></Link>
               </Button>
               <Button type="submit" name="Finalizar Compra">
-                <Link to="/"></Link>
+                <Link to="/orderResume"></Link>
               </Button>
             </div>
           </div>

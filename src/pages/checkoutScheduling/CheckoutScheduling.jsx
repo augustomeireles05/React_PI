@@ -3,8 +3,8 @@ import './CheckoutScheduling.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Footer from '../../components/footer/Footer.jsx';
 
-import Button from '../../components/Button/Button.jsx'
 
 function CheckoutScheduling() {
 
@@ -15,14 +15,19 @@ function CheckoutScheduling() {
           <hr />
         </div>
 
-        {/* FIM DO TÍTULO DA PÁGINA */}
+        {/*  FIM DO TÍTULO DA PÁGINA  */}
 
         <div className="row background d-flex justify-content-center">
-          {/* INÍCIO DO CARD ENDERECO */}
+          {/*  INÍCIO DO CARD ENDERECO  */}
           <div className="col-md-5 col-lg-5 row d-flex justify-content-center background">
-            <h4 className="mb-3 font-text">Meus Dados</h4>
-            <div className="card text-black bg-white mb-3 px-0">
-              {/* Início Meus dados */}
+            <h4 className="mb-3 font-text" style={{ maxWidth: 30 + "rem" }}>
+              Meus Dados
+            </h4>
+            <div
+              className="card text-black bg-white mb-3 px-0"
+              style={{ maxWidth: 30 + "rem" }}
+            >
+              {/*  Início Meus dados  */}
 
               <form className="card-header">
                 <div className="row meus-dados ">
@@ -48,6 +53,7 @@ function CheckoutScheduling() {
                       />
                     </div>
                   </div>
+
                   <div className="col-6">
                     <div className="mb-3">
                       <input
@@ -74,22 +80,22 @@ function CheckoutScheduling() {
                 </div>
               </form>
 
-              {/* Fim Endereço 02 */}
+              {/*  Fim Endereço 02  */}
             </div>
 
-            {/* FIM DO CARD ENDERECO */}
+            {/*  FIM DO CARD ENDERECO  */}
 
-            {/* Início modal adicionar endereço*/}
+            {/*  Início modal adicionar endereço */}
             <div
               className="modal fade"
               id="modal-endereco"
-              tabindex="-1"
+              tabIndex={-1}
               aria-labelledby="inicioModal"
               aria-hidden="true"
             >
               <div className="modal-dialog">
                 <div className="modal-content">
-                  {/* header do modal */}
+                  {/*  header do modal  */}
                   <div className="modal-header">
                     <h5 className="modal-title text-center" id="inicioModal">
                       ENDEREÇO
@@ -101,16 +107,13 @@ function CheckoutScheduling() {
                       aria-label="Close"
                     ></button>
                   </div>
-                  {/* fim da header do modal */}
+                  {/*  fim da header do modal  */}
 
-                  {/* corpo do modal Endereço */}
+                  {/*  corpo do modal Endereço  */}
                   <div className="modal-body">
                     <form className="formulario-cadastro container">
                       <div className="row alinha-campos d-flex justify-content-start gy-2">
                         <div className="cep col-sm-4">
-                          <label label for="cep" className="form-label">
-                            CEP
-                          </label>
                           <input
                             type="text"
                             className="form-control"
@@ -119,9 +122,6 @@ function CheckoutScheduling() {
                         </div>
 
                         <div className="rua col-sm-8">
-                          <label for="rua" className="form-label">
-                            LOGRADOURO
-                          </label>
                           <input
                             type="text"
                             className="form-control"
@@ -132,9 +132,6 @@ function CheckoutScheduling() {
 
                       <div className="row alinha-campos d-flex justify-content-start gy-2">
                         <div className="numero col-sm-3">
-                          <label label for="numero" className="form-label">
-                            NUMERO
-                          </label>
                           <input
                             type="number"
                             className="form-control"
@@ -143,9 +140,6 @@ function CheckoutScheduling() {
                         </div>
 
                         <div className="bairro col-sm-9">
-                          <label for="bairro" className="form-label">
-                            BAIRRO
-                          </label>
                           <input
                             type="text"
                             className="form-control"
@@ -156,11 +150,8 @@ function CheckoutScheduling() {
 
                       <div className="row alinha-campos d-flex justify-content-start gy-2">
                         <div className="uf col-sm-3">
-                          <label for="uf" className="form-label">
-                            UF
-                          </label>
                           <select name="uf" id="UF" className="form-control">
-                            <option value="estado" selected disabled>
+                            <option value="estado" defaultValue disabled>
                               - UF -
                             </option>
                             <option value="ac">AC</option>
@@ -194,9 +185,6 @@ function CheckoutScheduling() {
                         </div>
 
                         <div className="cidade col-sm-9">
-                          <label for="cidade" className="form-label">
-                            CIDADE
-                          </label>
                           <input
                             type="text"
                             name=""
@@ -207,9 +195,6 @@ function CheckoutScheduling() {
                       </div>
 
                       <div className="complemento">
-                        <label for="complemento" className="form-label">
-                          COMPLEMENTO
-                        </label>
                         <input
                           type="text"
                           className="form-control"
@@ -218,27 +203,37 @@ function CheckoutScheduling() {
                       </div>
 
                       <div className="row justify-content-center">
-                        <Button type="submit" href="" name="Gravar" />
+                        <button
+                          type="submit"
+                          className="botao-salvar button btn mt-4 col-sm-4"
+                        >
+                          GRAVAR
+                        </button>
                       </div>
                     </form>
                   </div>
-                  {/* fim do corpo do modal Endereço */}
+                  {/*  fim do corpo do modal Endereço  */}
                 </div>
               </div>
             </div>
-            {/* fim do modal adicionar endereço */}
+            {/*  fim do modal adicionar endereço  */}
             <hr />
 
-            <h4 className="mb-3 font-text">AGENDAMENTO</h4>
-            <div className="card text-black bg-white mb-3 px-0">
-              {/* Início Agendamento */}
+            <h4 className="mb-3 font-text" style={{ maxWidth: 30 + "rem" }}>
+              AGENDAMENTO
+            </h4>
+            <div
+              className="card text-black bg-white mb-3 px-0"
+              style={{ maxWidth: 30 + "rem" }}
+            >
+              {/*  Início Agendamento  */}
               <div className=" col-md-12 card-header">
                 <div className="form-check font-text d-flex justify-content-between">
                   <div className="d-grid d-flex justify-content-start ">
                     <p>Datas Disponiveis</p>
                   </div>
                   <div className="d-grid d-md-flex justify-content-end">
-                    {/* <img className="btn " src="" width="45" /> */}
+                    <img className="btn " src="#" width="45" />
                   </div>
                 </div>
               </div>
@@ -251,7 +246,6 @@ function CheckoutScheduling() {
                     </div>
                   </div>
                   <div className="col-2 ">
-                    <label for="data"></label>
                     <input type="date" id="data" name="Agenda" />
                   </div>
                 </div>
@@ -261,11 +255,12 @@ function CheckoutScheduling() {
               </div>
             </div>
 
-            {/* FIM DO BOTÃO DE ADICIONAR FORMA DE PAGAMENTO */}
+            {/*  FIM DO BOTÃO DE ADICIONAR FORMA DE PAGAMENTO  */}
+
             <hr />
           </div>
 
-          {/* INICIO DO CARD DO RESUMO  */}
+          {/*  INICIO DO CARD DO RESUMO   */}
           <div className="col-md-6 col-lg-5 order-md-last">
             <h4 className="d-flex justify-content-between align-items-center mb-3">
               <span className="text-black font-text">Resumo Agendamento</span>
@@ -319,27 +314,35 @@ function CheckoutScheduling() {
               <div className="row">
                 <div className="col-4 btn-responsividade ">
                   <div className=" col-12 d-grid gap-1 pt-3 justify-content-center  ">
-                    <a href="./carrinho.html">
+                    <Link to="/cart">
                       <button
                         className="btn button font-text vtcarrinho"
                         type="button"
                       >
                         Voltar para o Carrinho
                       </button>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-8 btn-responsividade">
                   <div className="d-grid gap-2 pt-3 ">
-                    <Button type="submit" name="Confirmar Agendamento">
-                        <Link to="/"></Link>
-                    </Button>
+                    <Link to="/schedulingDetails">
+                      <button
+                        className="btn button font-text confi_agendamento"
+                        type="button"
+                      >
+                        Confirmar Agendamento
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          {/*  FIM DO CARD DO RESUMO   */}
         </div>
+
+        <Footer />
       </>
     );
 }
