@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 .background-section {
     background-color: #f0f0f0;
     margin:0;
@@ -10,8 +12,23 @@
     
 } */
 
+.font-login-title{
+    background-color: #f0f0f0;
+    color: #2c2c2c;
+    box-shadow: none !important;
+}
+
+
 .font-login {
     font-family: 'Questrial', sans-serif;
+    font-size: 13px;
+}
+
+
+.signin-form input{
+    box-shadow: none;
+    padding: 18px;
+    background-color: #FFF;
 }
 
 .font-login-title {
@@ -31,6 +48,9 @@
     background: linear-gradient(191deg, rgb(179, 152, 4) 30%, rgb(223, 208, 126) 70%);
 }
 
+input {
+    width: 15px;
+}
 
 /* -- BEGIN RESPONSIVE -- */
 
@@ -38,11 +58,11 @@
 
     /* -- Begin to iphone 12 -- */
 
-    @media (max-width: 390px) {
+    /* @media (max-width: 390px) {
         .imagem-login {
             display: none;
         }
-    }
+    } */
 
     /* -- End to iphone 12 -- */
 
