@@ -1,6 +1,14 @@
 import { Link } from 'react-router-dom'
 import './Header.css'
 
+import Menu from '../../assets/images/Header/menu.png'
+import Mainlogo from '../../assets/images/Header/logo-rev01.jpeg'
+import Searchicon from '../../assets/images/Header/search.png'
+import Favoriteicon from '../../assets/images/Header/favorite.png'
+import Loginnicon from '../../assets/images/Header/user.png'
+import Garageicon from '../../assets/images/Header/garage-car.png'
+import Closeicon from '../../assets/images/Header/close.png'
+
 function Header() {
     return (
         <>
@@ -12,7 +20,7 @@ function Header() {
                     <div className="icon-menu">
                         {/*INSERÇÃO DA IMAGEM DO MENU HAMBURGUER*/}
                         <a className="btn btn-black" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                            {/*<img src="./img/img-header/menu.png" width="30" />*/}
+                            <img src={Menu} width="30" />
                         </a>
 
                         <div className="offcanvas offcanvas-start background-menu d-flex flex-column flex-shrink-0 p-3 text-black bg-dark" tabIndex={-1} id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style={{width: 280 + 'px'}}>
@@ -124,7 +132,7 @@ function Header() {
                 <div className="icons-header">
                     <div className="icon-logo">
                         <Link to="/">
-                            {/*<img src="./img/img-header/logo-rev01.jpeg" width="120" /> */}
+                            <img src={Mainlogo} width="120" />
                         </Link>
                     </div>
                 </div>
@@ -135,14 +143,14 @@ function Header() {
 
                         {/*INÍCIO DO ÍCONE DE PESQUISA*/}
                             <div className="icons-position-header search-icon">
-                                {/*<img src="./img/img-header/search.png" className="icons-header" data-bs-toggle="modal" width="30" data-bs-target="#modalPesquisa" role="button"/>*/}
+                                <img src={Searchicon} className="icons-header" data-bs-toggle="modal" width="30" data-bs-target="#modalPesquisa" role="button"/>
                             </div>
                         {/*FIM DO ÍCONE DE PESQUISA*/}
 
                         {/*INÍCIO DO ÍCONE DE FAVORITOS*/}
                             <div className="icons-position-header favorite-icon">
                                 <Link to="/wishList">
-                                    {/*<img src="./img/img-header/favorite.png" width="30" />*/}
+                                    <img src={Favoriteicon} width="30" />
                                 </Link>
                             </div>
                         {/*FIM DO ÍCONE DE FAVORITOS*/}
@@ -150,7 +158,7 @@ function Header() {
                         {/*INÍCIO DO ÍCONE DE LOGIN*/}
                             <div className="icons-position-header user-icon">
                                 <Link to="/login">
-                                    {/*<img src="./img/img-header/user.png" width="30" />*/}
+                                    <img src={Loginnicon} width="30" />
                                 </Link>
                             </div>
                         {/*FIM DO ÍCONE DE LOGIN*/}
@@ -158,7 +166,7 @@ function Header() {
                         {/*INÍCIO DO ÍCONE DE CARRINHO*/}
                             <div className="icons-position-header garage-icon">
                                  <Link to="/cart">
-                                    {/*<img src="./img/img-header/garage-car.png" width="30"/>*/}
+                                    <img src={Garageicon} width="30"/>
                                 </Link>
                             </div>
                         {/*FIM DO ÍCONE DE CARRINHO*/}
@@ -173,7 +181,7 @@ function Header() {
                 <div className="modal fade" id="modalPesquisa" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-xl">
                         <div className="modal-content p-5">
-                            {/*<img src="./img/img-header/close.png" type="button" className="icon-close btn-close align-self-end" data-bs-dismiss="modal" aria-label="Close"/> */}
+                            <img src={Closeicon} type="button" className="icon-close btn-close align-self-end" data-bs-dismiss="modal" aria-label="Close"/>
                             <div className="modal-header">
                                 <h5 className="modal-title mx-auto text-light" id="exampleModalLabel">BUSQUE POR UM VEÍCULO</h5>
                             </div>

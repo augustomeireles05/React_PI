@@ -4,12 +4,16 @@ import './OrderResume.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 
+import Awardicon from '../../assets/images/OrderDetails/certificado-de-garantia.png'
+import Checkedicon from '../../assets/images/OrderDetails/checked.png'
+import PrintNfe from '../../assets/images/OrderDetails/printer.png'
+
 function OrderResume() {
     return (
         <>
             
             <Header />
-            <div className="container">
+            <div className="container mb-5">
 
                 <div className="row-col-md-12 resumo-pedido mb-5 mt-5">
                     <h1 className="resumo ps-5 pb-2 pt-2 text-center">RESUMO DO PEDIDO</h1>
@@ -53,22 +57,22 @@ function OrderResume() {
 
                             <h4 className="titulo-principal text-center pb-2 mb-3 fs-3">STATUS DO PEDIDO</h4>
 
-                            {/*<img src="img/img-resumo-compra/certificado-de-garantia.png" className="img-certificado" alt="pedido concluido"/>*/}
+                            <img src={Awardicon} className="img-certificado" alt="pedido concluido"/>
 
                             <div className="sucesso d-flex justify-content-center align-items-center m-3">
                             <h2 className="text-center titulo-sucesso-compra mb-0 me-1">PEDIDO REALIZADO COM SUCESSO!</h2>
-                            {/*<img src="img/img-resumo-compra/checked.png" alt="sucesso" className="img-sucess"/>*/}
+                            <img src={Checkedicon} alt="sucesso" className="img-sucess"/>
                             </div>
 
-                            <p className="text-center numero-pedido">NÚMERO DO PEDIDO: XXXXXXX </p>
+                            <p className="text-center numero-pedido">NÚMERO DO PEDIDO: 004742 </p>
                         </div>
 
                         <div className="detalhes-pedido">
                             <div className="detalhes-pedido d-flex justify-content-center align-items-center mb-3">
                                 <h2 className="titulo-detalhes-pedido me-2 mb-0">DETALHES DO PEDIDO</h2>
-                                <Link to="" href="#">
-                                    {/*<img src="img/img-resumo-compra/printer.png" alt="imprimir resumo do pedido"
-                                    className="print"/>*/}
+                                <Link to={"#"}>
+                                    <img src={PrintNfe} alt="imprimir resumo do pedido"
+                                    className="print"/>
                                 </Link>
                             </div>
 
