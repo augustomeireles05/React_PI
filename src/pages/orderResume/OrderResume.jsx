@@ -12,7 +12,7 @@ function OrderResume() {
             <div className="container">
 
                 <div className="row-col-md-12 resumo-pedido mb-5 mt-5">
-                    <h1 className="resumo ps-5 pb-2 pt-2">RESUMO DO PEDIDO</h1>
+                    <h1 className="resumo ps-5 pb-2 pt-2 text-center">RESUMO DO PEDIDO</h1>
                 </div>
 
                 <div className="row g-5 px-3">
@@ -20,13 +20,13 @@ function OrderResume() {
                     <div className="col-md-4 flex-row justify-content-center align-items-start text-center">
 
                         {/*Navbar*/}
-                        <nav className="navbar navbar-light border-bottom-menu titulo-menu mb-3 mt-0 pt-0 pb-2">
-                            <div className="container-fluid d-block text-center">
-                                <span>MENU</span>
+                        {/* <div className="navbar navbar-light border-bottom-menu titulo-menu mb-3 mt-0 pt-0 pb-2">
+                            <div className="container d-block text-center pb-2">
+                                <span className="fs-6">MENU</span>
                             </div>
-                        </nav>
+                        </div> */}
 
-                        <div className="btn-group-vertical background-container-subject me-3 shadow" role="group" aria-label="Vertical button group">
+                        <div className="col-12 btn-group-vertical background-container-subject me-3 shadow" role="group" aria-label="Vertical button group">
                             <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
                                 <Link to="/myData" className="link-solution">MEUS DADOS</Link>
                             </button>
@@ -48,11 +48,10 @@ function OrderResume() {
 
 
                     {/* inicio da confirmação do pedido */}
-                    <div className="col-md">
+                    <div className="col-md bg-light rounded-1">
                         <div className="d-flex pedido-concluido justify-content-center flex-column mb-4">
 
-                            <span className="titulo-principal text-center pb-2 mb-3">STATUS DO PEDIDO</span>
-
+                            <h4 className="titulo-principal text-center pb-2 mb-3 fs-3">STATUS DO PEDIDO</h4>
 
                             {/*<img src="img/img-resumo-compra/certificado-de-garantia.png" className="img-certificado" alt="pedido concluido"/>*/}
 
@@ -74,44 +73,41 @@ function OrderResume() {
                             </div>
 
                             <div className="row resumo-produto mb-3">
-                                <h3 className="col-12 mb-2 pt-2">PRODUTO</h3>
+                                <h4 className="col-12 mb-2 pt-2">PRODUTO:</h4>
                                 <div className="produtos d-flex justify-content-around">
                                     <div className="produto col-7">
-                                        <p className="nome-produto1">PORSCHE 911 CARRERA 2021</p>
-                                        <p className="nome-produto2"> AUDI A5 SPORTBACK S-LINE 2019</p>
-
+                                        <p className="fs-6">PORSCHE 911 CARRERA 2021</p>
                                     </div>
 
                                     <div className="qtd col-5">
-                                        <p className="qtd-produto1 border-start-1">QUANTIDADE: 03</p>
-                                        <p className="qtd-produto2 border-start-1">QUANTIDADE: 01</p>
+                                        <p className="border-start-1 fs-6 text-end">QUANTIDADE: 01</p>
                                     </div>
                                 </div>
                             </div>
 
 
                             <div className="row resumo-pgmt mb-3">
-                                <h3 className="mb-2 pt-2">FORMA DE PAGAMENTO</h3>
-                                <div className="d-flex justify-content-between">
-                                    <p className="forma-pmgt me-5">CARTÃO DE CRÉDITO </p>
-                                    <p className="num-cartao me-5">************5030</p>
-                                    <p className="parcelamento me-5">3X DE R$ 133.383,33</p>
+                                <h3 className="mb-2 pt-2">FORMA DE PAGAMENTO:</h3>
+                                <div className="d-flex justify-content-between w-100">
+                                    <p className="text-start fs-6">CARTÃO DE CRÉDITO</p>
+                                    <p className="text-center fs-6">9486.XXXX.XXXX.5030</p>
+                                    <p className="text-end fs-6">3X DE R$ 133.383,33</p>
                                 </div>
                             </div>
 
                             <div className="row resumo-endereco mb-3">
-                                <h3 className="mb-2 pt-2">ENDEREÇO DE ENTREGA</h3>
-                                <p> RUA PRAÇA ROBERTO PEDRO GOMES Nº 101 MORUMBI SÃO PAULO/SP CEP: 12332-032</p>
+                                <h3 className="mb-2 pt-2">ENDEREÇO DE ENTREGA:</h3>
+                                <p class="fs-6"> RUA PRAÇA ROBERTO PEDRO GOMES Nº 101 MORUMBI SÃO PAULO/SP CEP: 12332-032</p>
                             </div>
 
                             <div className="row data-pedido mb-3">
                                 <h3 className="col-6 pt-2">DATA DO PEDIDO</h3>
-                                <p className="col-6 text-center pt-2">DD/mm/yyyy</p>
+                                <p className="col-6 text-end pt-2 fs-6">01/02/2022</p>
                             </div>
 
                             <div className="row valor-total mb-5">
                                 <h3 className="col-6 pt-2">VALOR TOTAL</h3>
-                                <p className="col-6 text-center pt-2">R$400.150,00</p>
+                                <p className="col-6 text-end pt-2 fs-6">R$400.149,99</p>
                             </div>
                         </div>
                     </div>
