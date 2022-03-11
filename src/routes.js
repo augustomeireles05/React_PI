@@ -9,12 +9,12 @@ import CheckoutScheduling from './pages/checkoutScheduling/CheckoutScheduling'
 import Contact from './pages/contact/Contact'
 import Invetory from './pages/inventory/Inventory'
 import Login from './pages/login/Login'
-import MyData from './pages/myData/MyData'
+// import MyData from './pages/myData/MyData'
 import OrderResume from './pages/orderResume/OrderResume'
 import RecoveryPassword from './pages/recoveryPassword/RecoveryPassword'
-import Register from './pages/register/Register'
-import SchedulingDetails from './pages/schedulingDetails/SchedulingDetails'
-import WishList from './pages/wishList/WishList'
+// import Register from './pages/register/Register'
+// import SchedulingDetails from './pages/schedulingDetails/SchedulingDetails'
+// import WishList from './pages/wishList/WishList'
 
 
 export const Routes = () => {
@@ -29,13 +29,13 @@ export const Routes = () => {
             <Route path="/contact" component={Contact} />
             <Route path="/inventory" component={Invetory} />
             <Route path="/login" component={Login} />
-            <Route path="/myData" component={MyData} />
+            {/* <Route path="/myData" component={MyData} /> */}
             <Route path="/myOrder" component={MyOrder} />
             <Route path="/orderResume" component={OrderResume} /> 
             <Route path="/recoveryPassword" component={RecoveryPassword} />
-            <Route path="/register" component={Register} />
+            {/* <Route path="/register" component={Register} />
             <Route path="/schedulingDetails" component={SchedulingDetails} />
-            <Route path="/wishList" component={WishList} />
+            <Route path="/wishList" component={WishList} /> */}
 
         </Switch>
     )

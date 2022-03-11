@@ -11,9 +11,9 @@ function Header() {
                 <div className="icons-header">
                     <div className="icon-menu">
                         {/*INSERÇÃO DA IMAGEM DO MENU HAMBURGUER*/}
-                        <Link className="btn btn-black" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <a className="btn btn-black" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                             {/*<img src="./img/img-header/menu.png" width="30" />*/}
-                        </Link>
+                        </a>
 
                         <div className="offcanvas offcanvas-start background-menu d-flex flex-column flex-shrink-0 p-3 text-black bg-dark" tabIndex={-1} id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style={{width: 280 + 'px'}}>
 
