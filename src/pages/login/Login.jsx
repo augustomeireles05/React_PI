@@ -62,10 +62,16 @@ function Login() {
                                     </div>
                                 </div>
                             </form>
+
                             <p className= "text-center pt-3 font-login">Não é um membro?</p>
                             <div className= "text-center input-layout"><Link to="" data-toggle="tab">Cadastre-se</Link>
                             </div>
                             
+
+                            <p className= "text-center pt-3 font-login">Não é um membro? </p>
+                            <div className= "text-center input-layout"><Link to="" data-toggle="tab">Cadastre-se</Link>
+                            </div>
+
                         </div>
                     </div>
                 </div>
