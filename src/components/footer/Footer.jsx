@@ -20,57 +20,50 @@ function Footer() {
     return (
       <>
         <footer>
-          {" "}
           {/*Começo Footer */}
           <div className="container mb-5 pt-3 ">
-            {" "}
             {/*Começo Redes Sociais */}
+
             <div className="row justify-content-center responsive-social-media">
               <div className="col-md-1">
-                {" "}
                 {/*Icon Facebook */}
                 <Link to="#" target="_blank">
                   <img src={Facebook} width="30" height="30" />
                 </Link>
               </div>
               <div className="col-md-1">
-                {" "}
                 {/*Icon Twitter */}
                 <Link to="#" target="_blank">
                   <img src={Twitter} width="30" height="30" />
                 </Link>
               </div>
               <div className="col-md-1">
-                {" "}
                 {/*Icon Instagram */}
                 <Link to="#" target="_blank">
                   <img src={Instagram} width="30" height="30" />
                 </Link>
               </div>
               <div className="col-md-1">
-                {" "}
                 {/*Icon Linkedin */}
                 <Link to="#" target="_blank">
                   <img src={Linkedin} width="30" height="30" />
                 </Link>
               </div>
               <div className="col-md-1">
-                {" "}
                 {/*Icon YouTube */}
                 <Link to="#" target="_blank">
                   <img src={Youtube} width="30" height="30" />
                 </Link>
               </div>
             </div>
-          </div>{" "}
+          </div>
+
           {/*Fim Redes Sociais */}
+
           <div className="container">
-            {" "}
             {/*Começo Container Texto */}
             <div className="row gy-5 text-start d-flex justify-content-center ms-3 responsive-footer">
-              {/*  row-cols-4 py-4 my-5  */}
               <div className="col-md-3">
-                {" "}
                 {/*Começo Institucional */}
                 <h5>INSTITUCIONAL</h5>
                 <br />
@@ -112,10 +105,11 @@ function Footer() {
                     </Link>
                   </li>
                 </ul>
-              </div>{" "}
+              </div>
+
               {/*Fim Institucional */}
+
               <div className="col-md-3">
-                {" "}
                 {/*Começo Contato */}
                 <h5>CONTATO</h5>
                 <br />
@@ -148,10 +142,11 @@ function Footer() {
                     </Link>
                   </li>
                 </ul>
-              </div>{" "}
+              </div>
+
               {/*Fim Contato */}
+
               <div className="col-md-3">
-                {" "}
                 {/*Começo Atendimento */}
                 <h5>ATENDIMENTO</h5>
                 <br />
@@ -193,10 +188,11 @@ function Footer() {
                     </Link>
                   </li>
                 </ul>
-              </div>{" "}
+              </div>
+
               {/*Fim Atendimento */}
+
               <div className="col-md-3">
-                {" "}
                 {/*Começo Minha Conta */}
                 <h5>MINHA CONTA</h5>
                 <br />
@@ -238,12 +234,12 @@ function Footer() {
                     </Link>
                   </li>
                 </ul>
-              </div>{" "}
+              </div>
+
               {/*Fim Minha Conta */}
             </div>
           </div>
           <div className="formas-pagamento text-center">
-            {" "}
             {/*Começo Gaveta Formas de Pagamento */}
             <details>
               <summary>formas de pagamento</summary>
@@ -279,12 +275,14 @@ function Footer() {
                 </li>
               </ul>
             </details>
-          </div>{" "}
+          </div>
+
           {/*Fim Gaveta Formas de Pagamento */}
+
+          {/*Começo Copyright */}
           <div className="text-center p-2">
-            {" "}
             {/*Começo Copyright */}© 2021-2022 DEV CARS AUTOMOBILES.
-          </div>{" "}
+          </div>
           {/*Fim Copyright */}
         </footer>
       </>
