@@ -188,7 +188,7 @@ function Home() {
             <form className=" filtro-de-busca row gx-12 align-items-center rounded p-3 mt-5 ">
               <legend className="text-center">ENCONTRE SEU CARRO</legend>
 
-              <div className="col-md-3 ">
+              <div className="col-md-4 col-lg-3 col-12 ">
                 <select id="inputState" className="form-select fundo-filtro">
                   <option defaultValue>Selecione a Marca</option>
                   <option>Ferrari</option>
@@ -201,7 +201,7 @@ function Home() {
                   <option>Jaguar</option>
                 </select>
               </div>
-              <div className="col-md-4 ">
+              <div className="col-md-4 col-lg-4  ">
                 <select id="inputState" className="form-select fundo-filtro">
                   <option defaultValue>Selecione o Modelo</option>
                   <option>aaaaa</option>
@@ -210,7 +210,7 @@ function Home() {
                   <option>ddddd</option>
                 </select>
               </div>
-              <div className="col-md-2 ">
+              <div className="col-md-4 col-lg-3  ">
                 <select id="inputState" className="form-select fundo-filtro">
                   <option defaultValue>Selecione o Ano</option>
                   <option>2022</option>
@@ -221,7 +221,7 @@ function Home() {
                 </select>
               </div>
 
-              <div className="botao-buscar col-md-3 text-center btn p-0">
+              <div className="botao-buscar col-md-12 col-lg-2 text-center btn p-0">
                 <button type="submit" className="btn botao-buscar-home">
                   BUSCAR
                 </button>

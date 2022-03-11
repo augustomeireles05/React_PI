@@ -12,8 +12,8 @@ function Inventory() {
                     <form className=" filtro-de-busca row gx-12 align-items-center rounded p-3 mt-5 ">
                         <legend className="text-center">ENCONTRE SEU CARRO</legend>
 
-                        <div className="col-md-3 ">
-                            <select id="inputState" className="form-select fundo-filtro">
+                        <div className="col-md-4 col-lg-3 col-12">
+                            <select id="inputState" className="form-select fundo-filtro marca">
                                 <option defaultValue>Selecione a Marca</option>
                                 <option>Ferrari</option>
                                 <option>Bentley</option>
@@ -25,8 +25,8 @@ function Inventory() {
                                 <option>Jaguar</option>
                             </select>
                         </div>
-                        <div className="col-md-4 ">
-                            <select id="inputState" className="form-select fundo-filtro">
+                        <div className="col-md-4 col-lg-4 ">
+                            <select id="inputState" className="form-select fundo-filtro modelo">
                                 <option defaultValue>Selecione o Modelo</option>
                                 <option>aaaaa</option>
                                 <option>bbbbb</option>
@@ -35,8 +35,8 @@ function Inventory() {
 
                             </select>
                         </div>
-                        <div className="col-md-2 ">
-                            <select id="inputState" className="form-select fundo-filtro">
+                        <div className="col-md-4 col-lg-3 ">
+                            <select id="inputState" className="form-select fundo-filtro ano">
                                 <option defaultValue>Selecione o Ano</option>
                                 <option>2022</option>
                                 <option>2021</option>
@@ -47,7 +47,7 @@ function Inventory() {
 
                         </div>
 
-                        <div className="botao-buscar col-md-3 text-center btn p-0">
+                        <div className="botao-buscar col-md-12 col-lg-2 text-center btn p-0">
                             <button type="submit" className="btn botao-buscar-home">BUSCAR</button>
                         </div>
 
@@ -382,7 +382,7 @@ function Inventory() {
                                         <div className="col-10 modal-mobily3">
                                             <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
                                         </div>
-                                        <div className="col-1 modal-mobily3">
+                                        <div className="col-12 col-md-1 modal-mobily3">
                                             <Link to="" className="nav-link text-black">
                                                 <button type="button" className="btn btn-secondary btn-modal-footer ">
                                                     Agendar visita

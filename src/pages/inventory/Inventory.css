@@ -220,10 +220,7 @@ body{
     .filtro-de-busca{
         margin-left: 1%;
         justify-content: center;
-        
-        
     }
-
 }
 
 @media (max-width: 640px) {
@@ -241,6 +238,13 @@ body{
     .modal-mobily3{
         width: 75%;
         margin-left: 10%;
+    }
+
+    .botao-buscar{ 
+        width: 93%;
+        justify-items: center;
+        margin-left: 3%;
+        margin-top: 3%;
     }
     
 }
