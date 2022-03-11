@@ -146,7 +146,7 @@ function Contact() {
                                                     </button>
                                                 </h2>
                                                 <div id="collapseTwo" className="accordion-collapse collapse"
-                                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    aria-labelledby="headingTwo" data-bs-parent={"#accordionExample"}>
                                                     <div className="accordion-body">
                                                         <strong>This is the second item's accordion body.</strong> It is hidden
                                                         by default, until the collapse plugin adds the appropriate classes that
