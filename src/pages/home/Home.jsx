@@ -1,6 +1,8 @@
 import './Home.css'
 
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+
+import Footer from '../../components/footer/Footer.jsx';
 
 function Home() {
     return (
@@ -888,6 +890,7 @@ function Home() {
             </div>
           </div>
         </section>
+        <Footer />
       </>
     );
 }
