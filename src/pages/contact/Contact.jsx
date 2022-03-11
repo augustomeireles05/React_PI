@@ -60,7 +60,7 @@ function Contact() {
                                     <div className="formulario">
                                         <p>FORMULÁRIO DE CONTATO</p>
 
-                                        <div className="col-md-12">
+                                        <div className="col-md-12 signin-form-contact">
 
                                             <input className="form-control" type="text" placeholder="Nome" aria-label="nome" input example></input>
                                             <br></br>

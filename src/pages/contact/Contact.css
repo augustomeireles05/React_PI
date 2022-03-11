@@ -167,3 +167,8 @@ textarea{
 
 }
 
+.signin-form-contact input, .signin-form-contact textarea{
+    box-shadow: none;
+    padding: 14px;
+    background-color: #FFF;
+}
