@@ -14,7 +14,7 @@ function Inventory() {
 
                         <div className="col-md-3 ">
                             <select id="inputState" className="form-select fundo-filtro">
-                                <option selected>Selecione a Marca</option>
+                                <option defaultValue>Selecione a Marca</option>
                                 <option>Ferrari</option>
                                 <option>Bentley</option>
                                 <option>Porsche</option>
@@ -27,7 +27,7 @@ function Inventory() {
                         </div>
                         <div className="col-md-4 ">
                             <select id="inputState" className="form-select fundo-filtro">
-                                <option selected>Selecione o Modelo</option>
+                                <option defaultValue>Selecione o Modelo</option>
                                 <option>aaaaa</option>
                                 <option>bbbbb</option>
                                 <option>ccccc</option>
@@ -37,7 +37,7 @@ function Inventory() {
                         </div>
                         <div className="col-md-2 ">
                             <select id="inputState" className="form-select fundo-filtro">
-                                <option selected>Selecione o Ano</option>
+                                <option defaultValue>Selecione o Ano</option>
                                 <option>2022</option>
                                 <option>2021</option>
                                 <option>2020</option>
@@ -61,7 +61,7 @@ function Inventory() {
                     {/* card 1 */}
                     <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-1">
                         {/* link entre Modal e Card */}
-                        <Link to=" " className="text-decoration-none">
+                        <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
                                 <img src="./img/img-estoque/Lamborghini Urus.jpg" className="card-img" alt="..."></img>
                                 <div className="card-body">
@@ -69,15 +69,15 @@ function Inventory() {
                                     <p className="card-text"><strong> R$ 3.000.000,00</strong></p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <Link to="" className="btn mt-3 btn_buscar btn-detalhes" role="button">VER DETALHES</Link>
+                                    <div className="btn mt-3 btn_buscar btn-detalhes" role="button">VER DETALHES</div>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     </div>
                     {/* card 2 */}
                     <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-2">
                         {/* link entre Modal e Card */}
-                        <Link to=" " className="text-decoration-none">
+                        <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
                                 <img src="./img/img-estoque/Bugatti Chiron.jpg" className="card-img" alt="..."></img>
                                 <div className="card-body">
@@ -85,15 +85,15 @@ function Inventory() {
                                     <p className="card-text"><strong> R$ 21.000.000,00 </strong></p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <Link to="" className="btn mt-3 btn_buscar" role="button">VER DETALHES</Link>
+                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     </div>
                     {/* card 3 */}
                     <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-3">
                         {/* link entre Modal e Card */}
-                        <Link to=" " className="text-decoration-none">
+                        <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
                                 <img src="./img/img-estoque/Nissan_GT-R.jpg" className="card-img" alt="..." ></img>
                                 <div className="card-body">
@@ -101,15 +101,15 @@ function Inventory() {
                                     <p className="card-text"><strong> R$ 769.109,00 </strong></p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <Link to="" className="btn  mt-3 btn_buscar" role="button">VER DETALHES</Link>
+                                    <div className="btn  mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     </div>
 
                     <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-4">
                         {/* link entre Modal e Card */}
-                        <Link to=" " className="text-decoration-none">
+                        <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
                                 <img src="./img/img-estoque/Mercedes-Benz Classe S (V223).jpg" className="card-img" alt="..."></img>
                                 <div className="card-body">
@@ -117,15 +117,15 @@ function Inventory() {
                                     <p className="card-text">R$ 641.000,00</p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <Link to="" className="btn mt-3 btn_buscar" role="button">VER DETALHES</Link>
+                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     </div>
                     {/* card 5 */}
                     <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-5">
                         {/* link entre Modal e Card */}
-                        <Link to=" " className="text-decoration-none">
+                        <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
                                 <img src="./img/img-estoque/Mercedes-Benz Classe G (W463).jpg" className="card-img" alt="..."></img>
                                 <div className="card-body">
@@ -133,14 +133,14 @@ function Inventory() {
                                     <p className="card-text"><strong> R$ 2.200.000,00 </strong></p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <Link to="" className="btn mt-3 btn_buscar" role="button">VER DETALHES</Link>
+                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     </div>{/* card 6 */}
                     <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-6">
                         {/* link entre Modal e Card */}
-                        <Link to=" " className="text-decoration-none">
+                        <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
                                 <img src="./img/img-estoque/Mercedes-Benz AMG GT R.jpg" className="card-img" alt="..."></img>
                                 <div className="card-body">
@@ -148,15 +148,15 @@ function Inventory() {
                                     <p className="card-text">R$2.200.000,00</p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <Link to="" className="btn mt-3 btn_buscar" role="button">VER DETALHES</Link>
+                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     </div>
                     {/* card 7 */}
                     <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-7">
                         {/* link entre Modal e Card */}
-                        <Link to=" " className="text-decoration-none">
+                        <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
                                 <img src="./img/img-estoque/Aston Martin DB11.jpg" className="card-img" alt="..."></img>
                                 <div className="card-body">
@@ -164,15 +164,15 @@ function Inventory() {
                                     <p className="card-text"> <strong> R$ 3.000.000,00 </strong></p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <Link to="" className="btn mt-3 btn_buscar" role="button">VER DETALHES</Link>
+                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     </div>
                     {/*  card 8  */}
                     <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-8">
                         {/*link entre Modal e Card */}
-                        <Link to=" " className="text-decoration-none">
+                        <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
                                 <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg" className="card-img" alt="..."></img>
                                 <div className="card-body">
@@ -180,15 +180,15 @@ function Inventory() {
                                     <p className="card-text"><strong> R$ 19.000.000,00 </strong></p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <Link to="" className="btn mt-3 btn_buscar" role="button">VER DETALHES</Link>
+                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     </div>
                     {/*  card 9  */}
                     <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-9">
                         {/* link entre Modal e Card  */}
-                        <Link to=" " className="text-decoration-none">
+                        <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
                                 <img src="./img/img-estoque/Bentley Mulliner Bacalar.jpg" className="card-img" alt="..."></img>
                                 <div className="card-body">
@@ -196,16 +196,16 @@ function Inventory() {
                                     <p className="card-text"><strong> R$ 1.350.000,00 </strong></p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <Link to="" className="btn mt-3 btn_buscar" role="button">VER DETALHES</Link>
+                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     </div>
                     {/* card 10  */}
                     <div className="col text-center btn" type="button" data-bs-toggle="modal"
                         data-bs-target="#modal-produto-10">
                         {/*  link entre Modal e Card  */}
-                        <Link to=" " className="text-decoration-none">
+                        <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
                                 <img src="./img/img-estoque/Bentley Continental GT3.jpg" className="card-img" alt="..."></img>
                                 <div className="card-body">
@@ -213,16 +213,16 @@ function Inventory() {
                                     <p className="card-text"><strong> R$ 1.950.000,00 </strong></p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <Link to="" className="btn mt-3 btn_buscar" role="button">VER DETALHES</Link>
+                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     </div>
                     {/*  card 11  */}
                     <div className="col text-center btn" type="button" data-bs-toggle="modal"
                         data-bs-target="#modal-produto-11">
                         {/*  link entre Modal e Card  */}
-                        <Link to=" " className="text-decoration-none">
+                        <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
                                 <img src="./img/img-estoque/Ares S1.jpg" className="card-img" alt="..."></img>
                                 <div className="card-body">
@@ -230,16 +230,16 @@ function Inventory() {
                                     <p className="card-text"><strong> R$ 7.100.000,00 </strong></p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <Link to="" className="btn mt-3 btn_buscar" role="button">VER DETALHES</Link>
+                                    <div  className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     </div>
                     {/* card 12  */}
                     <div className="col text-center btn" type="button" data-bs-toggle="modal"
                         data-bs-target="#modal-produto-12">
                         {/*  link entre Modal e Card  */}
-                        <Link to=" " className="text-decoration-none">
+                        <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
                                 <img src="./img/img-estoque/Lamborghini Huracan.jpg" className="card-img" alt="..."></img>
                                 <div className="card-body">
@@ -247,16 +247,16 @@ function Inventory() {
                                     <p className="card-text"><strong> R$ 4.300.000,00 </strong></p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <Link to="" className="btn mt-3 btn_buscar" role="button">VER DETALHES</Link>
+                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     </div>
 
                     {/*Inicio dos modais */}
 
                     {/*  Modal Card 1  */}
-                    <div className="modal fade " id="modal-produto-1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div className="modal fade " id="modal-produto-1" tabIndex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         {/* link entre Modal e Card */}
                         <div className="modal-dialog modal-xl">
@@ -398,7 +398,7 @@ function Inventory() {
 
                     {/*  Modal Card 2  */}
 
-                    <div className="modal fade " id="modal-produto-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div className="modal fade " id="modal-produto-2" tabIndex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         {/*  link entre Modal e Card */}
                         <div className="modal-dialog modal-xl">
@@ -536,7 +536,7 @@ function Inventory() {
                     </div>
                     {/*  Modal Card 3  */}
 
-                    <div className="modal fade " id="modal-produto-3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div className="modal fade " id="modal-produto-3" tabIndex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         {/* link entre Modal e Card  */}
                         <div className="modal-dialog modal-xl">
@@ -675,7 +675,7 @@ function Inventory() {
 
                     {/*  Modal Card 4  */}
 
-                    <div className="modal fade " id="modal-produto-4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div className="modal fade " id="modal-produto-4" tabIndex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         {/* link entre Modal e Card */}
                         <div className="modal-dialog modal-xl">
@@ -814,7 +814,7 @@ function Inventory() {
 
                     {/* Modal Card 5   */}
 
-                    <div className="modal fade " id="modal-produto-5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div className="modal fade " id="modal-produto-5" tabIndex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         {/*link entre Modal e Card */}
                         <div className="modal-dialog modal-xl">
@@ -953,7 +953,7 @@ function Inventory() {
 
                     {/*  Modal Card 6   */}
 
-                    <div className="modal fade " id="modal-produto-6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div className="modal fade " id="modal-produto-6" tabIndex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         {/*  link entre Modal e Card  */}
                         <div className="modal-dialog modal-xl">
@@ -1092,7 +1092,7 @@ function Inventory() {
 
                     {/*  Modal Card 7  */}
 
-                    <div className="modal fade " id="modal-produto-7" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div className="modal fade " id="modal-produto-7" tabIndex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         {/* link entre Modal e Card */}
                         <div className="modal-dialog modal-xl">
@@ -1231,7 +1231,7 @@ function Inventory() {
 
                     {/*Modal Card 8  */}
 
-                    <div className="modal fade " id="modal-produto-8" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div className="modal fade " id="modal-produto-8" tabIndex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         {/* link entre Modal e Card  */}
                         <div className="modal-dialog modal-xl">
@@ -1370,7 +1370,7 @@ function Inventory() {
 
                     {/* Modal Card 9  */}
 
-                    <div className="modal fade " id="modal-produto-9" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div className="modal fade " id="modal-produto-9" tabIndex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         {/*link entre Modal e Card */}
                         <div className="modal-dialog modal-xl">
@@ -1509,7 +1509,7 @@ function Inventory() {
 
                     {/* Modal Card 10  */}
 
-                    <div className="modal fade " id="modal-produto-10" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div className="modal fade " id="modal-produto-10" tabIndex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         {/* link entre Modal e Card */}
                         <div className="modal-dialog modal-xl">
@@ -1648,7 +1648,7 @@ function Inventory() {
 
                     {/* Modal Card 11   */}
 
-                    <div className="modal fade " id="modal-produto-11" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div className="modal fade " id="modal-produto-11" tabIndex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         {/* link entre Modal e Card */}
                         <div className="modal-dialog modal-xl">
@@ -1787,7 +1787,7 @@ function Inventory() {
 
                     {/* Modal Card 12  */}
 
-                    <div className="modal fade " id="modal-produto-12" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div className="modal fade " id="modal-produto-12" tabIndex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         {/* link entre Modal e Card */}
                         <div className="modal-dialog modal-xl">
