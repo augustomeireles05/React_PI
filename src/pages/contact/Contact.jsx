@@ -62,17 +62,18 @@ function Contact() {
 
                                         <div className="col-md-12">
 
-                                            <input className="form-control" type="text" placeholder="Nome" aria-label="nome"  ></input>
+                                            <input className="form-control" type="text" placeholder="Nome" aria-label="nome" input example></input>
                                             <br></br>
 
-                                            <input className="form-control" type="text" placeholder="E-mail" ></input>
+                                            <input className="form-control" type="text" placeholder="E-mail" aria-label="email"
+                                                input example></input>
                                                 <br></br>
 
                                             <input className="form-control" type="text" placeholder="Telefone" aria-label="telefone"
-                                                 ></input>
+                                                input example></input>
                                                 <br></br>
 
-                                            <input className="form-control" type="text" placeholder="Assunto" aria-label="assunto"  ></input>
+                                            <input className="form-control" type="text" placeholder="Assunto" aria-label="assunto" input example></input>
                                                 <br></br>
 
 
@@ -80,30 +81,28 @@ function Contact() {
                                                 aria-label="mensagem"></textarea>
                                                 <br></br>
 
-                                            
+
                                                 {/* <div className="col text-center">
                                                     <a className="btn btn-warning mt-6 d-block float-md-end" href="#" role="button">
                                                     Enviar </a>
                                                 </div>
-
-
                                                 <div className="col text-center">
                                                     <button className="send" type="submit">Enviar</button>
                                                 </div> */}
 
 
-                                            
+
 
                                             <div className="d-grid gap-2 col-12 mx-auto">
                                                 <button className="btn btn-enviar-contato" type="buttonAjuste">ENVIAR</button>
-                                                    
+
                                             </div>          
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div className="col-12 col-md-6">
                             <div className="column">
                                  {/* DUVIDAS  */}
@@ -117,9 +116,9 @@ function Contact() {
 
                                         <div className="accordion" id="accordionExample">
                                             <div className="accordion-item">
-                                                <h2 className="accordion-header" id="headingOne">
+                                                <h2 className="accordion-header w-100" id="headingOne">
                                                     <button className="accordion-button" type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#collapseOne" aria-expanded={"true"}
+                                                        data-bs-target="#collapseOne" aria-expanded="true"
                                                         aria-controls="collapseOne">
                                                         <span className="fonte-pagina-contato">O veículo já possui revisão?</span>
                                                     </button>
@@ -138,7 +137,7 @@ function Contact() {
                                                 </div>
                                             </div>
                                             <div className="accordion-item">
-                                                <h2 className="accordion-header" id="headingTwo">
+                                                <h2 className="accordion-header w-100" id="headingTwo">
                                                     <button className="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                                         aria-expanded="false" aria-controls="collapseTwo">
@@ -146,7 +145,7 @@ function Contact() {
                                                     </button>
                                                 </h2>
                                                 <div id="collapseTwo" className="accordion-collapse collapse"
-                                                    aria-labelledby="headingTwo" data-bs-parent={"#accordionExample"}>
+                                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                                     <div className="accordion-body">
                                                         <strong>This is the second item's accordion body.</strong> It is hidden
                                                         by default, until the collapse plugin adds the appropriate classes that
@@ -160,12 +159,12 @@ function Contact() {
                                                 </div>
                                             </div>
                                             <div className="accordion-item">
-                                                <h2 className="accordion-header" id="headingThree">
+                                                <h2 className="accordion-header w-100" id="headingThree">
                                                     <button className="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                                         aria-expanded="false" aria-controls="collapseThree">
                                                         <span className="fonte-pagina-contato">O carro já se envolveu em algum acidente?</span>
-                                                    
+
                                                     </button>
                                                 </h2>
                                                 <div id="collapseThree" className="accordion-collapse collapse"
@@ -186,7 +185,7 @@ function Contact() {
 
 
                                             <div className="accordion-item">
-                                                <h2 className="accordion-header" id="headingFour">
+                                                <h2 className="accordion-header w-100" id="headingFour">
                                                     <button className="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseFour"
                                                         aria-expanded="false" aria-controls="collapseFour">
@@ -209,7 +208,7 @@ function Contact() {
                                             </div>
 
                                             <div className="accordion-item">
-                                                <h2 className="accordion-header" id="headingFive">
+                                                <h2 className="accordion-header w-100" id="headingFive">
                                                     <button className="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseFive"
                                                         aria-expanded="false" aria-controls="collapseFour">
@@ -233,7 +232,7 @@ function Contact() {
 
 
                                             <div className="accordion-item">
-                                                <h2 className="accordion-header" id="headingSix">
+                                                <h2 className="accordion-header w-100" id="headingSix">
                                                     <button className="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseSix"
                                                         aria-expanded="false" aria-controls="collapseFour">
@@ -275,4 +274,4 @@ function Contact() {
     )
 }
 
-export default Contact
+export default Contact 
