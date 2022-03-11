@@ -1,11 +1,11 @@
 import { Switch, Route } from "react-router-dom";
 
 
-// import Home from './pages/home/Home'
+import Home from './pages/home/Home'
 // import Product from './pages/product/Product'
 // import Cart from './pages/cart/Cart'
 // import MyOrder from './pages/myOrder/MyOrder'
-// import AboutUs from './pages/aboutUs/AboutUs'
+import AboutUs from './pages/aboutUs/AboutUs'
 // import CheckoutOrder from './pages/checkoutOrder/CheckoutOrder'
 import CheckoutScheduling from './pages/checkoutScheduling/CheckoutScheduling'
 // import Contact from './pages/contact/Contact'
@@ -24,9 +24,9 @@ import CheckoutScheduling from './pages/checkoutScheduling/CheckoutScheduling'
 export const Routes = () => {
     return (
         <Switch>
-            {/* <Route path="/" component={Home} exact/>
-            <Route path="/product" component={Product} />
+            <Route path="/" component={Home} exact/>
             <Route path="/aboutUs" component={AboutUs} />
+            {/* <Route path="/product" component={Product} />
             <Route path="/cart" component={Cart} />
             <Route path="/checkoutOrder" component={CheckoutOrder} />
             <Route path="/contact" component={Contact} />

@@ -2,18 +2,18 @@ import './Footer.css'
 
 import { Link } from 'react-router-dom';
 
-import Facebook from '../../images/Footer/facebook.png';
-import Twitter from '../../images/Footer/twitter.png';
-import Instagram from '../../images/Footer/instagram.png';
-import Linkedin from '../../images/Footer/linkedin.png';
-import Youtube from '../../images/Footer/youtube.png';
+import Facebook from '../../assets/images/Footer/facebook.png';
+import Twitter from '../../assets/images/Footer/twitter.png';
+import Instagram from '../../assets/images/Footer/instagram.png';
+import Linkedin from '../../assets/images/Footer/linkedin.png';
+import Youtube from '../../assets/images/Footer/youtube.png';
 
-import Visa from '../../images/Footer/visa.png';
-import Mastercard from '../../images/Footer/mastercard.png';
-import Hipercard from '../../images/Footer/hipercard.png';
-import Elo from '../../images/Footer/elo.png';
-import Apple from '../../images/Footer/apple-pay (1).png';
-import Boleto from '../../images/Footer/codigo-de-barras.png';
+import Visa from '../../assets/images/Footer/visa.png';
+import Mastercard from '../../assets/images/Footer/mastercard.png';
+import Hipercard from "../../assets/images/Footer/hipercard.png";
+import Elo from "../../assets/images/Footer/elo.png";
+import Apple from "../../assets/images/Footer/apple-pay (1).png";
+import Boleto from "../../assets/images/Footer/codigo-de-barras.png";
 
 
 function Footer() {
@@ -28,31 +28,31 @@ function Footer() {
               <div className="col-md-1">
                 {/*Icon Facebook */}
                 <Link to="#" target="_blank">
-                  <img src={Facebook} width="30" height="30" />
+                  <img src={Facebook} width="30" height="30" alt="Facebook-Logo"/>
                 </Link>
               </div>
               <div className="col-md-1">
                 {/*Icon Twitter */}
                 <Link to="#" target="_blank">
-                  <img src={Twitter} width="30" height="30" />
+                  <img src={Twitter} width="30" height="30" alt="Twitter-Logo"/>
                 </Link>
               </div>
               <div className="col-md-1">
                 {/*Icon Instagram */}
                 <Link to="#" target="_blank">
-                  <img src={Instagram} width="30" height="30" />
+                  <img src={Instagram} width="30" height="30" alt="Instagram-Logo"/>
                 </Link>
               </div>
               <div className="col-md-1">
                 {/*Icon Linkedin */}
                 <Link to="#" target="_blank">
-                  <img src={Linkedin} width="30" height="30" />
+                  <img src={Linkedin} width="30" height="30" alt="Linkedin-Logo"/>
                 </Link>
               </div>
               <div className="col-md-1">
                 {/*Icon YouTube */}
                 <Link to="#" target="_blank">
-                  <img src={Youtube} width="30" height="30" />
+                  <img src={Youtube} width="30" height="30" alt="Youtube-Logo"/>
                 </Link>
               </div>
             </div>
