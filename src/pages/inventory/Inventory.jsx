@@ -2,9 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './Inventory.css'
 
+
 function Inventory() {
     return (
         <>
+            {/* <Header></Header> */}
             <hr></hr>
             <div className="container">
                 <div className="row-cols-1 row-cols-md-12 g-4 justify-content-center mt-4">
@@ -1936,6 +1938,7 @@ function Inventory() {
                     </div>
                 </div>
             </div>
+            {/* <Footer></Footer> */}
         </>
     )
 }
