@@ -36,7 +36,6 @@ export const Routes = () => {
             <Route path="/register" component={Register} />
             <Route path="/schedulingDetails" component={SchedulingDetails} />
             <Route path="/wishList" component={WishList} />
-            <Route path="/wishList" component={WishList} />
 
         </Switch>
     )
