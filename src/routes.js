@@ -8,7 +8,7 @@ import Home from './pages/home/Home'
 // import CheckoutScheduling from './pages/checkoutScheduling/CheckoutScheduling'
 import Contact from './pages/contact/Contact'
 // import Invetory from './pages/inventory/Inventory'
-// import Login from './pages/login/Login'
+import Login from './pages/login/Login'
 // import MyData from './pages/myData/MyData'
 // import OrderResume from './pages/orderResume/OrderResume'
 // import RecoveryPassword from './pages/recoveryPassword/RecoveryPassword'
@@ -27,9 +27,9 @@ export const Routes = () => {
             <Route path="/checkoutOrder" component={CheckoutOrder} />
             <Route path="/checkoutScheduling" component={CheckoutScheduling} /> */}
             <Route path="/contact" component={Contact} />
-            {/* <Route path="/inventory" component={Invetory} />
+            {/* <Route path="/inventory" component={Invetory} /> */}
             <Route path="/login" component={Login} />
-            <Route path="/myData" component={MyData} />
+            {/* <Route path="/myData" component={MyData} />
             <Route path="/myOrder" component={MyOrder} />
             <Route path="/orderResume" component={OrderResume} />
             <Route path="/recoveryPassword" component={RecoveryPassword} />

@@ -38,11 +38,11 @@ function Login() {
                             </div>
                             <form action="#" className= "signin-form">
                                 <div className= "form-group mb-3">
-                                    <label className= "label font-login" for="name">Login</label>
+                                    <label className= "label font-login" htmlFor="name">Login</label>
                                     <input type="text" className= "form-control font-login" placeholder="usuario@exemplo.com" required></input>
                                 </div>
                                 <div className= "form-group mb-3">
-                                    <label className= "label font-login" for="password">Senha</label>
+                                    <label className= "label font-login" htmlFor="password">Senha</label>
                                     <input type="password" className= "form-control" required></input>
                                 </div>
                                 <div className= "form-group button-entrar-login">
@@ -53,7 +53,7 @@ function Login() {
                                 <div className= "col-12 row form-group d-md-flex pt-3 mx-0 text-center">
                                     <div className= "col-6 flex-center">
                                         <label className= "checkbox-wrap checkbox-secondary mb-0 font-login">Lembrar-me
-                                            <input type="checkbox" checked></input>
+                                            <input type="checkbox" defaultChecked></input>
                                             <span className= "checkmark"></span>
                                         </label>
                                     </div>
@@ -62,10 +62,10 @@ function Login() {
                                     </div>
                                 </div>
                             </form>
-                            <p className= "text-center pt-3 font-login">Não é um membro?
+                            <p className= "text-center pt-3 font-login">Não é um membro?</p>
                             <div className= "text-center input-layout"><Link to="" data-toggle="tab">Cadastre-se</Link>
                             </div>
-                            </p>
+                            
                         </div>
                     </div>
                 </div>
