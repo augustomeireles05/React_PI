@@ -25,18 +25,19 @@ export const Routes = () => {
             <Route path="/aboutUs" component={AboutUs} />
             <Route path="/cart" component={Cart} />
             <Route path="/checkoutOrder" component={CheckoutOrder} />
-            <Route path="/checkoutScheduling" component={CheckoutScheduling} />
+            <Route path="/checkoutScheduling" component={CheckoutScheduling} /> */}
             <Route path="/contact" component={Contact} />
             <Route path="/inventory" component={Invetory} />
             <Route path="/login" component={Login} />
             <Route path="/myData" component={MyData} />
             <Route path="/myOrder" component={MyOrder} />
-            <Route path="/orderResume" component={OrderResume} />
+            <Route path="/orderResume" component={OrderResume} /> 
             <Route path="/recoveryPassword" component={RecoveryPassword} />
             <Route path="/register" component={Register} />
             <Route path="/schedulingDetails" component={SchedulingDetails} />
             <Route path="/wishList" component={WishList} />
-            
+            <Route path="/wishList" component={WishList} />
+
         </Switch>
     )
 }
