@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Login.css'
+import Bugatti from '../../assets/images/Login/login.jpg';
 
 function Login() {
     return (
@@ -17,7 +18,7 @@ function Login() {
                             <div className="wrap d-md-flex flex-center">
 
                                 <div className="img col-md-6 imagem-login">
-                                    {/* <img src="./imagens/bugatti-chiron-background.png" /> */}
+                                    <img src={Bugatti} alt="Login" />
                                 </div>
 
                                 <div className="login-wrap p-md-2 col-12 col-md-6">
@@ -27,12 +28,12 @@ function Login() {
                                         </div>
                                         <div className="w-100">
                                             <p className="social-media d-flex justify-content-end">
-                                                <a href="#"
+                                                <Link to="#"
                                                     className="social-icon d-flex align-items-center justify-content-center"><span
-                                                        className="fa fa-facebook"></span></a>
-                                                <a href="#"
+                                                        className="fa fa-facebook"></span></Link>
+                                                <Link to="#"
                                                     className="social-icon d-flex align-items-center justify-content-center"><span
-                                                        className="fa fa-twitter"></span></a>
+                                                        className="fa fa-twitter"></span></Link>
                                             </p>
                                         </div>
                                     </div>
@@ -58,12 +59,12 @@ function Login() {
                                                 
                                             </div>
                                             <div className="col-6 flex-center input-layout">
-                                                <a href="./recuperarsenha.html" className="font-login">Esqueci minha senha</a>
+                                                <Link href="./recuperarsenha.html" className="font-login">Esqueci minha senha</Link>
                                             </div>
                                         </div>
                                     </form>
                                     <p className="text-center pt-3 font-login">Não é um membro?</p>
-                                        <div className="text-center input-layout"><a data-toggle="tab" href="./cadastro.html">Cadastre-se</a>
+                                        <div className="text-center input-layout"><Link data-toggle="tab" href="./cadastro.html">Cadastre-se</Link>
                                         </div>
                                     
                                 </div>
