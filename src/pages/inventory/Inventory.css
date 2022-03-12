@@ -22,6 +22,10 @@ body{
     border-radius: 5px;
 }
 
+.titulo-card{
+    height: 7vh;
+}
+
 .card { 
     transition: 0.9s; 
     border-radius: 2px;
@@ -158,6 +162,23 @@ body{
     align-items: center;
     padding: 0.2rem 0.7rem;
     text-transform: uppercase;
+}
+
+
+@media (min-width: 1000px) {
+  
+    .titulo-card{
+        min-height: 8vh;
+    }
+    
+}
+
+@media (min-width: 700px) {
+  
+    .titulo-card{
+        height: 7vh;
+    }
+    
 }
 
 

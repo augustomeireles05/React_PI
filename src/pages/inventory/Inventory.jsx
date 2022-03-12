@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './Inventory.css'
 import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
+
 
 import LamborghiniUrus from '../../assets/images/Inventory/LamborghiniUrus.jpg'
 import LamborghiniUracan from '../../assets/images/Inventory/LamborghiniHuracan.jpg'
@@ -80,9 +82,9 @@ function Inventory() {
                             <div className="card h-100 mb-5">
                                 <img src={LamborghiniUrus} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Lamborghini Urus </h5>
-                                    <p className="card-text"><strong> R$ 3.000.000,00</strong></p>
-                                    <div className="btn mt-3 btn_buscar btn-detalhes" role="button">VER DETALHES</div>
+                                    <h5 className="card-title titulo-card">Lamborghini Urus </h5>
+                                    <p className="card-text text-center"><strong> R$ 3.000.000,00</strong></p>
+                                    <div className="btn mt-3 btn_buscar btn-detalhes mb-2" role="button">VER DETALHES</div>
                                 </div>
                             </div>
                         </div>
@@ -94,8 +96,8 @@ function Inventory() {
                             <div className="card h-100 mb-5">
                                 <img src={BugattiChiron} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Bugatti Chiron</h5>
-                                    <p className="card-text"><strong> R$ 21.000.000,00 </strong></p>
+                                    <h5 className="card-title titulo-card">Bugatti Chiron</h5>
+                                    <p className="card-text text-center"><strong> R$ 21.000.000,00 </strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -108,8 +110,8 @@ function Inventory() {
                             <div className="card h-100 mb-5">
                                 <img src={NissanGTR} className="card-img" alt="..." ></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">NissanGT-R</h5>
-                                    <p className="card-text"><strong> R$ 769.109,00 </strong></p>
+                                    <h5 className="card-title titulo-card">NissanGT-R</h5>
+                                    <p className="card-text text-center"><strong> R$ 769.109,00 </strong></p>
                                     <div className="btn  mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -122,8 +124,8 @@ function Inventory() {
                             <div className="card h-100 mb-5">
                                 <img src={MercedesBenzClasseS} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Mercedes-Benz Classe S (V223)</h5>
-                                    <p className="card-text">R$ 641.000,00</p>
+                                    <h5 className="card-title titulo-card">Mercedes-Benz Classe S (V223)</h5>
+                                    <p className="card-text text-center"><strong>R$ 641.000,00</strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -136,8 +138,8 @@ function Inventory() {
                             <div className="card h-100 mb-5">
                                 <img src={MercedesBenzClasseG} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Mercedes-Benz Classe G (W463) AMG</h5>
-                                    <p className="card-text"><strong> R$ 2.200.000,00 </strong></p>
+                                    <h5 className="card-title titulo-card">Mercedes-Benz Classe G (W463) AMG</h5>
+                                    <p className="card-text text-center"><strong> R$ 2.200.000,00 </strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -149,8 +151,8 @@ function Inventory() {
                             <div className="card h-100 mb-5">
                                 <img src={MercedesBenzAMGGTR} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Mercedes-Benz AMG GT R</h5>
-                                    <p className="card-text">R$2.200.000,00</p>
+                                    <h5 className="card-title titulo-card">Mercedes-Benz AMG GT R</h5>
+                                    <p className="card-text text-center"><strong>R$2.200.000,00</strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -163,8 +165,8 @@ function Inventory() {
                             <div className="card h-100 mb-5">
                                 <img src={AstonMartinDB11} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Aston Martin DB11</h5>
-                                    <p className="card-text"> <strong> R$ 3.000.000,00 </strong></p>
+                                    <h5 className="card-title titulo-card">Aston Martin DB11</h5>
+                                    <p className="card-text text-center"> <strong> R$ 3.000.000,00 </strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -177,8 +179,8 @@ function Inventory() {
                             <div className="card h-100 mb-5">
                                 <img src={MercedesBenzAMGF12016} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Mercedes-Benz AMG F1 2016</h5>
-                                    <p className="card-text"><strong> R$ 19.000.000,00 </strong></p>
+                                    <h5 className="card-title titulo-card">Mercedes-Benz AMG F1 2016</h5>
+                                    <p className="card-text text-center"><strong> R$ 19.000.000,00 </strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -191,8 +193,8 @@ function Inventory() {
                             <div className="card h-100 mb-5">
                                 <img src={BentleyMullinerBacalar} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Bentley Mulliner Bacalar</h5>
-                                    <p className="card-text"><strong> R$ 1.350.000,00 </strong></p>
+                                    <h5 className="card-title titulo-card">Bentley Mulliner Bacalar</h5>
+                                    <p className="card-text text-center"><strong> R$ 1.350.000,00 </strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -206,8 +208,8 @@ function Inventory() {
                             <div className="card h-100 mb-5">
                                 <img src={BentleyContinentalGT3} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Bentley Continental GT3</h5>
-                                    <p className="card-text"><strong> R$ 1.950.000,00 </strong></p>
+                                    <h5 className="card-title titulo-card">Bentley Continental GT3</h5>
+                                    <p className="card-text text-center"><strong> R$ 1.950.000,00 </strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -221,9 +223,9 @@ function Inventory() {
                             <div className="card h-100 mb-5">
                                 <img src={AresS1} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Ares S1</h5>
-                                    <p className="card-text"><strong> R$ 7.100.000,00 </strong></p>
-                                    <div  className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
+                                    <h5 className="card-title titulo-card">Ares S1</h5>
+                                    <p className="card-text text-center"><strong> R$ 7.100.000,00 </strong></p>
+                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
                         </div>
@@ -236,8 +238,8 @@ function Inventory() {
                             <div className="card h-100 mb-5">
                                 <img src={LamborghiniUracan} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Lamborghini Huracan </h5>
-                                    <p className="card-text"><strong> R$ 4.300.000,00 </strong></p>
+                                    <h5 className="card-title titulo-card">Lamborghini Huracan </h5>
+                                    <p className="card-text text-center"><strong> R$ 4.300.000,00 </strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -1917,8 +1919,8 @@ function Inventory() {
 
                     {/* numeração das paginas  */}
                     <div className="row text-center m-2">
-                        <div className="grupo-links">
-                            <Link to="//" className="btn btn-outline-secondary m-3">Preview</Link>
+                        <div className="grupo-links d-inline">
+                            <Link to="//" className="btn btn-outline-secondary m-3">Prev</Link>
                             <Link to="//" className="btn btn-outline-secondary">1</Link>
                             <Link to="//" className="btn btn-outline-secondary">2</Link>
                             <Link to="//" className="btn btn-outline-secondary">3</Link>
@@ -1927,7 +1929,7 @@ function Inventory() {
                     </div>
                 </div>
             </div>
-            {/* <Footer></Footer> */}
+            <Footer />
         </>
     )
 }
