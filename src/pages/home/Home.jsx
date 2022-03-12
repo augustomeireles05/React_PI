@@ -3,6 +3,9 @@ import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import { Link } from 'react-router-dom';
 
+import LogoDevCars from '../../assets/images/Inventory/logo-rev01.jpeg'
+
+
 import Capa1 from '../../assets/images/Home/Koenigsegg_Gemera.jpg'
 import Capa2 from '../../assets/images/Home/ferarri-monza.jpg'
 import Capa3 from '../../assets/images/Home/home2.jpeg'
@@ -141,7 +144,7 @@ function Home() {
                                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span className="visually-hidden">Previous</span>
                                 </button>
-                                <button className="carousel-control-next carousel-button-hover" type="button" data-bs-target="#carousel-marcas"
+                                <button className="carousel-control-next carousel-button-hover carousel-button-hover" type="button" data-bs-target="#carousel-marcas"
                                     data-bs-slide="next">
                                     <span className="carousel-control-next-icon " aria-hidden="true"></span>
                                     <span className="visually-hidden">Next</span>
@@ -227,18 +230,20 @@ function Home() {
                                     {/* link entre Modal e Card */}
                                     <div href="#" className="text-decoration-none">
                                         <div className="card h-100 mb-5">
-                                            <img src={MercedesBenzAMGF12016} className="card-img"
-                                                alt="..."></img>
+                                            <img src={MercedesBenzAMGF12016} className="card-img" alt="..."></img>
                                             <div className="card-body">
-                                                <h5 className="card-title">Mercedes AMG F1</h5>
-                                                <p className="card-text">R$19.000.000,00</p>
-                                                <button className="btn mt-3 botao-buscar btn-detalhes" href="#" role="button">
-                                                    DETALHES</button>
+                                                <h5 className="card-title">Bugatti Chiron</h5>
+                                                <p className="card-text text-center"><strong> R$ 21.000.000,00 </strong></p>
+                                                <button className="btn mt-3 btn_buscar" role="button">DETALHES</button>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
+
+
+
+
+
 
 
                                 {/* Modal */}
@@ -341,14 +346,14 @@ function Home() {
                                                                                     className="d-block w-100" alt="10px"></img>
                                                                             </div>
                                                                         </div>
-                                                                        <button className="carousel-control-prev" type="button"
+                                                                        <button className="carousel-control-prev carousel-button-hover carousel-button-hover" type="button"
                                                                             data-bs-target="#carouselExampleControls"
                                                                             data-bs-slide="prev">
                                                                             <span className="carousel-control-prev-icon"
                                                                                 aria-hidden="true"></span>
                                                                             <span className="visually-hidden">Previous</span>
                                                                         </button>
-                                                                        <button className="carousel-control-next" type="button"
+                                                                        <button className="carousel-control-next carousel-button-hover" type="button"
                                                                             data-bs-target="#carouselExampleControls"
                                                                             data-bs-slide="next">
                                                                             <span className="carousel-control-next-icon"
@@ -364,8 +369,8 @@ function Home() {
                                             </div>
                                             <div className="modal-footer modalfooter">
                                                 <div className="row">
-                                                    <div className="col-10 modal-mobily3">
-                                                        <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                                    <div className="col-10 modal-mobily3 text-center mb-3">
+                                                        <img className="logo-modal" src={LogoDevCars} alt=""></img>
                                                     </div>
                                                     <div className="col-1 modal-mobily3">
 
@@ -392,10 +397,10 @@ function Home() {
                                         <div className="card h-100 mb-5">
                                             <img src={BugattiChiron} className="card-img" alt="..."></img>
                                             <div className="card-body">
-                                    <h5 className="card-title">Bugatti Chiron</h5>
-                                    <p className="card-text text-center"><strong> R$ 21.000.000,00 </strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">DETALHES</div>
-                                </div>
+                                                <h5 className="card-title">Bugatti Chiron</h5>
+                                                <p className="card-text text-center"><strong> R$ 21.000.000,00 </strong></p>
+                                                <button className="btn mt-3 btn_buscar" role="button">DETALHES</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -497,14 +502,14 @@ function Home() {
                                                                                     className="d-block w-100" alt="10px"></img>
                                                                             </div>
                                                                         </div>
-                                                                        <button className="carousel-control-prev" type="button"
+                                                                        <button className="carousel-control-prev carousel-button-hover" type="button"
                                                                             data-bs-target="#carouselExampleControls"
                                                                             data-bs-slide="prev">
                                                                             <span className="carousel-control-prev-icon"
                                                                                 aria-hidden="true"></span>
                                                                             <span className="visually-hidden">Previous</span>
                                                                         </button>
-                                                                        <button className="carousel-control-next" type="button"
+                                                                        <button className="carousel-control-next carousel-button-hover" type="button"
                                                                             data-bs-target="#carouselExampleControls"
                                                                             data-bs-slide="next">
                                                                             <span className="carousel-control-next-icon"
@@ -520,13 +525,15 @@ function Home() {
                                             </div>
                                             <div className="modal-footer modalfooter">
                                                 <div className="row">
-                                                    <div className="col-10">
-                                                        <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                                    <div className="col-10  text-center mb-3">
+                                                        <img className="logo-modal" src={LogoDevCars} alt=""></img>
                                                     </div>
-                                                    <div className="col-1">
-                                                        <Link to={"/checkoutScheduling"}><button type="button"
-                                                            className="btn btn-secondary btn-modal-footer">Agendar
-                                                            visita</button></Link>
+                                                    <div className="col-1 modal-mobily3">
+
+                                                        <button type="button"
+                                                            className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
+                                                                visita </Link></button>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -544,10 +551,9 @@ function Home() {
                                         <div className="card h-100 mb-5">
                                             <img src={LamborghiniHuracan} className="card-img" alt="..."></img>
                                             <div className="card-body">
-                                                <h5 className="card-title">Lamborghini Huracan</h5>
-                                                <p className="card-text">R$4.300.000,00</p>
-                                                <button className="btn mt-3 botao-buscar btn-detalhes" href="#" role="button">
-                                                    DETALHES</button>
+                                                <h5 className="card-title">Bugatti Chiron</h5>
+                                                <p className="card-text text-center"><strong> R$ 21.000.000,00 </strong></p>
+                                                <button className="btn mt-3 btn_buscar" role="button">DETALHES</button>
                                             </div>
                                         </div>
                                     </div>
@@ -592,7 +598,7 @@ function Home() {
                                                                 </li>
                                                                 <li>
                                                                     <span className="detalhes-info">CAMBIO:</span>
-                                                                    <span className="detalhes-info">Automatico 7 velocidades</span>
+                                                                    <span className="detalhes-info text-end">Automatico 7 velocidades</span>
                                                                 </li>
                                                                 <li className="info-gerais-linhas">
                                                                     <span className="detalhes-info">POTENCIA:</span>
@@ -629,7 +635,7 @@ function Home() {
                                                                         data-bs-ride="carousel">
                                                                         <div className="carousel-inner carosel-modal">
                                                                             <div className="carousel-item active">
-                                                                                <img src={{ LamborghiniHuracan }}
+                                                                                <img src={LamborghiniHuracan}
                                                                                     className="d-block w-100" alt="..." width="5%"></img>
                                                                             </div>
                                                                             <div className="carousel-item">
@@ -641,22 +647,22 @@ function Home() {
                                                                                     className="d-block w-100" alt="10px"></img>
                                                                             </div>
                                                                             <div className="carousel-item">
-                                                                                <img src={{ LamborghiniHuracan }}
+                                                                                <img src={LamborghiniHuracan}
                                                                                     className="d-block w-100" alt="10px"></img>
                                                                             </div>
                                                                             <div className="carousel-item">
-                                                                                <img src={{ LamborghiniHuracan }}
+                                                                                <img src={LamborghiniHuracan}
                                                                                     className="d-block w-100" alt="10px"></img>
                                                                             </div>
                                                                         </div>
-                                                                        <button className="carousel-control-prev" type="button"
+                                                                        <button className="carousel-control-prev carousel-button-hover" type="button"
                                                                             data-bs-target="#carouselExampleControls"
                                                                             data-bs-slide="prev">
                                                                             <span className="carousel-control-prev-icon"
                                                                                 aria-hidden="true"></span>
                                                                             <span className="visually-hidden">Previous</span>
                                                                         </button>
-                                                                        <button className="carousel-control-next" type="button"
+                                                                        <button className="carousel-control-next carousel-button-hover" type="button"
                                                                             data-bs-target="#carouselExampleControls"
                                                                             data-bs-slide="next">
                                                                             <span className="carousel-control-next-icon"
@@ -672,13 +678,15 @@ function Home() {
                                             </div>
                                             <div className="modal-footer modalfooter">
                                                 <div className="row">
-                                                    <div className="col-10">
-                                                        <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                                    <div className="col-10 modal-mobily3 text-center mb-3">
+                                                        <img className="logo-modal" src={LogoDevCars} alt=""></img>
                                                     </div>
-                                                    <div className="col-1">
-                                                        <Link to={"/checkoutScheduling"}><button type="button"
-                                                            className="btn btn-secondary btn-modal-footer">Agendar
-                                                            visita</button></Link>
+                                                    <div className="col-1 modal-mobily3">
+
+                                                        <button type="button"
+                                                            className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
+                                                                visita </Link></button>
+
                                                     </div>
                                                 </div>
                                             </div>
