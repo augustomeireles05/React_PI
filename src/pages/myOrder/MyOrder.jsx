@@ -109,7 +109,7 @@ function MyOrder() {
                                 <div className="accordion-body">
                                     {/* item 1 do pedido 1 */}
                                     <div className="row justify-content-between">
-                                        <div className="col-12 col-sm-12 col-lg-3 text-sm-center mb-sm-2">
+                                        <div className="col-12 col-sm-12 col-lg-3 text-center mb-3 mb-sm-0 text-sm-center mb-sm-2">
                                             <img src={Audir8azul} alt="audi-r8-azul" className="img-pedido"/>
                                         </div>
                                         <div className="col-sm-4">
@@ -128,7 +128,7 @@ function MyOrder() {
 
                                         <div className="col-sm-1">
                                             <div className="d-flex flex-column text-sm-center">
-                                                <span className="titulo-descricao text-center text-sm-center mt-4 mt-sm-0">QTD</span>
+                                                <span className="titulo-descricao text-center text-sm-center mt-4 mt-sm-0">QUANTIDADE</span>
                                                 <span className="descricao text-center text-sm-center">1</span>
                                             </div>
                                         </div>
@@ -192,7 +192,7 @@ function MyOrder() {
 
                                         {/* item 1 do pedido 2 */}
                                         <div className="row justify-content-between">
-                                            <div className="col-12 col-sm-12 col-lg-3 text-sm-center mb-sm-2">
+                                            <div className="col-12 col-sm-12 col-lg-3 text-center mb-3 mb-sm-0 text-sm-center mb-sm-2">
                                                 <img src={MercedesAmgGt63} alt="MercedesBenz-AMG-GT63-2020" className="img-pedido"/>
                                             </div>
                                             <div className="col-sm-4">
@@ -212,7 +212,7 @@ function MyOrder() {
 
                                             <div className="col-sm-1">
                                                 <div className="d-flex flex-column text-sm-center">
-                                                    <span className="titulo-descricao text-center text-sm-center mt-4 mt-sm-0">QTD</span>
+                                                    <span className="titulo-descricao text-center text-sm-center mt-4 mt-sm-0">QUANTIDADE</span>
                                                     <span className="descricao text-center text-sm-center">1</span>
                                                 </div>
                                             </div>
@@ -263,7 +263,7 @@ function MyOrder() {
                                 <div className="accordion-body">
                                     {/* item 1 do pedido 2 */}
                                     <div className="row justify-content-between">
-                                        <div className="col-12 col-sm-12 col-lg-3 text-sm-center mb-sm-2">
+                                        <div className="col-12 col-sm-12 col-lg-3 text-center mb-3 mb-sm-0 text-sm-center mb-sm-2">
                                             <img src={BmwX72021} alt="MercedesBenz AMG GT63 2020 Branco" className="img-pedido"/>
                                         </div>
                                         <div className="col-sm-4">
@@ -282,7 +282,7 @@ function MyOrder() {
 
                                         <div className="col-sm-1">
                                             <div className="d-flex flex-column text-sm-center">
-                                                <span className="titulo-descricao text-center text-sm-center mt-4 mt-sm-0">QTD</span>
+                                                <span className="titulo-descricao text-center text-sm-center mt-4 mt-sm-0">QUANTIDADE</span>
                                                 <span className="descricao text-center text-sm-center">1</span>
                                             </div>
                                         </div>

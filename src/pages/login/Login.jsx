@@ -3,11 +3,15 @@ import { Link } from 'react-router-dom'
 import './Login.css'
 import Bugatti from '../../assets/images/Login/login.jpg';
 
+import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
+
 function Login() {
     return (
         <>
+            <Header />
             <section className="ftco-section background-section pt-4 pb-4">
-                <div className="col-10 col-md-10 col-lg-10 container shadow shadow-container px-0">
+                <div className="col-10 col-md-8 col-lg-6 container shadow shadow-container px-0">
                     <div className="row justify-content-center">
                         <div className="col-md-6 text-center mb-5 d-flex justify-content-center ">
                             <h2 className="heading-section font-login-title pt-4">LOGIN</h2>
@@ -15,16 +19,16 @@ function Login() {
                     </div>
                     <div className="row justify-content-center px-0 mx-0 pb-3">
                         <div className="col-md-12 col-lg-12">
-                            <div className="wrap d-md-flex flex-center">
+                            <div className="container-md wrap d-md-flex d-flex justify-content-between">
 
                                 <div className="img col-md-6 imagem-login">
                                     {/* <img src={Bugatti} alt="Login" class="w-100"/> */}
                                 </div>
 
-                                <div className="login-wrap p-md-2 col-12 col-md-6">
-                                    <div className="d-flex">
-                                        <div className="w-100">
-                                            <h3 className="mb-4 main-font-login">Entrar</h3>
+                                <div className="login-wrap p-md-2 col-12 col-md-6 ">
+                                    <div className="col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div className="w-100 justify-content-center">
+                                            <h3 className="mb-4 main-font-login text-center">Entrar</h3>
                                         </div>
                                         <div className="w-100">
                                             <p className="social-media d-flex justify-content-end">
@@ -74,6 +78,7 @@ function Login() {
                     </div>
                 </div>
             </section>
+            <Footer />
 
         </>
     )

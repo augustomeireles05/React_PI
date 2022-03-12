@@ -8,7 +8,8 @@
 .imagem-login {
     background-image: url('../../assets/images/Login/login.jpg');
     background-size: contain;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    background-position: center; 
 }
 
 .font-login-title{
