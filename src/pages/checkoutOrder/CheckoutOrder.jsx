@@ -2,14 +2,23 @@ import './CheckoutOrder.css';
 
 import React from 'react';
 
+import Header from '../../components/header/Header.jsx';
+import Footer from '../../components/footer/Footer.jsx';
 
 import Button from '../../components/Button/Button.jsx';
 import { Link } from 'react-router-dom';
+
+import Editar from '../../assets/images/CheckoutOrder/edit.png';
+import Lixeira from '../../assets/images/CheckoutOrder/trash.png';
+import Adicionar from '../../assets/images/CheckoutOrder/plus.png';
+import Boleto from '../../assets/images/CheckoutOrder/barcode.png';
+import Pix from '../../assets/images/CheckoutOrder/pix.png';
 
 function CheckoutOrder() {
 
     return (
       <>
+      <Header />
         {/* INÍCIO DO TÍTULO DA PÁGINA */}
         <div className="title-page background font-text-bold">
           <h3>Confira e finalize seu pedido</h3>
@@ -33,13 +42,12 @@ function CheckoutOrder() {
                       name="flexRadioDefault1"
                       id="flexRadioDefault1"
                     />
-                    <label className="form-check-label" for="flexRadioDefault1">
-                      <span className="space-input">Endereço 01</span>
-                    </label>
+                    <span className="space-input">Endereço 01</span>
+                  
                   </div>
                   <div className="d-grid d-md-flex justify-content-end">
-                    {/* <img className="btn " src={"./img/img-checkout/edit.png"} width="45" />
-                                    {/* <img className="btn " src={"./img/img-checkout/trash.png"} width="45" /> */}
+                    <img className="btn " src={Editar} width="45" alt="Editar"/>
+                    <img className="btn " src={Lixeira} width="45" alt="Lixeira"/>
                   </div>
                 </div>
               </div>
@@ -72,13 +80,11 @@ function CheckoutOrder() {
                       name="flexRadioDefault1"
                       id="flexRadioDefault1"
                     />
-                    <label className="form-check-label" for="flexRadioDefault1">
-                      <span className="space-input">Endereço 02</span>
-                    </label>
+                    <span className="space-input">Endereço 02</span>
                   </div>
                   <div className="d-grid d-md-flex justify-content-end">
-                    {/* <img className="btn " src={"./img/img-checkout/edit.png"} width="45" />
-                                    {/* <img className="btn " src={"./img/img-checkout/trash.png"} width="45" /> */}
+                    <img className="btn " src={Editar} width="45" alt="Editar"/>
+                    <img className="btn " src={Lixeira} width="45" alt="Lixeira"/>
                   </div>
                 </div>
               </div>
@@ -110,7 +116,7 @@ function CheckoutOrder() {
                 data-bs-toggle="modal"
                 data-bs-target="#modal-endereco"
               >
-                {/* <img src={"./img/img-checkout/plus.png"} width="30" /> */}
+                <img src={Adicionar} width="30" alt="Adicionar"/>
               </button>
               {/* Início botão padrão que abre o modal Endereco */}
             </div>
@@ -121,7 +127,7 @@ function CheckoutOrder() {
             <div
               className="modal fade"
               id="modal-endereco"
-              tabindex="-1"
+              tabIndex={-1}
               aria-labelledby="inicioModal"
               aria-hidden="true"
             >
@@ -146,9 +152,7 @@ function CheckoutOrder() {
                     <form className="formulario-cadastro container">
                       <div className="row alinha-campos d-flex justify-content-start gy-2">
                         <div className="cep col-sm-4">
-                          <label label for="cep" className="form-label">
                             <span className="text-color-modal">CEP</span>
-                          </label>
                           <input
                             type="text"
                             className="form-control"
@@ -157,9 +161,7 @@ function CheckoutOrder() {
                         </div>
 
                         <div className="rua col-sm-8">
-                          <label for="rua" className="form-label">
                             <span className="text-color-modal">LOGRADOURO</span>
-                          </label>
                           <input
                             type="text"
                             className="form-control"
@@ -170,9 +172,7 @@ function CheckoutOrder() {
 
                       <div className="row alinha-campos d-flex justify-content-start gy-2">
                         <div className="numero col-sm-3">
-                          <label label for="numero" className="form-label">
                             <span className="text-color-modal">NÚMERO</span>
-                          </label>
                           <input
                             type="number"
                             className="form-control"
@@ -181,9 +181,7 @@ function CheckoutOrder() {
                         </div>
 
                         <div className="bairro col-sm-9">
-                          <label for="bairro" className="form-label">
                             <span className="text-color-modal">BAIRRO</span>
-                          </label>
                           <input
                             type="text"
                             className="form-control"
@@ -194,11 +192,9 @@ function CheckoutOrder() {
 
                       <div className="row alinha-campos d-flex justify-content-start gy-2">
                         <div className="uf col-sm-3">
-                          <label for="uf" className="form-label">
                             <span className="text-color-modal">UF</span>
-                          </label>
                           <select name="uf" id="UF" className="form-control">
-                            <option value="estado" selected disabled>
+                            <option value="estado" defaultValue disabled>
                               - UF -
                             </option>
                             <option value="ac">AC</option>
@@ -232,9 +228,7 @@ function CheckoutOrder() {
                         </div>
 
                         <div className="cidade col-sm-9">
-                          <label for="cidade" className="form-label">
                             <span className="text-color-modal">CIDADE</span>
-                          </label>
                           <input
                             type="text"
                             name=""
@@ -245,9 +239,7 @@ function CheckoutOrder() {
                       </div>
 
                       <div className="complemento">
-                        <label for="complemento" className="form-label">
                           <span className="text-color-modal">COMPLEMENTO</span>
-                        </label>
                         <input
                           type="text"
                           className="form-control"
@@ -285,13 +277,11 @@ function CheckoutOrder() {
                       name="flexRadioDefault2"
                       id="flexRadioDefault2"
                     />
-                    <label className="form-check-label" for="flexRadioDefault2">
                       <span className="space-input">(Crédito) Mastercard</span>
-                    </label>
                   </div>
                   <div className="d-grid d-md-flex justify-content-end">
-                    {/*{/* <img className="btn " src={"./img/img-checkout/edit.png"} width="45" />
-                            {/* <img className="btn " src={"./img/img-checkout/trash.png"} width="45" /> */}
+                    <img className="btn " src={Editar} width="45" alt="Editar"/>
+                    <img className="btn " src={Lixeira} width="45" alt="Lixeira"/>
                   </div>
                 </div>
               </div>
@@ -315,13 +305,11 @@ function CheckoutOrder() {
                       name="flexRadioDefault2"
                       id="flexRadioDefault2"
                     />
-                    <label className="form-check-label" for="flexRadioDefault2">
                       <span className="space-input">(Débito) Visa</span>
-                    </label>
                   </div>
                   <div className="d-grid d-md-flex justify-content-end">
-                    {/* <img className="btn " src={"./img/img-checkout/edit.png"} width="45" />
-                            {/* <img className="btn " src={"./img/img-checkout/trash.png"} width="45" /> */}
+                    <img className="btn " src={Editar} width="45" alt="Editar"/>
+                    <img className="btn " src={Lixeira} width="45" alt="Lixeira"/>
                   </div>
                 </div>
               </div>
@@ -345,13 +333,11 @@ function CheckoutOrder() {
                       name="flexRadioDefault2"
                       id="flexRadioDefault2"
                     />
-                    <label className="form-check-label" for="flexRadioDefault2">
                       <span className="space-input">Paypal</span>
-                    </label>
                   </div>
                   <div className="d-grid d-md-flex justify-content-end">
-                    {/* <img className="btn " src={"./img/img-checkout/edit.png"} width="45" />
-                            {/* <img className="btn " src={"./img/img-checkout/trash.png"} width="45" /> */}
+                    <img className="btn " src={Editar} width="45" alt="Editar"/>
+                    <img className="btn " src={Lixeira} width="45" alt="Lixeira"/>
                   </div>
                 </div>
               </div>
@@ -376,7 +362,7 @@ function CheckoutOrder() {
                 data-bs-toggle="modal"
                 data-bs-target="#modal-cartao"
               >
-                {/* <img src={"./img/img-checkout/plus.png"} width="30" /> */}
+                <img src={Adicionar} width="30" alt="Adicionar"/> 
               </button>
               {/* fim do botão que abre o modal Cartão  */}
             </div>
@@ -386,7 +372,7 @@ function CheckoutOrder() {
             <div
               className="modal fade"
               id="modal-cartao"
-              tabindex="-1"
+              tabIndex={-1}
               aria-labelledby="inicioModal"
               aria-hidden="true"
             >
@@ -411,11 +397,9 @@ function CheckoutOrder() {
                     <form className="formulario-cadastro container">
                       <div className="alinha-itens d-flex flex-column justify-content-center align-items-center">
                         <div className="row numero col-sm-8">
-                          <label label for="numero" className="form-label">
                             <span className="text-color-modal">
                               NÚMERO DO CARTÃO
                             </span>
-                          </label>
                           <input
                             type="text"
                             className="form-control text-center"
@@ -425,11 +409,9 @@ function CheckoutOrder() {
                         </div>
 
                         <div className="row rua col-sm-8">
-                          <label for="nome" className="form-label">
                             <span className="text-color-modal">
                               NOME IMPRESSO NO CARTÃO
                             </span>
-                          </label>
                           <input
                             type="text"
                             className="form-control text-center"
@@ -440,9 +422,7 @@ function CheckoutOrder() {
 
                         <div className="row alinha-campos gy-4 justify-content-center">
                           <div className="cvv col-sm-4">
-                            <label for="cvv" className="form-label">
                               <span className="text-color-modal">CVV</span>
-                            </label>
                             <input
                               type="text"
                               name=""
@@ -453,11 +433,9 @@ function CheckoutOrder() {
                           </div>
 
                           <div className="complemento col-sm-4">
-                            <label for="complemento" className="form-label">
                               <span className="text-color-modal">
                                 DATA DE VALIDADE
                               </span>
-                            </label>
                             <input
                               type="text"
                               className="form-control text-center"
@@ -496,16 +474,13 @@ function CheckoutOrder() {
                     name="flexRadioDefault2"
                     id="flexRadioDefault2"
                   />
-                  <label className="form-check-label" for="flexRadioDefaul2">
                     <span className="icon-payment">
                       Pix
-                      {/* <img src={"img/img-checkout/pix.png"} width="30" /> */}
+                      <img src={Pix} width="30" alt="Pix"/>
                     </span>
-                  </label>
                 </div>
               </div>
               <div className="card-body">
-                {/* <h5 className="card-title">Secondary card title</h5> */}
                 <p className="card-text">
                   Vencimento em 30 minutos. Após o pagamento seu pedido será
                   processado.
@@ -522,12 +497,10 @@ function CheckoutOrder() {
                     name="flexRadioDefault2"
                     id="flexRadioDefault2"
                   />
-                  <label className="form-check-label" for="flexRadioDefaul2">
                     <span className="icon-payment">
                       Boleto
-                      {/* <img src={"./img/img-checkout/barcode.png"} width="30" /> */}
+                      <img src={Boleto} width="30" alt="Boleto"/>
                     </span>
-                  </label>
                 </div>
               </div>
               <div className="card-body">
@@ -619,6 +592,7 @@ function CheckoutOrder() {
           </div>
           {/* FIM DO CARD DO RESUMO  */}
         </div>
+        <Footer />
       </>
     );
 }
