@@ -2,13 +2,12 @@ import './WishList.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import { Link } from 'react-router-dom'
-//import Header from '../../components/header/Header'
-//import Footer from '../../components/footer/Footer'
+
 
 function WishList() {
     return (
         <>
-            {/* <Header/> */}
+            <Header/>
 
             <section>
 
@@ -23,14 +22,14 @@ function WishList() {
 
 
                                 {/*Navbar*/}
-                                <nav className="navbar navbar-light border-bottom-menu">
+                                <div className="navbar navbar-light border-bottom-menu">
                                     <div className="container-fluid d-block text-center">
-                                        <span className=" mb-0 ">MENU</span>
+                                        <span className=" mb-0 fs-6 ">MENU</span>
 
 
 
                                     </div>
-                                </nav>
+                                </div>
 
                                 <div className="btn-group-vertical background-container-subject shadow" role="group"
                                     aria-label="Vertical button group">
@@ -61,7 +60,7 @@ function WishList() {
                             <div className="">
                                 <div className="">
                                     <div className=" text-center title col-12 ">
-                                        <span>LISTA DE DESEJOS</span>
+                                        <span className="fs-6">LISTA DE DESEJOS</span>
                                     </div>
                                 </div>
 
@@ -237,7 +236,7 @@ function WishList() {
 
             </section>
 
-           {/* <Footer/>                                                              */}
+           <Footer/>                                                             
         </>
     )
 }

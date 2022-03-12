@@ -2,16 +2,15 @@ import './Cart.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
-import Header from '../../components/header/Header'
-import Footer from '../../components/footer/Footer'
 
-import imgCarrinho from '../../'
+
+
+import imgCarrinho from '../../assets/images/Cart/monza.jpg'
 
 
 
 function Cart() {
-    //const 
+  
     return (
         <>
 
@@ -67,7 +66,7 @@ function Cart() {
                             <div className="card-body p-4 justify-content-around">
                                 <div className="row d-flex justify-content-between align-items-center">
                                     <div className="col-md-2 col-lg-2 col-xl-2">
-                                        <img src="./img/img-carrinho/monza.jpg" className="img-fluid rounded-3" alt="Cotton T-shirt">
+                                        <img src={imgCarrinho} className="img-fluid rounded-3" alt="Cotton T-shirt"/>
                                     </div>
                                     <div className="col-md-3 col-lg-3 col-xl-3 texto-alinhado">
                                         <p className="lead fw-normal mb-2  text-shopping-cart fs-4">CARRO #01</p>

@@ -1,14 +1,13 @@
 import './Register.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
-//import Header from '../../components/header/Header'
-//import Footer from '../../components/footer/Footer'
+
 
 
 function Register() {
     return (
         <>
-           {/* <Header/> */}
+           <Header/>
 
             {/* Começo Conteúdo da Página */}
             <div className="container titulo-pagina">
@@ -128,7 +127,7 @@ function Register() {
                 </form>
             </div>
 
-            {/* <Footer/> */}
+            <Footer/>
         </>
     )
 }
