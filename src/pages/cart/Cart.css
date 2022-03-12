@@ -41,6 +41,12 @@
     text-align: center;
 }
 
+.trash-position {
+    display: flex;
+   align-items:flex-end ;
+
+}
+
 
 
 /* -- BEGIN RESONSIVE -- */
@@ -62,8 +68,8 @@
 
     @media (max-width: 400px) {
         .resume-shopping-cart {
-            display: flex;
-            text-align: justify;
+            /* display: flex; */
+            align-self: center;
 
             font-size: 1em;
             margin-top: 5%;

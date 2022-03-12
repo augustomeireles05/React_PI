@@ -37,7 +37,9 @@ hr {
     border-radius: 5px;
 }
 
-
+.menu-buttons-space{
+    width:100%;
+}
 .list-group-item:hover{
     padding: 5px;
     background-color: #E0E0E0;

@@ -1,10 +1,16 @@
 import './SchedulingDetails.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
+//import Header from '../../components/header/Header'
+//import Footer from '../../components/footer/Footer'
+
+          
 
 function schedulingDetails() {
     return (
         <>
+
+          {/* <Header/> */}
 
             <div className="container">
 
@@ -27,15 +33,15 @@ function schedulingDetails() {
                         <div className="btn-group-vertical background-container-subject me-3 shadow" role="group"
                             aria-label="Vertical button group">
                             <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu"><a
-                                className="link-solution" href="./meusdados.html">MEUS DADOS</a></button>
+                                className="link-solution" to="/myData">MEUS DADOS</a></button>
                             <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu"><a
-                                className="link-solution" href="./pedidos.html">MEUS PEDIDOS</a></button>
+                                className="link-solution" to="/myOrder">MEUS PEDIDOS</a></button>
                             <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu"><a
-                                className="link-solution" href="./carrinho.html">CARRINHO DE COMPRA</a></button>
+                                className="link-solution" to="/cart">CARRINHO DE COMPRA</a></button>
                             <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu"><a
-                                className="link-solution" href="./listadesejos.html">MEUS FAVORITOS</a></button>
+                                className="link-solution" to="/wishList">MEUS FAVORITOS</a></button>
                             <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu"><a
-                                className="link-solution" href="./home.html">SAIR</a></button>
+                                className="link-solution" to="/">SAIR</a></button>
                         </div>
 
 
@@ -65,7 +71,7 @@ function schedulingDetails() {
                         <div className="detalhes-pedido">
                             <div className="detalhes-pedido d-flex justify-content-center align-items-center mb-3">
                                 <h2 className="titulo-detalhes-agendamento me-2 mb-0">DETALHES DO AGENDAMENTO</h2>
-                                <a href="#" />
+                                <a to="#" />
                                 {/* <img src="img/img-resumo-compra/printer.png" alt="imprimir resumo do pedido"
                                     className="print"</a> */}
                             </div>
@@ -97,6 +103,8 @@ function schedulingDetails() {
                 </div>
             </div>
             {/* fim da confirmação do pedido */}
+
+             {/* < Footer/> */}
 
         </>
     )

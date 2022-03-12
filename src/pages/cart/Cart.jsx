@@ -2,12 +2,20 @@ import './Cart.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
+
+import imgCarrinho from '../../'
 
 
 
 function Cart() {
+    //const 
     return (
         <>
+
+            <Header/>
 
             {/* BEGIN TITULO PAGINA */}
 
@@ -56,157 +64,64 @@ function Cart() {
 
                         {/* Início do Card 01 */}
                         <div className="card rounded-3 mb-4 shadow p-3 bg-body rounded">
-                            <div className="card-body p-4">
+                            <div className="card-body p-4 justify-content-around">
                                 <div className="row d-flex justify-content-between align-items-center">
                                     <div className="col-md-2 col-lg-2 col-xl-2">
-                                        {/* <img src="./img/img-carrinho/monza.jpg" className="img-fluid rounded-3" alt="Cotton T-shirt"> */}
+                                        <img src="./img/img-carrinho/monza.jpg" className="img-fluid rounded-3" alt="Cotton T-shirt">
                                     </div>
                                     <div className="col-md-3 col-lg-3 col-xl-3 texto-alinhado">
-                                        <p className="lead fw-normal mb-2 text-shopping-cart">CARRO #01</p>
-                                        <p className="resume-shopping-cart">
+                                        <p className="lead fw-normal mb-2  text-shopping-cart fs-4">CARRO #01</p>
+                                        <p className="resume-shopping-cart fs-6 text-center">
                                             Resumo do produto 01
                                         </p>
                                     </div>
-                                    <div className="col-12 col-md-3 col-lg-3 col-xl-2 d-flex">
-                                        <button className="btn btn-link px-2">
-                                          {/* onclick="this.parentNode.querySelector('input[type=number]').stepDown()" */}
-                                          
-                                            <i className="bi bi-dash-square size-icons-input"></i>
-                                        </button>
+                                    <div className="col-md-3 col-lg-2 col-xl-2 offset-lg-1 p-0 text-center">
+                                        <h5 className="mb-0 text-shopping-cart"><span className="price-car fs-6">R$ 400.149,99</span></h5>
                                     </div>
-
+                                    <div className="col-md-1 col-lg-1 col-xl-1 text-end trash-position">
+                                        <Link to="#!" className="text-danger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                                className="bi bi-trash trash-position" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                                <path fillRule="evenodd"
+                                                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                            </svg>
+                                        </Link>
+                                    </div>
                                 </div>
 
-                                <input id="form1" min="0" name="quantity" value="2" type="number"
-                                    className="form-control form-control-sm input-center" />
+                            </div>
 
-                                <button className="btn btn-link px-2">
-                                    {/* onclick="this.parentNode.querySelector('input[type=number]').stepUp()" */}
-                                    <i className="bi bi-plus-square size-icons-input"></i>
-                                </button>
-                            </div>
-                            <div className="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                                <h5 className="mb-0 text-shopping-cart"><span className="price-car">R$ 12.500.000,00</span></h5>
-                            </div>
-                            <div className="col-md-1 col-lg-1 col-xl-1 text-end trash-position">
-                                <Link to="#!" className="text-danger">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                                        className="bi bi-trash trash-position" viewBox="0 0 16 16">
-                                        <path
-                                            d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
-                                        <path fillRule="evenodd"
-                                            d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                    </svg>
-                                </Link>
-                            </div>
+
                         </div>
+                        {/* Fim do Card 01 */}
+
+                        <div className="card-body d-md-flex justify-content-md-end px-0">
+                            <Link to="/checkoutOrder"><button type="button"
+                                className="btn button-continuar btn-block btn-lg btn-continue">Continue</button></Link>
+                        </div>
+
+
+
                     </div>
 
-                    {/* Fim do Card 01 */}
 
-                    {/* Início do Card 02 */}
-                    <div className="card rounded-3 mb-4 shadow p-3 bg-body rounded">
-                        <div className="card-body p-4">
-                            <div className="row d-flex justify-content-between align-items-center">
-                                <div className="col-md-2 col-lg-2 col-xl-2">
-                                    {/* <img src="./img/img-carrinho/monza.jpg" className="img-fluid rounded-3" alt="Cotton T-shirt"> */}
-                                </div>
-                                <div className="col-md-3 col-lg-3 col-xl-3 texto-alinhado">
-                                    <p className="lead fw-normal mb-2 text-shopping-cart">CARRO #02</p>
-                                    <p className="resume-shopping-cart">
-                                        Resumo do produto 02
-                                    </p>
-                                </div>
-                                <div className="col-12 col-md-3 col-lg-3 col-xl-2 d-flex">
-                                    <button className="btn btn-link px-2">
-                                        {/* onclick="this.parentNode.querySelector('input[type=number]').stepDown()" */}
-                                        <i className="bi bi-dash-square size-icons-input"></i>
-                                    </button>
-
-                                    <input id="form1" min="0" name="quantity" value="2" type="number"
-                                        className="form-control form-control-sm input-center" />
-
-                                    <button className="btn btn-link px-2">
-                                        {/* onclick="this.parentNode.querySelector('input[type=number]').stepUp()" */}
-                                        <i className="bi bi-plus-square size-icons-input"></i>
-                                    </button>
-                                </div>
-                                <div className="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                                    <h5 className="mb-0 text-shopping-cart"><span className="price-car">R$ 12.500.000,00</span></h5>
-                                </div>
-                                <div className="col-md-1 col-lg-1 col-xl-1 text-end trash-position">
-                                    <Link to="#" className="text-danger">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                                            className="bi bi-trash trash-position" viewBox="0 0 16 16">
-                                            <path
-                                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
-                                            <path fillRule="evenodd"
-                                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                        </svg>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Fim do Card 02 */}
-
-                    {/* Início do Card 03 */}
-                    <div className="card rounded-3 mb-4 shadow p-3 bg-body rounded">
-                        <div className="card-body p-4">
-                            <div className="row d-flex justify-content-between align-items-center">
-                                <div className="col-md-2 col-lg-2 col-xl-2">
-                                    {/* <img src="./img/img-carrinho/monza.jpg" className="img-fluid rounded-3" alt="Cotton T-shirt"> */}
-                                </div>
-                                <div className="col-md-3 col-lg-3 col-xl-3 texto-alinhado">
-                                    <p className="lead fw-normal mb-2 text-shopping-cart">CARRO #03</p>
-                                    <p className="resume-shopping-cart">
-                                        Resumo do produto 03
-                                    </p>
-                                </div>
-                                <div className="col-12 col-md-3 col-lg-3 col-xl-2 d-flex">
-                                    <button className="btn btn-link px-2">
-                                        {/* onclick="this.parentNode.querySelector('input[type=number]').stepDown()" */}
-                                        <i className="bi bi-dash-square size-icons-input"></i>
-                                    </button>
-
-                                    <input id="form1" min="0" name="quantity" value="2" type="number"
-                                        className="form-control form-control-sm input-center" />
-
-                                    <button className="btn btn-link px-2">
-                                        {/* onclick="this.parentNode.querySelector('input[type=number]').stepUp()" */}
-                                        <i className="bi bi-plus-square size-icons-input"></i>
-                                    </button>
-                                </div>
-                                <div className="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                                    <h5 className="mb-0 text-shopping-cart"><span className="price-car">R$ 12.500.000,00</span></h5>
-                                </div>
-                                <div className="col-md-1 col-lg-1 col-xl-1 text-end trash-position">
-                                    <Link to="#" className="text-danger">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                                            className="bi bi-trash trash-position" viewBox="0 0 16 16">
-                                            <path
-                                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
-                                            <path fillRule="evenodd"
-                                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                        </svg>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Fim do Card 03 */}
 
                     {/* Início do card Código de Continuar */}
 
-                    <div className="card-body d-md-flex justify-content-md-end px-0">
-                        <Link to=""><button type="button"
-                            className="btn button-continuar btn-block btn-lg btn-continue">Continue</button></Link>
-                    </div>
-
-                    {/* FIM DO CONTEUDO DO CONTAINER LADO DIREITO */}
                 </div>
 
+
+
+
+
+                {/* FIM DO CONTEUDO DO CONTAINER LADO DIREITO */}
+
             </main>
+
+            
+             < Footer/>
         </>
 
     )

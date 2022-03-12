@@ -3,18 +3,21 @@ import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import { Link } from 'react-router-dom'
 
+//import Header from '../../components/header/Header'
+//import Footer from '../../components/footer/Footer'
+
 function MyData() {
     return (
         <>
-
+             {/* <Header/> */}
 
             <section>
 
 
                 <article className="page-content container">
                     { /* coluna Menu */}
-                    <div className="col-row">
-                        <div className="col-3 d-md-block d-none">
+                    <div className="row">
+                        <div className="col-3">
                             { /*responsividade menu*/}
                             <div className="column ms-4">
 
@@ -27,36 +30,27 @@ function MyData() {
                                 </nav>
 
                                 <div className="btn-group-vertical background-container-subject me-3 shadow" role="group" aria-label="Vertical button group">
-                            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
-                                <Link to="/myData" className="link-solution">MEUS DADOS</Link>
-                            </button>
-                            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
-                                <Link to="/myOrder" className="link-solution">MEUS PEDIDOS</Link>
-                            </button>
-                            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
-                                <Link to="/cart" className="link-solution">CARRINHO DE COMPRA</Link>
-                            </button>
-                            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
-                                <Link to="/wishList" className="link-solution">LISTA DE DESEJOS</Link>
-                            </button>
-                            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
-                                <Link to="/" className="link-solution">SAIR</Link>
-                            </button>
-                        </div>
-
-                        </div>
-                    </div>
-                    {/* fim do menu lateral */}
-
-
-                                
+                                    <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
+                                        <Link to="/myData" className="link-solution">MEUS DADOS</Link>
+                                    </button>
+                                    <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
+                                        <Link to="/myOrder" className="link-solution">MEUS PEDIDOS</Link>
+                                    </button>
+                                    <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
+                                        <Link to="/cart" className="link-solution">CARRINHO DE COMPRA</Link>
+                                    </button>
+                                    <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
+                                        <Link to="/wishList" className="link-solution">LISTA DE DESEJOS</Link>
+                                    </button>
+                                    <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
+                                        <Link to="/" className="link-solution">SAIR</Link>
+                                    </button>
+                                </div>
 
                             </div>
-                        
-
-                        <div className="col-12 col-md-9 ajusteFormulario">
-
-
+                        </div>
+                        {/* fim do menu lateral */}
+                        <div className="col-9 ajusteFormulario">
                             <div className=" text-center title col-12 ">
                                 <span>MEUS DADOS</span>
                             </div>
@@ -176,15 +170,19 @@ function MyData() {
                             </form>
 
                         </div>
+                    </div>
 
 
 
-                    
+
 
 
                 </article>
 
             </section >
+
+            
+             {/* < Footer/> */}
 
         </>
     )
