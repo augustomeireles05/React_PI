@@ -365,5 +365,14 @@ header  {
 
 }
 
+.input-calendar {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.calendar {
+    width: 80%;
+}
 
 /* -- RESPONSIVE - BEGIN HEADER -- */

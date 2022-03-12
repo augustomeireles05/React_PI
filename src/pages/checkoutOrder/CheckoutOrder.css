@@ -25,3 +25,40 @@ body {
 .space-input {
     padding-left: 0.3em;
 }
+
+a button {
+    width: 100%;
+}
+
+
+.confi_agendamento {
+    background: linear-gradient(8deg, rgb(179, 152, 4) 30%, rgb(223, 208, 126) 70%);
+    height: 60px;
+    
+    
+}
+
+.confi_agendamento:hover {
+    background: linear-gradient(191deg, rgb(179, 152, 4) 30%, rgb(223, 208, 126) 70%);
+    font-weight: bold
+}
+
+
+.vtcarrinho {
+    background: linear-gradient(8deg, rgba(158, 157, 150, 0.411) 30%, rgb(211, 211, 209) 70%);
+    
+    
+}
+
+.vtcarrinho:hover {
+    background: linear-gradient(191deg, rgba(158, 157, 150, 0.411)30%, rgb(211, 211, 209) 70%);
+}
+
+
+.meus-dados{
+    width: 100%;
+    margin-left: 2px;
+}
+
+
+
