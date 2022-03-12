@@ -1,6 +1,9 @@
 import React from 'react'
 import './Contact.css'
 
+import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
+
 import DevCars from '../../assets/images/Contact/card-contato.jpeg'
 
 import Email from '../../assets/images/Contact/e-mail.png'
@@ -10,6 +13,7 @@ import Localizacao from '../../assets/images/Contact/localizacao 1.svg'
 function Contact() {
     return (
         <>
+        <Header />
             <section>
                 {/* Primeira navbar */}
                 <nav className="navbar navbar-dark bg-black">
@@ -266,6 +270,7 @@ function Contact() {
                     </div>
                 </article>
             </section>
+            <Footer />
         </>
     )
 }
