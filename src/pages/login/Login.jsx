@@ -18,7 +18,7 @@ function Login() {
                             <div className="wrap d-md-flex flex-center">
 
                                 <div className="img col-md-6 imagem-login">
-                                    <img src={Bugatti} alt="Login" />
+                                    {/* <img src={Bugatti} alt="Login" class="w-100"/> */}
                                 </div>
 
                                 <div className="login-wrap p-md-2 col-12 col-md-6">

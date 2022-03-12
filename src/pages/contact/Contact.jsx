@@ -1,6 +1,12 @@
 import React from 'react'
 import './Contact.css'
 
+import DevCars from '../../assets/images/Contact/card-contato.jpeg'
+
+import Email from '../../assets/images/Contact/e-mail.png'
+import Telefone from '../../assets/images/Contact/telefone-celular 1.svg'
+import Localizacao from '../../assets/images/Contact/localizacao 1.svg'
+
 function Contact() {
     return (
         <>
@@ -31,7 +37,7 @@ function Contact() {
                                 <div className="main-card">
                                     <div className="carousel-inner">
                                         <div className="carousel-item active">
-                                            <img className="d-block w-100" src="./img/img-contato/fotocardprincipal.jpeg" alt=""></img>
+                                            <img className="d-block w-100" src={DevCars} alt=""></img>
                                             <div className="carousel-caption d-none d-md-block">
                                                 <div className="carousel-caption d-none d-md-block"></div>
                                             </div>
@@ -41,15 +47,15 @@ function Contact() {
 
                                     <div className="geral">
                                         <div className="textoum">
-                                            <img src="./img/assets/localizacao 1.svg" />
+                                            <img src={Localizacao} class="me-1"/>
                                             Avenida Corifeu de Azevedo Marques 3097
                                         </div>
                                         <div className="textodois">
-                                            <img src="./img/assets/e-mail.png" />
+                                            <img src={Email} class="me-1"/>
                                             Vendas@devcars.com.br
                                         </div>
                                         <div className="textotres">
-                                            <img src="./img/assets/telefone-celular 1.svg" />
+                                            <img src={Telefone} class="me-1"/>
                                             (11) 0000 - 0000
                                         </div>
                                     </div>
