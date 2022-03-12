@@ -30,6 +30,20 @@ a button {
     width: 100%;
 }
 
+
+.confi_agendamento {
+    background: linear-gradient(8deg, rgb(179, 152, 4) 30%, rgb(223, 208, 126) 70%);
+    height: 60px;
+    
+    
+}
+
+.confi_agendamento:hover {
+    background: linear-gradient(191deg, rgb(179, 152, 4) 30%, rgb(223, 208, 126) 70%);
+    font-weight: bold
+}
+
+
 .vtcarrinho {
     background: linear-gradient(8deg, rgba(158, 157, 150, 0.411) 30%, rgb(211, 211, 209) 70%);
     
@@ -46,9 +60,52 @@ a button {
     margin-left: 2px;
 }
 
+
+
+
 /* -- RESPONSIVE - BEGIN HEADER -- */
 
-@media (max-width: 800px) { 
+@media (max-width: 1000px) {
+            
+    header {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
+
+        background-color: #000;
+        
+        padding-top: 1%;
+        padding-left: 4%;
+        padding-bottom: 1%;
+        padding-right: 2%;  
+
+    }  
+     
+   
+
+
+
+}
+
+@media (max-width: 800px) {
+        
+    header {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
+
+        background-color: #000;
+        
+        padding-top: 1%;
+        padding-left: 3%;
+        padding-bottom: 1%;
+        padding-right: 2%;  
+
+    }  
 
     .filtro-de-busca{
         margin-left: 1%;
@@ -75,10 +132,46 @@ a button {
 
 }
 
+@media (max-width: 640px) {
+        
+    header {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
+
+        background-color: #000;
+        
+        padding-top: 1%;
+        padding-left: 2%;
+        padding-bottom: 1%;
+        padding-right: 2%;  
+
+    }  
+
+    
+    
+}
 
 /* -- FOR IPHONE 6/7/8 -- */
 @media (max-width: 500px) {
     
+    header  {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
+
+        background-color: #000;
+        
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-bottom: 1%;
+        padding-right: 2%;  
+
+    } 
     .logo_marcas{
         display: nome;
         flex-direction: row;
@@ -148,9 +241,44 @@ a button {
 
 /* -- RESPONSIVE - BEGIN HEADER -- */
 
+@media (max-width: 1000px) {
+        
+header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    background-color: #000;        
+    padding-top: 1%;
+    padding-left: 4%;
+    padding-bottom: 1%;
+    padding-right: 2%;  
+
+}  
+      
+
+}
 
 @media (max-width: 800px) {
     
+header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+
+    background-color: #000;
+    
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-bottom: 1%;
+    padding-right: 2%;  
+
+}  
+
+
 .sobre_nos{
     width: 100%;
 }
@@ -161,6 +289,23 @@ a button {
 }
 
 @media (max-width: 640px) {
+    
+header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+
+    background-color: #000;
+    
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    padding-right: 2%;  
+
+}  
+
 
 .sobre_nos{
     width: 100%;
@@ -175,6 +320,21 @@ a button {
 /* -- FOR IPHONE 6/7/8 -- */
 @media (max-width: 500px) {
 
+header  {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+
+    background-color: #000;
+    
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    padding-right: 2%;  
+
+} 
 
 .sobre_nos{
     width: 100%;
@@ -207,4 +367,3 @@ a button {
 
 
 /* -- RESPONSIVE - BEGIN HEADER -- */
-

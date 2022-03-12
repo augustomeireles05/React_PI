@@ -22,6 +22,10 @@ body{
     border-radius: 5px;
 }
 
+.titulo-card{
+    height: 7vh;
+}
+
 .card { 
     transition: 0.9s; 
     border-radius: 2px;
@@ -161,6 +165,23 @@ body{
 }
 
 
+@media (min-width: 1000px) {
+  
+    .titulo-card{
+        min-height: 8vh;
+    }
+    
+}
+
+@media (min-width: 700px) {
+  
+    .titulo-card{
+        height: 7vh;
+    }
+    
+}
+
+
 
 @media (max-width: 1000px) {
   
@@ -220,10 +241,7 @@ body{
     .filtro-de-busca{
         margin-left: 1%;
         justify-content: center;
-        
-        
     }
-
 }
 
 @media (max-width: 640px) {
@@ -241,6 +259,13 @@ body{
     .modal-mobily3{
         width: 75%;
         margin-left: 10%;
+    }
+
+    .botao-buscar{ 
+        width: 93%;
+        justify-items: center;
+        margin-left: 3%;
+        margin-top: 3%;
     }
     
 }

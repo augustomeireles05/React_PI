@@ -1,19 +1,38 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './Inventory.css'
+import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
+
+
+import LamborghiniUrus from '../../assets/images/Inventory/LamborghiniUrus.jpg'
+import LamborghiniUracan from '../../assets/images/Inventory/LamborghiniHuracan.jpg'
+import BugattiChiron from '../../assets/images/Inventory/BugattiChiron.jpg'
+import NissanGTR from '../../assets/images/Inventory/Nissan_GT-R.jpg'
+import MercedesBenzClasseS from '../../assets/images/Inventory/Mercedes-BenzClasseS.jpg'
+import MercedesBenzClasseG from '../../assets/images/Inventory/Mercedes-BenzClasseG.jpg'
+import MercedesBenzAMGGTR from '../../assets/images/Inventory/Mercedes-BenzAMG-GT R.jpg'
+import AstonMartinDB11 from '../../assets/images/Inventory/AstonMartinDB11.jpg'
+import MercedesBenzAMGF12016 from '../../assets/images/Inventory/Mercedes-BenzAMG-F1-2016.jpg'
+import BentleyContinentalGT3 from '../../assets/images/Inventory/BentleyContinentalGT3.jpg'
+import BentleyMullinerBacalar from '../../assets/images/Inventory/BentleyMullinerBacalar.jpg'
+import AresS1 from '../../assets/images/Inventory/AresS1.jpg'
+
+import LogoDevcarsModal from '../../assets/images/Inventory/logo-rev01.jpeg'
+
 
 function Inventory() {
     return (
         <>
-            <hr></hr>
+            <Header />
             <div className="container">
                 <div className="row-cols-1 row-cols-md-12 g-4 justify-content-center mt-4">
 
                     <form className=" filtro-de-busca row gx-12 align-items-center rounded p-3 mt-5 ">
                         <legend className="text-center">ENCONTRE SEU CARRO</legend>
 
-                        <div className="col-md-3 ">
-                            <select id="inputState" className="form-select fundo-filtro">
+                        <div className="col-md-4 col-lg-3 col-12">
+                            <select id="inputState" className="form-select fundo-filtro marca">
                                 <option defaultValue>Selecione a Marca</option>
                                 <option>Ferrari</option>
                                 <option>Bentley</option>
@@ -25,8 +44,8 @@ function Inventory() {
                                 <option>Jaguar</option>
                             </select>
                         </div>
-                        <div className="col-md-4 ">
-                            <select id="inputState" className="form-select fundo-filtro">
+                        <div className="col-md-4 col-lg-4 ">
+                            <select id="inputState" className="form-select fundo-filtro modelo">
                                 <option defaultValue>Selecione o Modelo</option>
                                 <option>aaaaa</option>
                                 <option>bbbbb</option>
@@ -35,8 +54,8 @@ function Inventory() {
 
                             </select>
                         </div>
-                        <div className="col-md-2 ">
-                            <select id="inputState" className="form-select fundo-filtro">
+                        <div className="col-md-4 col-lg-3 ">
+                            <select id="inputState" className="form-select fundo-filtro ano">
                                 <option defaultValue>Selecione o Ano</option>
                                 <option>2022</option>
                                 <option>2021</option>
@@ -47,7 +66,7 @@ function Inventory() {
 
                         </div>
 
-                        <div className="botao-buscar col-md-3 text-center btn p-0">
+                        <div className="botao-buscar col-md-12 col-lg-2 text-center btn p-0">
                             <button type="submit" className="btn botao-buscar-home">BUSCAR</button>
                         </div>
 
@@ -63,13 +82,11 @@ function Inventory() {
                         {/* link entre Modal e Card */}
                         <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
-                                <img src="./img/img-estoque/Lamborghini Urus.jpg" className="card-img" alt="..."></img>
+                                <img src={LamborghiniUrus} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Lamborghini Urus </h5>
-                                    <p className="card-text"><strong> R$ 3.000.000,00</strong></p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <div className="btn mt-3 btn_buscar btn-detalhes" role="button">VER DETALHES</div>
+                                    <h5 className="card-title titulo-card">Lamborghini Urus </h5>
+                                    <p className="card-text text-center"><strong> R$ 3.000.000,00</strong></p>
+                                    <div className="btn mt-3 btn_buscar btn-detalhes mb-2" role="button">VER DETALHES</div>
                                 </div>
                             </div>
                         </div>
@@ -79,12 +96,10 @@ function Inventory() {
                         {/* link entre Modal e Card */}
                         <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
-                                <img src="./img/img-estoque/Bugatti Chiron.jpg" className="card-img" alt="..."></img>
+                                <img src={BugattiChiron} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Bugatti Chiron</h5>
-                                    <p className="card-text"><strong> R$ 21.000.000,00 </strong></p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+                                    <h5 className="card-title titulo-card">Bugatti Chiron</h5>
+                                    <p className="card-text text-center"><strong> R$ 21.000.000,00 </strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -95,12 +110,10 @@ function Inventory() {
                         {/* link entre Modal e Card */}
                         <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
-                                <img src="./img/img-estoque/Nissan_GT-R.jpg" className="card-img" alt="..." ></img>
+                                <img src={NissanGTR} className="card-img" alt="..." ></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">NissanGT-R</h5>
-                                    <p className="card-text"><strong> R$ 769.109,00 </strong></p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+                                    <h5 className="card-title titulo-card">NissanGT-R</h5>
+                                    <p className="card-text text-center"><strong> R$ 769.109,00 </strong></p>
                                     <div className="btn  mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -111,12 +124,10 @@ function Inventory() {
                         {/* link entre Modal e Card */}
                         <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
-                                <img src="./img/img-estoque/Mercedes-Benz Classe S (V223).jpg" className="card-img" alt="..."></img>
+                                <img src={MercedesBenzClasseS} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Mercedes-Benz Classe S (V223)</h5>
-                                    <p className="card-text">R$ 641.000,00</p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+                                    <h5 className="card-title titulo-card">Mercedes-Benz Classe S (V223)</h5>
+                                    <p className="card-text text-center"><strong>R$ 641.000,00</strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -127,12 +138,10 @@ function Inventory() {
                         {/* link entre Modal e Card */}
                         <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
-                                <img src="./img/img-estoque/Mercedes-Benz Classe G (W463).jpg" className="card-img" alt="..."></img>
+                                <img src={MercedesBenzClasseG} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Mercedes-Benz Classe G (W463) AMG</h5>
-                                    <p className="card-text"><strong> R$ 2.200.000,00 </strong></p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+                                    <h5 className="card-title titulo-card">Mercedes-Benz Classe G (W463) AMG</h5>
+                                    <p className="card-text text-center"><strong> R$ 2.200.000,00 </strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -142,12 +151,10 @@ function Inventory() {
                         {/* link entre Modal e Card */}
                         <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
-                                <img src="./img/img-estoque/Mercedes-Benz AMG GT R.jpg" className="card-img" alt="..."></img>
+                                <img src={MercedesBenzAMGGTR} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Mercedes-Benz AMG GT R</h5>
-                                    <p className="card-text">R$2.200.000,00</p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+                                    <h5 className="card-title titulo-card">Mercedes-Benz AMG GT R</h5>
+                                    <p className="card-text text-center"><strong>R$2.200.000,00</strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -158,12 +165,10 @@ function Inventory() {
                         {/* link entre Modal e Card */}
                         <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
-                                <img src="./img/img-estoque/Aston Martin DB11.jpg" className="card-img" alt="..."></img>
+                                <img src={AstonMartinDB11} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Aston Martin DB11</h5>
-                                    <p className="card-text"> <strong> R$ 3.000.000,00 </strong></p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+                                    <h5 className="card-title titulo-card">Aston Martin DB11</h5>
+                                    <p className="card-text text-center"> <strong> R$ 3.000.000,00 </strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -174,12 +179,10 @@ function Inventory() {
                         {/*link entre Modal e Card */}
                         <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
-                                <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg" className="card-img" alt="..."></img>
+                                <img src={MercedesBenzAMGF12016} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Mercedes-Benz AMG F1 2016</h5>
-                                    <p className="card-text"><strong> R$ 19.000.000,00 </strong></p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+                                    <h5 className="card-title titulo-card">Mercedes-Benz AMG F1 2016</h5>
+                                    <p className="card-text text-center"><strong> R$ 19.000.000,00 </strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -190,12 +193,10 @@ function Inventory() {
                         {/* link entre Modal e Card  */}
                         <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
-                                <img src="./img/img-estoque/Bentley Mulliner Bacalar.jpg" className="card-img" alt="..."></img>
+                                <img src={BentleyMullinerBacalar} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Bentley Mulliner Bacalar</h5>
-                                    <p className="card-text"><strong> R$ 1.350.000,00 </strong></p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+                                    <h5 className="card-title titulo-card">Bentley Mulliner Bacalar</h5>
+                                    <p className="card-text text-center"><strong> R$ 1.350.000,00 </strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -207,12 +208,10 @@ function Inventory() {
                         {/*  link entre Modal e Card  */}
                         <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
-                                <img src="./img/img-estoque/Bentley Continental GT3.jpg" className="card-img" alt="..."></img>
+                                <img src={BentleyContinentalGT3} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Bentley Continental GT3</h5>
-                                    <p className="card-text"><strong> R$ 1.950.000,00 </strong></p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+                                    <h5 className="card-title titulo-card">Bentley Continental GT3</h5>
+                                    <p className="card-text text-center"><strong> R$ 1.950.000,00 </strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -224,13 +223,11 @@ function Inventory() {
                         {/*  link entre Modal e Card  */}
                         <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
-                                <img src="./img/img-estoque/Ares S1.jpg" className="card-img" alt="..."></img>
+                                <img src={AresS1} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Ares S1</h5>
-                                    <p className="card-text"><strong> R$ 7.100.000,00 </strong></p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <div  className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
+                                    <h5 className="card-title titulo-card">Ares S1</h5>
+                                    <p className="card-text text-center"><strong> R$ 7.100.000,00 </strong></p>
+                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
                         </div>
@@ -241,12 +238,10 @@ function Inventory() {
                         {/*  link entre Modal e Card  */}
                         <div className="text-decoration-none">
                             <div className="card h-100 mb-5">
-                                <img src="./img/img-estoque/Lamborghini Huracan.jpg" className="card-img" alt="..."></img>
+                                <img src={LamborghiniUracan} className="card-img" alt="..."></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Lamborghini Huracan </h5>
-                                    <p className="card-text"><strong> R$ 4.300.000,00 </strong></p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+                                    <h5 className="card-title titulo-card">Lamborghini Huracan </h5>
+                                    <p className="card-text text-center"><strong> R$ 4.300.000,00 </strong></p>
                                     <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
                                 </div>
                             </div>
@@ -256,7 +251,7 @@ function Inventory() {
                     {/*Inicio dos modais */}
 
                     {/*  Modal Card 1  */}
-                    <div className="modal fade " id="modal-produto-1" tabIndex="-1" aria-labelledby="exampleModalLabel"
+                    <div className="modal fade" id="modal-produto-1" tabIndex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         {/* link entre Modal e Card */}
                         <div className="modal-dialog modal-xl">
@@ -279,8 +274,8 @@ function Inventory() {
                                                 Your browser does not support the video tag.
                                             </video> */}
 
-                                                <img src="./img/img-estoque/Lamborghini Urus.jpg" className="card-img img-modal"
-                                                    alt="..."></img>
+                                                <img src={LamborghiniUrus} className="card-img img-modal"
+                                                    alt="..." />
                                             </div>
 
 
@@ -336,24 +331,24 @@ function Inventory() {
                                                                 className="carousel-inner carosel-modal  row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4">
                                                                 <div className="carousel-item active">
 
-                                                                    <img src="./img/img-estoque/Lamborghini Urus.jpg"
-                                                                        className="d-block w-100" alt="..." width="5%"></img>
+                                                                    <img src={LamborghiniUrus}
+                                                                        className="d-block w-100" alt="..." width="5%" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Lamborghini Urus.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={LamborghiniUrus}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Lamborghini Urus.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={LamborghiniUrus}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Lamborghini Urus.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={LamborghiniUrus}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Lamborghini Urus.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={LamborghiniUrus}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                             </div>
                                                             <button className="carousel-control-prev" type="button"
@@ -379,10 +374,10 @@ function Inventory() {
                                 </div>
                                 <div className="modal-footer modalfooter">
                                     <div className="row">
-                                        <div className="col-10 modal-mobily3">
-                                            <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                        <div className="col-10 modal-mobily3 text-center mb-1">
+                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
                                         </div>
-                                        <div className="col-1 modal-mobily3">
+                                        <div className="col-12 col-md-1 modal-mobily3">
                                             <Link to="" className="nav-link text-black">
                                                 <button type="button" className="btn btn-secondary btn-modal-footer ">
                                                     Agendar visita
@@ -421,8 +416,8 @@ function Inventory() {
                                                 Your browser does not support the video tag.
                                             </video> */}
 
-                                                <img src="./img/img-estoque/Bugatti Chiron.jpg" className="card-img img-modal"
-                                                    alt="..."></img>
+                                                <img src={BugattiChiron} className="card-img img-modal"
+                                                    alt="..." />
                                             </div>
 
                                             <div className="col-7 modal-mobily2">
@@ -476,24 +471,24 @@ function Inventory() {
                                                                 className="carousel-inner carosel-modal  row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4">
                                                                 <div className="carousel-item active">
 
-                                                                    <img src="./img/img-estoque/Bugatti Chiron.jpg"
-                                                                        className="d-block w-100" alt="..." width="5%"></img>
+                                                                    <img src={BugattiChiron}
+                                                                        className="d-block w-100" alt="..." width="5%" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Bugatti Chiron.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={BugattiChiron}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Bugatti Chiron.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={BugattiChiron}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Bugatti Chiron.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={BugattiChiron}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Bugatti Chiron.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={BugattiChiron}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                             </div>
                                                             <button className="carousel-control-prev" type="button"
@@ -519,8 +514,8 @@ function Inventory() {
                                 </div>
                                 <div className="modal-footer modalfooter">
                                     <div className="row">
-                                        <div className="col-10 modal-mobily3">
-                                            <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                        <div className="col-10 modal-mobily3 text-center mb-1">
+                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
                                         </div>
                                         <div className="col-1 modal-mobily3">
                                             <Link to="/schedulingDetails" className="nav-link text-black">
@@ -559,8 +554,8 @@ function Inventory() {
                                                 Your browser does not support the video tag.
                                             </video> */}
 
-                                                <img src="./img/img-estoque/Nissan_GT-R.jpg" className="card-img img-modal"
-                                                    alt="..."></img>
+                                                <img src={NissanGTR} className="card-img img-modal"
+                                                    alt="..." />
                                             </div>
 
                                             <div className="col-7 modal-mobily2">
@@ -614,24 +609,24 @@ function Inventory() {
                                                                 className="carousel-inner carosel-modal  row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4">
                                                                 <div className="carousel-item active">
 
-                                                                    <img src="./img/img-estoque/Nissan_GT-R.jpg"
-                                                                        className="d-block w-100" alt="..." width="5%"></img>
+                                                                    <img src={NissanGTR}
+                                                                        className="d-block w-100" alt="..." width="5%" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Nissan_GT-R.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={NissanGTR}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Nissan_GT-R.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={NissanGTR}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Nissan_GT-R.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={NissanGTR}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Nissan_GT-R.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={NissanGTR}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                             </div>
                                                             <button className="carousel-control-prev" type="button"
@@ -657,8 +652,8 @@ function Inventory() {
                                 </div>
                                 <div className="modal-footer modalfooter">
                                     <div className="row">
-                                        <div className="col-10 modal-mobily3">
-                                            <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                        <div className="col-10 modal-mobily3 text-center mb-1">
+                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
                                         </div>
                                         <div className="col-1 modal-mobily3">
                                             <Link to="/schedulingDetails" className="nav-link text-black">
@@ -698,8 +693,8 @@ function Inventory() {
                                                 Your browser does not support the video tag.
                                             </video> */}
 
-                                                <img src="./img/img-estoque/Mercedes-Benz Classe S (V223).jpg" className="card-img img-modal"
-                                                    alt="..."></img>
+                                                <img src={MercedesBenzClasseS} className="card-img img-modal"
+                                                    alt="..." />
                                             </div>
 
                                             <div className="col-7 modal-mobily2">
@@ -753,24 +748,24 @@ function Inventory() {
                                                                 className="carousel-inner carosel-modal  row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4">
                                                                 <div className="carousel-item active">
 
-                                                                    <img src="./img/img-estoque/Mercedes-Benz Classe S (V223).jpg"
-                                                                        className="d-block w-100" alt="..." width="5%"></img>
+                                                                    <img src={MercedesBenzClasseS}
+                                                                        className="d-block w-100" alt="..." width="5%" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Mercedes-Benz Classe S (V223).jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={MercedesBenzClasseS}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Mercedes-Benz Classe S (V223).jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={MercedesBenzClasseS}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Mercedes-Benz Classe S (V223).jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={MercedesBenzClasseS}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Mercedes-Benz Classe S (V223).jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={MercedesBenzClasseS}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                             </div>
                                                             <button className="carousel-control-prev" type="button"
@@ -796,8 +791,8 @@ function Inventory() {
                                 </div>
                                 <div className="modal-footer modalfooter">
                                     <div className="row">
-                                        <div className="col-10 modal-mobily3">
-                                            <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                        <div className="col-10 modal-mobily3 text-center mb-1">
+                                            <img className="logo-modal" src={LogoDevcarsModal} alt=""></img>
                                         </div>
                                         <div className="col-1 modal-mobily3">
                                             <Link to="/schedulingDetails" className="nav-link text-black">
@@ -837,8 +832,8 @@ function Inventory() {
                                                 Your browser does not support the video tag.
                                             </video> */}
 
-                                                <img src="./img/img-estoque/Mercedes-Benz Classe G (W463).jpg" className="card-img img-modal"
-                                                    alt="..."></img>
+                                                <img src={MercedesBenzClasseG} className="card-img img-modal"
+                                                    alt="..." />
                                             </div>
 
                                             <div className="col-7 modal-mobily2">
@@ -892,24 +887,24 @@ function Inventory() {
                                                                 className="carousel-inner carosel-modal  row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4">
                                                                 <div className="carousel-item active">
 
-                                                                    <img src="./img/img-estoque/Mercedes-Benz Classe G (W463).jpg"
-                                                                        className="d-block w-100" alt="..." width="5%"></img>
+                                                                    <img src={MercedesBenzClasseG}
+                                                                        className="d-block w-100" alt="..." width="5%" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Mercedes-Benz Classe G (W463).jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={MercedesBenzClasseG}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Mercedes-Benz Classe G (W463).jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={MercedesBenzClasseG}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Mercedes-Benz Classe G (W463).jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={MercedesBenzClasseG}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Mercedes-Benz Classe G (W463).jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={MercedesBenzClasseG}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                             </div>
                                                             <button className="carousel-control-prev" type="button"
@@ -935,8 +930,8 @@ function Inventory() {
                                 </div>
                                 <div className="modal-footer modalfooter">
                                     <div className="row">
-                                        <div className="col-10 modal-mobily3">
-                                            <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                        <div className="col-10 modal-mobily3 text-center mb-1">
+                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
                                         </div>
                                         <div className="col-1 modal-mobily3">
                                             <Link to="/schedulingDetails" className="nav-link text-black">
@@ -976,8 +971,8 @@ function Inventory() {
                                                 Your browser does not support the video tag.
                                             </video> */}
 
-                                                <img src="./img/img-estoque/Mercedes-Benz AMG GT R.jpg" className="card-img img-modal"
-                                                    alt="..."></img>
+                                                <img src={MercedesBenzAMGGTR} className="card-img img-modal"
+                                                    alt="..." />
                                             </div>
 
                                             <div className="col-7 modal-mobily2">
@@ -1031,24 +1026,24 @@ function Inventory() {
                                                                 className="carousel-inner carosel-modal  row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4">
                                                                 <div className="carousel-item active">
 
-                                                                    <img src="./img/img-estoque/Mercedes-Benz AMG GT R.jpg"
-                                                                        className="d-block w-100" alt="..." width="5%"></img>
+                                                                    <img src={MercedesBenzAMGGTR}
+                                                                        className="d-block w-100" alt="..." width="5%" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Mercedes-Benz AMG GT R.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={MercedesBenzAMGGTR}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Mercedes-Benz AMG GT R.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={{MercedesBenzAMGGTR}}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Mercedes-Benz AMG GT R.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={MercedesBenzAMGGTR}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Mercedes-Benz AMG GT R.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={MercedesBenzAMGGTR}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                             </div>
                                                             <button className="carousel-control-prev" type="button"
@@ -1074,8 +1069,8 @@ function Inventory() {
                                 </div>
                                 <div className="modal-footer modalfooter">
                                     <div className="row">
-                                        <div className="col-10 modal-mobily3">
-                                            <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                        <div className="col-10 modal-mobily3 text-center mb-1">
+                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
                                         </div>
                                         <div className="col-1 modal-mobily3">
                                             <Link to="/schedulingDetails" className="nav-link text-black">
@@ -1115,8 +1110,8 @@ function Inventory() {
                                                 Your browser does not support the video tag.
                                             </video> */}
 
-                                                <img src="./img/img-estoque/Aston Martin DB11.jpg" className="card-img img-modal"
-                                                    alt="..."></img>
+                                                <img src={AstonMartinDB11} className="card-img img-modal"
+                                                    alt="..." />
                                             </div>
 
                                             <div className="col-7 modal-mobily2">
@@ -1170,24 +1165,24 @@ function Inventory() {
                                                                 className="carousel-inner carosel-modal  row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4">
                                                                 <div className="carousel-item active">
 
-                                                                    <img src="./img/img-estoque/Aston Martin DB11.jpg"
-                                                                        className="d-block w-100" alt="..." width="5%"></img>
+                                                                    <img src={AstonMartinDB11}
+                                                                        className="d-block w-100" alt="..." width="5%" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Aston Martin DB11.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={AstonMartinDB11}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Aston Martin DB11.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={AstonMartinDB11}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Aston Martin DB11.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={AstonMartinDB11}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Aston Martin DB11.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={AstonMartinDB11}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                             </div>
                                                             <button className="carousel-control-prev" type="button"
@@ -1213,8 +1208,8 @@ function Inventory() {
                                 </div>
                                 <div className="modal-footer modalfooter">
                                     <div className="row">
-                                        <div className="col-10 modal-mobily3">
-                                            <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                        <div className="col-10 modal-mobily3 text-center mb-1">
+                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
                                         </div>
                                         <div className="col-1 modal-mobily3">
                                             <Link to="/schedulingDetails" className="nav-link text-black">
@@ -1254,8 +1249,8 @@ function Inventory() {
                                                 Your browser does not support the video tag.
                                             </video> */}
 
-                                                <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg" className="card-img img-modal"
-                                                    alt="..."></img>
+                                                <img src={MercedesBenzAMGF12016} className="card-img img-modal"
+                                                    alt="..." />
                                             </div>
 
                                             <div className="col-7 modal-mobily2">
@@ -1309,24 +1304,24 @@ function Inventory() {
                                                                 className="carousel-inner carosel-modal  row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4">
                                                                 <div className="carousel-item active">
 
-                                                                    <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg"
-                                                                        className="d-block w-100" alt="..." width="5%"></img>
+                                                                    <img src={MercedesBenzAMGF12016}
+                                                                        className="d-block w-100" alt="..." width="5%" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={MercedesBenzAMGF12016}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={MercedesBenzAMGF12016}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={MercedesBenzAMGF12016}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={MercedesBenzAMGF12016}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                             </div>
                                                             <button className="carousel-control-prev" type="button"
@@ -1352,8 +1347,8 @@ function Inventory() {
                                 </div>
                                 <div className="modal-footer modalfooter">
                                     <div className="row">
-                                        <div className="col-10 modal-mobily3">
-                                            <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                        <div className="col-10 modal-mobily3 text-center mb-1">
+                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
                                         </div>
                                         <div className="col-1 modal-mobily3">
                                             <Link to="/schedulingDetails" className="nav-link text-black">
@@ -1393,8 +1388,8 @@ function Inventory() {
                                                 Your browser does not support the video tag.
                                             </video> */}
 
-                                                <img src="./img/img-estoque/Bentley Mulliner Bacalar.jpg" className="card-img img-modal"
-                                                    alt="..."></img>
+                                                <img src={BentleyMullinerBacalar} className="card-img img-modal"
+                                                    alt="..." />
                                             </div>
 
                                             <div className="col-7 modal-mobily2">
@@ -1448,24 +1443,24 @@ function Inventory() {
                                                                 className="carousel-inner carosel-modal  row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4">
                                                                 <div className="carousel-item active">
 
-                                                                    <img src="./img/img-estoque/Bentley Mulliner Bacalar.jpg"
-                                                                        className="d-block w-100" alt="..." width="5%"></img>
+                                                                    <img src={BentleyMullinerBacalar}
+                                                                        className="d-block w-100" alt="..." width="5%" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Bentley Mulliner Bacalar.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={BentleyMullinerBacalar}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Bentley Mulliner Bacalar.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={BentleyMullinerBacalar}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Bentley Mulliner Bacalar.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={BentleyMullinerBacalar}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Bentley Mulliner Bacalar.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={BentleyMullinerBacalar}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                             </div>
                                                             <button className="carousel-control-prev" type="button"
@@ -1491,8 +1486,8 @@ function Inventory() {
                                 </div>
                                 <div className="modal-footer modalfooter">
                                     <div className="row">
-                                        <div className="col-10 modal-mobily3">
-                                            <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                        <div className="col-10 modal-mobily3 text-center mb-1">
+                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
                                         </div>
                                         <div className="col-1 modal-mobily3">
                                             <Link to="/schedulingDetails" className="nav-link text-black">
@@ -1532,8 +1527,8 @@ function Inventory() {
                                                 Your browser does not support the video tag.
                                             </video> */}
 
-                                                <img src="./img/img-estoque/Bentley Continental GT3.jpg" className="card-img img-modal"
-                                                    alt="..."></img>
+                                                <img src={BentleyContinentalGT3} className="card-img img-modal"
+                                                    alt="..." />
                                             </div>
 
                                             <div className="col-7 modal-mobily2">
@@ -1587,24 +1582,24 @@ function Inventory() {
                                                                 className="carousel-inner carosel-modal  row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4">
                                                                 <div className="carousel-item active">
 
-                                                                    <img src="./img/img-estoque/Bentley Continental GT3.jpg"
-                                                                        className="d-block w-100" alt="..." width="5%"></img>
+                                                                    <img src={BentleyContinentalGT3}
+                                                                        className="d-block w-100" alt="..." width="5%" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Bentley Continental GT3.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={BentleyContinentalGT3}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Bentley Continental GT3.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={BentleyContinentalGT3}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Bentley Continental GT3.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={BentleyContinentalGT3}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Bentley Continental GT3.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={BentleyContinentalGT3}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                             </div>
                                                             <button className="carousel-control-prev" type="button"
@@ -1630,8 +1625,8 @@ function Inventory() {
                                 </div>
                                 <div className="modal-footer modalfooter">
                                     <div className="row">
-                                        <div className="col-10 modal-mobily3">
-                                            <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                        <div className="col-10 modal-mobily3 text-center mb-1">
+                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
                                         </div>
                                         <div className="col-1 modal-mobily3">
                                             <Link to="/schedulingDetails" className="nav-link text-black">
@@ -1671,8 +1666,8 @@ function Inventory() {
                                                 Your browser does not support the video tag.
                                             </video> */}
 
-                                                <img src="./img/img-estoque/Ares S1.jpg" className="card-img img-modal"
-                                                    alt="..."></img>
+                                                <img src={AresS1} className="card-img img-modal"
+                                                    alt="..." />
                                             </div>
 
                                             <div className="col-7 modal-mobily2">
@@ -1726,24 +1721,24 @@ function Inventory() {
                                                                 className="carousel-inner carosel-modal  row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4">
                                                                 <div className="carousel-item active">
 
-                                                                    <img src="./img/img-estoque/Ares S1.jpg"
-                                                                        className="d-block w-100" alt="..." width="5%"></img>
+                                                                    <img src={AresS1}
+                                                                        className="d-block w-100" alt="..." width="5%" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Ares S1.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={AresS1}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Ares S1.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={AresS1}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Ares S1.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={AresS1}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Ares S1.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={AresS1}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                             </div>
                                                             <button className="carousel-control-prev" type="button"
@@ -1769,8 +1764,8 @@ function Inventory() {
                                 </div>
                                 <div className="modal-footer modalfooter">
                                     <div className="row">
-                                        <div className="col-10 modal-mobily3">
-                                            <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                        <div className="col-10 modal-mobily3 text-center mb-1">
+                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
                                         </div>
                                         <div className="col-1 modal-mobily3">
                                             <Link to="/schedullingDetails" className="nav-link text-black">
@@ -1810,8 +1805,8 @@ function Inventory() {
                                                 Your browser does not support the video tag.
                                             </video> */}
 
-                                                <img src="./img/img-estoque/Lamborghini Huracan.jpg" className="card-img img-modal"
-                                                    alt="..."></img>
+                                                <img src={LamborghiniUracan} className="card-img img-modal"
+                                                    alt="..." />
                                             </div>
 
                                             <div className="col-7 modal-mobily2">
@@ -1865,24 +1860,24 @@ function Inventory() {
                                                                 className="carousel-inner carosel-modal  row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4">
                                                                 <div className="carousel-item active">
 
-                                                                    <img src="./img/img-estoque/Lamborghini Huracan.jpg"
-                                                                        className="d-block w-100" alt="..." width="5%"></img>
+                                                                    <img src={LamborghiniUracan}
+                                                                        className="d-block w-100" alt="..." width="5%" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Lamborghini Huracan.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={LamborghiniUracan}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Lamborghini Huracan.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={LamborghiniUracan}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Lamborghini Huracan.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={LamborghiniUracan}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                                 <div className="carousel-item">
-                                                                    <img src="./img/img-estoque/Lamborghini Huracan.jpg"
-                                                                        className="d-block w-100" alt="10px"></img>
+                                                                    <img src={LamborghiniUracan}
+                                                                        className="d-block w-100" alt="10px" />
                                                                 </div>
                                                             </div>
                                                             <button className="carousel-control-prev" type="button"
@@ -1908,8 +1903,8 @@ function Inventory() {
                                 </div>
                                 <div className="modal-footer modalfooter">
                                     <div className="row">
-                                        <div className="col-10 modal-mobily3">
-                                            <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
+                                        <div className="col-10 modal-mobily3 text-center mb-1">
+                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
                                         </div>
                                         <div className="col-1 modal-mobily3">
                                             <Link to="/schedullingDetails" className="nav-link text-black">
@@ -1926,16 +1921,17 @@ function Inventory() {
 
                     {/* numeração das paginas  */}
                     <div className="row text-center m-2">
-                        <div className="grupo-links">
-                            <Link to=" " className="btn btn-outline-secondary m-3"></Link>
-                            <Link to="" className="btn btn-outline-secondary">1</Link>
-                            <Link to="" className="btn btn-outline-secondary">2</Link>
-                            <Link to="" className="btn btn-outline-secondary">3</Link>
-                            <Link to=" " className="btn btn-outline-secondary m-3"></Link>
+                        <div className="grupo-links d-inline">
+                            <Link to="//" className="btn btn-outline-secondary m-3">Prev</Link>
+                            <Link to="//" className="btn btn-outline-secondary">1</Link>
+                            <Link to="//" className="btn btn-outline-secondary">2</Link>
+                            <Link to="//" className="btn btn-outline-secondary">3</Link>
+                            <Link to="//" className="btn btn-outline-secondary m-3">Next</Link>
                         </div>
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

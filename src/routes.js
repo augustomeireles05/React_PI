@@ -20,18 +20,18 @@ import WishList from './pages/wishList/WishList'
 export const Routes = () => {
     return (
         <Switch>
-            <Route path="/" component={Home} exact/>
+            <Route path="/" component={Home} exact />
             <Route path="/product" component={Product} />
             <Route path="/aboutUs" component={AboutUs} />
             <Route path="/cart" component={Cart} />
             <Route path="/checkoutOrder" component={CheckoutOrder} />
-            <Route path="/checkoutScheduling" component={CheckoutScheduling} /> 
+            <Route path="/checkoutScheduling" component={CheckoutScheduling} />
             <Route path="/contact" component={Contact} />
             <Route path="/inventory" component={Invetory} />
             <Route path="/login" component={Login} />
             <Route path="/myData" component={MyData} />
             <Route path="/myOrder" component={MyOrder} />
-            <Route path="/orderResume" component={OrderResume} /> 
+            <Route path="/orderResume" component={OrderResume} />
             <Route path="/recoveryPassword" component={RecoveryPassword} />
             <Route path="/register" component={Register} />
             <Route path="/schedulingDetails" component={SchedulingDetails} />

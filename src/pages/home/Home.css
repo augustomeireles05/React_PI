@@ -84,6 +84,10 @@ body{
     object-fit: cover;
 }
 
+.carousel-button-hover:hover{
+    background: none;
+}
+
 .social{
     background: rgb(214, 212, 212);
     margin-top: 95px;
@@ -110,10 +114,10 @@ body{
 
     .linhaDestaque{
         font-weight: bold;
-        margin-top: 50px;
         text-align: center;
-        margin-bottom: 2px;
-        
+        font-size: 20px;
+        text-align: start;
+        margin: 50px auto 2px 30px;
     }
 
 
@@ -146,6 +150,7 @@ body{
 
 .alinhamento_paragrafo{
     text-align:justify;
+    font-size: 14px;
 }
 
 .botao-buscar {
@@ -160,6 +165,24 @@ body{
 .imagens-midia{
     justify-items: center;
     margin-top: 50px;
+}
+
+
+.info-gerais1{
+    font-size: 29px;
+}
+
+.detalhes-info{
+    font-size: 15px;
+}
+
+.paragrafo-institucional{
+    font-size: 19px;
+}
+.paragrafo-institucional-card{
+    font-size: 15px;
+    padding: 0 20px;
+    text-align: justify;
 }
 
 /* -- RESPONSIVE - BEGIN HEADER -- */
@@ -242,7 +265,9 @@ body{
     margin-top: 100px;
 
  }
-    
+ 
+ 
+
     .logo_marcas{
         display: none;
     }
