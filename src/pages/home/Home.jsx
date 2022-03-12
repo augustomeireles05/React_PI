@@ -2,6 +2,35 @@ import './Home.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 
+import Capa1 from '../../assets/images/Home/Koenigsegg_Gemera.jpg'
+import Capa2 from '../../assets/images/Home/ferarri-monza.jpg'
+import Capa3 from '../../assets/images/Home/home2.jpeg'
+
+import LogomarcaAstonMartin from '../../assets/images/Home/aston-martin.png'
+import LogomarcaAudi from '../../assets/images/Home/audi.png'
+import LogomarcaBMW from '../../assets/images/Home/bmw.png'
+import LogomarcaBugatti from '../../assets/images/Home/bugatti.png'
+import LogomarcaCrysler from '../../assets/images/Home/chrysler.png'
+import LogomarcaFerrari from '../../assets/images/Home/ferrari-logo.png'
+import LogomarcaFord from '../../assets/images/Home/ford.png'
+import LogomarcaJaguar from '../../assets/images/Home/jaguar.png'
+import LogomarcaLamborghini from '../../assets/images/Home/lamborghini.png'
+import LogomarcaMclaren from '../../assets/images/Home/Mclaren.png'
+import LogomarcaMercedes from '../../assets/images/Home/mercedes.png'
+import LogomarcaOpel from '../../assets/images/Home/opel.png'
+import LogomarcaPagani from '../../assets/images/Home/pagani.png'
+import LogomarcaRollsRoyce from '../../assets/images/Home/rolls-royce.png'
+import LogomarcaSubaru from '../../assets/images/Home/subaru.png'
+import LogomarcaVolvo from '../../assets/images/Home/volvo.png'
+
+
+import MercedesBenzAMGF12016 from '../../assets/images/Inventory/Mercedes-BenzAMG-F1-2016.jpg'
+import BugattiChiron from '../../assets/images/Inventory/BugattiChiron.jpg'
+import LamborghiniHuracan from '../../assets/images/Inventory/LamborghiniHuracan.jpg'
+
+
+import SSCTuatara from '../../assets/images/Home/SSC Tuatara.jpg'
+
 function Home() {
     return (
         <>
@@ -22,14 +51,14 @@ function Home() {
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <img src="./img/img-home/Koenigsegg_Gemera.jpg" class="d-block w-100" alt="..."></img>
+                                    <img src={Capa1} class="d-block w-100" alt="Capa1"></img>
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Koenigsegg Gemera</h5>
                                         <p>DevCar sera unica e exclusiva importadora Koenigsegg Gemera</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item  carousel-tamanho" data-bs-interval="2000">
-                                    <img src="./img/img-home/Ferarri-monza.jpg" class="d-block w-100 stf2" alt="..."></img>
+                                    <img src={Capa2} class="d-block w-100 stf2" alt="..."></img>
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Ferrari MONZA</h5>
                                         <p> Velocidade Máx: 350 Km/h</p>
@@ -37,7 +66,7 @@ function Home() {
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./img/img-home/Koenigsegg_Gemera.jpg" class="d-block w-100" alt="" width="100%"></img>
+                                    <img src={Capa1} class="d-block w-100" alt="" width="100%"></img>
                                     <div class="carousel-caption d-none d-md-block">
                                         <font color="white">
                                             <h5> Bugatti Chiron </h5>
@@ -46,7 +75,7 @@ function Home() {
                                     </div>
                                 </div>
                                 <div class="carousel-item carousel-tamanho" data-bs-interval="1000">
-                                    <img src="./img/img-home/home2.jpeg" class="d-block w-100" alt="..." width="100%"></img>
+                                    <img src={Capa3} class="d-block w-100" alt="..." width="100%"></img>
                                     <div class="carousel-caption d-none d-md-block">
                                         <font color="white">
                                             <h5>DevCar's</h5>
@@ -77,30 +106,27 @@ function Home() {
                             <div id="carousel-marcas" class="carousel slide logo_marcas" data-bs-ride="carousel-marcas">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active logo-centralizado">
-                                        <img class="icons-marcas" src="./img/img-home/astom martin.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/audi.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/bmw.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/bugatti.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/chrysler.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/ferrari (2).png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/ford.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/jaguar.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/lambor.png" height="50px" />
+                                        <img class="icons-marcas ms-2 me-4" src={LogomarcaAstonMartin} height="50px" />
+                                        <img class="icons-marcas  me-4" src={LogomarcaAudi} height="50px" />
+                                        <img class="icons-marcas  me-4" src={LogomarcaBMW} height="50px" />
+                                        <img class="icons-marcas  me-4" src={LogomarcaBugatti} height="50px" />
+                                        <img class="icons-marcas  me-4" src={LogomarcaCrysler} height="50px" />
+                                        <img class="icons-marcas  me-4" src={LogomarcaFerrari} height="50px" />
+                                        <img class="icons-marcas  me-4" src={LogomarcaFord} height="50px" />
+                                        <img class="icons-marcas  me-4" src={LogomarcaJaguar} height="50px" />
 
 
                                     </div>
                                     <div class="carousel-item fundo-marcas logo-centralizado2  logo-centralizado">
-                                        <img class="icons-marcas" src="./img/img-home/Mclaren.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/mercedes.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/opel.jpg" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/pagani.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/bmw.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/rolls royce.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/subaru.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/volvo.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/ferrari (2).png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/volvo.png" height="50px" />
-                                        <img class="icons-marcas" src="./img/img-home/pagani.png" height="50px" />
+                                        <img class="icons-marcas ms-3 me-4" src={LogomarcaLamborghini} height="50px" />
+                                        <img class="icons-marcas ms-3 me-4" src={LogomarcaMclaren} height="50px" />
+                                        <img class="icons-marcas ms-3 me-4" src={LogomarcaMercedes} height="50px" />
+                                        <img class="icons-marcas ms-3 me-4" src={LogomarcaOpel} height="50px" />
+                                        <img class="icons-marcas ms-3 me-4" src={LogomarcaPagani} height="50px" />
+                                        <img class="icons-marcas ms-3 me-4" src={LogomarcaRollsRoyce} height="50px" />
+                                        <img class="icons-marcas ms-3 me-4" src={LogomarcaSubaru} height="50px" />
+                                        <img class="icons-marcas ms-3 me-4" src={LogomarcaVolvo} height="50px" />
+                                        
 
                                     </div>
                                 </div>
@@ -195,7 +221,7 @@ function Home() {
                                     {/* link entre Modal e Card */}
                                     <a href="#" class="text-decoration-none">
                                         <div class="card h-100 mb-5">
-                                            <img src="./img/img-estoque/Mercedes-Benz AMG F1 2016.jpg" class="card-img"
+                                            <img src={MercedesBenzAMGF12016} class="card-img"
                                                 alt="..."></img>
                                             <div class="card-body">
                                                 <h5 class="card-title">Mercedes AMG F1</h5>
@@ -361,7 +387,7 @@ function Home() {
                                     {/* link entre Modal e Card */}
                                     <a href="#" class="text-decoration-none">
                                         <div class="card h-100 mb-5">
-                                            <img src="./img/img-estoque/Bugatti Chiron.jpg" class="card-img" alt="..."></img>
+                                            <img src={BugattiChiron} class="card-img" alt="..."></img>
                                             <div class="card-body">
                                                 <h5 class="card-title">BUGATTI CHIRON</h5>
                                                 <p class="card-text">R$21.000.000,00</p>
@@ -516,7 +542,7 @@ function Home() {
                                     {/* link entre Modal e Card */}
                                     <a href="#" class="text-decoration-none">
                                         <div class="card h-100 mb-5">
-                                            <img src="./img/img-estoque/Lamborghini Huracan.jpg" class="card-img" alt="..."></img>
+                                            <img src={LamborghiniHuracan} class="card-img" alt="..."></img>
                                             <div class="card-body">
                                                 <h5 class="card-title">Lamborghini Huracan</h5>
                                                 <p class="card-text">R$4.300.000,00</p>
@@ -705,7 +731,7 @@ function Home() {
 
                         </div>
                         <div class="col-4 imagens-midia">
-                            <img src="./img/img-home/SSC Tuatara.jpg" alt="" width="100%"></img>
+                            <img src={SSCTuatara} alt="" width="100%"></img>
                         </div>
                     </div>
                 </div>

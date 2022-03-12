@@ -5,12 +5,11 @@
     margin:0;
 }
 
-/* .imagem-login {
-    background-image: url('../img/img-login/img-lgn.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-} */
+.imagem-login {
+    background-image: url('../../assets/images/Login/login.jpg');
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
 
 .font-login-title{
     background-color: #f0f0f0;
@@ -53,18 +52,17 @@ input {
 }
 
 /* -- BEGIN RESPONSIVE -- */
-
     /* -- BEGIN RESPONSIVE IPHONE -- */
 
     /* -- Begin to iphone 12 -- */
 
-    /* @media (max-width: 390px) {
+    @media (max-width: 390px) {
         .imagem-login {
             display: none;
         }
-    } */
+    } 
 
-    /* -- End to iphone 12 -- */
+    /* -- End to iphone 12 --
 
 
 
