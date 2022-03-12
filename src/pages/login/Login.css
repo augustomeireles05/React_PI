@@ -8,7 +8,8 @@
 .imagem-login {
     background-image: url('../../assets/images/Login/login.jpg');
     background-size: contain;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    background-position: center; 
 }
 
 .font-login-title{
@@ -21,6 +22,16 @@
 .font-login {
     font-family: 'Questrial', sans-serif;
     font-size: 13px;
+}
+
+.link-color {
+    color: #7d7000;
+    cursor: pointer;
+}
+
+.link-color:hover {
+    color: #5b5201;
+    font-weight: bold;
 }
 
 
