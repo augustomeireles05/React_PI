@@ -63,12 +63,12 @@ function Login() {
                                                 
                                             </div>
                                             <div className="col-6 flex-center input-layout">
-                                                <Link href="./recuperarsenha.html" className="font-login">Esqueci minha senha</Link>
+                                                <Link to="/recoveryPassword" className="font-login link-color">Esqueci minha senha</Link>
                                             </div>
                                         </div>
                                     </form>
                                     <p className="text-center pt-3 font-login">Não é um membro?</p>
-                                        <div className="text-center input-layout"><Link data-toggle="tab" href="./cadastro.html">Cadastre-se</Link>
+                                        <div className="text-center input-layout "><Link data-toggle="tab" to="/register" className="link-color">Cadastre-se</Link>
                                         </div>
                                     
                                 </div>

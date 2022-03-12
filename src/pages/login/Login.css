@@ -24,6 +24,16 @@
     font-size: 13px;
 }
 
+.link-color {
+    color: #7d7000;
+    cursor: pointer;
+}
+
+.link-color:hover {
+    color: #5b5201;
+    font-weight: bold;
+}
+
 
 .signin-form input{
     box-shadow: none;
