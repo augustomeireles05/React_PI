@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './Inventory.css'
+import Header from '../../components/header/Header'
 
 import LamborghiniUrus from '../../assets/images/Inventory/LamborghiniUrus.jpg'
 import LamborghiniUracan from '../../assets/images/Inventory/LamborghiniHuracan.jpg'
@@ -19,8 +20,7 @@ import AresS1 from '../../assets/images/Inventory/AresS1.jpg'
 function Inventory() {
     return (
         <>
-            {/* <Header></Header> */}
-            <hr></hr>
+            <Header />
             <div className="container">
                 <div className="row-cols-1 row-cols-md-12 g-4 justify-content-center mt-4">
 

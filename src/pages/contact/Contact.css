@@ -63,6 +63,10 @@ nav p{
 }
 
 
+.text-ac-body{
+    text-align:justify;
+}
+
 
 .btn-enviar-contato{
     background: linear-gradient(8deg, rgb(179, 152, 4) 30%, rgb(223, 208, 126) 70%);
