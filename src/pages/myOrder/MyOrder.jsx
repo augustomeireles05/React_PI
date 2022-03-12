@@ -3,6 +3,13 @@ import './MyOrder.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 
+import SchedulingIcon from '../../assets/images/MyOrder/andamento.png'
+import Cancelstatusicon from '../../assets/images/MyOrder/cancelado.png'
+import Deliveredicon from '../../assets/images/MyOrder/entregue.png'
+
+import Audir8azul from '../../assets/images/MyOrder/Mercedes.jpg'
+import MercedesAmgGt63 from '../../assets/images/MyOrder/MercedesBenz-AMG-GT63S2020.jpg'
+import BmwX72021 from '../../assets/images/MyOrder/BMW-X7-2021.jpg'
 
 function MyOrder() {
     return (
@@ -83,7 +90,7 @@ function MyOrder() {
                                     </div>
 
                                     <div className="col status-pedido d-flex align-items-center justify-content-center">
-                                        {/*<img src="img/img-pedidos/status-agendado.png" alt="cancelado" className="figura-status"/>*/}
+                                        <img src={SchedulingIcon} alt="agendado" className="figura-status"/>
                                         <span className="ms-1">AGENDADO</span>
                                     </div>
 
@@ -102,8 +109,8 @@ function MyOrder() {
                                 <div className="accordion-body">
                                     {/* item 1 do pedido 1 */}
                                     <div className="row justify-content-between">
-                                        <div className="col-12 col-sm-12 col-lg-3">
-                                            {/*<img src="img/img-pedidos/resized_IMG_1399-768x576.jpg" alt="MercedesBenz AMG GT63 2020 Branco" className="img-pedido"/>*/}
+                                        <div className="col-12 col-sm-12 col-lg-3 text-sm-center mb-sm-2">
+                                            <img src={Audir8azul} alt="audi-r8-azul" className="img-pedido"/>
                                         </div>
                                         <div className="col-sm-4">
                                             <div className="d-flex flex-column">
@@ -165,7 +172,7 @@ function MyOrder() {
                                         </div>
 
                                         <div className="col status-pedido d-flex align-items-center justify-content-center ms-1">
-                                            {/*<img src="img/img-pedidos/status-cancelado.png" alt="cancelado" className="figura-status"/>*/}
+                                            <img src={Cancelstatusicon} alt="cancelado" className="figura-status"/>
                                             <span className="">CANCELADO</span>
                                         </div>
 
@@ -185,13 +192,13 @@ function MyOrder() {
 
                                         {/* item 1 do pedido 2 */}
                                         <div className="row justify-content-between">
-                                            <div className="col-12 col-sm-12 col-lg-3">
-                                                {/*<img src="img/img-pedidos/MercedesBenz_AMG_GT_63_S_2020_branco_01.jpg" alt="MercedesBenz AMG GT63 2020 Branco" className="img-pedido"/>*/}
+                                            <div className="col-12 col-sm-12 col-lg-3 text-sm-center mb-sm-2">
+                                                <img src={MercedesAmgGt63} alt="MercedesBenz-AMG-GT63-2020" className="img-pedido"/>
                                             </div>
                                             <div className="col-sm-4">
                                                 <div className="d-flex flex-column">
                                                     <span className="titulo-descricao text-center text-sm-center">DESCRIÇÃO ITENS</span>
-                                                    <span className="descricao text-center text-sm-center">MERCEDES BENSZ AMG GT63 2020
+                                                    <span className="descricao text-center text-sm-center">MERCEDES BENZ AMG GT63 2020
                                                         BRANCO</span>
                                                 </div>
                                             </div>
@@ -237,7 +244,7 @@ function MyOrder() {
                                     </div>
 
                                     <div className="col status-pedido d-flex align-items-center justify-content-center">
-                                        {/*<img src="img/img-pedidos/status-entregue.png" alt="cancelado" className="figura-status">*/}
+                                        <img src={Deliveredicon} alt="cancelado" className="figura-status" />
                                         <span className="ms-1">ENTREGUE</span>
                                     </div>
 
@@ -256,13 +263,13 @@ function MyOrder() {
                                 <div className="accordion-body">
                                     {/* item 1 do pedido 2 */}
                                     <div className="row justify-content-between">
-                                        <div className="col-12 col-sm-12 col-lg-3">
-                                            {/*<img src="img/img-pedidos/resized_IMG_1399-768x576.jpg" alt="MercedesBenz AMG GT63 2020 Branco" className="img-pedido"/> */}
+                                        <div className="col-12 col-sm-12 col-lg-3 text-sm-center mb-sm-2">
+                                            <img src={BmwX72021} alt="MercedesBenz AMG GT63 2020 Branco" className="img-pedido"/>
                                         </div>
                                         <div className="col-sm-4">
                                             <div className="d-flex flex-column">
                                                 <span className="titulo-descricao text-center text-sm-center">DESCRIÇÃO ITENS</span>
-                                                <span className="descricao text-center text-sm-center">AUDI RS Q8 2021 AZUL</span>
+                                                <span className="descricao text-center text-sm-center">BMW X7 2021</span>
                                             </div>
                                         </div>
 
