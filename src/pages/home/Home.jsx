@@ -1,6 +1,7 @@
 import './Home.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
+import { Link } from 'react-router-dom';
 
 import Capa1 from '../../assets/images/Home/Koenigsegg_Gemera.jpg'
 import Capa2 from '../../assets/images/Home/ferarri-monza.jpg'
@@ -45,13 +46,13 @@ function Home() {
                         <div id="carousel-hipercarros" className="carousel carousel-dark slide carousel-hipercarros "
                             data-bs-ride="carousel-hipercarros">
                             <div className="carousel-indicators">
-                                <button type="button" data-bs-target="#carousel-hipercarros" data-bs-slide-to="0" className="active"
+                                <button type="button carousel-button-hover" data-bs-target="#carousel-hipercarros" data-bs-slide-to="0" className="active"
                                     aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carousel-hipercarros" data-bs-slide-to="1"
+                                <button type="button carousel-button-hover" data-bs-target="#carousel-hipercarros" data-bs-slide-to="1"
                                     aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carousel-hipercarros" data-bs-slide-to="2"
+                                <button type="button carousel-button-hover" data-bs-target="#carousel-hipercarros" data-bs-slide-to="2"
                                     aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carousel-hipercarros" data-bs-slide-to="3"
+                                <button type="button carousel-button-hover" data-bs-target="#carousel-hipercarros" data-bs-slide-to="3"
                                     aria-label="Slide 4"></button>
                             </div>
                             <div className="carousel-inner">
@@ -59,7 +60,7 @@ function Home() {
                                     <img src={Capa1} className="d-block w-100" alt="Capa1"></img>
                                     <div className="carousel-caption d-none d-md-block">
                                         <h5>Koenigsegg Gemera</h5>
-                                        <p>DevCar sera unica e exclusiva importadora Koenigsegg Gemera</p>
+                                        <p className="paragrafo-institucional">DevCar sera unica e exclusiva importadora Koenigsegg Gemera</p>
                                     </div>
                                 </div>
                                 <div className="carousel-item  carousel-tamanho" data-bs-interval="2000">
@@ -91,12 +92,12 @@ function Home() {
                                 </div>
 
                             </div>
-                            <button className="carousel-control-prev" type="button" data-bs-target="#carousel-hipercarros"
+                            <button className="carousel-control-prev carousel-button-hover" type="button" data-bs-target="#carousel-hipercarros"
                                 data-bs-slide="prev">
                                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span className="visually-hidden">Previous</span>
                             </button>
-                            <button className="carousel-control-next" type="button" data-bs-target="#carousel-hipercarros"
+                            <button className="carousel-control-next carousel-button-hover" type="button" data-bs-target="#carousel-hipercarros"
                                 data-bs-slide="next">
                                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span className="visually-hidden">Next</span>
@@ -124,25 +125,25 @@ function Home() {
                                     </div>
                                     <div className="carousel-item fundo-marcas logo-centralizado2  logo-centralizado">
                                         <img className="icons-marcas ms-3 me-4" src={LogomarcaLamborghini} height="50px" />
-                                        <img className="icons-marcas ms-3 me-4" src={LogomarcaMclaren} height="50px" />
-                                        <img className="icons-marcas ms-3 me-4" src={LogomarcaMercedes} height="50px" />
-                                        <img className="icons-marcas ms-3 me-4" src={LogomarcaOpel} height="50px" />
-                                        <img className="icons-marcas ms-3 me-4" src={LogomarcaPagani} height="50px" />
-                                        <img className="icons-marcas ms-3 me-4" src={LogomarcaRollsRoyce} height="50px" />
-                                        <img className="icons-marcas ms-3 me-4" src={LogomarcaSubaru} height="50px" />
-                                        <img className="icons-marcas ms-3 me-4" src={LogomarcaVolvo} height="50px" />
-                                        
+                                        <img className="icons-marcas ms-5 me-4" src={LogomarcaMclaren} height="50px" />
+                                        <img className="icons-marcas ms-5 me-4" src={LogomarcaMercedes} height="50px" />
+                                        <img className="icons-marcas ms-5 me-4" src={LogomarcaOpel} height="50px" />
+                                        <img className="icons-marcas ms-5 me-4" src={LogomarcaPagani} height="50px" />
+                                        <img className="icons-marcas ms-5 me-4" src={LogomarcaRollsRoyce} height="50px" />
+                                        <img className="icons-marcas ms-5 me-4" src={LogomarcaSubaru} height="50px" />
+                                        <img className="icons-marcas ms-5 me-4" src={LogomarcaVolvo} height="50px" />
+
 
                                     </div>
                                 </div>
-                                <button className="carousel-control-prev" type="button" data-bs-target="#carousel-marcas"
+                                <button className="carousel-control-prev carousel-button-hover" type="button" data-bs-target="#carousel-marcas"
                                     data-bs-slide="prev">
                                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span className="visually-hidden">Previous</span>
                                 </button>
-                                <button className="carousel-control-next" type="button" data-bs-target="#carousel-marcas"
+                                <button className="carousel-control-next carousel-button-hover" type="button" data-bs-target="#carousel-marcas"
                                     data-bs-slide="next">
-                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span className="carousel-control-next-icon " aria-hidden="true"></span>
                                     <span className="visually-hidden">Next</span>
                                 </button>
                             </div>
@@ -153,7 +154,7 @@ function Home() {
 
 
                 <hr></hr>
-                <div className="row-cols-1 row-cols-md-12 g-4 justify-content-center mt-4 mx-4">
+                <div className="row-cols-1 row-cols-md-12 g-4 justify-content-center mt-4 mx-4 mb-5">
 
                     <form className=" filtro-de-busca row gx-12 align-items-center rounded p-3 mt-5 ms-0 ">
                         <legend className="text-center">ENCONTRE SEU CARRO</legend>
@@ -219,24 +220,24 @@ function Home() {
                     <div className="carousel-inner">
                         <div className="carousel-item active">
 
-                            <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4 mx-3">
+                            <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-center mx-3">
                                 {/* card 1 */}
                                 <div className="col text-center btn" type="button" data-bs-toggle="modal"
                                     data-bs-target="#modal-produto-1">
                                     {/* link entre Modal e Card */}
-                                    <a href="#" className="text-decoration-none">
+                                    <div href="#" className="text-decoration-none">
                                         <div className="card h-100 mb-5">
                                             <img src={MercedesBenzAMGF12016} className="card-img"
                                                 alt="..."></img>
                                             <div className="card-body">
                                                 <h5 className="card-title">Mercedes AMG F1</h5>
                                                 <p className="card-text">R$19.000.000,00</p>
-                                                <a className="btn mt-3 botao-buscar btn-detalhes" href="#" role="button">
-                                                    DETALHES</a>
+                                                <button className="btn mt-3 botao-buscar btn-detalhes" href="#" role="button">
+                                                    DETALHES</button>
                                             </div>
 
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
 
 
@@ -250,7 +251,7 @@ function Home() {
                                             <div className="modal-header cores-modal modal-mobily5 justify-content-center mt-1">
                                                 <h5>CHRYSLER PACIFICA HYBRID 2019</h5>
                                                 <button type="button"
-                                                    className="btn-close btn-modal-close fecharmodal justify-flex-end"
+                                                    className="btn-close btn-modal-close fecharmodal justify-flex-end "
                                                     data-bs-dismiss="modal" aria-label="Close">
                                                 </button>
                                             </div>
@@ -269,28 +270,28 @@ function Home() {
                                                                 className="card-img img-modal" alt="..."></img>
                                                         </div>
 
-                                                        <div className="col-7 modal-mobily2">
+                                                        <div className="col-12 col-lg-7 modal-mobily2">
                                                             <h3 className="info-gerais1">Ficha Técnica</h3>
                                                             <ul className="lista-modal info-gerais2 linhas-modal">
                                                                 <li>
-                                                                    <span>COR:</span>
-                                                                    <span>AZUL</span>
+                                                                    <span className="detalhes-info">COR:</span>
+                                                                    <span className="detalhes-info">AZUL</span>
                                                                 </li>
                                                                 <li className="info-gerais-linhas">
-                                                                    <span>KM:</span>
-                                                                    <span>31.106</span>
+                                                                    <span className="detalhes-info">KM:</span>
+                                                                    <span className="detalhes-info">31.106</span>
                                                                 </li>
                                                                 <li>
-                                                                    <span>CAMBIO:</span>
-                                                                    <span>PDK</span>
+                                                                    <span className="detalhes-info">CAMBIO:</span>
+                                                                    <span className="detalhes-info">PDK</span>
                                                                 </li>
                                                                 <li className="info-gerais-linhas">
-                                                                    <span>POTENCIA:</span>
-                                                                    <span>350 cv.</span>
+                                                                    <span className="detalhes-info">POTENCIA:</span>
+                                                                    <span className="detalhes-info">350 cv.</span>
                                                                 </li>
                                                                 <li>
-                                                                    <span>VALOR (R$):</span>
-                                                                    <span>XXXXXX</span>
+                                                                    <span className="detalhes-info">VALOR (R$):</span>
+                                                                    <span className="detalhes-info">XXXXXX</span>
                                                                 </li>
                                                             </ul>
                                                             <h3 className=" info-gerais">INFORMAÇÕES GERAIS</h3>
@@ -367,11 +368,11 @@ function Home() {
                                                         <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
                                                     </div>
                                                     <div className="col-1 modal-mobily3">
-                                                        <a href="./agendamento.html" className="nav-link text-black">
-                                                            <a href="./agendamento.html"><button type="button"
-                                                                className="btn btn-secondary btn-modal-footer">Agendar
-                                                                visita</button></a>
-                                                        </a>
+
+                                                        <button type="button"
+                                                            className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
+                                                                visita </Link></button>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -387,17 +388,16 @@ function Home() {
                                 <div className="col text-center btn" type="button" data-bs-toggle="modal"
                                     data-bs-target="#modal-produto-2">
                                     {/* link entre Modal e Card */}
-                                    <a href="#" className="text-decoration-none">
+                                    <div href="#" className="text-decoration-none">
                                         <div className="card h-100 mb-5">
                                             <img src={BugattiChiron} className="card-img" alt="..."></img>
                                             <div className="card-body">
-                                                <h5 className="card-title">BUGATTI CHIRON</h5>
-                                                <p className="card-text">R$21.000.000,00</p>
-                                                <a className="btn mt-3 botao-buscar btn-detalhes" href="#" role="button">
-                                                    DETALHES</a>
-                                            </div>
+                                    <h5 className="card-title">Bugatti Chiron</h5>
+                                    <p className="card-text text-center"><strong> R$ 21.000.000,00 </strong></p>
+                                    <div className="btn mt-3 btn_buscar" role="button">DETALHES</div>
+                                </div>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
 
                                 {/* Modal */}
@@ -423,32 +423,32 @@ function Home() {
                                                         Your browser does not support the video tag.
                                                     </video> */}
 
-                                                            <img src="./img/img-estoque/Bugatti Chiron.jpg"
+                                                            <img src={BugattiChiron}
                                                                 className="card-img img-modal" alt="..."></img>
                                                         </div>
 
-                                                        <div className="col-7">
+                                                        <div className="col-12 col-lg-7">
                                                             <h3 className="info-gerais1">Ficha Técnica</h3>
                                                             <ul className="lista-modal info-gerais2  linhas-modal">
                                                                 <li>
-                                                                    <span>COR:</span>
-                                                                    <span>Branco</span>
+                                                                    <span className="detalhes-info">COR:</span>
+                                                                    <span className="detalhes-info">Branco</span>
                                                                 </li>
                                                                 <li className="info-gerais-linhas">
-                                                                    <span>KM:</span>
-                                                                    <span>18.106</span>
+                                                                    <span className="detalhes-info">KM:</span>
+                                                                    <span className="detalhes-info">18.106</span>
                                                                 </li>
                                                                 <li>
-                                                                    <span>CAMBIO:</span>
-                                                                    <span>Automatico 7 velocidades</span>
+                                                                    <span className="detalhes-info">CAMBIO:</span>
+                                                                    <span className="detalhes-info">Automatico 7 velocidades</span>
                                                                 </li>
                                                                 <li className="info-gerais-linhas">
-                                                                    <span>POTENCIA:</span>
-                                                                    <span>150 cv</span>
+                                                                    <span className="detalhes-info">POTENCIA:</span>
+                                                                    <span className="detalhes-info">150 cv</span>
                                                                 </li>
                                                                 <li>
-                                                                    <span>VALOR (R$):</span>
-                                                                    <span>R$209.000,00</span>
+                                                                    <span className="detalhes-info">VALOR (R$):</span>
+                                                                    <span className="detalhes-info">R$209.000,00</span>
                                                                 </li>
                                                             </ul>
                                                             <h3 className=" info-gerais">INFORMAÇÕES GERAIS</h3>
@@ -477,23 +477,23 @@ function Home() {
                                                                         data-bs-ride="carousel">
                                                                         <div className="carousel-inner carosel-modal">
                                                                             <div className="carousel-item active">
-                                                                                <img src="./img/img-estoque/Bugatti Chiron.jpg"
+                                                                                <img src={BugattiChiron}
                                                                                     className="d-block w-100" alt="..." width="5%"></img>
                                                                             </div>
                                                                             <div className="carousel-item">
-                                                                                <img src="./img/img-estoque/Bugatti Chiron.jpg"
+                                                                                <img src={BugattiChiron}
                                                                                     className="d-block w-100" alt="10px"></img>
                                                                             </div>
                                                                             <div className="carousel-item">
-                                                                                <img src="../img/img-estoque/Bugatti Chiron.jpg"
+                                                                                <img src={BugattiChiron}
                                                                                     className="d-block w-100" alt="10px"></img>
                                                                             </div>
                                                                             <div className="carousel-item">
-                                                                                <img src="./img/img-estoque/Bugatti Chiron.jpg"
+                                                                                <img src={BugattiChiron}
                                                                                     className="d-block w-100" alt="10px"></img>
                                                                             </div>
                                                                             <div className="carousel-item">
-                                                                                <img src="./img/img-estoque/Bugatti Chiron.jpg"
+                                                                                <img src={BugattiChiron}
                                                                                     className="d-block w-100" alt="10px"></img>
                                                                             </div>
                                                                         </div>
@@ -524,9 +524,9 @@ function Home() {
                                                         <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
                                                     </div>
                                                     <div className="col-1">
-                                                        <a href="./agendamento.html"><button type="button"
+                                                        <Link to={"/checkoutScheduling"}><button type="button"
                                                             className="btn btn-secondary btn-modal-footer">Agendar
-                                                            visita</button></a>
+                                                            visita</button></Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -540,17 +540,17 @@ function Home() {
                                 <div className="col text-center btn" type="button" data-bs-toggle="modal"
                                     data-bs-target="#modal-produto-3">
                                     {/* link entre Modal e Card */}
-                                    <a href="#" className="text-decoration-none">
+                                    <div href="#" className="text-decoration-none">
                                         <div className="card h-100 mb-5">
                                             <img src={LamborghiniHuracan} className="card-img" alt="..."></img>
                                             <div className="card-body">
                                                 <h5 className="card-title">Lamborghini Huracan</h5>
                                                 <p className="card-text">R$4.300.000,00</p>
-                                                <a className="btn mt-3 botao-buscar btn-detalhes" href="#" role="button">
-                                                    DETALHES</a>
+                                                <button className="btn mt-3 botao-buscar btn-detalhes" href="#" role="button">
+                                                    DETALHES</button>
                                             </div>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
 
                                 {/* Modal */}
@@ -575,36 +575,37 @@ function Home() {
                                                         Your browser does not support the video tag.
                                                     </video> */}
 
-                                                            <img src="./img/img-estoque/Lamborghini Huracan.jpg"
+                                                            <img src={LamborghiniHuracan}
                                                                 className="card-img img-modal" alt="..."></img>
                                                         </div>
 
-                                                        <div className="col-7">
+                                                        <div className="col-12 col-lg-7">
                                                             <h3 className="info-gerais1">Ficha Técnica</h3>
                                                             <ul className="lista-modal info-gerais2  linhas-modal">
                                                                 <li>
-                                                                    <span>COR:</span>
-                                                                    <span>Preto</span>
+                                                                    <span className="detalhes-info">COR:</span>
+                                                                    <span className="detalhes-info">Preto</span>
                                                                 </li>
                                                                 <li className="info-gerais-linhas">
-                                                                    <span>KM:</span>
-                                                                    <span>18.106</span>
+                                                                    <span className="detalhes-info">KM:</span>
+                                                                    <span className="detalhes-info">18.106</span>
                                                                 </li>
                                                                 <li>
-                                                                    <span>CAMBIO:</span>
-                                                                    <span>Automatico 7 velocidades</span>
+                                                                    <span className="detalhes-info">CAMBIO:</span>
+                                                                    <span className="detalhes-info">Automatico 7 velocidades</span>
                                                                 </li>
                                                                 <li className="info-gerais-linhas">
-                                                                    <span>POTENCIA:</span>
-                                                                    <span>150 cv</span>
+                                                                    <span className="detalhes-info">POTENCIA:</span>
+                                                                    <span className="detalhes-info">150 cv</span>
                                                                 </li>
                                                                 <li>
-                                                                    <span>VALOR (R$):</span>
-                                                                    <span>R$399.000,00</span>
+                                                                    <span className="detalhes-info">VALOR (R$):</span>
+                                                                    <span className="detalhes-info">R$399.000,00</span>
                                                                 </li>
                                                             </ul>
-                                                            <h3>INFORMAÇÕES GERAIS</h3>
-                                                            <p>Cambio PDK de 8 marchas e dupla embreagem, tração integral,
+
+                                                            <h3 className="info-gerais">INFORMAÇÕES GERAIS</h3>
+                                                            <p className="alinhamento_paragrafo">Cambio PDK de 8 marchas e dupla embreagem, tração integral,
                                                                 modos E,
                                                                 Híbrido, Sport e Sport Plus, eixo traseiro direcional,
                                                                 controle de chassi 4D, suspensão pneumática, pacote Sport
@@ -628,23 +629,23 @@ function Home() {
                                                                         data-bs-ride="carousel">
                                                                         <div className="carousel-inner carosel-modal">
                                                                             <div className="carousel-item active">
-                                                                                <img src="./img/img-estoque/Lamborghini Huracan.jpg"
+                                                                                <img src={{ LamborghiniHuracan }}
                                                                                     className="d-block w-100" alt="..." width="5%"></img>
                                                                             </div>
                                                                             <div className="carousel-item">
-                                                                                <img src="./img/img-estoque/Lamborghini Huracan.jpg"
+                                                                                <img src={LamborghiniHuracan}
                                                                                     className="d-block w-100" alt="10px"></img>
                                                                             </div>
                                                                             <div className="carousel-item">
-                                                                                <img src="./img/img-estoque/Lamborghini Huracan.jpg"
+                                                                                <img src={LamborghiniHuracan}
                                                                                     className="d-block w-100" alt="10px"></img>
                                                                             </div>
                                                                             <div className="carousel-item">
-                                                                                <img src="./img/img-estoque/Lamborghini Huracan.jpg"
+                                                                                <img src={{ LamborghiniHuracan }}
                                                                                     className="d-block w-100" alt="10px"></img>
                                                                             </div>
                                                                             <div className="carousel-item">
-                                                                                <img src="./img/img-estoque/Lamborghini Huracan.jpg"
+                                                                                <img src={{ LamborghiniHuracan }}
                                                                                     className="d-block w-100" alt="10px"></img>
                                                                             </div>
                                                                         </div>
@@ -675,9 +676,9 @@ function Home() {
                                                         <img className="logo-modal" src="./img/img-header/logo-rev01.jpeg" alt=""></img>
                                                     </div>
                                                     <div className="col-1">
-                                                        <a href="./agendamento.html"><button type="button"
+                                                        <Link to={"/checkoutScheduling"}><button type="button"
                                                             className="btn btn-secondary btn-modal-footer">Agendar
-                                                            visita</button></a>
+                                                            visita</button></Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -695,12 +696,12 @@ function Home() {
                                 <img src="..." className="d-block w-100" alt="..."></img>
                             </div>
                         </div>
-                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                        <button className="carousel-control-prev carousel-button-hover" type="button" data-bs-target="#carouselExampleControlsNoTouching"
                             data-bs-slide="prev">
                             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span className="visually-hidden">Previous</span>
                         </button>
-                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                        <button className="carousel-control-next carousel-button-hover" type="button" data-bs-target="#carouselExampleControlsNoTouching "
                             data-bs-slide="next">
                             <span className="carousel-control-next-icon" aria-hidden="true"></span>
                             <span className="visually-hidden">Next</span>
@@ -710,14 +711,14 @@ function Home() {
                 </div>
             </div>
 
-                                                    
+
 
             <section>
                 <div className="social">
-                    <div className="row social-Texto ">
-                        <h3>SSC Tuatara apresnta versao com até 2.230 cv</h3>
+                    <div className="row social-Texto px-5 pt-2">
+                        <h3>SSC Tuatara apresenta versao com até 2.230 cv</h3>
                         <div className="col-8 texto_midia">
-                            <p>
+                            <p p className="paragrafo-institucional-card">
 
                                 O norte-americano SSC Tuatara conseguiu superar a marca de velocidade
                                 do Koenigsegg Agera RS e se tornou o novo modelo de produção <strong> mais
