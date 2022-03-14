@@ -585,7 +585,7 @@ function CheckoutOrder() {
               <Button type="button" name="Voltar para Carrinho">
                 <Link to="/cart"></Link>
               </Button>
-              <Button type="submit" name="Finalizar Compra">
+              <Button type="button" name="Finalizar Compra">
                 <Link to="/orderResume"></Link>
               </Button>
             </div>

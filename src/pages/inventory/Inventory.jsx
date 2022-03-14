@@ -378,7 +378,7 @@ function Inventory() {
                                             <img className="logo-modal" src={LogoDevcarsModal} alt="" />
                                         </div>
                                         <div className="col-12 col-md-1 modal-mobily3">
-                                            <Link to="" className="nav-link text-black">
+                                            <Link to="/checkoutScheduling" className="nav-link text-black">
                                                 <button type="button" className="btn btn-secondary btn-modal-footer ">
                                                     Agendar visita
                                                 </button>
@@ -518,7 +518,7 @@ function Inventory() {
                                             <img className="logo-modal" src={LogoDevcarsModal} alt="" />
                                         </div>
                                         <div className="col-1 modal-mobily3">
-                                            <Link to="/schedulingDetails" className="nav-link text-black">
+                                            <Link to="/checkoutScheduling" className="nav-link text-black">
                                                 <button type="button" className="btn btn-secondary btn-modal-footer ">Agendar
                                                     visita</button>
                                             </Link>
@@ -656,9 +656,8 @@ function Inventory() {
                                             <img className="logo-modal" src={LogoDevcarsModal} alt="" />
                                         </div>
                                         <div className="col-1 modal-mobily3">
-                                            <Link to="/schedulingDetails" className="nav-link text-black">
-                                                <button type="button" className="btn btn-secondary btn-modal-footer ">Agendar
-                                                    visita</button>
+                                            <Link to="/cart" className="nav-link text-black">
+                                                <button type="button" className="btn btn-secondary btn-modal-footer ">Comprar</button>
                                             </Link>
                                         </div>
                                     </div>

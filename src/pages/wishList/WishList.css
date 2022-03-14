@@ -253,7 +253,6 @@ button:hover {
 .icons-header li {
     padding-top: 3%;
     padding-bottom: 3%;
-    /*border: 2px solid red;*/
     margin: 2%;
 }
 
@@ -354,7 +353,7 @@ header {
 .icons-header li {
     padding-top: 3%;
     padding-bottom: 3%;
-    border: 2px solid red;
+    /* border: 2px solid red; O ERRO ESTAVA AQUII!!!!  */
     margin: 2%;
 }
 

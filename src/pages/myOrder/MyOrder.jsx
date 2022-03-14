@@ -59,7 +59,7 @@ function MyOrder() {
                     {/* inicio dos cards de pedidos */}
                     <div className="titulos-detalhes col col-sm-9">
 
-                        <div className="container d-flex justify-content-around titulo-menu mb-3 mt-0 pt-0 pb-2">
+                        <div className="container d-flex justify-content-around titulo-menu mb-3 mt-0 pt-0 pb-4">
                             <div className="col-3 text-center">
                                 <span className="fs-6">PEDIDO</span>
                             </div>
@@ -80,7 +80,7 @@ function MyOrder() {
 
 
                         {/* acordeon pedido 1 */}
-                        <div className="accordion-item mb-3">
+                        <div className="row accordion-item mb-3">
                             <h2 className="accordion-header" id="flush-headingOne">
                                 <button className="justify-content-center accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -161,7 +161,7 @@ function MyOrder() {
 
                         {/* acordeon pedido 2 */}
                         <div className="accordion accordion-flush" id="flush-headingTwo">
-                            <div className="accordion-item mb-3">
+                            <div className="row accordion-item mb-3">
                                 <h2 className="accordion-header" id="flush-headingTwo">
                                     <button className="justify-content-center accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseTwo" aria-expanded="false"
@@ -234,7 +234,7 @@ function MyOrder() {
 
 
                         {/* acordeon pedido 3 */}
-                        <div className="accordion-item">
+                        <div className="row accordion-item mb-3">
                             <h2 className="accordion-header" id="flush-headingThree">
                                 <button className="justify-content-center accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">

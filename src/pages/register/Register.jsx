@@ -20,7 +20,7 @@ function Register() {
             {/*Começo Dados Pessoais*/}
             <div className="container dados-pessoais">
                 <div className="col-12 titulo-dados">
-                    <h2>Dados Pessoais</h2>
+                    <h2 className="h2-register">Dados Pessoais</h2>
                 </div>
                 <form className="row mb-2">
                     <div className="col-md-6">
@@ -43,7 +43,7 @@ function Register() {
             <div className="container endereco">
                 { /*Começo Endereço*/}
                 <div className="col-12 titulo-endereco">
-                    <h2>Endereço</h2>
+                    <h2 className="h2-register">Endereço</h2>
                 </div>
                 <form className="row mb-2">
                     <div className="col-md-6">
@@ -98,7 +98,7 @@ function Register() {
             { /*Começo Senha*/}
             <div className="container senha">
                 <div className="col-md-12 titulo-senha">
-                    <h2>Senha</h2>
+                    <h2 className="h2-register">Senha</h2>
                 </div>
                 <form className="row mb-2 justify-content-center">
                     <div className="col-md-8">
