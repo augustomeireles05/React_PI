@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Orbitron&family=Questrial&family=Roboto+Condensed:wght@300&display=swap');
+
+
+
+
 .btn-principal {
     background: linear-gradient(8deg, rgb(179, 152, 4) 30%, rgb(223, 208, 126) 70%);
     border-radius: 4px;
     border: none;
     padding: 10px;
+    justify-content: center;
+    margin: 20px;
+    width: 100%;
+	height: 100%;
+ 
+    
 }
 
 .btn-principal:hover{
@@ -11,4 +22,18 @@
 
 .link-referencia{
     text-decoration: none;
+    color: black;
+    font-family: 'Questrial', sans-serif;
+    font-size: 15px;
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+   
+    
+}
+
+.link-referencia:hover {
+    color: black;
+    font-weight: bold;
 }
