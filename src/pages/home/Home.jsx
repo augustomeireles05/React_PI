@@ -232,9 +232,9 @@ function Home() {
                                         <div className="card h-100 mb-5">
                                             <img src={MercedesBenzAMGF12016} className="card-img" alt="..."></img>
                                             <div className="card-body">
-                                                <h5 className="card-title">Bugatti Chiron</h5>
-                                                <p className="card-text text-center"><strong> R$ 21.000.000,00 </strong></p>
-                                                <button className="btn mt-3 btn_buscar" role="button">DETALHES</button>
+                                                <h5 className="card-title">Mercedes AMG F1</h5>
+                                                <p className="card-text text-center"><strong>R$19.000.000,00</strong></p>
+                                                <button className="btn mt-3 ms-0 btn_buscar" role="button">DETALHES</button>
                                             </div>
                                         </div>
                                     </div>
@@ -296,7 +296,7 @@ function Home() {
                                                                 </li>
                                                                 <li>
                                                                     <span className="detalhes-info">VALOR (R$):</span>
-                                                                    <span className="detalhes-info">XXXXXX</span>
+                                                                    <span className="detalhes-info">19.000.000,00</span>
                                                                 </li>
                                                             </ul>
                                                             <h3 className=" info-gerais">INFORMAÇÕES GERAIS</h3>
@@ -399,7 +399,7 @@ function Home() {
                                             <div className="card-body">
                                                 <h5 className="card-title">Bugatti Chiron</h5>
                                                 <p className="card-text text-center"><strong> R$ 21.000.000,00 </strong></p>
-                                                <button className="btn mt-3 btn_buscar" role="button">DETALHES</button>
+                                                <button className="btn mt-3 btn_buscar ms-0" role="button">DETALHES</button>
                                             </div>
                                         </div>
                                     </div>
@@ -445,7 +445,7 @@ function Home() {
                                                                 </li>
                                                                 <li>
                                                                     <span className="detalhes-info">CAMBIO:</span>
-                                                                    <span className="detalhes-info">Automatico 7 velocidades</span>
+                                                                    <span className="detalhes-info text-end">Automatico 7 velocidades</span>
                                                                 </li>
                                                                 <li className="info-gerais-linhas">
                                                                     <span className="detalhes-info">POTENCIA:</span>
@@ -453,7 +453,7 @@ function Home() {
                                                                 </li>
                                                                 <li>
                                                                     <span className="detalhes-info">VALOR (R$):</span>
-                                                                    <span className="detalhes-info">R$209.000,00</span>
+                                                                    <span className="detalhes-info">21.000.000,00</span>
                                                                 </li>
                                                             </ul>
                                                             <h3 className=" info-gerais">INFORMAÇÕES GERAIS</h3>
@@ -551,9 +551,9 @@ function Home() {
                                         <div className="card h-100 mb-5">
                                             <img src={LamborghiniHuracan} className="card-img" alt="..."></img>
                                             <div className="card-body">
-                                                <h5 className="card-title">Bugatti Chiron</h5>
-                                                <p className="card-text text-center"><strong> R$ 21.000.000,00 </strong></p>
-                                                <button className="btn mt-3 btn_buscar" role="button">DETALHES</button>
+                                                <h5 className="card-title">Lamborghini Huracan</h5>
+                                                <p className="card-text text-center"><strong>R$4.300.000,00</strong></p>
+                                                <button className="btn mt-3 btn_buscar ms-0" role="button">DETALHES</button>
                                             </div>
                                         </div>
                                     </div>
@@ -606,7 +606,7 @@ function Home() {
                                                                 </li>
                                                                 <li>
                                                                     <span className="detalhes-info">VALOR (R$):</span>
-                                                                    <span className="detalhes-info">R$399.000,00</span>
+                                                                    <span className="detalhes-info">4.300.000,00</span>
                                                                 </li>
                                                             </ul>
 
