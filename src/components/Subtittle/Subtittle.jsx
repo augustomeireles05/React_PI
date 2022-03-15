@@ -5,12 +5,12 @@ function Subtitle(props) {
 
     return (
         <>
-            <nav class="navbar navbar-light border-bottom-menu titulo-menu mb-3 mt-0 pt-0 pb-2">
-                <div class="container-fluid d-block text-center">
-                    <span>{props.menu}</span>
-                    <span>{props.order}</span>
+            <div className="navbar navbar-light border-bottom-menu titulo-menu mb-3 mt-0 pt-0 pb-2 col-12">
+                <div className="container-fluid d-block text-center">
+                    <span className="fs-6">{props.menu}</span>
+                    <span className="fs-6">{props.subtitulo}</span>
                 </div>
-            </nav>
+            </div>
         </>
     )
 }

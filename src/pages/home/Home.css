@@ -106,11 +106,6 @@ body{
     
 }
 
-.fundo-filtro{
-    background-color: #E0E0E0;
-    margin-bottom: 2%;
-}
-
 
 .linhaDestaque{
     font-weight: bold;
@@ -153,18 +148,6 @@ body{
     font-size: 14px;
 }
 
-.botao-buscar {
-    background: linear-gradient(8deg, rgb(179, 152, 4) 30%, rgb(223, 208, 126) 70%);
-}
-
-.botao-buscar:hover{
-    background: linear-gradient(191deg, rgb(179, 152, 4) 30%, rgb(223, 208, 126) 70%);
-}
-
-
-.botao-buscar-home:hover{
-    border:none;
-}
 
 .imagens-midia{
     justify-items: center;
@@ -258,12 +241,6 @@ body{
         
     }
 
-    .botao-buscar{           
-        width: 50%;
-        justify-items: center;
-        margin-left: 5%;
-        margin-top: 3%;
-    }
 
  .btn-detalhes{
     margin-top: 100px;

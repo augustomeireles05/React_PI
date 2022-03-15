@@ -62,7 +62,7 @@ function Register() {
                         <input type="text" className="form-control" id="inputCidade" placeholder="Cidade" />
                     </div>
                     <div className="col-md-4">
-                        <select name="estado" id="inputUF" className="form-select">
+                        <select name="estado" id="inputUF" className="form-select hover">
                             <option value="estado">-- UF --</option>
                             <option value="ac">AC</option>
                             <option value="al">AL</option>

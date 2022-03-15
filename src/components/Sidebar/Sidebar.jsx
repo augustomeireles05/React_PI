@@ -1,19 +1,63 @@
 import React from 'react'
 import './Sidebar.css'
-import { Link } from 'react-router-dom'
+
+
+import SidebarItem from '../../components/Sidebar/SidebarItem'
+
 
 function Sidebar() {
     return (
+        <>
         
-        <div className="btn-group-vertical background-container-subject me-3 shadow" role="group"
-            aria-label="Vertical button group">
-            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu"><a className="btn"> <Link to={'/myData'} className="link-solution">MEUS DADOS</Link></a></button>
-            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu"><Link to={'/myOrder'} className="link-solution">MEUS PEDIDOS</Link></button>
-            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu"><Link to={'/cart'} className="link-solution">MEU CARRINHO</Link></button>
-            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu"><Link to={'/wishList'} className="link-solution">LISTA DE DESEJOS</Link></button>
-            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu"><Link to={' '} className="link-solution"></Link>SAIR</button>
-        </div>
-       
+            <button class="navbar-toggler d-md-none collapsed"
+                type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+                aria-controls="sidebarMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="navbar-toggler-icon text-center w-100">
+                    MENU
+                </div>
+            </button>
+
+
+            <div className="col-md-4 flex-row justify-content-center align-items-start text-center mt-0 px-0">
+
+                <nav id="sidebarMenu"
+                    className=" col-12 d-md-block bg-light sidebar collapse btn-group-vertical background-container-subject bg-white">
+
+                    <div className="position-sticky w-100">
+                        <ul className="nav flex-column">
+                            <SidebarItem link="/myData" item="MEUS DADOS"/>
+
+                            <SidebarItem link="/myOrder" item="MEUS PEDIDOS"/>
+
+                            <SidebarItem link="/cart" item="CARRINHO DE COMPRA"/>
+
+                            <SidebarItem link="/wishList" item="LISTA DE DESEJOS"/>
+
+                            <SidebarItem link="/" item="SAIR"/>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+
+
+
+
+            {/* <div className="col-md-4 flex-row justify-content-center align-items-start text-center">
+
+                <div className="col-12 btn-group-vertical background-container-subject me-3 shadow bg-white" role="group" aria-label="Vertical button group">
+
+                    <Link to="/myData" className="link-solution button-menu-lateral sidebar-font border-button-sidebar-menu w-100 p-2">MEUS DADOS</Link>
+                    <Link to="/myData" className="link-solution button-menu-lateral sidebar-font border-button-sidebar-menu w-100 p-2">MEUS PEDIDOS</Link>
+                    <Link to="/myData" className="link-solution button-menu-lateral sidebar-font border-button-sidebar-menu w-100 p-2">CARRINHO DE COMPRA</Link>
+                    <Link to="/myData" className="link-solution button-menu-lateral sidebar-font border-button-sidebar-menu w-100 p-2">LISTA DE DESEJOS </Link>
+                    <Link to="/myData" className="link-solution button-menu-lateral sidebar-font border-button-sidebar-menu w-100 p-2">SAIR </Link>
+
+                </div>
+            </div> */}
+
+        </>
     )
 }
 

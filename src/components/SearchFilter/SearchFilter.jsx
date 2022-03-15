@@ -5,13 +5,13 @@ function SearchFilter() {
     return (
         <>
             <hr />
-            <div className="row-cols-1 row-cols-md-12 g-4 justify-content-center mt-4">
+            <div className="row-cols-1 row-cols-md-12 g-4 justify-content-center mt-4 mb-5">
 
-                <form className=" filtro-de-busca row gx-12 align-items-center rounded p-3 mt-5 ">
+                <form className=" filtro-de-busca row gx-12 align-items-center rounded p-3 mt-5 ms-0 ">
                     <legend className="text-center">ENCONTRE SEU CARRO</legend>
 
-                    <div className="col-md-3 ">
-                        <select id="inputState" className="form-select fundo-filtro">
+                    <div className="col-md-4 col-lg-3 col-12 ">
+                        <select id="inputState" className="form-select bg-filter">
                             <option selected>Selecione a Marca</option>
                             <option>Ferrari</option>
                             <option>Bentley</option>
@@ -23,8 +23,8 @@ function SearchFilter() {
                             <option>Jaguar</option>
                         </select>
                     </div>
-                    <div className="col-md-4 ">
-                        <select id="inputState" className="form-select fundo-filtro">
+                    <div className="col-md-4 col-lg-4 ">
+                        <select id="inputState" className="form-select bg-filter">
                             <option selected>Selecione o Modelo</option>
                             <option>aaaaa</option>
                             <option>bbbbb</option>
@@ -33,8 +33,8 @@ function SearchFilter() {
 
                         </select>
                     </div>
-                    <div className="col-md-2 ">
-                        <select id="inputState" className="form-select fundo-filtro">
+                    <div className="col-md-4 col-lg-3 ">
+                        <select id="inputState" className="form-select bg-filter">
                             <option selected>Selecione o Ano</option>
                             <option>2022</option>
                             <option>2021</option>
@@ -45,12 +45,10 @@ function SearchFilter() {
 
                     </div>
 
-                    <div className="botao-buscar col-md-3 text-center btn p-0">
-                        <button type="submit" className="btn botao-buscar-home">BUSCAR</button>
-                    </div>
-
+                    <button type="submit" className="btn botao-buscar col-md-12 col-lg-2 text-center btn p-0 border-none pt-2 pb-2">BUSCAR</button>
 
                 </form>
+
             </div>
         </>
     )
