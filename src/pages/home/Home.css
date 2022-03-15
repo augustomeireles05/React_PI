@@ -112,13 +112,13 @@ body{
 }
 
 
-    .linhaDestaque{
-        font-weight: bold;
-        text-align: center;
-        font-size: 20px;
-        text-align: start;
-        margin: 50px auto 2px 30px;
-    }
+.linhaDestaque{
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    text-align: start;
+    margin: 50px auto 2px 30px;
+}
 
 
 .icon-close{
@@ -161,6 +161,10 @@ body{
     background: linear-gradient(191deg, rgb(179, 152, 4) 30%, rgb(223, 208, 126) 70%);
 }
 
+
+.botao-buscar-home:hover{
+    border:none;
+}
 
 .imagens-midia{
     justify-items: center;
