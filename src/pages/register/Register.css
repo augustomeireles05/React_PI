@@ -19,7 +19,7 @@ body {
     height: 50%;
 }
 
-.form-control,.form-select {
+.form-control,.form-select .hover {
     margin: 5px;
     margin-right: 10px;
     font-family: 'Questrial', sans-serif;
@@ -30,7 +30,7 @@ body {
 
 }
 
-.form-select:hover{
+.form-select .hover:hover{
     border: 2px solid yellow;
     background: white;
 }

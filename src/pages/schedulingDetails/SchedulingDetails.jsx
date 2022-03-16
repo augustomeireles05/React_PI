@@ -3,6 +3,7 @@ import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 //import Header from '../../components/header/Header'
 //import Footer from '../../components/footer/Footer'
+import Subtittle from '../../components/Subtittle/Subtittle'
 
           
 
@@ -24,11 +25,7 @@ function schedulingDetails() {
 
 
                         {/*Navbar*/}
-                        <nav className="navbar navbar-light border-bottom-menu titulo-menu mb-3 mt-0 pt-0 pb-2">
-                            <div className="container-fluid d-block text-center">
-                                <span>MENU</span>
-                            </div>
-                        </nav>
+                        <Subtittle menu="MENU"/>
 
                         <div className="btn-group-vertical background-container-subject me-3 shadow" role="group"
                             aria-label="Vertical button group">
@@ -53,7 +50,7 @@ function schedulingDetails() {
                     <div className="col-md-8">
                         <div className="d-flex pedido-concluido justify-content-center flex-column mb-4">
 
-                            <span className="titulo-pricipal text-center pb-2 mb-3">AGENDAMENTO</span>
+                        <Subtittle subtitulo="AGENDAMENTO"/>
 
 
                             {/* <img src="img/img-resumo-compra/certificado-de-garantia.png" className="img-certificado"

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import './OrderResume.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
+import Sidebar from '../../components/Sidebar/Sidebar'
+import Subtitle from '../../components/Subtittle/Subtittle'
 
 import Awardicon from '../../assets/images/OrderDetails/certificado-de-garantia.png'
 import Checkedicon from '../../assets/images/OrderDetails/checked.png'
@@ -20,36 +22,7 @@ function OrderResume() {
                 </div>
 
                 <div className="row g-5 px-3">
-                    {/* inicio do menu lateral */}
-                    <div className="col-md-4 flex-row justify-content-center align-items-start text-center">
-
-                        {/*Navbar*/}
-                        {/* <div className="navbar navbar-light border-bottom-menu titulo-menu mb-3 mt-0 pt-0 pb-2">
-                            <div className="container d-block text-center pb-2">
-                                <span className="fs-6">MENU</span>
-                            </div>
-                        </div> */}
-
-                        <div className="col-12 btn-group-vertical background-container-subject me-3 shadow" role="group" aria-label="Vertical button group">
-                            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
-                                <Link to="/myData" className="link-solution">MEUS DADOS</Link>
-                            </button>
-                            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
-                                <Link to="/myOrder" className="link-solution">MEUS PEDIDOS</Link>
-                            </button>
-                            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
-                                <Link to="/cart" className="link-solution">CARRINHO DE COMPRA</Link>
-                            </button>
-                            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
-                                <Link to="/wishList" className="link-solution">LISTA DE DESEJOS</Link>
-                            </button>
-                            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
-                                <Link to="/" className="link-solution">SAIR</Link>
-                            </button>
-                        </div>
-                    </div>
-                    {/* fim do menu lateral */}
-
+                    <Sidebar />
 
                     {/* inicio da confirmação do pedido */}
                     <div className="col-md bg-light rounded-1">
