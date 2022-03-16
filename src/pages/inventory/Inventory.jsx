@@ -5,6 +5,7 @@ import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import SearchFilter from '../../components/SearchFilter/SearchFilter'
 
+import ProductList from '../../components/ProductCard/ProductList'
 
 import LamborghiniUrus from '../../assets/images/Inventory/LamborghiniUrus.jpg'
 import LamborghiniUracan from '../../assets/images/Inventory/LamborghiniHuracan.jpg'
@@ -30,178 +31,10 @@ function Inventory() {
                 <SearchFilter />
 
 
-                <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4">
+                <div className="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
                     {/* Inicio dos Cards */}
-                    {/* card 1 */}
-                    <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-1">
-                        {/* link entre Modal e Card */}
-                        <div className="text-decoration-none">
-                            <div className="card h-100 mb-5">
-                                <img src={LamborghiniUrus} className="card-img" alt="..."></img>
-                                <div className="card-body">
-                                    <h5 className="card-title titulo-card">Lamborghini Urus </h5>
-                                    <p className="card-text text-center"><strong> R$ 3.000.000,00</strong></p>
-                                    <div className="btn mt-3 btn_buscar btn-detalhes mb-2" role="button">VER DETALHES</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* card 2 */}
-                    <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-2">
-                        {/* link entre Modal e Card */}
-                        <div className="text-decoration-none">
-                            <div className="card h-100 mb-5">
-                                <img src={BugattiChiron} className="card-img" alt="..."></img>
-                                <div className="card-body">
-                                    <h5 className="card-title titulo-card">Bugatti Chiron</h5>
-                                    <p className="card-text text-center"><strong> R$ 21.000.000,00 </strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* card 3 */}
-                    <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-3">
-                        {/* link entre Modal e Card */}
-                        <div className="text-decoration-none">
-                            <div className="card h-100 mb-5">
-                                <img src={NissanGTR} className="card-img" alt="..." ></img>
-                                <div className="card-body">
-                                    <h5 className="card-title titulo-card">NissanGT-R</h5>
-                                    <p className="card-text text-center"><strong> R$ 769.109,00 </strong></p>
-                                    <div className="btn  mt-3 btn_buscar" role="button">VER DETALHES</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-4">
-                        {/* link entre Modal e Card */}
-                        <div className="text-decoration-none">
-                            <div className="card h-100 mb-5">
-                                <img src={MercedesBenzClasseS} className="card-img" alt="..."></img>
-                                <div className="card-body">
-                                    <h5 className="card-title titulo-card">Mercedes-Benz Classe S (V223)</h5>
-                                    <p className="card-text text-center"><strong>R$ 641.000,00</strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* card 5 */}
-                    <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-5">
-                        {/* link entre Modal e Card */}
-                        <div className="text-decoration-none">
-                            <div className="card h-100 mb-5">
-                                <img src={MercedesBenzClasseG} className="card-img" alt="..."></img>
-                                <div className="card-body">
-                                    <h5 className="card-title titulo-card">Mercedes-Benz Classe G (W463) AMG</h5>
-                                    <p className="card-text text-center"><strong> R$ 2.200.000,00 </strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>{/* card 6 */}
-                    <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-6">
-                        {/* link entre Modal e Card */}
-                        <div className="text-decoration-none">
-                            <div className="card h-100 mb-5">
-                                <img src={MercedesBenzAMGGTR} className="card-img" alt="..."></img>
-                                <div className="card-body">
-                                    <h5 className="card-title titulo-card">Mercedes-Benz AMG GT R</h5>
-                                    <p className="card-text text-center"><strong>R$2.200.000,00</strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* card 7 */}
-                    <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-7">
-                        {/* link entre Modal e Card */}
-                        <div className="text-decoration-none">
-                            <div className="card h-100 mb-5">
-                                <img src={AstonMartinDB11} className="card-img" alt="..."></img>
-                                <div className="card-body">
-                                    <h5 className="card-title titulo-card">Aston Martin DB11</h5>
-                                    <p className="card-text text-center"> <strong> R$ 3.000.000,00 </strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/*  card 8  */}
-                    <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-8">
-                        {/*link entre Modal e Card */}
-                        <div className="text-decoration-none">
-                            <div className="card h-100 mb-5">
-                                <img src={MercedesBenzAMGF12016} className="card-img" alt="..."></img>
-                                <div className="card-body">
-                                    <h5 className="card-title titulo-card">Mercedes-Benz AMG F1 2016</h5>
-                                    <p className="card-text text-center"><strong> R$ 19.000.000,00 </strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/*  card 9  */}
-                    <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-9">
-                        {/* link entre Modal e Card  */}
-                        <div className="text-decoration-none">
-                            <div className="card h-100 mb-5">
-                                <img src={BentleyMullinerBacalar} className="card-img" alt="..."></img>
-                                <div className="card-body">
-                                    <h5 className="card-title titulo-card">Bentley Mulliner Bacalar</h5>
-                                    <p className="card-text text-center"><strong> R$ 1.350.000,00 </strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* card 10  */}
-                    <div className="col text-center btn" type="button" data-bs-toggle="modal"
-                        data-bs-target="#modal-produto-10">
-                        {/*  link entre Modal e Card  */}
-                        <div className="text-decoration-none">
-                            <div className="card h-100 mb-5">
-                                <img src={BentleyContinentalGT3} className="card-img" alt="..."></img>
-                                <div className="card-body">
-                                    <h5 className="card-title titulo-card">Bentley Continental GT3</h5>
-                                    <p className="card-text text-center"><strong> R$ 1.950.000,00 </strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/*  card 11  */}
-                    <div className="col text-center btn" type="button" data-bs-toggle="modal"
-                        data-bs-target="#modal-produto-11">
-                        {/*  link entre Modal e Card  */}
-                        <div className="text-decoration-none">
-                            <div className="card h-100 mb-5">
-                                <img src={AresS1} className="card-img" alt="..."></img>
-                                <div className="card-body">
-                                    <h5 className="card-title titulo-card">Ares S1</h5>
-                                    <p className="card-text text-center"><strong> R$ 7.100.000,00 </strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* card 12  */}
-                    <div className="col text-center btn" type="button" data-bs-toggle="modal"
-                        data-bs-target="#modal-produto-12">
-                        {/*  link entre Modal e Card  */}
-                        <div className="text-decoration-none">
-                            <div className="card h-100 mb-5">
-                                <img src={LamborghiniUracan} className="card-img" alt="..."></img>
-                                <div className="card-body">
-                                    <h5 className="card-title titulo-card">Lamborghini Huracan </h5>
-                                    <p className="card-text text-center"><strong> R$ 4.300.000,00 </strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
+                    <ProductList />
 
                     {/*Inicio dos modais */}
 
@@ -1873,8 +1706,8 @@ function Inventory() {
                         </div>
                     </div>
 
-                    {/* numeração das paginas  */}
-                    <div className="row text-center m-2">
+                    {/* numeração das paginas  */} 
+                    <div className="row col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center m-2">
                         <div className="grupo-links d-inline">
                             <Link to="//" className="btn btn-outline-secondary m-3">Prev</Link>
                             <Link to="//" className="btn btn-outline-secondary">1</Link>
