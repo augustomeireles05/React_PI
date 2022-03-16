@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 
 import Header from '../../components/header/Header.jsx';
 import Footer from '../../components/footer/Footer.jsx';
+import Button from "../../components/Button/Button";
+import SupportButton from "../../components/Button/SupportButton";
 
 
 function CheckoutScheduling() {
@@ -226,7 +228,7 @@ function CheckoutScheduling() {
                   <p>Datas Disponiveis</p>
                 </div>
                 <div className="d-grid d-md-flex justify-content-end">
-                  <img className="btn " src="#" width="45" alt=""/>
+                  <img className="btn " src="#" width="45" alt="" />
                 </div>
               </div>
             </div>
@@ -239,7 +241,7 @@ function CheckoutScheduling() {
                   </div>
                 </div>
                 <div className="col-6 input-calendar">
-                  <input type="date" id="data" name="Agenda" className="calendar"  />
+                  <input type="date" id="data" name="Agenda" className="calendar" />
                 </div>
               </div>
             </div>
@@ -305,7 +307,27 @@ function CheckoutScheduling() {
 
           <div className="container btn-responsividade">
             <div className="row">
-              <div className="col-4 btn-responsividade ">
+
+
+            <div className="col-6 btn-responsividade ">
+                <div className=" col-12 d-grid gap-1 pt-3 justify-content-center  ">
+                  <SupportButton link="/Cart" name="Voltar para o Carrinho" />
+                  
+                </div>
+                </div>
+
+
+
+              <div className="col-6 btn-responsividade ">
+                <div className=" col-12 d-grid gap-1 pt-3 justify-content-center  ">
+                  <Button link="/ShedulingDetails" name="Confirmar Agendamento" />
+                  
+                </div>
+                </div>
+
+
+
+                {/* <div className="col-4 btn-responsividade ">
                 <div className=" col-12 d-grid gap-1 pt-3 justify-content-center  ">
                   <Link to="/cart">
                     <button
@@ -328,16 +350,16 @@ function CheckoutScheduling() {
                     </button>
                   </Link>
                 </div>
+              </div> */}
               </div>
             </div>
           </div>
+          {/*  FIM DO CARD DO RESUMO   */}
         </div>
-        {/*  FIM DO CARD DO RESUMO   */}
-      </div>
 
-      <Footer />
-    </>
-  );
+        <Footer />
+      </>
+      );
 }
 
-export default CheckoutScheduling;
+      export default CheckoutScheduling;

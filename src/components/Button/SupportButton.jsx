@@ -4,10 +4,8 @@ import "./SupportButton.css";
 function SupportButton(props) {
     return (
         <>
-            <div className="col-12 text-center mt-2" >
-                <button type={props.type} classname="btn btn-Apoio w-25">
-                    <Link to={props.href} className="link-referencia">{props.name}</Link>
-                </button>
+            <div className="d-flex justify-content-center ">
+                <button className="btn btn-secundario" type="submit"><a href={props.link} className="link-referencia">{props.name}</a></button>
             </div>
         </>
     );

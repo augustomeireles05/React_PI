@@ -1,6 +1,7 @@
 import './Register.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
+import Button from '../../components/Button/Button'
 
 
 
@@ -122,7 +123,8 @@ function Register() {
                         </div>
                     </div>
                     <div className="col-12 text-center mt-2">
-                        <button type="submit" className="btn btn_cadastrar w-25 ">Cadastrar</button>
+                        {/* <button type="submit" className="btn btn_cadastrar w-25 ">Cadastrar</button> */}
+                        <Button link="" name="CADASTRE-SE" />
                     </div>
                 </form>
             </div>
