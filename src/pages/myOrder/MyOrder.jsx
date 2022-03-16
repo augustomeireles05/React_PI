@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import './MyOrder.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
+import Button from '../../components/Button/Button'
+import SupportButton from '../../components/Button/SupportButton'
 
 import SchedulingIcon from '../../assets/images/MyOrder/andamento.png'
 import Cancelstatusicon from '../../assets/images/MyOrder/cancelado.png'
@@ -14,6 +16,8 @@ import BmwX72021 from '../../assets/images/MyOrder/BMW-X7-2021.jpg'
 function MyOrder() {
     return (
         <>
+        {/* <Button link="/home" name="PRINCIPAL"/>
+        <SupportButton link="/home" name="SECUNDARIO"/> */}
             <Header />
             <div className="container">
                 <div className="row mb-3 mt-4">
