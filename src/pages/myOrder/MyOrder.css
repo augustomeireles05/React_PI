@@ -127,9 +127,6 @@ body{
     background: linear-gradient(191deg, rgb(179, 152, 4) 30%, rgb(223, 208, 126) 70%);
 }
 
-button:hover {
-    background: linear-gradient(191deg, rgb(179, 152, 4) 30%, rgb(223, 208, 126) 70%);
-}
 
 .text-shopping-cart {
     color: black;
