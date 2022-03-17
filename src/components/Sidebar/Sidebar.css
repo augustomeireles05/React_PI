@@ -8,8 +8,16 @@
     font-family: 'Questrial', sans-serif;
 }
 
-.button-menu-lateral:hover {
+/* .button-menu-lateral:hover {
     background: linear-gradient(8deg, rgb(179, 152, 4) 30%, rgb(223, 208, 126) 70%);
+} */
+
+.navbar-toggler-style:hover{
+    background-color: #fff;
+}
+
+.menu-image-size{
+    width: 20px;
 }
 
 .link-solution {

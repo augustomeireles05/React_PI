@@ -1,28 +1,26 @@
 import React from 'react'
 import './Sidebar.css'
-import MenuHamburguer from '../../assets/images/OrderDetails/menu-aberto.png'
 
-// import React from 'react'
-// import './Sidebar.css'
-// import MenuHamburguer from '../../assets/images/OrderDetails/menu-aberto.png'
-// import Subtittle from '../Subtittle/SubtittleSidebar'
+import MenuImage from '../../assets/images/SchedulingDetails/botao-de-menu.png'
 
+function ButtonTrigger() {
+    return (
+        <>
+            <div class="navbar-toggler d-md-none collapsed w-100 mt-4 bg-white navbar-toggler-style d-flex "
+                type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+                aria-controls="sidebarMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="navbar-toggler-icon text-center me-2 ">
+                    <img src={MenuImage} alt="imagem de menu hamburguer" className="menu-image-size" />
+                </div>
 
-// function Sidebar() {
-//     return (
+                <div class="navbar-toggler-icon text-center">
+                    <span>MENU</span>
+                </div>
 
-//         <button className="navbar-toggler d-md-none collapsed d-flex justify-content-start border-bottom toggle-button-style"
-//             type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
-//             aria-controls="sidebarMenu" aria-expanded="false"
-//             aria-label="Toggle navigation">
-//             <div className="navbar-toggler-icon w-50 text-end pe-3">
-//                 <img src={MenuHamburguer} alt="imagem menu hamburguer" style={{width:'32px'}} />
-//             </div>
-//             <div className="navbar-toggler-icon text-start w-50 toggler-style lh-base">
-//                 <span className="">MENU</span>
-//             </div>
-//         </button>
-//     )
-// }
+            </div>
 
-// export default Sidebar
+        </>
+    )
+}
+export default ButtonTrigger
