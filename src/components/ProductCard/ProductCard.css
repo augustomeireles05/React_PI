@@ -11,12 +11,11 @@
 .font-price {
     font-family: 'Questrial', sans-serif;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.2em;
     color: rgba(103, 96, 0, 0.898);
     
 }
 
-.css-title {
+.css-font-family {
     font-family: 'Questrial', sans-serif;
-    font-weight: bold;
 }

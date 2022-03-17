@@ -29,7 +29,7 @@ const ProductCard = () => {
                     {List.cardData.map((item, index) => {
                         return (
 
-                            <div className="row justify-content-center col-12 col-md-6 col-lg-3 mx-0 mb-4" key={index} style={{ width: 28 + 'em' }}>
+                            <div className="row justify-content-around col-12 col-md-10 col-lg-3 mx-0 mb-4" key={index} style={{ width: 19 + 'em' }}>
                                 <div className="card p-0 overflow-hidden h-100 shadow" >
                                     <img src={item.image} className="card-img-top" />
                                     <div className="text-center mb-3">
