@@ -23,7 +23,8 @@ li{
 
 /* -- RESPONSIVE --*/
 
-/* @media (max-width: 760px) {
+ @media (max-width: 760px) {
+
     .responsive-footer {
         display: flex;
         align-items: center;
@@ -33,6 +34,7 @@ li{
     .responsive-social-media{
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
 
 }
@@ -47,6 +49,7 @@ li{
     .responsive-social-media{
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
     
-} */
+}
