@@ -9,7 +9,7 @@ function Sidebar() {
 
         <>
 
-            <div className="col-md-4 flex-row justify-content-center align-items-start text-center mt-0 px-0">
+            <div className="col-md-12 flex-row justify-content-center align-items-start text-center mt-0 px-0">
 
                 <ButtonTrigger />
                 <nav id="sidebarMenu"
