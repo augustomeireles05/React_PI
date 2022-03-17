@@ -21,7 +21,7 @@ function OrderResume() {
                     <h1 className="resumo ps-5 pb-2 pt-2 text-center">RESUMO DO PEDIDO</h1>
                 </div>
 
-                <div className="row g-5 px-3">
+                <div className="row g-5">
                     <Sidebar />
 
                     {/* inicio da confirmação do pedido */}

@@ -1,7 +1,6 @@
 import React from 'react'
 import './Sidebar.css'
 import MenuHamburguer from '../../assets/images/OrderDetails/menu-aberto.png'
-import Subtittle from '../Subtittle/SubtittleSidebar'
 
 function Sidebar() {
     return (
