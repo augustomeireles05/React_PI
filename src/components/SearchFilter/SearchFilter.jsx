@@ -7,7 +7,7 @@ function SearchFilter() {
             <hr />
             <div className="row-cols-1 row-cols-md-12 g-4 justify-content-center mt-4 mb-5 mx-4">
 
-                <form className=" filtro-de-busca row gx-12 align-items-center rounded p-3 mt-5 ms-0 ">
+                <form className=" filtro-de-busca row rounded p-2 mt-5 ms-0 gx-3 gy-3">
                     <legend className="text-center">ENCONTRE SEU CARRO</legend>
 
                     <div className="col-md-4 col-lg-3 col-12 ">
@@ -45,8 +45,9 @@ function SearchFilter() {
 
                     </div>
 
-                    <button type="submit" className="btn botao-buscar col-md-12 col-lg-2 text-center btn p-0 border-none pt-2 pb-2">BUSCAR</button>
-
+                    <div className="col-12 col-md-5 col-lg-2 text-center">
+                        <button type="submit" className="btn botao-buscar btn border-none py-2 ms-0 w-100">BUSCAR</button>
+                    </div>
                 </form>
 
             </div>
