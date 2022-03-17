@@ -20,6 +20,9 @@ import BentleyMullinerBacalar from '../../assets/images/Inventory/BentleyMulline
 import AresS1 from '../../assets/images/Inventory/AresS1.jpg'
 
 import LogoDevcarsModal from '../../assets/images/Inventory/logo-rev01.jpeg'
+import Button from '../../components/Button/Button'
+import SupportButton from '../../components/Button/SupportButton';
+
 
 
 function Inventory() {
@@ -41,7 +44,8 @@ function Inventory() {
                                 <div className="card-body">
                                     <h5 className="card-title titulo-card">Lamborghini Urus </h5>
                                     <p className="card-text text-center"><strong> R$ 3.000.000,00</strong></p>
-                                    <div className="btn mt-3 btn_buscar btn-detalhes mb-2" role="button">VER DETALHES</div>
+                                    {/* <div className="btn mt-3 btn_buscar btn-detalhes mb-2" role="button">VER DETALHES</div> */}
+                                    <Button link="#Mmodal-produto-1" name="VER DETALHES" />
                                 </div>
                             </div>
                         </div>
@@ -55,7 +59,8 @@ function Inventory() {
                                 <div className="card-body">
                                     <h5 className="card-title titulo-card">Bugatti Chiron</h5>
                                     <p className="card-text text-center"><strong> R$ 21.000.000,00 </strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
+                                    {/* <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div> */}
+                                    <Button link="#Mmodal-produto-2" name="VER DETALHES" />
                                 </div>
                             </div>
                         </div>
@@ -69,7 +74,8 @@ function Inventory() {
                                 <div className="card-body">
                                     <h5 className="card-title titulo-card">NissanGT-R</h5>
                                     <p className="card-text text-center"><strong> R$ 769.109,00 </strong></p>
-                                    <div className="btn  mt-3 btn_buscar" role="button">VER DETALHES</div>
+                                    {/* <div className="btn  mt-3 btn_buscar" role="button">VER DETALHES</div> */}
+                                    <Button link="#Mmodal-produto-3" name="VER DETALHES" />
                                 </div>
                             </div>
                         </div>
@@ -83,7 +89,8 @@ function Inventory() {
                                 <div className="card-body">
                                     <h5 className="card-title titulo-card">Mercedes-Benz Classe S (V223)</h5>
                                     <p className="card-text text-center"><strong>R$ 641.000,00</strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
+                                    {/* <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div> */}
+                                    <Button link="#Mmodal-produto-4" name="VER DETALHES" />
                                 </div>
                             </div>
                         </div>
@@ -97,7 +104,8 @@ function Inventory() {
                                 <div className="card-body">
                                     <h5 className="card-title titulo-card">Mercedes-Benz Classe G (W463) AMG</h5>
                                     <p className="card-text text-center"><strong> R$ 2.200.000,00 </strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
+                                    {/* <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div> */}
+                                    <Button link="#Mmodal-produto-5" name="VER DETALHES" />
                                 </div>
                             </div>
                         </div>
@@ -110,7 +118,8 @@ function Inventory() {
                                 <div className="card-body">
                                     <h5 className="card-title titulo-card">Mercedes-Benz AMG GT R</h5>
                                     <p className="card-text text-center"><strong>R$2.200.000,00</strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
+                                    {/* <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div> */}
+                                    <Button link="#Mmodal-produto-6" name="VER DETALHES" />
                                 </div>
                             </div>
                         </div>
@@ -124,7 +133,8 @@ function Inventory() {
                                 <div className="card-body">
                                     <h5 className="card-title titulo-card">Aston Martin DB11</h5>
                                     <p className="card-text text-center"> <strong> R$ 3.000.000,00 </strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
+                                    {/* <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div> */}
+                                    <Button link="#Mmodal-produto-7" name="VER DETALHES" />
                                 </div>
                             </div>
                         </div>
@@ -138,7 +148,8 @@ function Inventory() {
                                 <div className="card-body">
                                     <h5 className="card-title titulo-card">Mercedes-Benz AMG F1 2016</h5>
                                     <p className="card-text text-center"><strong> R$ 19.000.000,00 </strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
+                                    {/* <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div> */}
+                                    <Button link="#Mmodal-produto-8" name="VER DETALHES" />
                                 </div>
                             </div>
                         </div>
@@ -152,7 +163,8 @@ function Inventory() {
                                 <div className="card-body">
                                     <h5 className="card-title titulo-card">Bentley Mulliner Bacalar</h5>
                                     <p className="card-text text-center"><strong> R$ 1.350.000,00 </strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
+                                    {/* <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div> */}
+                                    <Button link="#Mmodal-produto-9" name="VER DETALHES" />
                                 </div>
                             </div>
                         </div>
@@ -167,7 +179,8 @@ function Inventory() {
                                 <div className="card-body">
                                     <h5 className="card-title titulo-card">Bentley Continental GT3</h5>
                                     <p className="card-text text-center"><strong> R$ 1.950.000,00 </strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
+                                    {/* <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div> */}
+                                    <Button link="#Mmodal-produto-10" name="VER DETALHES" />
                                 </div>
                             </div>
                         </div>
@@ -182,7 +195,8 @@ function Inventory() {
                                 <div className="card-body">
                                     <h5 className="card-title titulo-card">Ares S1</h5>
                                     <p className="card-text text-center"><strong> R$ 7.100.000,00 </strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
+                                    {/* <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div> */}
+                                    <Button link="#Mmodal-produto-11" name="VER DETALHES" />
                                 </div>
                             </div>
                         </div>
@@ -197,7 +211,8 @@ function Inventory() {
                                 <div className="card-body">
                                     <h5 className="card-title titulo-card">Lamborghini Huracan </h5>
                                     <p className="card-text text-center"><strong> R$ 4.300.000,00 </strong></p>
-                                    <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div>
+                                    {/* <div className="btn mt-3 btn_buscar" role="button">VER DETALHES</div> */}
+                                    <Button link="#Mmodal-produto-12" name="VER DETALHES" />
                                 </div>
                             </div>
                         </div>
@@ -328,19 +343,20 @@ function Inventory() {
                                     </div>
                                 </div>
                                 <div className="modal-footer modalfooter">
-                                    <div className="row">
-                                        <div className="col-10 modal-mobily3 text-center mb-1">
-                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
-                                        </div>
-                                        <div className="col-12 col-md-1 modal-mobily3">
-                                            <Link to="/checkoutScheduling" className="nav-link text-black">
-                                                <button type="button" className="btn btn-secondary btn-modal-footer ">
-                                                    Agendar visita
-                                                </button>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
+                                                <div className="row">
+                                                    <div className="col-10 modal-mobily3 text-center mb-3">
+                                                    <img className="logo-modal" src={LogoDevcarsModal} alt="" />
+                                                    </div>
+                                                    <div className="col-1 modal-mobily3">
+
+                                                        {/* <button type="button"
+                                                            className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
+                                                                visita </Link></button> */}
+                                                    <SupportButton link="/checkoutScheduling" name="AGENDAR VISITA"/>            
+
+                                                    </div>
+                                                </div>
+                                            </div>
 
                             </div>
                         </div>
@@ -396,7 +412,7 @@ function Inventory() {
                                                     </li>
                                                     <li>
                                                         <span>VALOR (R$):</span>
-                                                        <span>XXXXXX</span>
+                                                        <span>21.000.000,00</span>
                                                     </li>
                                                 </ul>
                                                 <h3 className=" info-gerais">INFORMAÇÕES GERAIS</h3>
@@ -468,18 +484,20 @@ function Inventory() {
                                     </div>
                                 </div>
                                 <div className="modal-footer modalfooter">
-                                    <div className="row">
-                                        <div className="col-10 modal-mobily3 text-center mb-1">
-                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
-                                        </div>
-                                        <div className="col-1 modal-mobily3">
-                                            <Link to="/checkoutScheduling" className="nav-link text-black">
-                                                <button type="button" className="btn btn-secondary btn-modal-footer ">Agendar
-                                                    visita</button>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
+                                                <div className="row">
+                                                    <div className="col-10 modal-mobily3 text-center mb-3">
+                                                    <img className="logo-modal" src={LogoDevcarsModal} alt="" />
+                                                    </div>
+                                                    <div className="col-1 modal-mobily3">
+
+                                                        {/* <button type="button"
+                                                            className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
+                                                                visita </Link></button> */}
+                                                    <SupportButton link="/checkoutScheduling" name="AGENDAR VISITA"/>            
+
+                                                    </div>
+                                                </div>
+                                            </div>
 
                             </div>
                         </div>
@@ -534,7 +552,7 @@ function Inventory() {
                                                     </li>
                                                     <li>
                                                         <span>VALOR (R$):</span>
-                                                        <span>XXXXXX</span>
+                                                        <span>769.109,00</span>
                                                     </li>
                                                 </ul>
                                                 <h3 className=" info-gerais">INFORMAÇÕES GERAIS</h3>
@@ -606,17 +624,20 @@ function Inventory() {
                                     </div>
                                 </div>
                                 <div className="modal-footer modalfooter">
-                                    <div className="row">
-                                        <div className="col-10 modal-mobily3 text-center mb-1">
-                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
-                                        </div>
-                                        <div className="col-1 modal-mobily3">
-                                            <Link to="/cart" className="nav-link text-black">
-                                                <button type="button" className="btn btn-secondary btn-modal-footer ">Comprar</button>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
+                                                <div className="row">
+                                                    <div className="col-10 modal-mobily3 text-center mb-3">
+                                                    <img className="logo-modal" src={LogoDevcarsModal} alt="" />
+                                                    </div>
+                                                    <div className="col-1 modal-mobily3">
+
+                                                        {/* <button type="button"
+                                                            className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
+                                                                visita </Link></button> */}
+                                                    <SupportButton link="/checkoutScheduling" name="COMPRAR"/>            
+
+                                                    </div>
+                                                </div>
+                                            </div>
 
                             </div>
                         </div>
@@ -672,7 +693,7 @@ function Inventory() {
                                                     </li>
                                                     <li>
                                                         <span>VALOR (R$):</span>
-                                                        <span>XXXXXX</span>
+                                                        <span>641.000,00</span>
                                                     </li>
                                                 </ul>
                                                 <h3 className=" info-gerais">INFORMAÇÕES GERAIS</h3>
@@ -744,18 +765,20 @@ function Inventory() {
                                     </div>
                                 </div>
                                 <div className="modal-footer modalfooter">
-                                    <div className="row">
-                                        <div className="col-10 modal-mobily3 text-center mb-1">
-                                            <img className="logo-modal" src={LogoDevcarsModal} alt=""></img>
-                                        </div>
-                                        <div className="col-1 modal-mobily3">
-                                            <Link to="/schedulingDetails" className="nav-link text-black">
-                                                <button type="button" className="btn btn-secondary btn-modal-footer ">Agendar
-                                                    visita</button>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
+                                                <div className="row">
+                                                    <div className="col-10 modal-mobily3 text-center mb-3">
+                                                    <img className="logo-modal" src={LogoDevcarsModal} alt="" />
+                                                    </div>
+                                                    <div className="col-1 modal-mobily3">
+
+                                                        {/* <button type="button"
+                                                            className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
+                                                                visita </Link></button> */}
+                                                    <SupportButton link="/checkoutScheduling" name="COMPRAR"/>            
+
+                                                    </div>
+                                                </div>
+                                            </div>
 
                             </div>
                         </div>
@@ -811,7 +834,7 @@ function Inventory() {
                                                     </li>
                                                     <li>
                                                         <span>VALOR (R$):</span>
-                                                        <span>XXXXXX</span>
+                                                        <span>2.200.000,00</span>
                                                     </li>
                                                 </ul>
                                                 <h3 className=" info-gerais">INFORMAÇÕES GERAIS</h3>
@@ -883,18 +906,20 @@ function Inventory() {
                                     </div>
                                 </div>
                                 <div className="modal-footer modalfooter">
-                                    <div className="row">
-                                        <div className="col-10 modal-mobily3 text-center mb-1">
-                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
-                                        </div>
-                                        <div className="col-1 modal-mobily3">
-                                            <Link to="/schedulingDetails" className="nav-link text-black">
-                                                <button type="button" className="btn btn-secondary btn-modal-footer ">Agendar
-                                                    visita</button>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
+                                                <div className="row">
+                                                    <div className="col-10 modal-mobily3 text-center mb-3">
+                                                    <img className="logo-modal" src={LogoDevcarsModal} alt="" />
+                                                    </div>
+                                                    <div className="col-1 modal-mobily3">
+
+                                                        {/* <button type="button"
+                                                            className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
+                                                                visita </Link></button> */}
+                                                    <SupportButton link="/checkoutScheduling" name="AGENDAR VISITA"/>            
+
+                                                    </div>
+                                                </div>
+                                            </div>
 
                             </div>
                         </div>
@@ -950,7 +975,7 @@ function Inventory() {
                                                     </li>
                                                     <li>
                                                         <span>VALOR (R$):</span>
-                                                        <span>XXXXXX</span>
+                                                        <span>2.200.000,00</span>
                                                     </li>
                                                 </ul>
                                                 <h3 className=" info-gerais">INFORMAÇÕES GERAIS</h3>
@@ -1022,18 +1047,20 @@ function Inventory() {
                                     </div>
                                 </div>
                                 <div className="modal-footer modalfooter">
-                                    <div className="row">
-                                        <div className="col-10 modal-mobily3 text-center mb-1">
-                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
-                                        </div>
-                                        <div className="col-1 modal-mobily3">
-                                            <Link to="/schedulingDetails" className="nav-link text-black">
-                                                <button type="button" className="btn btn-secondary btn-modal-footer ">Agendar
-                                                    visita</button>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
+                                                <div className="row">
+                                                    <div className="col-10 modal-mobily3 text-center mb-3">
+                                                    <img className="logo-modal" src={LogoDevcarsModal} alt="" />
+                                                    </div>
+                                                    <div className="col-1 modal-mobily3">
+
+                                                        {/* <button type="button"
+                                                            className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
+                                                                visita </Link></button> */}
+                                                    <SupportButton link="/checkoutScheduling" name="AGENDAR VISITA"/>            
+
+                                                    </div>
+                                                </div>
+                                            </div>
 
                             </div>
                         </div>
@@ -1089,7 +1116,7 @@ function Inventory() {
                                                     </li>
                                                     <li>
                                                         <span>VALOR (R$):</span>
-                                                        <span>XXXXXX</span>
+                                                        <span>3.000.000,00</span>
                                                     </li>
                                                 </ul>
                                                 <h3 className=" info-gerais">INFORMAÇÕES GERAIS</h3>
@@ -1161,18 +1188,20 @@ function Inventory() {
                                     </div>
                                 </div>
                                 <div className="modal-footer modalfooter">
-                                    <div className="row">
-                                        <div className="col-10 modal-mobily3 text-center mb-1">
-                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
-                                        </div>
-                                        <div className="col-1 modal-mobily3">
-                                            <Link to="/schedulingDetails" className="nav-link text-black">
-                                                <button type="button" className="btn btn-secondary btn-modal-footer ">Agendar
-                                                    visita</button>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
+                                                <div className="row">
+                                                    <div className="col-10 modal-mobily3 text-center mb-3">
+                                                    <img className="logo-modal" src={LogoDevcarsModal} alt="" />
+                                                    </div>
+                                                    <div className="col-1 modal-mobily3">
+
+                                                        {/* <button type="button"
+                                                            className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
+                                                                visita </Link></button> */}
+                                                    <SupportButton link="/checkoutScheduling" name="AGENDAR VISITA"/>            
+
+                                                    </div>
+                                                </div>
+                                            </div>
 
                             </div>
                         </div>
@@ -1228,7 +1257,7 @@ function Inventory() {
                                                     </li>
                                                     <li>
                                                         <span>VALOR (R$):</span>
-                                                        <span>XXXXXX</span>
+                                                        <span>19.000.000,00</span>
                                                     </li>
                                                 </ul>
                                                 <h3 className=" info-gerais">INFORMAÇÕES GERAIS</h3>
@@ -1300,18 +1329,20 @@ function Inventory() {
                                     </div>
                                 </div>
                                 <div className="modal-footer modalfooter">
-                                    <div className="row">
-                                        <div className="col-10 modal-mobily3 text-center mb-1">
-                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
-                                        </div>
-                                        <div className="col-1 modal-mobily3">
-                                            <Link to="/schedulingDetails" className="nav-link text-black">
-                                                <button type="button" className="btn btn-secondary btn-modal-footer ">Agendar
-                                                    visita</button>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
+                                                <div className="row">
+                                                    <div className="col-10 modal-mobily3 text-center mb-3">
+                                                    <img className="logo-modal" src={LogoDevcarsModal} alt="" />
+                                                    </div>
+                                                    <div className="col-1 modal-mobily3">
+
+                                                        {/* <button type="button"
+                                                            className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
+                                                                visita </Link></button> */}
+                                                    <SupportButton link="/checkoutScheduling" name="AGENDAR VISITA"/>            
+
+                                                    </div>
+                                                </div>
+                                            </div>
 
                             </div>
                         </div>
@@ -1367,7 +1398,7 @@ function Inventory() {
                                                     </li>
                                                     <li>
                                                         <span>VALOR (R$):</span>
-                                                        <span>XXXXXX</span>
+                                                        <span>1.350.000,00</span>
                                                     </li>
                                                 </ul>
                                                 <h3 className=" info-gerais">INFORMAÇÕES GERAIS</h3>
@@ -1439,18 +1470,20 @@ function Inventory() {
                                     </div>
                                 </div>
                                 <div className="modal-footer modalfooter">
-                                    <div className="row">
-                                        <div className="col-10 modal-mobily3 text-center mb-1">
-                                            <img className="logo-modal" src={LogoDevcarsModal} alt="" />
-                                        </div>
-                                        <div className="col-1 modal-mobily3">
-                                            <Link to="/schedulingDetails" className="nav-link text-black">
-                                                <button type="button" className="btn btn-secondary btn-modal-footer ">Agendar
-                                                    visita</button>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
+                                                <div className="row">
+                                                    <div className="col-10 modal-mobily3 text-center mb-3">
+                                                    <img className="logo-modal" src={LogoDevcarsModal} alt="" />
+                                                    </div>
+                                                    <div className="col-1 modal-mobily3">
+
+                                                        {/* <button type="button"
+                                                            className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
+                                                                visita </Link></button> */}
+                                                    <SupportButton link="/checkoutScheduling" name="AGENDAR VISITA"/>            
+
+                                                    </div>
+                                                </div>
+                                            </div>
 
                             </div>
                         </div>
@@ -1876,11 +1909,13 @@ function Inventory() {
                     {/* numeração das paginas  */}
                     <div className="row text-center m-2">
                         <div className="grupo-links d-inline">
-                            <Link to="//" className="btn btn-outline-secondary m-3">Prev</Link>
+                            <SupportButton link="/Cart" name="Prev" />
                             <Link to="//" className="btn btn-outline-secondary">1</Link>
                             <Link to="//" className="btn btn-outline-secondary">2</Link>
                             <Link to="//" className="btn btn-outline-secondary">3</Link>
-                            <Link to="//" className="btn btn-outline-secondary m-3">Next</Link>
+                            <SupportButton link="/Cart" name="Next" />
+                         
+
                         </div>
                     </div>
                 </div>

@@ -2,6 +2,7 @@ import './Cart.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import { Link } from 'react-router-dom'
+import Button from '../../components/Button/Button'
 
 
 
@@ -97,8 +98,10 @@ function Cart() {
                         {/* Fim do Card 01 */}
 
                         <div className="card-body d-md-flex justify-content-md-end px-0">
-                            <Link to="/checkoutOrder"><button type="button"
-                                className="btn button-continuar btn-block btn-lg btn-continue">Continue</button></Link>
+                            {/* <Link to="/checkoutOrder"><button type="button"
+                                className="btn button-continuar btn-block btn-lg btn-continue">Continue</button></Link> */}
+                                <Button link="/checkoutOrder" name="Continue"/>
+                                
                         </div>
 
 

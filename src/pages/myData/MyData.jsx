@@ -2,6 +2,7 @@ import './MyData.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import { Link } from 'react-router-dom'
+import Button from '../../components/Button/Button'
 
 
 
@@ -106,9 +107,14 @@ function MyData() {
 
                                     <div className="col-12 col-md-6">
                                         <div className="mb-3">
-                                            <Link className="btn btn-warning mt-6 d-block float-md-end" to="#" role="button">
-                                                SALVAR </Link>
+                                            {/* <Link className="btn btn-warning mt-6 d-block float-md-end" to="#" role="button">
+                                                SALVAR </Link> */}
+                                                
+                                            <Button link="" name="SALVAR" />    
                                         </div>
+
+
+                                        
 
                                     </div>
 
@@ -157,8 +163,10 @@ function MyData() {
 
                                     <div className="col-12">
                                         <div className="mb-3">
-                                            <Link className="btn btn-warning mt-6 d-block float-md-end" to="#" role="button">
-                                                MODIFICAR</Link>
+                                            {/* <Link className="btn btn-warning mt-6 d-block float-md-end" to="#" role="button">
+                                                MODIFICAR</Link> */}
+                                             
+                                            <Button link="" name="MODIFICAR" />   
                                         </div>
 
                                     </div>

@@ -9,6 +9,9 @@ import DevCars from '../../assets/images/Contact/card-contato.jpeg'
 import Email from '../../assets/images/Contact/e-mail.png'
 import Telefone from '../../assets/images/Contact/telefone-celular 1.svg'
 import Localizacao from '../../assets/images/Contact/localizacao 1.svg'
+import Button from '../../components/Button/Button'
+import SupportButton from '../../components/Button/SupportButton'
+
 
 function Contact() {
     return (
@@ -104,7 +107,8 @@ function Contact() {
 
 
                                             <div className="d-grid gap-2 col-12 mx-auto">
-                                                <button className="btn btn-enviar-contato" type="buttonAjuste">ENVIAR</button>
+                                                {/* <button className="btn btn-enviar-contato" type="buttonAjuste">ENVIAR</button> */}
+                                                <Button link="/" name="ENVIAR" />
 
                                             </div>          
                                         </div>
