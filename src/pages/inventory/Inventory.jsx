@@ -5,7 +5,6 @@ import Footer from '../../components/footer/Footer'
 import SearchFilter from '../../components/SearchFilter/SearchFilter'
 import ProductCard from '../../components/ProductCard/ProductCard'
 
-
 function Inventory() {
     return (
         <>

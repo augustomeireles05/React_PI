@@ -5,6 +5,7 @@ import Bugatti from '../../assets/images/Login/login.jpg';
 
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
+import Button from '../../components/Button/Button';
 
 function Login() {
     return (
@@ -52,15 +53,17 @@ function Login() {
                                             <input type="password" className="form-control font-login-input" required></input>
                                         </div>
                                         <div className="form-group button-entrar-login">
-                                            <button type="submit" className="form-control btn rounded submit px-3 font-login">
+                                            {/* <button type="submit" className="form-control btn rounded submit px-3 font-login">
                                                 Entrar
-                                            </button>
+                                            </button> */}
+
+                                            <Button link="/ShedulingDetails" name="Entrar" />
                                         </div>
                                         <div className="col-12 row form-group d-md-flex pt-3 mx-0 text-center">
                                             <div className="col-6 d-flex justify-content-center align-items-center">
                                                 <label className="checkbox-wrap checkbox-secondary mb-0 me-2 font-login">Lembrar-me</label>
-                                                    <input type="checkbox" defaultChecked class="check"></input>
-                                                
+                                                <input type="checkbox" defaultChecked class="check"></input>
+
                                             </div>
                                             <div className="col-6 flex-center input-layout">
                                                 <Link to="/recoveryPassword" className="font-login link-color">Esqueci minha senha</Link>
@@ -68,9 +71,9 @@ function Login() {
                                         </div>
                                     </form>
                                     <p className="text-center pt-3 font-login">Não é um membro?</p>
-                                        <div className="text-center input-layout "><Link data-toggle="tab" to="/register" className="link-color">Cadastre-se</Link>
-                                        </div>
-                                    
+                                    <div className="text-center input-layout "><Link data-toggle="tab" to="/register" className="link-color">Cadastre-se</Link>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

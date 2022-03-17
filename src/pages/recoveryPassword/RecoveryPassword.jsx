@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import './RecoveryPassword.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
+import Button from '../../components/Button/Button'
 
 
 function RecoveryPassword() {
@@ -29,9 +30,11 @@ function RecoveryPassword() {
                             </div>
                             <div className="button-recuperarsenha">
                                 <Link  to="/login">
-                                    <button className="btn w-100" type="button">
+                                    {/* <button className="btn w-100" type="button">
                                         Restaurar
-                                    </button>
+                                    </button> */}
+                                    
+                                <Button link=""  name="Restaurar" />
                                 </Link>
                             </div>
                         </form>
