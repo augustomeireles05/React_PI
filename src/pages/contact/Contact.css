@@ -1,5 +1,5 @@
 body{
-    font-size: 10px;
+    /* font-size: 10px; */
     background-color: #E0E0E0;
 }
 
@@ -80,6 +80,11 @@ nav p{
     width: 100%;
     background-color: #F0F0F0;
     margin-bottom: 20px;
+    min-width: 5px; 
+    max-width: 1000px;
+   
+
+    /* AJUSTE DE RESPONSIVIDADE */
 }
 
 .fonte-pagina-contato {
