@@ -40,6 +40,8 @@ import ModalMercedesBenzAMGF12016 from '../../assets/images/Inventory/Mercedes-B
 import VideoF1 from '../../assets/videos/F1.mp4'
 
 import SSCTuatara from '../../assets/images/Home/SSC Tuatara.jpg'
+import Button from '../../components/Button/Button.jsx'
+import SupportButton from '../../components/Button/SupportButton';
 
 function Home() {
     return (
@@ -182,13 +184,14 @@ function Home() {
                                 <div className="col text-center btn" type="button" data-bs-toggle="modal"
                                     data-bs-target="#modal-produto-1">
                                     {/* link entre Modal e Card */}
-                                    <div href="#" className="text-decoration-none">
+                                    <div className="text-decoration-none">
                                         <div className="card h-100 mb-5">
                                             <img src={MercedesBenzAMGF12016} className="card-img" alt="..."></img>
                                             <div className="card-body">
                                                 <h5 className="card-title">Mercedes AMG F1</h5>
                                                 <p className="card-text text-center"><strong>R$19.000.000,00</strong></p>
-                                                <button className="btn mt-3 ms-0 btn_buscar" role="button">DETALHES</button>
+                                                {/* <button className="btn mt-3 ms-0 btn_buscar" role="button">DETALHES</button> */}
+                                                <Button link="#modal-produto-1" name="DETALHES"/>
                                             </div>
                                         </div>
                                     </div>
@@ -328,9 +331,10 @@ function Home() {
                                                     </div>
                                                     <div className="col-1 modal-mobily3">
 
-                                                        <button type="button"
+                                                        {/* <button type="button"
                                                             className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
-                                                                visita </Link></button>
+                                                                visita </Link></button> */}
+                                                    <SupportButton link="/checkoutScheduling" name="AGENDAR VISITA"/>            
 
                                                     </div>
                                                 </div>
@@ -353,7 +357,8 @@ function Home() {
                                             <div className="card-body">
                                                 <h5 className="card-title">Bugatti Chiron</h5>
                                                 <p className="card-text text-center"><strong> R$ 21.000.000,00 </strong></p>
-                                                <button className="btn mt-3 btn_buscar ms-0" role="button">DETALHES</button>
+                                                {/* <button className="btn mt-3 btn_buscar ms-0" role="button">DETALHES</button> */}
+                                                <Button link="#modal-produto-2" name="DETALHES"/>   
                                             </div>
                                         </div>
                                     </div>
@@ -484,9 +489,11 @@ function Home() {
                                                     </div>
                                                     <div className="col-1 modal-mobily3">
 
-                                                        <button type="button"
+                                                        {/* <button type="button"
                                                             className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
-                                                                visita </Link></button>
+                                                                visita </Link></button> */}
+
+                                                        <SupportButton link="/checkoutScheduling" name="AGENDAR VISITA"/>        
 
                                                     </div>
                                                 </div>
@@ -507,7 +514,8 @@ function Home() {
                                             <div className="card-body">
                                                 <h5 className="card-title">Lamborghini Huracan</h5>
                                                 <p className="card-text text-center"><strong>R$4.300.000,00</strong></p>
-                                                <button className="btn mt-3 btn_buscar ms-0" role="button">DETALHES</button>
+                                                {/* <button className="btn mt-3 btn_buscar ms-0" role="button">DETALHES</button> */}
+                                                <Button link="#modal-produto-3" name="DETALHES"/> 
                                             </div>
                                         </div>
                                     </div>
@@ -637,9 +645,10 @@ function Home() {
                                                     </div>
                                                     <div className="col-1 modal-mobily3">
 
-                                                        <button type="button"
+                                                        {/* <button type="button"
                                                             className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
-                                                                visita </Link></button>
+                                                                visita </Link></button> */}
+                                                         <SupportButton link="/checkoutScheduling" name="AGENDAR VISITA"/>          
 
                                                     </div>
                                                 </div>

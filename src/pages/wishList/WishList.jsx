@@ -2,6 +2,7 @@ import './WishList.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import { Link } from 'react-router-dom'
+import Button from '../../components/Button/Button'
 
 
 function WishList() {
@@ -84,7 +85,8 @@ function WishList() {
                                                     <div className="card-body">
                                                         <h5 className="card-title">CHRYSLER PACIFICA XS 2019</h5>
                                                         <p className="card-text">R$579.000,00</p>
-                                                        <Link className="btn-sm btn-warning mt-3 buttom-width text-decoration-none">COMPRAR</Link>
+                                                        {/* <Link className="btn-sm btn-warning mt-3 buttom-width text-decoration-none">COMPRAR</Link> */}
+                                                        <Button link="/" name="COMPRAR" />
                                                                         
                                                         {/* <Link to="#" /><img src="./img/img-header/favorite.png" alt="favotirar"
                                                                     className="favoritar"/><Link />
@@ -108,7 +110,8 @@ function WishList() {
                                                     <div className="card-body">
                                                         <h5 className="card-title">JAQUE E-PACE P-250 2018</h5>
                                                         <p className="card-text">R$209.000,00</p>
-                                                        <Link className="btn-sm btn-warning mt-3 buttom-width text-decoration-none">COMPRAR</Link>
+                                                        {/* <Link className="btn-sm btn-warning mt-3 buttom-width text-decoration-none">COMPRAR</Link> */}
+                                                        <Button link="/" name="COMPRAR" />
                                                         {/* <Link to="#" /><img src="./img/img-header/favorite.png" alt="favotirar"
                                                                     className="favoritar"/><Link />
                                                             </div> */}
@@ -132,7 +135,8 @@ function WishList() {
                                                     <div className="card-body">
                                                         <h5 className="card-title">LAND ROVER EVOQUE 2020</h5>
                                                         <p className="card-text">R$399.000,00</p>
-                                                        <Link className="btn-sm btn-warning mt-3 buttom-width text-decoration-none">COMPRAR</Link>
+                                                        {/* <Link className="btn-sm btn-warning mt-3 buttom-width text-decoration-none">COMPRAR</Link> */}
+                                                        <Button link="/ShedulingDetails" name="COMPRAR" />
                                                         {/* <Link to="#" /><img src="./img/img-header/favorite.png" alt="favotirar"
                                                                     className="favoritar"/><Link />
                                                             </div> */}
@@ -152,7 +156,8 @@ function WishList() {
                                                     <div className="card-body">
                                                         <h5 className="card-title">FORD MUSTANG GT 2020</h5>
                                                         <p className="card-text">R$425.000,00</p>
-                                                        <Link className="btn-sm btn-warning mt-3 buttom-width text-decoration-none">COMPRAR</Link>
+                                                        {/* <Link className="btn-sm btn-warning mt-3 buttom-width text-decoration-none">COMPRAR</Link> */}
+                                                        <Button link="/" name="COMPRAR" />
                                                         {/* <Link to="#" /><img src="./img/img-header/favorite.png" alt="favotirar"
                                                                     className="favoritar"/><Link /> */}
                                                     </div>
@@ -171,7 +176,8 @@ function WishList() {
                                                     <div className="card-body">
                                                         <h5 className="card-title">PORSCHE 911 CARRERA 2021</h5>
                                                         <p className="card-text">R$1.030.000,00</p>
-                                                        <Link className="btn-sm btn-warning mt-3 buttom-width text-decoration-none">COMPRAR</Link>
+                                                        {/* <Link className="btn-sm btn-warning mt-3 buttom-width text-decoration-none">COMPRAR</Link> */}
+                                                        <Button link="/" name="COMPRAR" />
                                                         {/* <Link to="#" /><img src="./img/img-header/favorite.png" alt="favotirar"
                                                                     className="favoritar"/><Link /> */}
                                                     </div>
@@ -190,7 +196,8 @@ function WishList() {
                                                     <div className="card-body">
                                                         <h5 className="card-title">AUDI A5 SPORTBACK 2019</h5>
                                                         <p className="card-text">R$249.000,00</p>
-                                                        <Link className="btn-sm btn-warning mt-3 buttom-width text-decoration-none">COMPRAR</Link>
+                                                        {/* <Link className="btn-sm btn-warning mt-3 buttom-width text-decoration-none">COMPRAR</Link> */}
+                                                        <Button link="/" name="COMPRAR" />
                                                         {/* <Link to="#" /><img src="./img/img-header/favorite.png" alt="favotirar"
                                                                     className="favoritar"/><Link /> */}
                                                     </div>
@@ -209,7 +216,8 @@ function WishList() {
                                                     <div className="card-body">
                                                         <h5 className="card-title">MERCEDES-BENZ AMG GLE 63 2018</h5>
                                                         <p className="card-text">R$659.000,00</p>
-                                                        <Link className="btn-sm btn-warning mt-3 buttom-width text-decoration-none">COMPRAR</Link>
+                                                        {/* <Link className="btn-sm btn-warning mt-3 buttom-width text-decoration-none">COMPRAR</Link> */}
+                                                        <Button link="/" name="COMPRAR" />
                                                         {/* <Link to="#" /><img src="./img/img-header/favorite.png" alt="favotirar"
                                                                     className="favoritar"/><Link /> */}
                                                     </div>
