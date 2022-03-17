@@ -6,15 +6,15 @@ import MenuImage from '../../assets/images/SchedulingDetails/botao-de-menu.png'
 function ButtonTrigger() {
     return (
         <>
-            <div class="navbar-toggler d-md-none collapsed w-100 mt-4 bg-white navbar-toggler-style d-flex "
+            <div className="navbar-toggler d-md-none collapsed w-100 mt-4 bg-white navbar-toggler-style d-flex "
                 type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
                 aria-controls="sidebarMenu" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <div class="navbar-toggler-icon text-center me-2 ">
+                <div className="navbar-toggler-icon text-center me-2 ">
                     <img src={MenuImage} alt="imagem de menu hamburguer" className="menu-image-size" />
                 </div>
 
-                <div class="navbar-toggler-icon text-center">
+                <div className="navbar-toggler-icon text-center">
                     <span>MENU</span>
                 </div>
 
