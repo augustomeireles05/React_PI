@@ -5,6 +5,7 @@ import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import SearchFilter from '../../components/SearchFilter/SearchFilter'
 
+import ProductList from '../../components/ProductCard/ProductList'
 
 import LamborghiniUrus from '../../assets/images/Inventory/LamborghiniUrus.jpg'
 import LamborghiniUracan from '../../assets/images/Inventory/LamborghiniHuracan.jpg'
@@ -33,8 +34,9 @@ function Inventory() {
                 <SearchFilter />
 
 
-                <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4">
+                <div className="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
                     {/* Inicio dos Cards */}
+
                     {/* card 1 */}
                     <div className="col text-center btn" type="button" data-bs-toggle="modal" data-bs-target="#modal-produto-1">
                         {/* link entre Modal e Card */}
@@ -217,6 +219,10 @@ function Inventory() {
                             </div>
                         </div>
                     </div>
+=======
+                    
+                    <ProductList />
+
 
                     {/*Inicio dos modais */}
 
@@ -1906,8 +1912,8 @@ function Inventory() {
                         </div>
                     </div>
 
-                    {/* numeração das paginas  */}
-                    <div className="row text-center m-2">
+                    {/* numeração das paginas  */} 
+                    <div className="row col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center m-2">
                         <div className="grupo-links d-inline">
                             <SupportButton link="/Cart" name="Prev" />
                             <Link to="//" className="btn btn-outline-secondary">1</Link>
