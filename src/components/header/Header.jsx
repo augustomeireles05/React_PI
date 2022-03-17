@@ -180,7 +180,7 @@ function Header() {
 
                 <div className="modal fade" id="modalPesquisa" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-xl">
-                        <div className="modal-content p-5">
+                        <div className="modal-content1 p-5">
                             <img src={Closeicon} type="button" className="icon-close btn-close align-self-end" data-bs-dismiss="modal" aria-label="Close"/>
                             <div className="modal-header">
                                 <h5 className="modal-title mx-auto text-light" id="exampleModalLabel">BUSQUE POR UM VEÍCULO</h5>
