@@ -5,7 +5,7 @@ function SearchFilter() {
     return (
         <>
             <hr />
-            <div className="row-cols-1 row-cols-md-12 g-4 justify-content-center mt-4 mb-5">
+            <div className="row-cols-1 row-cols-md-12 g-4 justify-content-center mt-4 mb-5 mx-4">
 
                 <form className=" filtro-de-busca row gx-12 align-items-center rounded p-3 mt-5 ms-0 ">
                     <legend className="text-center">ENCONTRE SEU CARRO</legend>

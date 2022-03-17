@@ -159,9 +159,7 @@ function Home() {
                     </div>
                 </div>
 
-                <div className="mx-4">
-                    <SearchFilter />
-                </div>
+                <SearchFilter />
             </section>
 
 

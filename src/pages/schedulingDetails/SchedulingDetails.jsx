@@ -4,6 +4,7 @@ import Footer from '../../components/footer/Footer'
 //import Header from '../../components/header/Header'
 //import Footer from '../../components/footer/Footer'
 import Subtittle from '../../components/Subtittle/Subtittle'
+import Sidebar from '../../components/Sidebar/Sidebar'
 
           
 
@@ -27,19 +28,7 @@ function schedulingDetails() {
                         {/*Navbar*/}
                         <Subtittle menu="MENU"/>
 
-                        <div className="btn-group-vertical background-container-subject me-3 shadow" role="group"
-                            aria-label="Vertical button group">
-                            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu"><a
-                                className="link-solution" to="/myData">MEUS DADOS</a></button>
-                            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu"><a
-                                className="link-solution" to="/myOrder">MEUS PEDIDOS</a></button>
-                            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu"><a
-                                className="link-solution" to="/cart">CARRINHO DE COMPRA</a></button>
-                            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu"><a
-                                className="link-solution" to="/wishList">MEUS FAVORITOS</a></button>
-                            <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu"><a
-                                className="link-solution" to="/">SAIR</a></button>
-                        </div>
+                        <Sidebar />
 
 
                     </div>
