@@ -21,35 +21,35 @@ function Footer() {
       <>
         <footer>
           {/*Começo Footer */}
-          <div className="container mb-5 pt-3 ">
+          <div className="container mt-5 mb-5 pt-3">
             {/*Começo Redes Sociais */}
 
-            <div className="row justify-content-center responsive-social-media">
-              <div className="col-md-1">
+            <div className="row justify-content-center responsive-social-media pt-3">
+              <div className="col-2 col-md-1">
                 {/*Icon Facebook */}
                 <Link to="#" target="_blank">
                   <img src={Facebook} width="30" height="30" alt="Facebook-Logo"/>
                 </Link>
               </div>
-              <div className="col-md-1">
+              <div className="col-2 col-md-1">
                 {/*Icon Twitter */}
                 <Link to="#" target="_blank">
                   <img src={Twitter} width="30" height="30" alt="Twitter-Logo"/>
                 </Link>
               </div>
-              <div className="col-md-1">
+              <div className="col-2 col-md-1">
                 {/*Icon Instagram */}
                 <Link to="#" target="_blank">
                   <img src={Instagram} width="30" height="30" alt="Instagram-Logo"/>
                 </Link>
               </div>
-              <div className="col-md-1">
+              <div className="col-2 col-md-1">
                 {/*Icon Linkedin */}
                 <Link to="#" target="_blank">
                   <img src={Linkedin} width="30" height="30" alt="Linkedin-Logo"/>
                 </Link>
               </div>
-              <div className="col-md-1">
+              <div className="col-2 col-md-1">
                 {/*Icon YouTube */}
                 <Link to="#" target="_blank">
                   <img src={Youtube} width="30" height="30" alt="Youtube-Logo"/>

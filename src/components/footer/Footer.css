@@ -21,9 +21,10 @@ li{
 }
 
 
+
 /* -- RESPONSIVE --*/
 
- @media (max-width: 760px) {
+ /* @media (max-width: 760px) {
 
     .responsive-footer {
         display: flex;
@@ -52,4 +53,4 @@ li{
         align-items: center;
     }
     
-}
+} */
