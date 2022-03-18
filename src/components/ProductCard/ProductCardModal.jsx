@@ -1,7 +1,34 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import '../../components/ProductCard/ProductCardModal.css'
+import CurrencyFormat from 'react-currency-format';
 
 export default class ProductCardModal extends Component {
+
+    limitValue = 999999.99
+
+    //MODIFICANDO BIBLIOTECA:
+        // defaultOptions = {
+        //     significantDigits: 2,
+        //     thousandsSeparator: '.',
+        //     decimalSeparator: ',',
+        //     symbol: 'R$ '
+        // }
+
+        // currencyFormatter = (value, options) => {
+        //     if (typeof value !== 'number') value = 0.0
+        //     options = { ...defaultOptions, ...options }
+        //     value = value.toFixed(options.significantDigits)
+        
+        //     const [currency, decimal] = value.split('.')
+        //     return `${options.symbol} ${currency.replace(
+        //       /\B(?=(\d{3})+(?!\d))/g,
+        //       options.thousandsSeparator
+        //     )}${options.decimalSeparator}${decimal}`
+        // }
+    //FIM    
+
+
     render() {
 
         let modelStyle = {
@@ -15,7 +42,7 @@ export default class ProductCardModal extends Component {
                 <div className="modal-dialog">
                     <div className="modal-content background-modal">
                         <div className="modal-header">
-                            <h5 className="modal-title font-title-modal">{this.props.brand} {this.props.model}</h5>
+                            <h5 className="modal-title px-1 font-title-modal">{this.props.brand} {this.props.model}</h5>
                             <button type="button" className="btn-close" onClick={this.props.hide}></button>
                         </div>
                         <div className="modal-body row-cols-12 col-sm-12 col-md-12 col-lg-12">
@@ -56,7 +83,17 @@ export default class ProductCardModal extends Component {
                                 </div>
                                 <div className="row justify-content-center col-12 border border-dark mx-0 d-flex align-items-center mt-2">
                                     <p className="col-6 text-start fs-6 my-0">Preço:</p>
-                                    <p className="col-6 css-font-family-modal text-end fs-6 my-0 css-font-family-modal">{this.props.price}</p>
+                                    <CurrencyFormat
+                                        value={this.props.price.toFixed(2)}
+                                        displayType={'text'}
+                                        thousandSeparator={true}
+                                        prefix={'R$ '}
+                                        renderText={value => 
+                                            <p className="col-6 css-font-family-modal text-end fs-6 my-0 css-font-family-modal">
+                                                {value}
+                                            </p>}
+                                    />
+
                                 </div>
                                 
                             </div>
@@ -69,8 +106,22 @@ export default class ProductCardModal extends Component {
                             
                         </div>
                         <div className="modal-footer">
-                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" className="btn btn-primary">Save changes</button>
+                            {/* <button type="button" className="btn btn-primary">Comprar</button> */}
+                            {/* {console.log(this.props.price > this.limitValue)} */}
+                                
+                                <div className="">
+                                    <Link to="/checkoutScheduling" className="btn btn-modal-buy">Agendar visita</Link>
+                                </div>
+                                <div className="">
+                                    {
+                                        this.props.price < this.limitValue
+                                        ? <> <Link to="/checkoutOrder" className="btn btn-modal-buy">Comprar</Link> </>
+                                        : ''
+                                        // <> <Link to="/checkoutScheduling" className="btn btn-modal-buy">Agendar visita</Link> </>
+                                    }
+                                </div>
+
+                                
                         </div>
                     </div>
                 </div>

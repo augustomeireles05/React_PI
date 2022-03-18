@@ -90,15 +90,15 @@ body{
     justify-content: center;
 }
 
-.modal-title{
+/* .modal-title{
     margin-left: 30%;
     margin-top: 10px;
-}
+} */
 
-.btn-modal-footer{
+/* .btn-modal-footer{
     width: 150px;
     height: 45px;
-}
+} */
 
 .img-modal{
     border-radius: 10px;

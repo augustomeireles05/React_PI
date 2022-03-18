@@ -4,13 +4,16 @@ import './Contact.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 
-import DevCars from '../../assets/images/Contact/card-contato.jpeg'
+import Button from '../../components/Button/Button'
+// import SupportButton from '../../components/Button/SupportButton'
+import Input from '../../components/Input/Input'
+import Label from '../../components/Input/Label'
+import Subtittle from '../../components/Subtittle/Subtittle'
 
+import DevCars from '../../assets/images/Contact/card-contato.jpeg'
 import Email from '../../assets/images/Contact/e-mail.png'
 import Telefone from '../../assets/images/Contact/telefone-celular 1.svg'
 import Localizacao from '../../assets/images/Contact/localizacao 1.svg'
-import Button from '../../components/Button/Button'
-import SupportButton from '../../components/Button/SupportButton'
 
 
 function Contact() {
@@ -34,12 +37,12 @@ function Contact() {
                 <article className="page-content">
                     {/* duas colunas  */}
                     <div className="row">
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-lg-6">
                             <div className="column">
                                 {/* LOJA  */}
-                                <div className="title">
-                                    <span>LOJA</span>
-                                </div>
+                                {/* <div className="title"> */}
+                                    <Subtittle menu="LOJA"/>
+                                {/* </div> */}
                                 {/* CARROUSEL  */}
                                 <div className="main-card">
                                     <div className="carousel-inner">
@@ -75,41 +78,28 @@ function Contact() {
 
                                         <div className="col-md-12 signin-form-contact">
 
-                                            <input className="form-control" type="text" placeholder="Nome" aria-label="nome" input example></input>
-                                            <br></br>
+                                            <Label label="Nome" for="nome"/>
+                                            <Input type="text" aria-label="nome" id="nome"/>
+                                            
+                                
+                                            <Label label="Email" for="email"/>
+                                            <Input type="email" aria-label="email" id="email"/>
 
-                                            <input className="form-control" type="text" placeholder="E-mail" aria-label="email"
-                                                input example></input>
-                                                <br></br>
+                                        
+                                            <Label label="Telefone" for="telefone"/>
+                                            <Input type="text" aria-label="telefone" id="telefone"/>
+                                                
+                                        
+                                            <Label label="Assunto" for="assunto"/>
+                                            <Input type="text" aria-label="assunto" id="assunto"/>
+                                                
 
-                                            <input className="form-control" type="text" placeholder="Telefone" aria-label="telefone"
-                                                input example></input>
-                                                <br></br>
-
-                                            <input className="form-control" type="text" placeholder="Assunto" aria-label="assunto" input example></input>
-                                                <br></br>
-
-
-                                            <textarea className="form-control" rows="6" type="text" placeholder="Mensagem"
-                                                aria-label="mensagem"></textarea>
-                                                <br></br>
-
-
-                                                {/* <div className="col text-center">
-                                                    <a className="btn btn-warning mt-6 d-block float-md-end" href="#" role="button">
-                                                    Enviar </a>
-                                                </div>
-                                                <div className="col text-center">
-                                                    <button className="send" type="submit">Enviar</button>
-                                                </div> */}
-
-
-
+                                            <Label label="Mensagem" for="mensagem"/>
+                                            <textarea className="form-control" rows="6" type="text" id="mensagem" aria-label="mensagem"></textarea>
+                                               
 
                                             <div className="d-grid gap-2 col-12 mx-auto">
-                                                {/* <button className="btn btn-enviar-contato" type="buttonAjuste">ENVIAR</button> */}
                                                 <Button link="/" name="ENVIAR" />
-
                                             </div>          
                                         </div>
                                     </div>
@@ -117,12 +107,10 @@ function Contact() {
                             </div>
                         </div>
 
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-lg-6">
                             <div className="column">
                                  {/* DUVIDAS  */}
-                                <div className="title">
-                                    <span>DÚVIDAS FREQUENTES</span>
-                                </div>
+                                 <Subtittle subtitulo="DÚVIDAS FREQUENTES"/>
                                  {/* CARD PERGUNTAS  */}
                                 <div className="main-card">
                                     <div className="question-perguntas">
