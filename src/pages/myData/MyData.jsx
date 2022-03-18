@@ -8,6 +8,7 @@ import Button from '../../components/Button/Button'
 import Input from '../../components/Input/Input'
 import Label from '../../components/Input/Label'
 import Subtittle from '../../components/Subtittle/Subtittle'
+import SideBar from '../../components/Sidebar/Sidebar'
 
 
 function MyData() {
@@ -20,20 +21,22 @@ function MyData() {
 
                 <article className="page-content container">
                     { /* coluna Menu */}
-                    <div className="row">
-                        <div className="col-3">
-                            { /responsividade menu/}
-                            <div className="column ms-4">
+                    <div className=" row">
+                        <div className=" d-flex justify-content-center d-none d-md-block col-md-3">
+                            { /*responsividade menu*/}
+                            <div className="column ms-3">
 
-                                { /Navbar/}
-                                <nav className="navbar navbar-light mb-3 mt-0 pt-0 pb-2">
+                                { /*Navbar*/}
+                                <nav className=" navbar navbar-light mb-3 mt-0 pt-0 pb-2">
                                     {/* <div className="container-fluid d-block text-center"> */}
                                         <Subtittle menu="MENU"/>
 
                                     {/* </div> */}
                                 
+                                <SideBar></SideBar>
 
-                                <div className="btn-group-vertical background-container-subject me-3 shadow" role="group" aria-label="Vertical button group">
+
+                                {/* <div className="btn-group-vertical background-container-subject me-3 shadow" role="group" aria-label="Vertical button group">
                                     <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
                                         <Link to="/myData" className="link-solution">MEUS DADOS</Link>
                                     </button>
@@ -49,7 +52,7 @@ function MyData() {
                                     <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
                                         <Link to="/" className="link-solution">SAIR</Link>
                                     </button>
-                                </div>
+                                </div> */}
                                 </nav>
                             </div>
                         </div>
@@ -125,7 +128,7 @@ function MyData() {
                             <Subtittle subtitulo="ALTERAR SENHA"/>
                             
 
-                            { /2 FORMULARIO/}
+                            { /*2 FORMULARIO*/}
                             <form>
                                 <div className="row mb-5">
                                     <div className="col-12 col-md-6">

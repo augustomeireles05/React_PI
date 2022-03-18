@@ -34,7 +34,7 @@ function RecoveryPassword() {
                             </div>
                             <div className="button-recuperarsenha">
                                 <Link to="/login">
-                                    <Button link="" name="Restaurar" />
+                                    <Button link="#" name="Restaurar" />
                                 </Link>
                             </div>
                         </form>
