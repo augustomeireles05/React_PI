@@ -57,15 +57,15 @@ function Contact() {
 
                                     <div className="geral">
                                         <div className="textoum">
-                                            <img src={Localizacao} class="me-1"/>
+                                            <img src={Localizacao} className="me-1"/>
                                             Avenida Corifeu de Azevedo Marques 3097
                                         </div>
                                         <div className="textodois">
-                                            <img src={Email} class="me-1"/>
+                                            <img src={Email} className="me-1"/>
                                             Vendas@devcars.com.br
                                         </div>
                                         <div className="textotres">
-                                            <img src={Telefone} class="me-1"/>
+                                            <img src={Telefone} className="me-1"/>
                                             (11) 0000 - 0000
                                         </div>
                                     </div>
