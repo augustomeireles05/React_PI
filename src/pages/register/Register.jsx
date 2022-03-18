@@ -6,31 +6,31 @@ import Button from '../../components/Button/Button'
 import MainTittle from '../../components/Tittle/MainTittle'
 import Input from '../../components/Input/Input'
 import Label from '../../components/Input/Label'
+import Subtitle from '../../components/Subtittle/Subtittle'
 
 function Register() {
     return (
         <>
            <Header/>
-
+            <MainTittle tittle="Cadastro"/>
             {/* Começo Conteúdo da Página */}
-            <div className="container titulo-pagina">
+            {/* <div className="container titulo-pagina">
                 <div className="row">
                     <div className="col-12 justify-content-flex-start">
                         <h1>Cadastro</h1>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/*Começo Dados Pessoais*/}
             <div className="container dados-pessoais">
-                <div className="col-12 titulo-dados">
-                    <h2 className="h2-register">Dados Pessoais</h2>
-                </div>
+                
+                <Subtitle menu="Dados Pessoais" />
                 <form className="row mb-2">
-                    <div className="col-md-6">
+                    <div className="col-12">
                         <Label label="Nome" for="name"/>
                         <Input type="text" aria-label="name" id="name"/>
                     </div>
-                    <div className="col-md-12">
+                    <div className="col-12 col-md-6">
                         <Label label="Email" for="email"/>
                         <Input type="email" aria-label="email" id="email"/>
                     </div>
@@ -44,89 +44,33 @@ function Register() {
                     </div>
                 </form>
             </div>
-            <div className="container endereco">
-                { /*Começo Endereço*/}
-                <div className="col-12 titulo-endereco">
-                    <h2 className="h2-register">Endereço</h2>
-                </div>
-                <form className="row mb-2">
-                    <div className="col-md-6">
-                        <input type="text" className="form-control" id="inputCEP" placeholder="CEP" />
-                    </div>
-                    <div className="col-md-6">
-                        <input type="text" className="form-control" id="inputRua" placeholder="Rua" />
-                    </div>
-                    <div className="col-md-6">
-                        <input type="text" className="form-control" id="inputNumero" placeholder="Nº" />
-                    </div>
-                    <div className="col-md-6">
-                        <input type="text" className="form-control" id="inputComplemento" placeholder="Complemento" />
-                    </div>
-                    <div className="col-md-6">
-                        <input type="text" className="form-control" id="inputCidade" placeholder="Cidade" />
-                    </div>
-                    <div className="col-md-4">
-                        <select name="estado" id="inputUF" className="form-select hover">
-                            <option value="estado">-- UF --</option>
-                            <option value="ac">AC</option>
-                            <option value="al">AL</option>
-                            <option value="am">AM</option>
-                            <option value="ap">AP</option>
-                            <option value="ba">BA</option>
-                            <option value="ce">CE</option>
-                            <option value="df">DF</option>
-                            <option value="es">ES</option>
-                            <option value="go">GO</option>
-                            <option value="ma">MA</option>
-                            <option value="mt">MT</option>
-                            <option value="ms">MS</option>
-                            <option value="mg">MG</option>
-                            <option value="pa">PA</option>
-                            <option value="pb">PB</option>
-                            <option value="pr">PR</option>
-                            <option value="pe">PE</option>
-                            <option value="pi">PI</option>
-                            <option value="rj">RJ</option>
-                            <option value="rn">RN</option>
-                            <option value="ro">RO</option>
-                            <option value="rs">RS</option>
-                            <option value="rr">RR</option>
-                            <option value="sc">SC</option>
-                            <option value="se">SE</option>
-                            <option value="sp">SP</option>
-                            <option value="to">TO</option>
-                        </select>
-                    </div>
-                </form>
-            </div> { /*Fim Endereço*/}
+            
             { /*Começo Senha*/}
             <div className="container senha">
-                <div className="col-md-12 titulo-senha">
-                    <h2 className="h2-register">Senha</h2>
-                </div>
-                <form className="row mb-2 justify-content-center">
+              
+                <Subtitle subtitulo="Senha" />
+                <form className="row mb-2 justify-content-start">
                     <div className="col-md-8">
-                        <input type="password" className="form-control" id="inputPassword4" placeholder="Digite uma senha de 8-16 caracteres" />
+                        <Label label="Escolha um senha" for="password-register"/>
+                        <Input type="password" aria-label="password-register" id="password-register"/>
+                        {/* <span className="fs-6">Digite uma senha de 8-16 caracteres</span> */}
                     </div>
-                    <div className="col-md-8">
-                        <input type="password" className="form-control" id="inputPassword4" placeholder="Confirme a sua senha" />
-                    </div>
-                </form>
 
-            </div>
-            { /*Fim Senha*/}
-            <div className="container fim-cadastro">
-                <form className="row mb-2">
+                    <div className="col-md-8">
+                        <Label label="Confirme sua senha" for="password-register-confirm"/>
+                        <Input type="password" aria-label="password-register-confirm" id="password-register-confirm"/>
+                    </div>
+                
                     <div className="col-12">
                         <div className="form-check">
-                            <input className="form-check-input" type="checkbox" id="gridCheck" required />
+                            <input className="form-check-input" type="checkbox" id="gridCheck" required defaultChecked />
                             <label className="form-check-label" for="gridCheck">
                                 Li e concordo com os <a href="TERMOS E CONDIÇÕES DE USO DEV CARS™.pdf" download="TERMOS E CONDIÇÕES DE USO DEV CARS™.pdf" target="_blank">Termos e Condições de Uso</a>.
                             </label>
                         </div>
                     </div>
+
                     <div className="col-12 text-center mt-2">
-                        {/* <button type="submit" className="btn btn_cadastrar w-25 ">Cadastrar</button> */}
                         <Button link="" name="CADASTRE-SE" />
                     </div>
                 </form>
