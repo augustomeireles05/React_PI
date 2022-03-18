@@ -478,3 +478,6 @@ li a {
     padding-right: 40px;
 }
 
+nav{
+    box-shadow: none;
+}

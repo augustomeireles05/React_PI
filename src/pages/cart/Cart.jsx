@@ -23,7 +23,7 @@ function Cart() {
             <main className="background-grey mt-0 mb-0">
                 <div
                     className="col-10 col-md-10 col-lg-10 col-xl-10 d-flex justify-content-center pt-2 borda container mb-2 background-main">
-                    <div className="col-0 col-md-2 borda1 container-sidebar-menu me-3 background-grey">
+                    <div className="col-0 col-lg-2 borda1 container-sidebar-menu me-3 background-grey">
 
                         {/* INICIO DO CONTAINER LADO ESQUERDO */}
                         <div className="bd-example d-flex justify-content-center flex-column background-grey mb-3">

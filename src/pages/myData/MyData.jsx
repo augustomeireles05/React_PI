@@ -17,19 +17,19 @@ function MyData() {
                 <article className="page-content container">
                     { /* coluna Menu */}
                     <div className="row">
-                        <div className="col-3">
+                        <div className="d-none d-md-block col-md-3">
                             { /*responsividade menu*/}
                             <div className="column ms-4">
 
                                 { /*Navbar*/}
-                                <nav className="navbar navbar-light border-bottom-menu titulo-menu mb-3 mt-0 pt-0 pb-2">
+                                <nav className="navbar navbar-light border-bottom-menu mb-3 mt-0 pt-0 pb-2">
                                     <div className="container-fluid d-block text-center">
                                         <span>MENU</span>
 
                                     </div>
                                 </nav>
 
-                                <div className="btn-group-vertical background-container-subject me-3 shadow" role="group" aria-label="Vertical button group">
+                                <div className="btn-group-vertical background-container-subject me-3 " role="group" aria-label="Vertical button group">
                                     <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
                                         <Link to="/myData" className="link-solution">MEUS DADOS</Link>
                                     </button>
