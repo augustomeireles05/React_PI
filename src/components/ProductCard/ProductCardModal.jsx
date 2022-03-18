@@ -42,7 +42,7 @@ export default class ProductCardModal extends Component {
                 <div className="modal-dialog">
                     <div className="modal-content background-modal">
                         <div className="modal-header">
-                            <h5 className="modal-title font-title-modal">{this.props.brand} {this.props.model}</h5>
+                            <h5 className="modal-title px-1 font-title-modal">{this.props.brand} {this.props.model}</h5>
                             <button type="button" className="btn-close" onClick={this.props.hide}></button>
                         </div>
                         <div className="modal-body row-cols-12 col-sm-12 col-md-12 col-lg-12">

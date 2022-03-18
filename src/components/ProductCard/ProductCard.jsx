@@ -23,7 +23,7 @@ const ProductCard = () => {
 
     return (
         <>
-            <section className="py-4 py-lg-5 container">
+            <section className="py-4 py-lg-5 col-12 col-sm-12 col-md-12 justify-content-around">
                 <div className="row justify-content-center align-item-center">
 
 

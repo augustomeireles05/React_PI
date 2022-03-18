@@ -238,7 +238,7 @@ const lista = {
             inventory: "Disponível",
             enphasis: "Não",
             image: "https://i.ibb.co/hWkCP2s/audi-q8.jpg",
-            description: ""
+            description: "Com interior generoso e sistema operacional de última geração, ele é a opção ideal para quem busca um utilitário robusto e elegante. Seu sistema de tração permanente quattro garante o desempenho em terrenos difíceis, enquanto o motor 3.0 TFSI com tecnologia híbrida leve desenvolve 340 cv de potência e torque de 500 Nm. Na cidade, na estrada ou no campo, o novo Audi Q8 oferece uma performance superior à da concorrência, indo de 0 a 100 em 5,9 segundos. O Q8 traz sob o capô o motor 3.0 TFSI V6, que produz 340 cv de potência entre 5.000 e 6.400 rpm e torque de 51 kgfm de 1.370 a 4.500 rpm. O câmbio é automático de oito marchas e a tração, integral quattro."
         },
     
         {
