@@ -4,6 +4,7 @@ function Button(props) {
   return (
     <>
       <div className="d-flex justify-content-center ">
+
         {/* <button type={props.type} className="btn btn-principal w-25">
           {props.name}
         </button> */}
