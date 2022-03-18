@@ -27,6 +27,14 @@ nav p{
     font-size: 1rem;
 }
 
+.links-externos {
+    color: black;
+    text-decoration: none;
+}
+
+.links-externos:hover {
+    color: orange;
+}
 .page-content{
     max-width: 80%;
     margin: auto;
