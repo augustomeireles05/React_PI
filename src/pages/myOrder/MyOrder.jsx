@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom'
 import './MyOrder.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
-import Button from '../../components/Button/Button'
-import SupportButton from '../../components/Button/SupportButton'
+import Sidebar from '../../components/Sidebar/Sidebar'
+import Subtittle from '../../components/Subtittle/Subtittle'
+// import Button from '../../components/Button/Button'
+// import SupportButton from '../../components/Button/SupportButton'
 
 import SchedulingIcon from '../../assets/images/MyOrder/andamento.png'
 import Cancelstatusicon from '../../assets/images/MyOrder/cancelado.png'
@@ -25,43 +27,20 @@ function MyOrder() {
                 </div>
 
 
-                <div className="row justify-content-center">
+                <div className="row justify-content-center g-5 px-3">
                     {/* inicio do menu lateral */}
-                    <div className="col-12 col-sm-3 flex-row justify-content-center">
-                        <div className="column text-center">
+                    <div className="col-md-4 flex-row justify-content-center text-center">
 
-                            {/*Navbar*/}
-                            <div className="navbar navbar-light border-bottom-menu titulo-menu mb-3 mt-0 pt-0 pb-2 col-12">
-                                <div className="container-fluid d-block text-center">
-                                    <span className="fs-6">MENU</span>
-                                </div>
-                            </div>
+                        {/*Navbar*/}
+                        <Subtittle menu="MENU" />
 
-                            <div className="col-12 btn-group-vertical background-container-subject shadow mb-4" role="group" aria-label="Vertical button group">
-                                <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
-                                    <Link to="/myData" className="link-solution">MEUS DADOS</Link>
-                                </button>
-                                <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
-                                    <Link to="/myOrder" className="link-solution">MEUS PEDIDOS</Link>
-                                </button>
-                                <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
-                                    <Link to="/cart" className="link-solution">CARRINHO DE COMPRA</Link>
-                                </button>
-                                <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
-                                    <Link to="/wishList" className="link-solution">LISTA DE DESEJOS</Link>
-                                </button>
-                                <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
-                                    <Link to="/" className="link-solution">SAIR</Link>
-                                </button>
-                            </div>
-
-                        </div>
+                        <Sidebar />
                     </div>
                     {/* fim do menu lateral */}
 
 
                     {/* inicio dos cards de pedidos */}
-                    <div className="titulos-detalhes col col-sm-9">
+                    <div className="col-md rounded-1 mb-5">
 
                         <div className="container d-flex justify-content-around titulo-menu mb-3 mt-0 pt-0 pb-4">
                             <div className="col-3 text-center">

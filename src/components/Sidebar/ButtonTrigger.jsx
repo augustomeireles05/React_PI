@@ -1,5 +1,6 @@
 import React from 'react'
 import './Sidebar.css'
+
 import MenuImage from '../../assets/images/SchedulingDetails/botao-de-menu.png'
 
 function ButtonTrigger() {
