@@ -5,7 +5,7 @@ function Label(props) {
 
     return (
         <>
-            <label className="label font-recuperarsenha" for={props.for}>{props.label}</label>
+            <label className="label font-recuperarsenha" htmlFor={props.for}>{props.label}</label>
         </>
     )
 }
