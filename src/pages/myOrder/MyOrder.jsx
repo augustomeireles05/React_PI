@@ -18,7 +18,7 @@ import BmwX72021 from '../../assets/images/MyOrder/BMW-X7-2021.jpg'
 function MyOrder() {
     return (
         <>
-        {/* <Button link="/home" name="PRINCIPAL"/>
+            {/* <Button link="/home" name="PRINCIPAL"/>
         <SupportButton link="/home" name="SECUNDARIO"/> */}
             <Header />
             <div className="container">
@@ -42,16 +42,16 @@ function MyOrder() {
                     {/* inicio dos cards de pedidos */}
                     <div className="col-md rounded-1 mb-5">
 
-                        <div className="container d-flex justify-content-around titulo-menu mb-3 mt-0 pt-0 pb-4">
-                            <div className="col-3 text-center">
+                        <div className="d-flex justify-content-around titulo-menu mb-3 mt-0 pt-0 pb-4">
+                            <div className="col-3 text-end text-md-center">
                                 <span className="fs-6">PEDIDO</span>
                             </div>
 
                             <div className="col text-center">
-                                <span className="fs-6">STATUS</span>
+                                <span className="fs-6 me-5 me-md-0">STATUS</span>
                             </div>
 
-                            <div className="col text-center">
+                            <div className="col text-center d-none d-md-none d-xl-block d-xxl-block">
                                 <span className="fs-6">DATA</span>
                             </div>
 
@@ -64,20 +64,20 @@ function MyOrder() {
 
                         {/* acordeon pedido 1 */}
                         <div className="row accordion-item mb-3">
-                            <h2 className="accordion-header" id="flush-headingOne">
+                            <h2 className="accordion-header p-0" id="flush-headingOne">
                                 <button className="justify-content-center accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
 
                                     <div className="col-3">
-                                        <span className="ms-3">#43775</span>
+                                        <span className="ms-md-3">#43775</span>
                                     </div>
 
                                     <div className="col status-pedido d-flex align-items-center justify-content-center">
-                                        <img src={SchedulingIcon} alt="agendado" className="figura-status"/>
+                                        <img src={SchedulingIcon} alt="agendado" className="figura-status" />
                                         <span className="ms-1">AGENDADO</span>
                                     </div>
 
-                                    <div className="col dt-pedido text-sm-center">
+                                    <div className="col dt-pedido text-sm-center d-none d-md-none d-xl-block d-xxl-block">
                                         <span className="ps-5">15/11/2021</span>
                                     </div>
 
@@ -93,7 +93,7 @@ function MyOrder() {
                                     {/* item 1 do pedido 1 */}
                                     <div className="row justify-content-between">
                                         <div className="col-12 col-sm-12 col-lg-3 text-center mb-3 mb-sm-0 text-sm-center mb-sm-2">
-                                            <img src={Audir8azul} alt="audi-r8-azul" className="img-pedido"/>
+                                            <img src={Audir8azul} alt="audi-r8-azul" className="img-pedido" />
                                         </div>
                                         <div className="col-sm-4">
                                             <div className="d-flex flex-column">
@@ -130,11 +130,20 @@ function MyOrder() {
                                     <div className="row pagamento mt-5">
                                         <div className="col-sm">
                                             <div className="d-flex flex-column text-sm-end">
-                                                <span className="titulo-data-pgmt text-center text-sm-end">DATA DO PAGAMENTO: </span>
-                                                <span className="data-pgmt text-center text-sm-end">12/11/2021</span>
+                                                <span className="titulo-data-pgmt text-start text-sm-end">DATA DO PAGAMENTO: </span>
+                                                <span className="data-pgmt text-start text-sm-end">12/11/2021</span>
                                             </div>
                                         </div>
                                         {/* fim dos detalhes de pagamento */}
+                                    </div>
+
+                                    <div className="row entrega mt-5 d-block d-md-none">
+                                        <div className="col-sm">
+                                            <div className="d-flex flex-column text-sm-end">
+                                                <span className="titulo-data-pgmt text-start text-sm-end">DATA DO PEDIDO</span>
+                                                <span className="data-pgmt text-start text-sm-end">15/11/2021</span>
+                                            </div>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -145,21 +154,21 @@ function MyOrder() {
                         {/* acordeon pedido 2 */}
                         <div className="accordion accordion-flush" id="flush-headingTwo">
                             <div className="row accordion-item mb-3">
-                                <h2 className="accordion-header" id="flush-headingTwo">
+                                <h2 className="accordion-header p-0" id="flush-headingTwo">
                                     <button className="justify-content-center accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                         aria-controls="flush-collapseTwo">
 
                                         <div className="col-3">
-                                            <span className="ms-3">#73475</span>
+                                            <span className="ms-md-3">#73475</span>
                                         </div>
 
                                         <div className="col status-pedido d-flex align-items-center justify-content-center ms-1">
-                                            <img src={Cancelstatusicon} alt="cancelado" className="figura-status"/>
+                                            <img src={Cancelstatusicon} alt="cancelado" className="figura-status me-1" />
                                             <span className="">CANCELADO</span>
                                         </div>
 
-                                        <div className="col dt-pedido text-sm-center">
+                                        <div className="col dt-pedido text-sm-center d-none d-md-none d-xl-block d-xxl-block">
                                             <span className="ps-5">25/12/2021</span>
                                         </div>
 
@@ -176,7 +185,7 @@ function MyOrder() {
                                         {/* item 1 do pedido 2 */}
                                         <div className="row justify-content-between">
                                             <div className="col-12 col-sm-12 col-lg-3 text-center mb-3 mb-sm-0 text-sm-center mb-sm-2">
-                                                <img src={MercedesAmgGt63} alt="MercedesBenz-AMG-GT63-2020" className="img-pedido"/>
+                                                <img src={MercedesAmgGt63} alt="MercedesBenz-AMG-GT63-2020" className="img-pedido" />
                                             </div>
                                             <div className="col-sm-4">
                                                 <div className="d-flex flex-column">
@@ -206,6 +215,15 @@ function MyOrder() {
                                                     <span className="descricao  text-center text-sm-center">600.000,00</span>
                                                 </div>
                                             </div>
+
+                                            <div className="row entrega mt-5 d-block d-md-none">
+                                                <div className="col-sm">
+                                                    <div className="d-flex flex-column text-sm-end">
+                                                        <span className="titulo-data-pgmt text-start text-sm-end">DATA DO PEDIDO</span>
+                                                        <span className="data-pgmt text-start text-sm-end">25/12/2021</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
                                     </div>
@@ -218,12 +236,12 @@ function MyOrder() {
 
                         {/* acordeon pedido 3 */}
                         <div className="row accordion-item mb-3">
-                            <h2 className="accordion-header" id="flush-headingThree">
+                            <h2 className="accordion-header p-0" id="flush-headingThree">
                                 <button className="justify-content-center accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
 
                                     <div className="col-3">
-                                        <span className="ms-3">#43775</span>
+                                        <span className="ms-md-3">#43775</span>
                                     </div>
 
                                     <div className="col status-pedido d-flex align-items-center justify-content-center">
@@ -231,7 +249,7 @@ function MyOrder() {
                                         <span className="ms-1">ENTREGUE</span>
                                     </div>
 
-                                    <div className="col dt-pedido text-sm-center">
+                                    <div className="col dt-pedido text-sm-center d-none d-md-none d-xl-block d-xxl-block">
                                         <span className="ps-5">15/11/2021</span>
                                     </div>
 
@@ -247,7 +265,7 @@ function MyOrder() {
                                     {/* item 1 do pedido 2 */}
                                     <div className="row justify-content-between">
                                         <div className="col-12 col-sm-12 col-lg-3 text-center mb-3 mb-sm-0 text-sm-center mb-sm-2">
-                                            <img src={BmwX72021} alt="MercedesBenz AMG GT63 2020 Branco" className="img-pedido"/>
+                                            <img src={BmwX72021} alt="MercedesBenz AMG GT63 2020 Branco" className="img-pedido" />
                                         </div>
                                         <div className="col-sm-4">
                                             <div className="d-flex flex-column">
@@ -310,7 +328,7 @@ function MyOrder() {
                                             </div>
                                         </div>
 
-                                        <div className="col-sm">
+                                        <div className="col-sm mt-4">
                                             <div className="d-flex flex-column text-sm-center">
                                                 <span className="titulo-data-pgmt  text-md-start mt-sm-0 mt-md-4">DATA DO PAGAMENTO</span>
                                                 <span className="data-pgmt text-md-start">10/11/2021</span>
