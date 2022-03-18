@@ -153,6 +153,17 @@ body{
 }
 
 
+.accordion-button:not(.collapsed){
+    background-color: #fdffef;
+    border-color: #fdffef;
+    color: #000;
+}
+
+.accordion-button:focus {
+    border-color: #fdffef;
+}
+
+
 /* -- RESPONSIVE -- */
 
 @media (min-width: 766px) {
