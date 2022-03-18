@@ -4,6 +4,7 @@ import './OrderResume.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import Sidebar from '../../components/Sidebar/Sidebar'
+import MainTittle from '../../components/Tittle/MainTittle.jsx';
 import Subtittle from '../../components/Subtittle/Subtittle'
 
 import Awardicon from '../../assets/images/OrderDetails/certificado-de-garantia.png'
@@ -16,10 +17,8 @@ function OrderResume() {
 
             <Header />
             <div className="container">
-
-                <div className="row-col-md-12 resumo-agendamento mt-5 mb-5">
-                    <h1 className="resumo ps-5 pb-2 pt-2">RESUMO DO PEDIDO</h1>
-                </div>
+                
+                <MainTittle tittle="RESUMO DO PEDIDO" />
 
                 <div className="row g-5">
                     <div className="row g-5 px-3">
