@@ -47,20 +47,16 @@ function Login() {
                                     </div>
                                     <form action="#" className="signin-form ms-1">
                                         <div className="form-group mb-3">
-                                            <Label label="Login" htmlFor="login"/>
+                                            <Label label="Login" for="login"/>
                                             <Input type="text" aria-label="login" id="login"/>
                                         </div>
 
                                         <div className="form-group mb-3">
-                                            <Label label="Senha" htmlFor="senha"/>
+                                            <Label label="Senha" for="senha"/>
                                             <Input type="password" aria-label="senha" id="senha"/>
                                         </div>
                                         <div className="form-group button-entrar-login">
-                                            {/* <button type="submit" className="form-control btn rounded submit px-3 font-login">
-                                                Entrar
-                                            </button> */}
-
-                                            <Button link="/ShedulingDetails" name="Entrar" />
+                                            <Button link="/ShedulingDetails" name="Entrar" className="form-group button-entrar-login"/>
                                         </div>
                                         <div className="col-12 row form-group d-md-flex pt-3 mx-0 text-center">
                                             <div className="col-6 d-flex justify-content-center align-items-center">

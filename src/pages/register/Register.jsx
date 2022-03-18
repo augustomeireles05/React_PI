@@ -3,7 +3,9 @@ import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import Button from '../../components/Button/Button'
 
-
+import MainTittle from '../../components/Tittle/MainTittle'
+import Input from '../../components/Input/Input'
+import Label from '../../components/Input/Label'
 
 function Register() {
     return (
@@ -25,19 +27,20 @@ function Register() {
                 </div>
                 <form className="row mb-2">
                     <div className="col-md-6">
-                        <input type="text" className="form-control" id="inputName" placeholder="Nome" />
-                    </div>
-                    <div className="col-md-6">
-                        <input type="text" className="form-control" id="inputName2" placeholder="Sobrenome" />
+                        <Label label="Nome" for="name"/>
+                        <Input type="text" aria-label="name" id="name"/>
                     </div>
                     <div className="col-md-12">
-                        <input type="email" className="form-control" id="inputEmail4" placeholder="Digite o seu email" />
+                        <Label label="Email" for="email"/>
+                        <Input type="email" aria-label="email" id="email"/>
                     </div>
                     <div className="col-md-6">
-                        <input type="text" className="form-control" id="inputCPF" placeholder="CPF" />
+                        <Label label="CPF" for="cpf"/>
+                        <Input type="text" aria-label="cpf" id="cpf"/>
                     </div>
                     <div className="col-md-6">
-                        <input placeholder="Data de Nascimento" type="text" className="form-control" onfocus="(this.type='date')" onblur="(this.type='text')" id="inputDate" />
+                        <Label label="Data de Nascimento" for="dtNascimento"/>
+                        <Input type="date" aria-label="dtNascimento" id="dtNascimento"/>
                     </div>
                 </form>
             </div>
