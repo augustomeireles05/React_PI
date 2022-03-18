@@ -1,9 +1,14 @@
 import './MyData.css'
+import { Link } from 'react-router-dom'
+
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
-import { Link } from 'react-router-dom'
 import Button from '../../components/Button/Button'
 
+import Input from '../../components/Input/Input'
+import Label from '../../components/Input/Label'
+import Subtittle from '../../components/Subtittle/Subtittle'
+import SideBar from '../../components/Sidebar/Sidebar'
 
 
 function MyData() {
@@ -16,20 +21,22 @@ function MyData() {
 
                 <article className="page-content container">
                     { /* coluna Menu */}
-                    <div className="row">
-                        <div className="d-none d-md-block col-md-3">
+                    <div className=" row">
+                        <div className=" d-flex justify-content-center d-none d-md-block col-md-3">
                             { /*responsividade menu*/}
-                            <div className="column ms-4">
+                            <div className="column ms-3">
 
                                 { /*Navbar*/}
-                                <nav className="navbar navbar-light border-bottom-menu mb-3 mt-0 pt-0 pb-2">
-                                    <div className="container-fluid d-block text-center">
-                                        <span>MENU</span>
+                                <nav className=" navbar navbar-light mb-3 mt-0 pt-0 pb-2">
+                                    {/* <div className="container-fluid d-block text-center"> */}
+                                        <Subtittle menu="MENU"/>
 
-                                    </div>
-                                </nav>
+                                    {/* </div> */}
+                                
+                                <SideBar></SideBar>
 
-                                <div className="btn-group-vertical background-container-subject me-3 " role="group" aria-label="Vertical button group">
+
+                                {/* <div className="btn-group-vertical background-container-subject me-3 shadow" role="group" aria-label="Vertical button group">
                                     <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
                                         <Link to="/myData" className="link-solution">MEUS DADOS</Link>
                                     </button>
@@ -45,23 +52,34 @@ function MyData() {
                                     <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
                                         <Link to="/" className="link-solution">SAIR</Link>
                                     </button>
-                                </div>
-
+                                </div> */}
+                                </nav>
                             </div>
                         </div>
                         {/* fim do menu lateral */}
                         <div className="col-9 ajusteFormulario">
-                            <div className=" text-center title col-12 ">
+                            {/* <div className=" text-center title col-12 ">
                                 <span>MEUS DADOS</span>
-                            </div>
+                            </div> */}
+                            <Subtittle subtitulo="MEUS DADOS"/>
                             { /* 1 Formulario*/}
                             <form>
                                 <div className="row ajusteFormulario">
 
-                                    <div className="col-12 col-md-6 inputsFormulario">
+                                    <div className="col-12 inputsFormulario">
                                         <div className="mb-3">
-                                            <input placeholder="Informe seu nome" type="email" className="form-control"
-                                                id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                            <Label label="Nome completo" for="nome"/>
+                                            <Input type="text" aria-label="nome" id="nome"/>
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div className="col-12 col-md-6">
+                                        <div className="mb-3">
+                                            <Label label="Email" for="email"/>
+                                            <Input type="email" aria-label="email" id="email"/>
                                         </div>
 
                                     </div>
@@ -69,27 +87,8 @@ function MyData() {
 
                                     <div className="col-12 col-md-6">
                                         <div className="mb-3">
-                                            <input placeholder="Informe seu sobrenome" type="email" className="form-control"
-                                                id="exampleInputEmail1" aria-describedby="emailHelp" />
-                                        </div>
-
-                                    </div>
-
-
-                                    <div className="col-12 col-md-6">
-                                        <div className="mb-3">
-                                            <input placeholder="Informe seu e-mail" type="email" className="form-control"
-                                                id="exampleInputEmail1" aria-describedby="emailHelp" />
-                                        </div>
-
-                                    </div>
-
-
-                                    <div className="col-12 col-md-6">
-                                        <div className="mb-3">
-                                            <input placeholder="123 ***- *** 48" type="email" className="form-control"
-                                                id="exampleInputEmail1" aria-describedby="emailHelp" />
-
+                                            <Label label="CPF" for="cpf"/>
+                                            <Input type="text" aria-label="cpf" id="cpf"/>
                                         </div>
 
 
@@ -97,8 +96,8 @@ function MyData() {
 
                                     <div className="col-12 col-md-6">
                                         <div className="mb-3">
-                                            <input placeholder="Data de Nascimento" type="email" className="form-control"
-                                                id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                            <Label label="Data de Nascimento" for="dtNascimento"/>
+                                            <Input type="date" aria-label="dtNascimento" id="dtNascimento"/>
 
                                         </div>
 
@@ -125,26 +124,25 @@ function MyData() {
 
                             </form>
 
-                            <div className=" text-center title col-12 ">
-                                <span>ALTERAR SENHA</span>
-                            </div>
+                          
+                            <Subtittle subtitulo="ALTERAR SENHA"/>
+                            
 
                             { /*2 FORMULARIO*/}
                             <form>
                                 <div className="row mb-5">
                                     <div className="col-12 col-md-6">
                                         <div className="mb-3">
-                                            <input placeholder="INSIRA SUA SENHA ATUAL" type="email" className="form-control"
-                                                id="exampleInputEmail1" aria-describedby="emailHelp" />
-
+                                            <Input type="password" aria-label="password" />
+                                            <Label label="Informe sua senha atual"/>
                                         </div>
 
                                     </div>
 
                                     <div className="col-12 col-md-6">
                                         <div className="mb-3">
-                                            <input placeholder="INSIRA SUA NOVA SENHA" type="email" className="form-control"
-                                                id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                            <Input type="password" aria-label="password" />
+                                            <Label label="Informe sua nova senha"/>
 
                                         </div>
                                     </div>
@@ -152,8 +150,8 @@ function MyData() {
 
                                     <div className="col-12 col-md-6">
                                         <div className="mb-3">
-                                            <input placeholder="CONFIRME A NOVA SENHA" type="email" className="form-control"
-                                                id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                            <Input type="password" aria-label="password" />
+                                            <Label label="Confirme sua nova senha"/>
 
                                         </div>
 
@@ -196,7 +194,3 @@ function MyData() {
 }
 
 export default MyData
-
-
-
-

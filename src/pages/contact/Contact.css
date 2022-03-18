@@ -181,3 +181,8 @@ textarea{
     padding: 14px;
     background-color: #FFF;
 }
+
+
+.accordion-button:not(.collapsed){
+    border:none;
+}
