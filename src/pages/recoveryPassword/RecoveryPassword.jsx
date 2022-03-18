@@ -40,9 +40,8 @@ function RecoveryPassword() {
                                 <Link to="/login">
                                     <Button link="#" name="Restaurar" />
                                 </Link>
+                            </div>    
 
-
-                            </div>
 
                         </form>
                     </div>
