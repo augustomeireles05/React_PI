@@ -4,20 +4,22 @@ import React from 'react';
 
 import Header from '../../components/header/Header.jsx';
 import Footer from '../../components/footer/Footer.jsx';
+import MainTittle from '../../components/Tittle/MainTittle.jsx';
+
 import Empresa from '../../assets/images/AboutUs/empresa.jpg';
 import Estoque from '../../assets/images/AboutUs/estoque.jpg';
 import Executivo from '../../assets/images/AboutUs/executivo.jpg';
 import Helicoptero from '../../assets/images/AboutUs/helicoptero.jpg';
+
+
 
 function AboutUs() {
 
     return (
         <>
             <Header />
-        
-                <div class="row linha_sobre_nos">
-                    <p class="linha_sobre_nos1">SOBRE NÓS</p>
-                </div>
+            <MainTittle tittle="Sobre Nós" />
+
                 <div className="container">
                     {/* A EMPRESA */}
                     <div className="container">

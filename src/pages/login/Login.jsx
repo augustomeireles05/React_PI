@@ -5,6 +5,9 @@ import Bugatti from '../../assets/images/Login/login.jpg';
 
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
+
+import Input from '../../components/Input/Input'
+import Label from '../../components/Input/Label'
 import Button from '../../components/Button/Button';
 
 function Login() {
@@ -23,7 +26,7 @@ function Login() {
                             <div className="container-md wrap d-md-flex d-flex justify-content-between">
 
                                 <div className="img col-md-6 imagem-login">
-                                    {/* <img src={Bugatti} alt="Login" class="w-100"/> */}
+                                    {/* <img src={Bugatti} alt="Login" className="w-100"/> */}
                                 </div>
 
                                 <div className="login-wrap p-md-2 col-12 col-md-6 ">
@@ -42,27 +45,23 @@ function Login() {
                                             </p>
                                         </div>
                                     </div>
-                                    <form action="#" className="signin-form">
+                                    <form action="#" className="signin-form ms-1">
                                         <div className="form-group mb-3">
-                                            <label className="label font-login" htmlFor="name">Login</label>
-                                            <input type="text" className="form-control font-login-input" placeholder="usuario@exemplo.com"
-                                                required></input>
+                                            <Label label="Login" for="login"/>
+                                            <Input type="text" aria-label="login" id="login"/>
                                         </div>
+
                                         <div className="form-group mb-3">
-                                            <label className="label font-login" htmlFor="password">Senha</label>
-                                            <input type="password" className="form-control font-login-input" required></input>
+                                            <Label label="Senha" for="senha"/>
+                                            <Input type="password" aria-label="senha" id="senha"/>
                                         </div>
                                         <div className="form-group button-entrar-login">
-                                            {/* <button type="submit" className="form-control btn rounded submit px-3 font-login">
-                                                Entrar
-                                            </button> */}
-
-                                            <Button link="/ShedulingDetails" name="Entrar" />
+                                            <Button link="/ShedulingDetails" name="Entrar" className="form-group button-entrar-login"/>
                                         </div>
                                         <div className="col-12 row form-group d-md-flex pt-3 mx-0 text-center">
                                             <div className="col-6 d-flex justify-content-center align-items-center">
                                                 <label className="checkbox-wrap checkbox-secondary mb-0 me-2 font-login">Lembrar-me</label>
-                                                <input type="checkbox" defaultChecked class="check"></input>
+                                                <input type="checkbox" defaultChecked className="check"></input>
 
                                             </div>
                                             <div className="col-6 flex-center input-layout">
