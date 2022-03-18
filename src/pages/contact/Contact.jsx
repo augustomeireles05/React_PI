@@ -48,15 +48,15 @@ function Contact() {
 
                                     <div className="geral">
                                         <div className="textoum">
-                                            <img src={Localizacao} class="me-1" alt="Localização"/>
-                                            Avenida Corifeu de Azevedo Marques, 3097
+                                            <img src={Localizacao} className="me-1" alt="Localização"/>
+                                            <a href="https://goo.gl/maps/xkbNkwPFwL2yeffG9" className="links-externos">Avenida Corifeu de Azevedo Marques, 3097</a>
                                         </div>
                                         <div className="textodois">
-                                            <img src={Email} class="me-1" alt="Email"/>
+                                            <img src={Email} className="me-1" alt="Email"/>
                                             <a href="mailto:vendas@devcars.com?subject=Compras" className="links-externos"> vendas@devcars.com</a>
                                         </div>
                                         <div className="textotres">
-                                            <img src={Telefone} class="me-1" alt="Telefone"/>
+                                            <img src={Telefone} className="me-1" alt="Telefone"/>
                                             <a href="tel:+551137695678" className="links-externos"> (11) 3769-5678</a>
                                         </div>
                                     </div>
@@ -69,24 +69,24 @@ function Contact() {
 
                                         <div className="col-md-12 signin-form-contact">
 
-                                            <Label label="Nome" for="nome"/>
+                                            <Label label="Nome" htmlFor="nome"/>
                                             <Input type="text" aria-label="nome" id="nome"/>
                                             
                                 
-                                            <Label label="Email" for="email"/>
+                                            <Label label="Email" htmlFor="email"/>
                                             <Input type="email" aria-label="email" id="email"/>
 
                                         
-                                            <Label label="Telefone" for="telefone"/>
+                                            <Label label="Telefone" htmlFor="telefone"/>
                                             <Input type="text" aria-label="telefone" id="telefone"/>
                                                 
                                         
-                                            <Label label="Assunto" for="assunto"/>
+                                            <Label label="Assunto" htmlFor="assunto"/>
                                             <Input type="text" aria-label="assunto" id="assunto"/>
                                                 
 
-                                            <Label label="Mensagem" for="mensagem"/>
-                                            <textarea className="form-control" rows="6" type="text" id="mensagem" aria-label="mensagem"></textarea>
+                                            <Label label="Mensagem" htmlFor="mensagem"/>
+                                            <textarea className="form-control m-0" rows="6" type="text" id="mensagem" aria-label="mensagem"></textarea>
                                                
 
                                             <div className="d-grid gap-2 col-12 mx-auto">
@@ -128,19 +128,13 @@ function Contact() {
                                                     <button className="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                                         aria-expanded="false" aria-controls="collapseTwo">
-                                                        <span className="fonte-pagina-contato">O documento está em dia?</span>
+                                                        <span className="fonte-pagina-contato">O que faz um carro ser de luxo?</span>
                                                     </button>
                                                 </h2>
                                                 <div id="collapseTwo" className="accordion-collapse collapse"
                                                     aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                                     <div className="accordion-body">
-                                                    <p className="text-ac-body"><strong>Sim. Garantimos sempre </strong> It is shown by
-                                                        default, until the collapse plugin adds the appropriate classes that we
-                                                        use to style each element. These classes control the overall appearance,
-                                                        as well as the showing and hiding via CSS transitions. You can modify
-                                                        any of this with custom CSS or overriding our default variables. It's
-                                                        also worth noting that just about any HTML can go within the
-                                                        <code>.accordion-body</code>, though the transition does limit overflow.</p>
+                                                        <p className="text-ac-body"><strong>Para ser considerado um carro de luxo, o veículo deve ter recursos de alto nível que vão além das necessidades médias.</strong> O termo luxo é usado para categorizar veículos que estão equipados com melhores capacidades de desempenho, interiores luxuosos e todos os últimos recursos de segurança e tecnologia.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -149,20 +143,14 @@ function Contact() {
                                                     <button className="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                                         aria-expanded="false" aria-controls="collapseThree">
-                                                        <span className="fonte-pagina-contato">O carro já se envolveu em algum acidente?</span>
+                                                        <span className="fonte-pagina-contato">Os veículos são originais de fábrica?</span>
 
                                                     </button>
                                                 </h2>
                                                 <div id="collapseThree" className="accordion-collapse collapse"
                                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                                     <div className="accordion-body fonte-pagina-contato">
-                                                    <p className="text-ac-body"><strong>This is the first item's accordion body.</strong> It is shown by
-                                                        default, until the collapse plugin adds the appropriate classes that we
-                                                        use to style each element. These classes control the overall appearance,
-                                                        as well as the showing and hiding via CSS transitions. You can modify
-                                                        any of this with custom CSS or overriding our default variables. It's
-                                                        also worth noting that just about any HTML can go within the
-                                                        <code>.accordion-body</code>, though the transition does limit overflow.</p>
+                                                    <p className="text-ac-body"><strong>A DevCars trabalha apenas com veículos originais.</strong>Trabalhamos com marcas selecionacionas, que saem direto da fábrica para o nosso estoque, onde passam novamente por checagens e revisões periódicas.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -180,13 +168,7 @@ function Contact() {
                                                 <div id="collapseFour" className="accordion-collapse collapse"
                                                     aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                                     <div className="accordion-body">
-                                                    <p className="text-ac-body"><strong>This is the first item's accordion body.</strong> It is shown by
-                                                        default, until the collapse plugin adds the appropriate classes that we
-                                                        use to style each element. These classes control the overall appearance,
-                                                        as well as the showing and hiding via CSS transitions. You can modify
-                                                        any of this with custom CSS or overriding our default variables. It's
-                                                        also worth noting that just about any HTML can go within the
-                                                        <code>.accordion-body</code>, though the transition does limit overflow.</p>
+                                                    <p className="text-ac-body"><strong>Sim. Assim que o veículo é adquirido, a DevCars o assegura durante 12 meses (doze meses)</strong> após o término da garantia de fábrica, que pode variar de acordo com a marca. Para mais detalhes entre em contato com um de nossos representantes.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -196,19 +178,13 @@ function Contact() {
                                                     <button className="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseFive"
                                                         aria-expanded="false" aria-controls="collapseFour">
-                                                        <span className="fonte-pagina-contato">Alguma peça da lataria já foi retocada?</span>
+                                                        <span className="fonte-pagina-contato">Posso personalizar ou modificar o veículo?</span>
                                                     </button>
                                                 </h2>
                                                 <div id="collapseFive" className="accordion-collapse collapse"
                                                     aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                                     <div className="accordion-body">
-                                                    <p className="text-ac-body"><strong>This is the first item's accordion body.</strong> It is shown by
-                                                        default, until the collapse plugin adds the appropriate classes that we
-                                                        use to style each element. These classes control the overall appearance,
-                                                        as well as the showing and hiding via CSS transitions. You can modify
-                                                        any of this with custom CSS or overriding our default variables. It's
-                                                        also worth noting that just about any HTML can go within the
-                                                        <code>.accordion-body</code>, though the transition does limit overflow.</p>
+                                                    <p className="text-ac-body"><strong>No momento ainda não trabalhamos com a personalização e/ou alterações que não sejam os padrões originais dos veículos.</strong> Assim, mantemos a autenticidade do produto e entregamos a qualidade da marca. </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -225,13 +201,7 @@ function Contact() {
                                                 <div id="collapseSix" className="accordion-collapse collapse"
                                                     aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                                                     <div className="accordion-body">
-                                                    <p className="text-ac-body"><strong>This is the first item's accordion body.</strong> It is shown by
-                                                        default, until the collapse plugin adds the appropriate classes that we
-                                                        use to style each element. These classes control the overall appearance,
-                                                        as well as the showing and hiding via CSS transitions. You can modify
-                                                        any of this with custom CSS or overriding our default variables. It's
-                                                        also worth noting that just about any HTML can go within the
-                                                        <code>.accordion-body</code>, though the transition does limit overflow.</p>
+                                                    <p className="text-ac-body"><strong>A DevCars possui diversos parceiros na hora de fretar o seu veículo.</strong> Eles são retirados de nosso armazém por caminhões cegonha, mantendo os cuidados para que cheguem até seu destino em perfeitas condições.</p>
                                                     </div>
                                                 </div>
                                             </div>
