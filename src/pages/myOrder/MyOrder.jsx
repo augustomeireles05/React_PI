@@ -6,6 +6,7 @@ import Sidebar from '../../components/Sidebar/Sidebar'
 import Subtittle from '../../components/Subtittle/Subtittle'
 // import Button from '../../components/Button/Button'
 // import SupportButton from '../../components/Button/SupportButton'
+import MainTittle from '../../components/Tittle/MainTittle'
 
 import SchedulingIcon from '../../assets/images/MyOrder/andamento.png'
 import Cancelstatusicon from '../../assets/images/MyOrder/cancelado.png'
@@ -21,10 +22,11 @@ function MyOrder() {
             {/* <Button link="/home" name="PRINCIPAL"/>
         <SupportButton link="/home" name="SECUNDARIO"/> */}
             <Header />
+            <MainTittle tittle="PÁGINA DE PEDIDOS"/>
             <div className="container">
-                <div className="row mb-3 mt-4">
+                {/* <div className="row mb-3 mt-4">
                     <h1 className="titulo-pagina pb-3 pt-3 ps-5 text-center w-100">PÁGINA DE PEDIDOS</h1>
-                </div>
+                </div> */}
 
 
                 <div className="row justify-content-center g-5 px-3">

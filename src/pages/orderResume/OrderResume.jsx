@@ -5,6 +5,7 @@ import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import Subtittle from '../../components/Subtittle/Subtittle'
+import MainTittle from '../../components/Tittle/MainTittle'
 
 import Awardicon from '../../assets/images/OrderDetails/certificado-de-garantia.png'
 import Checkedicon from '../../assets/images/OrderDetails/checked.png'
@@ -15,18 +16,14 @@ function OrderResume() {
         <>
 
             <Header />
+            <MainTittle tittle="RESUMO DO PEDIDO"/>
             <div className="container">
 
-                <div className="row-col-md-12 resumo-agendamento mt-5 mb-5">
-                    <h1 className="resumo ps-5 pb-2 pt-2">RESUMO DO PEDIDO</h1>
-                </div>
+                
 
-                <div className="row g-5">
-                    <div className="row g-5 px-3">
+                    <div className="row gx-5 gy-3 px-3">
                         {/* inicio do menu lateral */}
                         <div className="col-md-4 flex-row justify-content-center text-center">
-
-                            {/*Navbar*/}
                             <Subtittle menu="MENU" />
 
                             <Sidebar />
@@ -101,7 +98,7 @@ function OrderResume() {
                             </div>
                         </div>
                     </div>
-                </div>
+                
                 {/* fim da confirmação do pedido */}
                 <Footer />
             </div>

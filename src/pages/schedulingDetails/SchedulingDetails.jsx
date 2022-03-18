@@ -5,6 +5,7 @@ import Footer from '../../components/footer/Footer'
 
 import Subtittle from '../../components/Subtittle/Subtittle'
 import Sidebar from '../../components/Sidebar/Sidebar'
+import MainTittle from '../../components/Tittle/MainTittle'
 
 import Awardicon from '../../assets/images/OrderDetails/certificado-de-garantia.png'
 import Checkedicon from '../../assets/images/OrderDetails/checked.png'
@@ -16,23 +17,15 @@ function schedulingDetails() {
 
             <Header />
 
+            <MainTittle tittle="RESUMO DO AGENDAMENTO"/>
             <div className="container">
-
-                <div className="row-col-md-12 resumo-agendamento mt-5 mb-5">
-                    <h1 className="resumo ps-5 pb-2 pt-2">RESUMO DO AGENDAMENTO</h1>
-                </div>
-
-                <div className="row g-5 px-3">
+                
+                <div className="row gx-5 gy-3 px-3">
                     {/* inicio do menu lateral */}
                     <div className="col-md-4 flex-row justify-content-center text-center">
-
-
-                        {/*Navbar*/}
                         <Subtittle menu="MENU" />
 
                         <Sidebar />
-
-
                     </div>
                     {/* fim do menu lateral */}
 
@@ -57,7 +50,7 @@ function schedulingDetails() {
                             <div className="detalhes-pedido">
                                 <div className="detalhes-pedido d-flex justify-content-center align-items-center mb-3">
                                     <h2 className="titulo-detalhes-agendamento me-2 mb-0">DETALHES DO AGENDAMENTO</h2>
-                                    <Link to={"#"}>
+                                    <Link to={"/"}>
                                         <img src={PrintNfe} alt="imprimir resumo do pedido"
                                             className="print" />
                                     </Link>
