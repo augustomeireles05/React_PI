@@ -6,8 +6,10 @@ function Subtitle(props) {
     return (
         <>
             <div className="navbar navbar-light border-bottom-menu titulo-menu mb-3 mt-0 pt-0 pb-2 col-12">
-                <div className="container-fluid d-block text-center">
-                    <span className="fs-6 d-md-block">{props.menu}</span>
+                <div className="container-fluid d-none d-md-block text-center">
+                    <span className="fs-6">{props.menu}</span>
+                </div>
+                <div className="container-fluid d-block text-center">    
                     <span className="fs-6">{props.subtitulo}</span>
                 </div>
             </div>

@@ -1,18 +1,20 @@
 import './SchedulingDetails.css'
+import { Link } from 'react-router-dom'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
-//import Header from '../../components/header/Header'
-//import Footer from '../../components/footer/Footer'
+
 import Subtittle from '../../components/Subtittle/Subtittle'
 import Sidebar from '../../components/Sidebar/Sidebar'
 
-          
+import Awardicon from '../../assets/images/OrderDetails/certificado-de-garantia.png'
+import Checkedicon from '../../assets/images/OrderDetails/checked.png'
+import PrintNfe from '../../assets/images/OrderDetails/printer.png'
 
 function schedulingDetails() {
     return (
         <>
 
-          {/* <Header/> */}
+            <Header />
 
             <div className="container">
 
@@ -26,7 +28,7 @@ function schedulingDetails() {
 
 
                         {/*Navbar*/}
-                        <Subtittle menu="MENU"/>
+                        <Subtittle menu="MENU" />
 
                         <Sidebar />
 
@@ -36,53 +38,53 @@ function schedulingDetails() {
 
 
                     {/* inicio da confirmação do pedido */}
-                    <div className="col-md-8">
-                        <div className="d-flex pedido-concluido justify-content-center flex-column mb-4">
+                    <div className="col-md-8 mb-5">
 
-                        <Subtittle subtitulo="AGENDAMENTO"/>
+                        <Subtittle subtitulo="AGENDAMENTO" />
+                        <div className="bg-white p-4 pb-2">
+                            <div className="d-flex pedido-concluido justify-content-center flex-column mb-4">
 
+                                <img src={Awardicon} className="img-certificado" alt="pedido concluido" />
 
-                            {/* <img src="img/img-resumo-compra/certificado-de-garantia.png" className="img-certificado"
-                                alt="agendamento concluido"> */}
+                                <div className="sucesso d-flex justify-content-center align-items-center m-3">
+                                    <h2 className="text-center titulo-sucesso-agendamento mb-0 me-1">AGENDAMENTO REALIZADO COM SUCESSO!</h2>
+                                    <img src={Checkedicon} alt="sucesso" className="img-sucess" />
+                                </div>
 
-                            <div className="sucesso d-flex justify-content-center align-items-center m-3">
-                                <h2 className="text-center titulo-sucesso-agendamento mb-0 me-1">AGENDAMENTO REALIZADO COM SUCESSO!
-                                </h2>
-                                {/* <img src="img/img-resumo-compra/checked.png" alt="sucesso" className="img-sucess"> */}
+                                <p className="text-center numero-pedido">PROTOCOLO DE AGENDAMENTO: 00991 </p>
                             </div>
 
-                            <p className="text-center numero-pedido">PROTOCOLO DE AGENDAMENTO: XXXXXXXXXX </p>
-                        </div>
+                            <div className="detalhes-pedido">
+                                <div className="detalhes-pedido d-flex justify-content-center align-items-center mb-3">
+                                    <h2 className="titulo-detalhes-agendamento me-2 mb-0">DETALHES DO AGENDAMENTO</h2>
+                                    <Link to={"#"}>
+                                        <img src={PrintNfe} alt="imprimir resumo do pedido"
+                                            className="print" />
+                                    </Link>
+                                </div>
 
-                        <div className="detalhes-pedido">
-                            <div className="detalhes-pedido d-flex justify-content-center align-items-center mb-3">
-                                <h2 className="titulo-detalhes-agendamento me-2 mb-0">DETALHES DO AGENDAMENTO</h2>
-                                <a to="#" />
-                                {/* <img src="img/img-resumo-compra/printer.png" alt="imprimir resumo do pedido"
-                                    className="print"</a> */}
-                            </div>
+                                <div className="row resumo-produto mb-3">
+                                    <h3 className="col-12 mb-2 pt-2 subtitulo">PRODUTO</h3>
+                                    <div className="produtos d-flex justify-content-around">
+                                        <div className="produto col-7">
+                                            <p className="nome-produto1">AUDI RS Q8 2021 AZUL</p>
+                                        </div>
 
-                            <div className="row resumo-produto mb-3">
-                                <h3 className="col-12 mb-2 pt-2 subtitulo">PRODUTO</h3>
-                                <div className="produtos d-flex justify-content-around">
-                                    <div className="produto col-7">
-                                        <p className="nome-produto1">AUDI RS Q8 2021 AZUL</p>
-                                    </div>
-
-                                    <div className="qtd col-5">
-                                        <p className="qtd-produto1 text-end">QTD: 01</p>
+                                        <div className="qtd col-5">
+                                            <p className="qtd-produto1 text-end">QTD: 01</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div className="row data-agendamento mb-3">
-                                <h3 className="subtitulo col-6 pt-2">DATA DO AGENDAMENTO</h3>
-                                <p className="col-6 text-end pt-2">DD/mm/yyyy</p>
-                            </div>
+                                <div className="row data-agendamento mb-3">
+                                    <h3 className="subtitulo col-6 pt-2">DATA DO AGENDAMENTO</h3>
+                                    <p className="col-6 text-end pt-2">29/03/2022</p>
+                                </div>
 
-                            <div className="row valor-total mb-5">
-                                <h3 className="subtitulo col-6 pt-2">VALOR DO BEM</h3>
-                                <p className="col-6 text-end pt-2">R$400.150,00</p>
+                                <div className="row valor-total mb-5">
+                                    <h3 className="subtitulo col-6 pt-2">VALOR DO BEM</h3>
+                                    <p className="col-6 text-end pt-2">R$400.150,00</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -90,7 +92,7 @@ function schedulingDetails() {
             </div>
             {/* fim da confirmação do pedido */}
 
-             {/* < Footer/> */}
+            < Footer />
 
         </>
     )
