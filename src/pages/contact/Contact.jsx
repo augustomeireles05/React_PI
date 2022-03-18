@@ -1,37 +1,28 @@
 import React from 'react'
 import './Contact.css'
 
-import Header from '../../components/header/Header'
-import Footer from '../../components/footer/Footer'
+import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer';
 
-import Button from '../../components/Button/Button'
-// import SupportButton from '../../components/Button/SupportButton'
-import Input from '../../components/Input/Input'
-import Label from '../../components/Input/Label'
-import Subtittle from '../../components/Subtittle/Subtittle'
+import Button from '../../components/Button/Button';
+import Input from '../../components/Input/Input';
+import Label from '../../components/Input/Label';
+import MainTittle from '../../components/Tittle/MainTittle.jsx';
+import Subtittle from '../../components/Subtittle/Subtittle';
 
-import DevCars from '../../assets/images/Contact/card-contato.jpeg'
-import Email from '../../assets/images/Contact/e-mail.png'
-import Telefone from '../../assets/images/Contact/telefone-celular 1.svg'
-import Localizacao from '../../assets/images/Contact/localizacao 1.svg'
+import DevCars from '../../assets/images/Contact/card-contato.jpeg';
+import Email from '../../assets/images/Contact/e-mail.png';
+import Telefone from '../../assets/images/Contact/telefone-celular 1.svg';
+import Localizacao from '../../assets/images/Contact/localizacao 1.svg';
 
 
 function Contact() {
     return (
         <>
         <Header />
+    
             <section>
-                {/* Primeira navbar */}
-                <nav className="navbar navbar-dark bg-black">
-                    <div className="container-fluid">
-                        <div className="col-12 navbar-text text-center">
-
-                            <h2 className="fonte-pagina-contato">CONTATO</h2>
-
-                        </div>
-                    </div>
-
-                </nav>
+                <MainTittle tittle="Contato" />
 
 
                 <article className="page-content">
@@ -57,16 +48,16 @@ function Contact() {
 
                                     <div className="geral">
                                         <div className="textoum">
-                                            <img src={Localizacao} class="me-1"/>
-                                            Avenida Corifeu de Azevedo Marques 3097
+                                            <img src={Localizacao} class="me-1" alt="Localização"/>
+                                            Avenida Corifeu de Azevedo Marques, 3097
                                         </div>
                                         <div className="textodois">
-                                            <img src={Email} class="me-1"/>
-                                            Vendas@devcars.com.br
+                                            <img src={Email} class="me-1" alt="Email"/>
+                                            <a href="mailto:vendas@devcars.com?subject=Compras" className="links-externos"> vendas@devcars.com</a>
                                         </div>
                                         <div className="textotres">
-                                            <img src={Telefone} class="me-1"/>
-                                            (11) 0000 - 0000
+                                            <img src={Telefone} class="me-1" alt="Telefone"/>
+                                            <a href="tel:+551137695678" className="links-externos"> (11) 3769-5678</a>
                                         </div>
                                     </div>
                                 </div>
@@ -119,7 +110,7 @@ function Contact() {
                                         <div className="accordion" id="accordionExample">
                                             <div className="accordion-item">
                                                 <h2 className="accordion-header w-100" id="headingOne">
-                                                    <button className="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                                         data-bs-target="#collapseOne" aria-expanded="true"
                                                         aria-controls="collapseOne">
                                                         <span className="fonte-pagina-contato">O veículo já possui revisão?</span>
@@ -128,13 +119,7 @@ function Contact() {
                                                 <div id="collapseOne" className="accordion-collapse collapse "
                                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                     <div className="accordion-body">
-                                                        <p className="text-ac-body"><strong>This is the first item's accordion body.</strong> It is shown by
-                                                        default, until the collapse plugin adds the appropriate classes that we
-                                                        use to style each element. These classes control the overall appearance,
-                                                        as well as the showing and hiding via CSS transitions. You can modify
-                                                        any of this with custom CSS or overriding our default variables. It's
-                                                        also worth noting that just about any HTML can go within the
-                                                        <code>.accordion-body</code>, though the transition does limit overflow.</p>
+                                                        <p className="text-ac-body"><strong>Sim. Todos os nossos veículos passam por revisão.</strong> Nós da DevCars sempre nos preocupamos em garantir um padrão de qualidade. Prestando todos os cuidados necessários para que o seu veículo sempre esteja nos padrões.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -149,7 +134,7 @@ function Contact() {
                                                 <div id="collapseTwo" className="accordion-collapse collapse"
                                                     aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                                     <div className="accordion-body">
-                                                    <p className="text-ac-body"><strong>This is the first item's accordion body.</strong> It is shown by
+                                                    <p className="text-ac-body"><strong>Sim. Garantimos sempre </strong> It is shown by
                                                         default, until the collapse plugin adds the appropriate classes that we
                                                         use to style each element. These classes control the overall appearance,
                                                         as well as the showing and hiding via CSS transitions. You can modify
