@@ -20,28 +20,30 @@ function Register() {
 
 
 
-                <div className="row justify-content-center " >
-                    <div id="myGroup">
-                            <div class="btn btn-outline-secondary border-bottom-0 active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample" aria-current="page">Pessoa Física</div>
-                            <div class="btn btn-outline-secondary border-bottom-0 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample" aria-current="page">Pessoa Jurídica</div>
+                <div className="row justify-content-center align-items-center" >
+                    <div id="myGroup" className="d-flex">
+                        <div class="btn btn-outline-secondary border-bottom-0 active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample" aria-current="page">Pessoa Física</div>
+                        <div class="btn btn-outline-secondary border-bottom-0 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample" aria-current="page">Pessoa Jurídica</div>
                     </div>
 
                     {/* colapse pessoa fisica */}
-                    <div className="collapse show" id="collapseExample" data-parent="#myGroup">
+                    <div className="collapse show d-flex justify-content-center" id="collapseExample" data-parent="#myGroup">
 
                         <form className="col-12 col-md-10 mb-2 justify-content-start gy-3 dados-pessoais ps-md-5 pe-md-5 h-100">
                             <Subtitle menu="Dados Pessoais" />
+                            <div className="row">
+                                <div className="col-12 col-md-10 col-lg-6 mb-3">
+                                    <Label label="Email" for="email" />
+                                    <Input type="email" aria-label="email" id="email" />
+                                </div>
+                                <div className="col-12 col-md-10 col-lg-6 mb-3">
+                                    <Label label="CPF" for="cpf" />
+                                    <Input type="text" aria-label="cpf" id="cpf" />
+                                </div>
+                            </div>
                             <div className="col-md-10 mb-3">
                                 <Label label="Nome" for="name" />
                                 <Input type="text" aria-label="name" id="name" />
-                            </div>
-                            <div className="col-12 col-md-10 col-lg-6 mb-3">
-                                <Label label="Email" for="email" />
-                                <Input type="email" aria-label="email" id="email" />
-                            </div>
-                            <div className="col-12 col-md-10 col-lg-6 mb-3">
-                                <Label label="CPF" for="cpf" />
-                                <Input type="text" aria-label="cpf" id="cpf" />
                             </div>
                             <div className="col-12 col-md-10 col-lg-6 mb-5">
                                 <Label label="Data de Nascimento" for="dtNascimento" />
@@ -81,7 +83,7 @@ function Register() {
                                 </div>
                             </div>
 
-                            <div className="col-12 text-center mt-2">
+                            <div className="col-12 col-md-3 text-center mt-2">
                                 <Button link="" name="CADASTRE-SE" />
                             </div>
                         </form>
@@ -150,7 +152,7 @@ function Register() {
                                 </div>
                             </div>
 
-                            <div className="col-12 text-center mt-2">
+                            <div className="col-12 col-md-3 text-center mt-2">
                                 <Button link="" name="CADASTRE-SE" />
                             </div>
                         </form>
