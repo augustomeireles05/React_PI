@@ -21,7 +21,7 @@ function Register() {
 
 
                 <div className="row justify-content-center align-items-center" >
-                    <div id="myGroup" className="d-flex">
+                    <div id="myGroup" className="d-flex w-75">
                         <div class="btn btn-outline-secondary border-bottom-0 active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample" aria-current="page">Pessoa Física</div>
                         <div class="btn btn-outline-secondary border-bottom-0 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample" aria-current="page">Pessoa Jurídica</div>
                     </div>
