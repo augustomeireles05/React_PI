@@ -10,7 +10,10 @@ import LogoDevCars from '../../assets/images/Inventory/logo-rev01.jpeg'
 
 import Capa1 from '../../assets/images/Home/Koenigsegg_Gemera.jpg'
 import Capa2 from '../../assets/images/Home/ferarri-monza.jpg'
-import Capa3 from '../../assets/images/Home/home2.jpeg'
+
+import BugattichironBanner from '../../assets/images/Home/bugatti-chiron-banner.png'
+import LamborghiniAventadorBanner from '../../assets/images/Home/Lamborghini-aventador-banner.png'
+
 
 import LogomarcaAstonMartin from '../../assets/images/Home/aston-martin.png'
 import LogomarcaAudi from '../../assets/images/Home/audi.png'
@@ -50,7 +53,7 @@ function Home() {
             <section>
                 <div className="row">
                     <div className="col-12">
-                        <div id="carousel-hipercarros" className="carousel carousel-dark slide carousel-hipercarros "
+                        <div id="carousel-hipercarros" className="carousel slide carousel-dark carousel-hipercarros "
                             data-bs-ride="carousel-hipercarros">
                             <div className="carousel-indicators">
                                 <button type="button carousel-button-hover" data-bs-target="#carousel-hipercarros" data-bs-slide-to="0" className="active"
@@ -63,36 +66,36 @@ function Home() {
                                     aria-label="Slide 4"></button>
                             </div>
                             <div className="carousel-inner">
-                                <div className="carousel-item active" data-bs-interval="10000">
+                                <div className="carousel-item active" data-bs-interval="3000">
                                     <img src={Capa1} className="d-block w-100" alt="Capa1"></img>
                                     <div className="carousel-caption d-none d-md-block">
-                                        <h5>Koenigsegg Gemera</h5>
-                                        <p className="paragrafo-institucional">DevCar sera unica e exclusiva importadora Koenigsegg Gemera</p>
+                                        {/* <h5>Koenigsegg Gemera</h5>
+                                        <p className="paragrafo-institucional">DevCar sera unica e exclusiva importadora Koenigsegg Gemera</p> */}
                                     </div>
                                 </div>
-                                <div className="carousel-item  carousel-tamanho" data-bs-interval="2000">
-                                    <img src={Capa2} className="d-block w-100 stf2" alt="..."></img>
+                                <div className="carousel-item" data-bs-interval="3000">
+                                    <img src={BugattichironBanner} className="d-block w-100 stf2" alt="..."></img>
                                     <div className="carousel-caption d-none d-md-block">
-                                        <h5>Ferrari MONZA</h5>
-                                        <p> Velocidade Máx: 350 Km/h</p>
+                                        {/* <h5>Ferrari MONZA</h5>
+                                        <p> Velocidade Máx: 350 Km/h</p> */}
                                     </div>
-                                    <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+                                    {/* <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p> */}
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={Capa1} className="d-block w-100" alt="" width="100%"></img>
+                                    <img src={Capa2} className="d-block w-100" alt="" width="100%"></img>
                                     <div className="carousel-caption d-none d-md-block">
                                         <font color="white">
-                                            <h5> Bugatti Chiron </h5>
-                                            <p text="blue">Velocidade Máx: 474 km/h</p>
+                                            {/* <h5> Bugatti Chiron </h5>
+                                            <p text="blue">Velocidade Máx: 474 km/h</p> */}
                                         </font>
                                     </div>
                                 </div>
-                                <div className="carousel-item carousel-tamanho" data-bs-interval="1000">
-                                    <img src={Capa3} className="d-block w-100" alt="..." width="100%"></img>
+                                <div className="carousel-item" data-bs-interval="3000">
+                                    <img src={LamborghiniAventadorBanner} className="d-block w-100" alt="..." width="100%"></img>
                                     <div className="carousel-caption d-none d-md-block">
                                         <font color="white">
-                                            <h5>DevCar's</h5>
-                                            <p> O conceito, na sua garagem</p>
+                                            {/* <h5>DevCar's</h5>
+                                            <p> O conceito, na sua garagem</p> */}
                                         </font>
                                     </div>
                                     <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
@@ -118,7 +121,7 @@ function Home() {
                         <div className="col-12 ">
                             <div id="carousel-marcas" className="carousel slide logo_marcas" data-bs-ride="carousel-marcas">
                                 <div className="carousel-inner">
-                                    <div className="carousel-item active logo-centralizado">
+                                    <div className="carousel-item active logo-centralizado" data-bs-interval="3000">
                                         <img className="icons-marcas ms-2 me-4" src={LogomarcaAstonMartin} height="50px" />
                                         <img className="icons-marcas  me-4" src={LogomarcaAudi} height="50px" />
                                         <img className="icons-marcas  me-4" src={LogomarcaBMW} height="50px" />
@@ -130,7 +133,7 @@ function Home() {
 
 
                                     </div>
-                                    <div className="carousel-item fundo-marcas logo-centralizado2  logo-centralizado">
+                                    <div className="carousel-item fundo-marcas logo-centralizado2  logo-centralizado" data-bs-interval="3000">
                                         <img className="icons-marcas ms-3 me-4" src={LogomarcaLamborghini} height="50px" />
                                         <img className="icons-marcas ms-5 me-4" src={LogomarcaMclaren} height="50px" />
                                         <img className="icons-marcas ms-5 me-4" src={LogomarcaMercedes} height="50px" />
@@ -148,7 +151,7 @@ function Home() {
                                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span className="visually-hidden">Previous</span>
                                 </button>
-                                <button className="carousel-control-next carousel-button-hover carousel-button-hover" type="button" data-bs-target="#carousel-marcas"
+                                <button className="carousel-control-next carousel-button-hover" type="button" data-bs-target="#carousel-marcas"
                                     data-bs-slide="next">
                                     <span className="carousel-control-next-icon " aria-hidden="true"></span>
                                     <span className="visually-hidden">Next</span>

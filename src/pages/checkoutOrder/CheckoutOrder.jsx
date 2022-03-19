@@ -125,13 +125,13 @@ function CheckoutOrder() {
           {/* Início modal adicionar endereço*/}
           <div className="modal fade" id="modal-endereco" tabIndex={-1} aria-labelledby="inicioModal" aria-hidden="true">
             <div className="modal-dialog">
-              <div className="modal-content">
+              <div className="modal-content background-modal-checkoutorder">
                 {/* header do modal */}
                 <div className="modal-header">
 
                   <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <h5 className="modal-title text-center" id="inicioModal">
+                <h5 className="modal-title text-center text-dark" id="inicioModal">
                   Cadastre um novo endereço
                 </h5>
                 {/* fim da header do modal */}
@@ -280,13 +280,13 @@ function CheckoutOrder() {
           {/* Início modal adicionar cartão*/}
           <div className="modal fade" id="modal-cartao" tabIndex={-1} aria-labelledby="inicioModal" aria-hidden="true">
             <div className="modal-dialog">
-              <div className="modal-content">
+              <div className="modal-content background-modal-checkoutorder">
                 {/* header do modal */}
                 <div className="modal-header">
 
                   <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <h5 className="modal-title text-center" id="inicioModal">
+                <h5 className="modal-title text-center text-dark" id="inicioModal">
                   Adicione um novo cartão
                 </h5>
                 {/* fim da header do modal */}
