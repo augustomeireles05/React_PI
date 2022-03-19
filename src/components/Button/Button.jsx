@@ -8,7 +8,9 @@ function Button(props) {
         {/* <button type={props.type} className="btn btn-principal w-25">
           {props.name}
         </button> */}
+
         <button className="btn btn-principal fw-normal text-decoration-none" type="submit"><a href={props.link} className="link-referencia">{props.name}</a></button>
+
       </div>
     </>
   );
