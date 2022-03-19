@@ -189,7 +189,7 @@ function Home() {
                                                 <h5 className="card-title">Mercedes AMG F1</h5>
                                                 <p className="card-text text-center"><strong>R$19.000.000,00</strong></p>
                                                 {/* <button className="btn mt-3 ms-0 btn_buscar" role="button">DETALHES</button> */}
-                                                <Button link="#modal-produto-1" name="DETALHES"/>
+                                                <Button link="#modal-produto-1" name="DETALHES" />
                                             </div>
                                         </div>
                                     </div>
@@ -224,7 +224,7 @@ function Home() {
                                                         style="max-width: 102%; padding-top: 5px;">
                                                         <source src="./videos/F1.mp4" type="video/mp4">
                                                         Your browser does not support the video tag.
-                                                    </video> */}
+                                                        </video> */}
 
                                                             <img src={ModalMercedesBenzAMGF12016}
                                                                 className="card-img img-modal" alt="..."></img>
@@ -269,12 +269,13 @@ function Home() {
                                                                 Zone, soleiras e acabamentos iluminados, cortinas
                                                                 laterais e traseira elétricas, teto solar duplo,
                                                                 portas Soft Close, porta malas elétrico, aerofólio
-                                                                retrátil.</p>
+                                                                retrátil.
+                                                            </p>
                                                         </div>
 
                                                         <div className="container">
-                                                            <div className="row">
-                                                                <div className="col-5  ">
+                                                            <div className="row col-12">
+                                                                <div className="col-6">
                                                                     <div id="carouselExampleControls " className="carousel slide logo_marcas"
                                                                         data-bs-ride="carousel">
                                                                         <div
@@ -317,12 +318,17 @@ function Home() {
                                                                         </button>
                                                                     </div>
                                                                 </div>
+                                                                <div className="row col-xl-6 mt-6 col-md-12">
+                                                                    <div className="align-self-center modal-mobily3">
+                                                                        <SupportButton link="/checkoutScheduling" name="Agendar Visita" />
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="modal-footer modalfooter">
+                                            {/* <div className="modal-footer modalfooter">
                                                 <div className="row">
                                                     <div className="col-10 modal-mobily3 text-center mb-3">
                                                         <img className="logo-modal" src={LogoDevCars} alt=""></img>
@@ -332,12 +338,11 @@ function Home() {
                                                         {/* <button type="button"
                                                             className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
                                                                 visita </Link></button> */}
-                                                    <SupportButton link="/checkoutScheduling" name="AGENDAR VISITA"/>            
+                                                        {/* <SupportButton link="/checkoutScheduling" name="AGENDAR VISITA" />
 
-                                                    </div>
-                                                </div>
-                                            </div>
-
+                                                    </div> */}
+                                                {/* </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
@@ -356,7 +361,7 @@ function Home() {
                                                 <h5 className="card-title">Bugatti Chiron</h5>
                                                 <p className="card-text text-center"><strong> R$ 21.000.000,00 </strong></p>
                                                 {/* <button className="btn mt-3 btn_buscar ms-0" role="button">DETALHES</button> */}
-                                                <Button link="#modal-produto-2" name="DETALHES"/>   
+                                                <Button link="#modal-produto-2" name="DETALHES" />
                                             </div>
                                         </div>
                                     </div>
@@ -432,8 +437,8 @@ function Home() {
                                                         </div>
 
                                                         <div className="container">
-                                                            <div className="row">
-                                                                <div className="col-5 ">
+                                                            <div className="row col-12">
+                                                                <div className="col-6">
                                                                     <div id="carouselExampleControls"
                                                                         className="carousel slide logo_marcas"
                                                                         data-bs-ride="carousel">
@@ -475,28 +480,16 @@ function Home() {
                                                                         </button>
                                                                     </div>
                                                                 </div>
+                                                                <div className="row col-xl-6 mt-6 col-md-12">
+                                                                    <div className="align-self-center modal-mobily3">
+                                                                        <SupportButton link="/checkoutScheduling" name="Agendar Visita" />
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="modal-footer modalfooter">
-                                                <div className="row">
-                                                    <div className="col-10  text-center mb-3">
-                                                        <img className="logo-modal" src={LogoDevCars} alt=""></img>
-                                                    </div>
-                                                    <div className="col-1 modal-mobily3">
-
-                                                        {/* <button type="button"
-                                                            className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
-                                                                visita </Link></button> */}
-
-                                                        <SupportButton link="/checkoutScheduling" name="AGENDAR VISITA"/>        
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
                                         </div>
                                     </div>
                                 </div> {/* Fim Modal */}
@@ -513,7 +506,7 @@ function Home() {
                                                 <h5 className="card-title">Lamborghini Huracan</h5>
                                                 <p className="card-text text-center"><strong>R$4.300.000,00</strong></p>
                                                 {/* <button className="btn mt-3 btn_buscar ms-0" role="button">DETALHES</button> */}
-                                                <Button link="#modal-produto-3" name="DETALHES"/> 
+                                                <Button link="#modal-produto-3" name="DETALHES" />
                                             </div>
                                         </div>
                                     </div>
@@ -588,8 +581,8 @@ function Home() {
                                                         </div>
 
                                                         <div className="container">
-                                                            <div className="row">
-                                                                <div className="col-5 ">
+                                                            <div className="row col-12">
+                                                                <div className="col-6">
                                                                     <div id="carouselExampleControls"
                                                                         className="carousel slide logo_marcas"
                                                                         data-bs-ride="carousel">
@@ -631,27 +624,16 @@ function Home() {
                                                                         </button>
                                                                     </div>
                                                                 </div>
+                                                                <div className="row col-xl-6 mt-6 col-md-12">
+                                                                    <div className="align-self-center modal-mobily3">
+                                                                        <SupportButton link="/checkoutScheduling" name="Agendar Visita" />
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="modal-footer modalfooter">
-                                                <div className="row">
-                                                    <div className="col-10 modal-mobily3 text-center mb-3">
-                                                        <img className="logo-modal" src={LogoDevCars} alt=""></img>
-                                                    </div>
-                                                    <div className="col-1 modal-mobily3">
-
-                                                        {/* <button type="button"
-                                                            className="btn btn-secondary btn-modal-footer"><Link to="/checkoutScheduling" className="nav-link text-black">Agendar
-                                                                visita </Link></button> */}
-                                                         <SupportButton link="/checkoutScheduling" name="AGENDAR VISITA"/>          
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
                                         </div>
                                     </div>
                                 </div>
