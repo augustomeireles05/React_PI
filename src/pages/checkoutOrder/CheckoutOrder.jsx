@@ -7,7 +7,6 @@ import Footer from '../../components/footer/Footer.jsx';
 
 import Button from '../../components/Button/Button.jsx';
 import SupportButton from '../../components/Button/SupportButton';
-import { Link } from 'react-router-dom';
 
 import Editar from '../../assets/images/CheckoutOrder/edit.png';
 import Lixeira from '../../assets/images/CheckoutOrder/trash.png';
@@ -583,15 +582,10 @@ function CheckoutOrder() {
             </form>
 
             <div className="d-grid gap-2 d-md-block pt-2">
-              {/* <Button type="button" name="Voltar para Carrinho"> */}
-              <SupportButton link="/Cart" name="Voltar para o Carrinho"/>
-            
-                {/* <Link to="/cart"></Link> */}
-              {/* </Button> */}
-              {/* <Button type="button" name="Finalizar Compra"> */}
-                {/* <Link to="/orderResume"></Link> */}
+              <div className="col-sm-12">
+                <SupportButton link="/Cart" name="Voltar para o Carrinho"/>
                 <Button link="/orderResume" name="Finalizar Compra"/>
-              {/* </Button> */}
+              </div>
             </div>
           </div>
           {/* FIM DO CARD DO RESUMO  */}
