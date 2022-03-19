@@ -7,9 +7,10 @@ import Footer from '../../components/footer/Footer.jsx';
 
 import Button from '../../components/Button/Button.jsx';
 import SupportButton from '../../components/Button/SupportButton';
-import { Link } from 'react-router-dom';
+
 import Input from '../../components/Input/Input'
 import Label from '../../components/Input/Label'
+
 
 import Editar from '../../assets/images/CheckoutOrder/edit.png';
 import Lixeira from '../../assets/images/CheckoutOrder/trash.png';
@@ -384,7 +385,6 @@ function CheckoutOrder() {
             {/* Fim do Card do Boleto */}
           </div>
         </div>
-
         {/* INICIO DO CARD DO RESUMO  */}
         <div className="col-md-6 col-lg-5 order-md-last mt-2">
           <h4 className="d-flex justify-content-between align-items-center mb-3">
@@ -412,25 +412,14 @@ function CheckoutOrder() {
               <strong className="font-text-bold">R$ 4.756.100,00</strong>
             </li>
           </ul>
-
-          <div className="col-12 col-md-12 row justify-content-between ms-2 ms-md-2 me-0 me-md-0">
-            {/* <Button type="button" name="Voltar para Carrinho"> */}
-            <div className="col-6 col-md-6 col-lg-6 px-0">
-              <SupportButton link="/Cart" name="Ir para carrinho" />
-            </div>
-            
-
-            {/* <Link to="/cart"></Link> */}
-            {/* </Button> */}
-            {/* <Button type="button" name="Finalizar Compra"> */}
-            {/* <Link to="/orderResume"></Link> */}
-
-            <div className="col-6 col-md-6 col-lg-6 m-0 m-md-0 px-0">
+          <div className="d-grid gap-2 d-md-block pt-2">
+            <div className="col-sm-12">
+              <SupportButton link="/Cart" name="Voltar para o Carrinho" />
               <Button link="/orderResume" name="Finalizar Compra" />
             </div>
-
-            {/* </Button> */}
           </div>
+
+          {/* </Button> */}
         </div>
         {/* FIM DO CARD DO RESUMO  */}
       </div>
