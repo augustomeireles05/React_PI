@@ -212,7 +212,7 @@ function Home() {
                                         <div className="modal-content cores-modal">
 
                                             <div className="modal-header cores-modal modal-mobily5 justify-content-center mt-1">
-                                                <h5>CHRYSLER PACIFICA HYBRID 2019</h5>
+                                                <h5>Mercedes AMG F1</h5>
                                                 <button type="button"
                                                     className="btn-close btn-modal-close fecharmodal justify-flex-end "
                                                     data-bs-dismiss="modal" aria-label="Close">
@@ -238,7 +238,7 @@ function Home() {
                                                             <ul className="lista-modal info-gerais2 linhas-modal">
                                                                 <li>
                                                                     <span className="detalhes-info">COR:</span>
-                                                                    <span className="detalhes-info">AZUL</span>
+                                                                    <span className="detalhes-info">Prata</span>
                                                                 </li>
                                                                 <li className="info-gerais-linhas">
                                                                     <span className="detalhes-info">KM:</span>
@@ -254,7 +254,7 @@ function Home() {
                                                                 </li>
                                                                 <li>
                                                                     <span className="detalhes-info">VALOR (R$):</span>
-                                                                    <span className="detalhes-info">19.000.000,00</span>
+                                                                    <span className="detalhes-info">R$19.000.000,00</span>
                                                                 </li>
                                                             </ul>
                                                             <h3 className=" info-gerais">INFORMAÇÕES GERAIS</h3>
@@ -402,7 +402,7 @@ function Home() {
                                                             <ul className="lista-modal info-gerais2  linhas-modal">
                                                                 <li>
                                                                     <span className="detalhes-info">COR:</span>
-                                                                    <span className="detalhes-info">Branco</span>
+                                                                    <span className="detalhes-info">Azul</span>
                                                                 </li>
                                                                 <li className="info-gerais-linhas">
                                                                     <span className="detalhes-info">KM:</span>
