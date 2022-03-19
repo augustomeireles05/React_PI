@@ -4,8 +4,9 @@ import './OrderResume.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import Sidebar from '../../components/Sidebar/Sidebar'
+import MainTittle from '../../components/Tittle/MainTittle.jsx';
 import Subtittle from '../../components/Subtittle/Subtittle'
-import MainTittle from '../../components/Tittle/MainTittle'
+// import MainTittle from '../../components/Tittle/MainTittle'
 
 import Awardicon from '../../assets/images/OrderDetails/certificado-de-garantia.png'
 import Checkedicon from '../../assets/images/OrderDetails/checked.png'
@@ -18,8 +19,8 @@ function OrderResume() {
             <Header />
             <MainTittle tittle="RESUMO DO PEDIDO"/>
             <div className="container">
-
-                
+{/*                 
+                <MainTittle tittle="RESUMO DO PEDIDO" /> */}
 
                     <div className="row gx-5 gy-3 px-3">
                         {/* inicio do menu lateral */}

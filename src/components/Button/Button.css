@@ -7,10 +7,10 @@
     background: linear-gradient(8deg, rgb(179, 152, 4) 30%, rgb(223, 208, 126) 70%);
     border-radius: 4px;
     border: none;
-    padding: 0px 10px 0px 10px;
+    padding: 20px 20px 20px 20px;
     margin: 5px;
-    text-align: center; 
-    
+    text-align: center;
+    margin-left: 10px;
 }
 
 .btn-principal:hover{
@@ -30,10 +30,17 @@
 
 .link-referencia:hover {
     color: black;
-    font-weight: bold;
-    
 }
 
-a{
+.a {
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    .btn-principal {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 20px;
+    }
 }
