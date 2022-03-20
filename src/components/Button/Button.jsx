@@ -1,14 +1,15 @@
 import "./Button.css";
 
 function Button(props) {
+  
   return (
     <>
-      {/* Estava justify-content-center */}
-      <div className="d-flex justify-content-end me-3 me-md-0 "> 
-        {/* <button type={props.type} className="btn btn-principal w-25">
-          {props.name}
-        </button> */}
-        <button className="btn btn-principal" type="submit"><a href={props.link} className="link-referencia">{props.name}</a></button>
+      {/* Estava justify-content-end */}
+      <div className="d-flex justify-content-center me-3 me-md-0"> 
+        <button className="btn btn-principal fw-normal text-decoration-none col-12" type="submit">
+          <a href={props.link} className="link-referencia a">{props.name}</a>
+        </button>
+
       </div>
     </>
   );

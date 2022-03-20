@@ -1,63 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Orbitron&family=Questrial&family=Roboto+Condensed:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Orbitron&family=Questrial&family=Roboto+Condensed:wght@300&display=swap');
 
-body {
+/* body {
     background-color: #E0E0E0;
 }
 
 .title-page {
     padding: 2%;
     font-family: 'Questrial', sans-serif;
-}
+} */
 
-.font-text {
-    font-family: 'Questrial', sans-serif;
-}
-
-.font-text-bold {
-    font-family: 'Questrial', sans-serif;
-    font-weight: 800;
-}
-
-.background {
-    background-color: #E0E0E0;
-}
-
-.space-input {
-    padding-left: 0.3em;
-}
-
-a button {
-    width: 100%;
-}
-
-
-.confi_agendamento {
+.btn-modal-checkoutorder {
     background: linear-gradient(8deg, rgb(179, 152, 4) 30%, rgb(223, 208, 126) 70%);
-    height: 60px;
-    
-    
+    font-family: 'Questrial', sans-serif;
+    border-radius: 5px;
+    border: none;
 }
 
-.confi_agendamento:hover {
+.btn-modal-checkoutorder:hover {
     background: linear-gradient(191deg, rgb(179, 152, 4) 30%, rgb(223, 208, 126) 70%);
-    font-weight: bold
 }
 
-
-.vtcarrinho {
-    background: linear-gradient(8deg, rgba(158, 157, 150, 0.411) 30%, rgb(211, 211, 209) 70%);
-    
-    
+.background-modal-checkoutorder {
+    background: radial-gradient(circle, rgba(182,182,182,1) 0%, rgba(156,156,156,0.996039603960396) 100%);
 }
-
-.vtcarrinho:hover {
-    background: linear-gradient(191deg, rgba(158, 157, 150, 0.411)30%, rgb(211, 211, 209) 70%);
-}
-
-
-.meus-dados{
-    width: 100%;
-    margin-left: 2px;
-}
-
-

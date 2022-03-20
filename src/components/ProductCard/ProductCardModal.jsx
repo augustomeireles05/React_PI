@@ -115,7 +115,7 @@ export default class ProductCardModal extends Component {
                                 <div className="">
                                     {
                                         this.props.price < this.limitValue
-                                        ? <> <Link to="/checkoutOrder" className="btn btn-modal-buy">Comprar</Link> </>
+                                        ? <> <Link to="/cart" className="btn btn-modal-buy">Comprar</Link> </>
                                         : ''
                                         // <> <Link to="/checkoutScheduling" className="btn btn-modal-buy">Agendar visita</Link> </>
                                     }
