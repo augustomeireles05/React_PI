@@ -71,51 +71,38 @@ function WishList() {
 
                                 <div className="">
                                     <div className="listadesejos">
-
-                                        <div className="row row-cols-1 row-cols-md-3 g-4 responsive-ipadPro">
-
-
-
-
+                                        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 responsive-ipadPro">
                                             {/* card 1 */}
                                             <div className="col text-center">
                                                 <Link to="#" className="text-decoration-none" />
                                                 <div className="card h-100 mb-5">
                                                     {/* <img src="../img/Land_Rover_Evoque_HSE_Dynamic_Preta_2020_01-768x576.jpg"
                                                             className="card-img" alt="..."/> */}
-                                                         <div className="col-md-2 col-lg-12 col-xl-12">
+                                                         <div className="col-md-12 col-lg-12 col-xl-12">
                                                              <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt"/>
                                                           </div>   
                                                     <div className="card-body">
                                                         <h5 className="card-title">CHRYSLER PACIFICA XS 2019</h5>
                                                         <p className="card-text">R$579.000,00</p>
-                                                        {/* <Link className="btn-sm btn-warning mt-3 buttom-width text-decoration-none">COMPRAR</Link> */}
-                                                    
-                                                                        
+                                                        {/* <Link className="btn-sm btn-warning mt-3 buttom-width text-decoration-none">COMPRAR</Link> */}          
                                                         {/* <Link to="#" /><img src="./img/img-header/favorite.png" alt="favotirar"
                                                                     className="favoritar"/><Link />
                                                             </div> */}
                                                     </div>
                                                     <div className="card-footer">
                                                     <Button link="/" name="COMPRAR" />
-
                                                     </div>
                                                     <Link />
                                                 </div>
                                             </div>
-
                                             {/* fim do card 1 */}
-
-
-
-
                                             {/* card 2 */}
                                             <div className="col text-center">
                                                 <Link to="#" className="text-decoration-none" />
                                                 <div className="card h-100 mb-5">
                                                     {/* <img src="../img/Land_Rover_Evoque_HSE_Dynamic_Preta_2020_01-768x576.jpg"
                                                             className="card-img" alt="..."/> */}
-                                                             <div className="col-md-2 col-lg-12 col-xl-12">
+                                                             <div className="col-md-12 col-lg-12 col-xl-12">
                                                              <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt"/>
                                                           </div>   
                                                     <div className="card-body">
@@ -151,7 +138,7 @@ function WishList() {
                                                 <div className="card h-100 mb-5">
                                                     {/* <img src="../img/Land_Rover_Evoque_HSE_Dynamic_Preta_2020_01-768x576.jpg"
                                                             className="card-img" alt="..."/> */}
-                                                             <div className="col-md-2 col-lg-12 col-xl-12">
+                                                             <div className="col-md-12 col-lg-12 col-xl-12">
                                                              <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt"/>
                                                           </div>   
                                                     <div className="card-body">
@@ -180,7 +167,7 @@ function WishList() {
                                                 <div className="card h-100 mb-5">
                                                     {/* <img src="../img/Mustang_GT_Cinza_2019_01-184x130.jpg" className="card-img"
                                                             alt="..."/> */}
-                                                             <div className="col-md-2 col-lg-12 col-xl-12">
+                                                             <div className="col-md-12 col-lg-12 col-xl-12">
                                                              <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt"/>
                                                           </div>   
                                                     <div className="card-body">
@@ -208,7 +195,7 @@ function WishList() {
                                                 <div className="card h-100 mb-5">
                                                     {/* <img src="../img/Porsche_911_Carrera_2021_giz_01-184x130.jpg"
                                                             className="card-img" alt="..."/> */}
-                                                             <div className="col-md-2 col-lg-12 col-xl-12">
+                                                             <div className="col-md-12 col-lg-12 col-xl-12">
                                                              <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt"/>
                                                           </div>   
                                                     <div className="card-body">
@@ -235,7 +222,7 @@ function WishList() {
                                                 <div className="card h-100 mb-5">
                                                     {/* <img src="../img/Audi_A5_Sportback_Sline_2019_cinza_01-768x576.jpg"
                                                             className="card-img" alt="..."/> */}
-                                                             <div className="col-md-2 col-lg-12 col-xl-12">
+                                                             <div className="col-md-12 col-lg-12 col-xl-12">
                                                              <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt"/>
                                                           </div>   
                                                     <div className="card-body">
@@ -262,7 +249,7 @@ function WishList() {
                                                 <div className="card h-100 mb-5">
                                                     {/* <img src="../img/MercedesBenz_AMG_GT_63_S_2020_branco_01-768x576.jpg"
                                                             className="card-img" alt="..."/> */}
-                                                             <div className="col-md-2 col-lg-12 col-xl-12">
+                                                             <div className="col-md-12 col-lg-12 col-xl-12">
                                                              <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt"/>
                                                           </div>   
                                                     <div className="card-body">

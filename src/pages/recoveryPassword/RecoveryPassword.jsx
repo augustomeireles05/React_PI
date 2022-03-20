@@ -35,7 +35,7 @@ function RecoveryPassword() {
                                 <Input type="password" aria-label="password-confirm" id="password-confirm" />
                             </div>
 
-                            <div className="button-recuperarsenha">
+                            <div className="button-recuperarsenha mt-3">
 
                                 <Link to="/login">
                                     <Button link="#" name="Restaurar" />

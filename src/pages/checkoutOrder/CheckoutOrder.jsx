@@ -585,7 +585,9 @@ function CheckoutOrder() {
             <div className="d-grid gap-2 d-md-block pt-2">
               {/* <Button type="button" name="Voltar para Carrinho"> */}
               <SupportButton link="/Cart" name="Voltar para o Carrinho"/>
-            
+
+              <div className="mt-3"></div>
+
                 {/* <Link to="/cart"></Link> */}
               {/* </Button> */}
               {/* <Button type="button" name="Finalizar Compra"> */}

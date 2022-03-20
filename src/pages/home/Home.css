@@ -184,6 +184,12 @@ body{
     text-align: justify;
 }
 
+.card-title-height{
+
+    height: 50px;
+
+
+}
 /* -- RESPONSIVE - BEGIN HEADER -- */
 
 @media (max-width: 1000px) {

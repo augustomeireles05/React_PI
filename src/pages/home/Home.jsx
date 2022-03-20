@@ -186,7 +186,7 @@ function Home() {
                                         <div className="card h-100 mb-5">
                                             <img src={MercedesBenzAMGF12016} className="card-img" alt="..."></img>
                                             <div className="card-body">
-                                                <h5 className="card-title">Mercedes AMG F1</h5>
+                                                <h5 className="card-title card-title-height">Mercedes AMG F1</h5>
                                                 <p className="card-text text-center"><strong>R$19.000.000,00</strong></p>
                                                 {/* <button className="btn mt-3 ms-0 btn_buscar" role="button">DETALHES</button> */}
                                                 <Button link="#modal-produto-1" name="DETALHES"/>
@@ -353,7 +353,7 @@ function Home() {
                                         <div className="card h-100 mb-5">
                                             <img src={BugattiChiron} className="card-img" alt="..."></img>
                                             <div className="card-body">
-                                                <h5 className="card-title">Bugatti Chiron</h5>
+                                                <h5 className="card-title card-title-height">Bugatti Chiron</h5>
                                                 <p className="card-text text-center"><strong> R$ 21.000.000,00 </strong></p>
                                                 {/* <button className="btn mt-3 btn_buscar ms-0" role="button">DETALHES</button> */}
                                                 <Button link="#modal-produto-2" name="DETALHES"/>   
@@ -510,7 +510,7 @@ function Home() {
                                         <div className="card h-100 mb-5">
                                             <img src={LamborghiniHuracan} className="card-img" alt="..."></img>
                                             <div className="card-body">
-                                                <h5 className="card-title">Lamborghini Huracan</h5>
+                                                <h5 className="card-title card-title-height">Lamborghini Huracan</h5>
                                                 <p className="card-text text-center"><strong>R$4.300.000,00</strong></p>
                                                 {/* <button className="btn mt-3 btn_buscar ms-0" role="button">DETALHES</button> */}
                                                 <Button link="#modal-produto-3" name="DETALHES"/> 
