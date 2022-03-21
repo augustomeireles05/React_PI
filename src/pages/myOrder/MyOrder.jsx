@@ -44,7 +44,7 @@ function MyOrder() {
                     {/* inicio dos cards de pedidos */}
                     <div className="col-md rounded-1 mb-5">
 
-                        <div className="d-flex justify-content-around titulo-menu mb-3 mt-0 pt-0 pb-4">
+                        <div className="d-flex justify-content-around titulo-menu mb-3 mt-0 pt-0 pb-2">
                             <div className="col-3 text-end text-md-center">
                                 <span className="fs-6">PEDIDO</span>
                             </div>
@@ -74,7 +74,7 @@ function MyOrder() {
                                         <span className="ms-md-3">#43775</span>
                                     </div>
 
-                                    <div className="col status-pedido d-flex align-items-center justify-content-center">
+                                    <div className="col status-pedido d-flex align-items-center justify-content-center mb-3">
                                         <img src={SchedulingIcon} alt="agendado" className="figura-status" />
                                         <span className="ms-1">AGENDADO</span>
                                     </div>
