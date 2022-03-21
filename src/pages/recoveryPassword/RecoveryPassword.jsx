@@ -30,17 +30,16 @@ function RecoveryPassword() {
                                 <Input type="password" aria-label="password" id="password"/>
                             </div>
 
-                            <div className="col-12 col-md-12 col-lg-12 w-100 mt-3" data-validate="Password is required">
+                            <div className="col-12 col-md-12 col-lg-12 w-100 mt-3 mb-4" data-validate="Password is required">
                                 <Label label="Confirme sua nova senha" for="password-confirm"/>
                                 <Input type="password" aria-label="password-confirm" id="password-confirm" />
                             </div>
 
-                            <div className="button-recuperarsenha">
-
-                                <Link to="/login">
+                            {/* <div className="button-recuperarsenha"> */}
+                                {/* <Link to="/login"> */}
                                     <Button link="#" name="Restaurar" />
-                                </Link>
-                            </div>    
+                                {/* </Link> */}
+                            {/* </div>     */}
 
 
                         </form>
