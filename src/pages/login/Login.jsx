@@ -55,7 +55,7 @@ function Login() {
                                             <Label label="Senha" for="senha"/>
                                             <Input type="password" aria-label="senha" id="senha"/>
                                         </div>
-                                        <div className="form-group button-entrar-login">
+                                        <div className="form-group button-entrar-login mt-4">
                                             <Button link="/ShedulingDetails" name="Entrar" className="form-group button-entrar-login"/>
                                         </div>
                                         <div className="col-12 row form-group d-md-flex pt-3 mx-0 text-center">
