@@ -81,15 +81,15 @@ function Home() {
                                     </div>
                                     {/* <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p> */}
                                 </div>
-                                <div className="carousel-item">
+                                {/* <div className="carousel-item">
                                     <img src={Capa2} className="d-block w-100" alt="" width="100%"></img>
                                     <div className="carousel-caption d-none d-md-block">
                                         <font color="white">
                                             {/* <h5> Bugatti Chiron </h5>
-                                            <p text="blue">Velocidade Máx: 474 km/h</p> */}
+                                            <p text="blue">Velocidade Máx: 474 km/h</p> 
                                         </font>
                                     </div>
-                                </div>
+                                </div> */}
                                 <div className="carousel-item" data-bs-interval="3000">
                                     <img src={LamborghiniAventadorBanner} className="d-block w-100" alt="..." width="100%"></img>
                                     <div className="carousel-caption d-none d-md-block">
