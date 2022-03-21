@@ -34,6 +34,13 @@ function Register() {
 
                     <form className="col-12 col-md-10 mb-2 justify-content-start gy-3 dados-pessoais ps-md-5 pe-md-5 h-100 w-100">
                         <Subtitle menu="Dados Pessoais" />
+
+                        <div className="col-md-10 mb-3">
+                            <Label label="Nome" for="nome" />
+                            <Input type="text" aria-label="Nome" id="Nome" />
+                        </div>
+
+
                         <div className="row">
                             <div className="col-12 col-md-10 col-lg-6 mb-3">
                                 <Label label="Email" for="emailPF" />
@@ -44,15 +51,17 @@ function Register() {
                                 <Input type="text" aria-label="cpf" id="cpf" />
                             </div>
                         </div>
-                        <div className="col-md-10 mb-3">
-                            <Label label="Nome" for="nome" />
-                            <Input type="text" aria-label="Nome" id="Nome" />
+                    
+                        <div className="row">
+                            <div className="col-12 col-md-10 col-lg-6 mb-5">
+                                <Label label="Data de Nascimento" for="dtNascimento" />
+                                <Input type="date" aria-label="dtNascimento" id="dtNascimento" />
+                            </div>
+                            <div className="col-12 col-md-10 col-lg-6 mb-3">
+                                <Label label="Telefone" for="telefonePF" />
+                                <Input type="text" aria-label="telefonePF" id="telefonePF" />
+                            </div>
                         </div>
-                        <div className="col-12 col-md-10 col-lg-6 mb-5">
-                            <Label label="Data de Nascimento" for="dtNascimento" />
-                            <Input type="date" aria-label="dtNascimento" id="dtNascimento" />
-                        </div>
-
 
 
                         { /*Começo Senha*/}
@@ -102,6 +111,12 @@ function Register() {
                     {/* <form className="row mb-2 gy-3"> */}
                     <form className="col-12 col-md-10 mb-2 justify-content-start gy-3 dados-pessoais ps-md-5 pe-md-5 h-100 w-100">
                         <Subtitle menu="Dados Pessoais" />
+
+                        <div className="col-md-10 mb-3">
+                            <Label label="Razão Social" for="rzSocial" />
+                            <Input type="text" aria-label="rzSocial" id="rzSocial" />
+                        </div>
+
                         <div className="row">
                             <div className="col-12 col-md-10 col-lg-6 mb-3">
                                 <Label label="Email" for="email" />
@@ -112,15 +127,23 @@ function Register() {
                                 <Input type="text" aria-label="cnpj" id="cnpj" />
                             </div>
                         </div>
-                        <div className="col-md-10 mb-3">
-                            <Label label="Razão Social" for="rzSocial" />
-                            <Input type="text" aria-label="rzSocial" id="rzSocial" />
-                        </div>
+                        
 
+
+                        <div className="row">
                         <div className="col-12 col-md-10 col-lg-6 mb-5">
                             <Label label="Inscrição Estadual" for="inscrEstadual" />
                             <Input type="text" aria-label="inscrEstadual" id="inscrEstadual" />
                         </div>
+                        <div className="col-12 col-md-10 col-lg-6 mb-5">
+                            <Label label="Telefone" for="telefonePJ" />
+                            <Input type="text" aria-label="telefonePJ" id="telefonePJ" />
+                        </div>
+                        </div>
+
+
+
+                        
 
 
 
