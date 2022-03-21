@@ -1,17 +1,21 @@
 import './WishList.css'
+
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
-import { Link } from 'react-router-dom'
 import Button from '../../components/Button/Button'
+import Subtittle from '../../components/Subtittle/Subtittle.jsx';
+
+import { Link } from 'react-router-dom'
+
 import imgListaDesejos from '../../assets/images/newInventory/audi-tt.jpeg'
 
 
 function WishList() {
     return (
         <>
-            <Header/>
-
+            <Header />
             <section>
+           
 
                 <article className="page-content">
 
@@ -24,14 +28,12 @@ function WishList() {
 
 
                                 {/*Navbar*/}
-                                <div className="navbar navbar-light me-5 border-bottom-menu">
+                                {/* <div className="navbar navbar-light me-5 border-bottom-menu">
                                     <div className="container-fluid  d-block text-center">
-                                        <span className=" mb-0 fs-6 ">MENU</span>
-
-
-
+                                        <span className="mb-0 fs-6">MENU</span>
                                     </div>
-                                </div>
+                                </div> */}
+                                 <Subtittle menu="MENU"/>
 
                                 <div className="btn-group-vertical background-container-subject shadow me-5" role="group"
                                     aria-label="Vertical button group">
@@ -54,28 +56,22 @@ function WishList() {
                                         <Link className="link-solution" to="/"> SAIR </Link>
                                     </button>
                                 </div>
-
                             </div>
                         </div>
                         {/* coluna lista desejos*/}
                         <div className="col-9">
                             <div className="">
-                                <div className="">
-                                    <div className=" text-center title col-12 ">
+                                 <div className="">
+                                   {/* <div className=" text-center title col-12 ">
                                         <span className="fs-6">LISTA DE DESEJOS</span>
-                                    </div>
-                                </div>
-
-
-
+                                    </div> */}
+                                    <Subtittle subtitulo="LISTA DE DESEJOS" />
+                                </div> 
+                                
 
                                 <div className="">
                                     <div className="listadesejos">
-
                                         <div className="row row-cols-1 row-cols-md-3 g-4 responsive-ipadPro">
-
-
-
 
                                             {/* card 1 */}
                                             <div className="col text-center">
@@ -83,21 +79,21 @@ function WishList() {
                                                 <div className="card h-100 mb-5">
                                                     {/* <img src="../img/Land_Rover_Evoque_HSE_Dynamic_Preta_2020_01-768x576.jpg"
                                                             className="card-img" alt="..."/> */}
-                                                         <div className="col-md-2 col-lg-12 col-xl-12">
-                                                             <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt"/>
-                                                          </div>   
+                                                    <div className="col-md-2 col-lg-12 col-xl-12">
+                                                        <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt" />
+                                                    </div>
                                                     <div className="card-body">
                                                         <h5 className="card-title">CHRYSLER PACIFICA XS 2019</h5>
                                                         <p className="card-text">R$579.000,00</p>
                                                         {/* <Link className="btn-sm btn-warning mt-3 buttom-width text-decoration-none">COMPRAR</Link> */}
-                                                    
-                                                                        
+
+
                                                         {/* <Link to="#" /><img src="./img/img-header/favorite.png" alt="favotirar"
                                                                     className="favoritar"/><Link />
                                                             </div> */}
                                                     </div>
                                                     <div className="card-footer">
-                                                    <Button link="/" name="COMPRAR" />
+                                                        <Button link="/" name="COMPRAR" />
 
                                                     </div>
                                                     <Link />
@@ -106,18 +102,15 @@ function WishList() {
 
                                             {/* fim do card 1 */}
 
-
-
-
                                             {/* card 2 */}
                                             <div className="col text-center">
                                                 <Link to="#" className="text-decoration-none" />
                                                 <div className="card h-100 mb-5">
                                                     {/* <img src="../img/Land_Rover_Evoque_HSE_Dynamic_Preta_2020_01-768x576.jpg"
                                                             className="card-img" alt="..."/> */}
-                                                             <div className="col-md-2 col-lg-12 col-xl-12">
-                                                             <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt"/>
-                                                          </div>   
+                                                    <div className="col-md-2 col-lg-12 col-xl-12">
+                                                        <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt" />
+                                                    </div>
                                                     <div className="card-body">
                                                         <h5 className="card-title">JAQUE E-PACE P-250 2018</h5>
                                                         <p className="card-text">R$209.000,00</p>
@@ -127,10 +120,9 @@ function WishList() {
                                                                     className="favoritar"/><Link />
                                                             </div> */}
 
-                                                            
                                                     </div>
                                                     <div className="card-footer">
-                                                    <Button link="/" name="COMPRAR" />
+                                                        <Button link="/" name="COMPRAR" />
 
                                                     </div>
 
@@ -141,19 +133,15 @@ function WishList() {
 
                                             {/* fim do card 2 */}
 
-
-
-
-
                                             {/* card 3 */}
                                             <div className="col text-center">
                                                 <Link to="#" className="text-decoration-none" />
                                                 <div className="card h-100 mb-5">
                                                     {/* <img src="../img/Land_Rover_Evoque_HSE_Dynamic_Preta_2020_01-768x576.jpg"
                                                             className="card-img" alt="..."/> */}
-                                                             <div className="col-md-2 col-lg-12 col-xl-12">
-                                                             <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt"/>
-                                                          </div>   
+                                                    <div className="col-md-2 col-lg-12 col-xl-12">
+                                                        <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt" />
+                                                    </div>
                                                     <div className="card-body">
                                                         <h5 className="card-title">LAND ROVER EVOQUE 2020</h5>
                                                         <p className="card-text">R$399.000,00</p>
@@ -166,7 +154,7 @@ function WishList() {
                                                     <Link />
 
                                                     <div className="card-footer">
-                                                    <Button link="/" name="COMPRAR" />
+                                                        <Button link="/" name="COMPRAR" />
 
                                                     </div>
                                                 </div>
@@ -180,9 +168,9 @@ function WishList() {
                                                 <div className="card h-100 mb-5">
                                                     {/* <img src="../img/Mustang_GT_Cinza_2019_01-184x130.jpg" className="card-img"
                                                             alt="..."/> */}
-                                                             <div className="col-md-2 col-lg-12 col-xl-12">
-                                                             <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt"/>
-                                                          </div>   
+                                                    <div className="col-md-2 col-lg-12 col-xl-12">
+                                                        <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt" />
+                                                    </div>
                                                     <div className="card-body">
                                                         <h5 className="card-title">FORD MUSTANG GT 2020</h5>
                                                         <p className="card-text">R$425.000,00</p>
@@ -192,11 +180,11 @@ function WishList() {
                                                                     className="favoritar"/><Link /> */}
                                                     </div>
                                                     <div className="card-footer">
-                                                    <Button link="/" name="COMPRAR" />
+                                                        <Button link="/" name="COMPRAR" />
 
                                                     </div>
                                                 </div>
-                                               
+
                                                 <Link />
                                             </div>
                                             {/* fim do card 4 */}
@@ -208,9 +196,9 @@ function WishList() {
                                                 <div className="card h-100 mb-5">
                                                     {/* <img src="../img/Porsche_911_Carrera_2021_giz_01-184x130.jpg"
                                                             className="card-img" alt="..."/> */}
-                                                             <div className="col-md-2 col-lg-12 col-xl-12">
-                                                             <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt"/>
-                                                          </div>   
+                                                    <div className="col-md-2 col-lg-12 col-xl-12">
+                                                        <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt" />
+                                                    </div>
                                                     <div className="card-body">
                                                         <h5 className="card-title">PORSCHE 911 CARRERA 2021</h5>
                                                         <p className="card-text">R$1.030.000,00</p>
@@ -220,7 +208,7 @@ function WishList() {
                                                                     className="favoritar"/><Link /> */}
                                                     </div>
                                                     <div className="card-footer">
-                                                    <Button link="/" name="COMPRAR" />
+                                                        <Button link="/" name="COMPRAR" />
 
                                                     </div>
                                                 </div>
@@ -235,9 +223,9 @@ function WishList() {
                                                 <div className="card h-100 mb-5">
                                                     {/* <img src="../img/Audi_A5_Sportback_Sline_2019_cinza_01-768x576.jpg"
                                                             className="card-img" alt="..."/> */}
-                                                             <div className="col-md-2 col-lg-12 col-xl-12">
-                                                             <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt"/>
-                                                          </div>   
+                                                    <div className="col-md-2 col-lg-12 col-xl-12">
+                                                        <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt" />
+                                                    </div>
                                                     <div className="card-body">
                                                         <h5 className="card-title">AUDI A5 SPORTBACK 2019</h5>
                                                         <p className="card-text">R$249.000,00</p>
@@ -247,7 +235,7 @@ function WishList() {
                                                                     className="favoritar"/><Link /> */}
                                                     </div>
                                                     <div className="card-footer">
-                                                    <Button link="/" name="COMPRAR" />
+                                                        <Button link="/" name="COMPRAR" />
 
                                                     </div>
                                                 </div>
@@ -262,9 +250,9 @@ function WishList() {
                                                 <div className="card h-100 mb-5">
                                                     {/* <img src="../img/MercedesBenz_AMG_GT_63_S_2020_branco_01-768x576.jpg"
                                                             className="card-img" alt="..."/> */}
-                                                             <div className="col-md-2 col-lg-12 col-xl-12">
-                                                             <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt"/>
-                                                          </div>   
+                                                    <div className="col-md-2 col-lg-12 col-xl-12">
+                                                        <img src={imgListaDesejos} className="img-fluid rounded-3" alt="Cotton T-shirt" />
+                                                    </div>
                                                     <div className="card-body">
                                                         <h5 className="card-title">MERCEDES-BENZ AMG GLE 63 2018</h5>
                                                         <p className="card-text">R$659.000,00</p>
@@ -274,7 +262,7 @@ function WishList() {
                                                                     className="favoritar"/><Link /> */}
                                                     </div>
                                                     <div className="card-footer">
-                                                    <Button link="/" name="COMPRAR" />
+                                                        <Button link="/" name="COMPRAR" />
 
                                                     </div>
                                                 </div>
@@ -300,7 +288,7 @@ function WishList() {
 
             </section>
 
-           <Footer/>                                                             
+            <Footer />
         </>
     )
 }
