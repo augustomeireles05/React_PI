@@ -375,6 +375,20 @@ function CheckoutOrder() {
                 </span>
               </div>
             </div>
+
+            <div className="d-grid gap-2 d-md-block pt-2">
+              {/* <Button type="button" name="Voltar para Carrinho"> */}
+              <SupportButton link="/Cart" name="Voltar para o Carrinho"/>
+
+              <div className="mt-3"></div>
+
+                {/* <Link to="/cart"></Link> */}
+              {/* </Button> */}
+              {/* <Button type="button" name="Finalizar Compra"> */}
+                {/* <Link to="/orderResume"></Link> */}
+                <Button link="/orderResume" name="Finalizar Compra"/>
+              {/* </Button> */}
+            </div>
             <div className="card-body">
               {/* <h5 className="card-title">Secondary card title</h5> */}
               <p className="card-text">
