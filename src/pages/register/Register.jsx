@@ -68,11 +68,11 @@ function Register() {
 
 
                         <Subtitle subtitulo="Senha" />
-                        <div className="col-12 col-md-10 col-lg-6 mb-3">
+                        {/* <div className="col-12 col-md-10 col-lg-6 mb-3">
                             <Label label="Informe sua senha atual" for="current-password" />
                             <Input type="password" aria-label="password-register" id="current-password" />
-                            {/* <span className="fs-6">Digite uma senha de 8-16 caracteres</span> */}
-                        </div>
+                            {/* <span className="fs-6">Digite uma senha de 8-16 caracteres</span>
+                        </div> */}
 
 
                         <div className="col-12 col-md-10 col-lg-6 mb-3">
@@ -151,11 +151,11 @@ function Register() {
 
 
                         <Subtitle subtitulo="Senha" />
-                        <div className="col-12 col-md-10 col-lg-6 mb-3">
+                        {/* <div className="col-12 col-md-10 col-lg-6 mb-3">
                             <Label label="Informe sua senha atual" for="current-password" />
                             <Input type="password" aria-label="password-register" id="current-password" />
-                            {/* <span className="fs-6">Digite uma senha de 8-16 caracteres</span> */}
-                        </div>
+                            {/* <span className="fs-6">Digite uma senha de 8-16 caracteres</span>
+                        </div> */}
 
 
                         <div className="col-12 col-md-10 col-lg-6 mb-3">
