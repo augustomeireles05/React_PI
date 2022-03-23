@@ -11,7 +11,7 @@ const ProductCard = () => {
         
         return (
             <>
-                <h5>{priceConverted}</h5>
+                <h6 className="font-price">{priceConverted}</h6>
             </>
         ) 
 
@@ -43,12 +43,13 @@ const ProductCard = () => {
 
                         return (
 
-                            <div className="row justify-content-around col-12 col-md-10 col-lg-3 mx-0 mb-4" key={index} style={{ width: 23 + 'em' }}>
+                            <div className="row justify-content-around col-12 col-md-10 col-lg-3 mx-0 mb-4" key={index} style={{ width: 22 + 'em' }}>
                                 <div className="card p-0 overflow-hidden h-100 shadow" >
                                     <img src={item.image} className="card-img-top" />
                                     <div className="text-center mb-3">
                                         <h5 className="card-title mb-4 css-font-family" >{item.brand} {item.model}</h5>
 
+                                        {/* INÍCIO: UTILIZANDO A BIBLIOTECA DO CURRENCY FORMAT */}
                                         {/* <CurrencyFormat
                                             value={item.price.toFixed(2)}
                                             displayType={'text'}
@@ -59,7 +60,9 @@ const ProductCard = () => {
                                                     {value}
                                                 </p>}
                                         /> */}
-
+                                        {/* FIM: UTILIZANDO A BIBLIOTECA DO CURRENCY FORMAT */}
+                                        
+                                        {/* TRAZENDO O PREÇO FORMATADO */}
                                         {showPrice(item.price)}
 
                                         <button className="btn mt-3 color-button"
