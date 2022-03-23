@@ -320,7 +320,7 @@ function CheckoutScheduling() {
 
               <div className="col-6 btn-responsividade ">
                 <div className=" col-12 d-grid gap-1 pt-3 justify-content-center  ">
-                  <Button link="/ShedulingDetails" name="Confirmar Agendamento" />
+                  <Button link="/SchedulingDetails" name="Confirmar Agendamento" />
                   
                 </div>
                 </div>
