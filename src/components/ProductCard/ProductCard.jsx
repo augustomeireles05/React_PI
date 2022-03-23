@@ -24,14 +24,14 @@ const ProductCard = () => {
     return (
         <>
             <section className="py-4 py-lg-5 col-12 col-sm-12 col-md-12 justify-content-around">
-                <div className="row justify-content-center align-item-center">
+                <div className="row justify-content-evenly align-item-center">
 
 
                     {List.cardData.map((item, index) => {
 
                         return (
 
-                            <div className="row justify-content-around col-12 col-md-10 col-lg-3 mx-0 mb-4" key={index} style={{ width: 19 + 'em' }}>
+                            <div className="row justify-content-around col-12 col-md-10 col-lg-3 mx-0 mb-4" key={index} style={{ width: 23 + 'em' }}>
                                 <div className="card p-0 overflow-hidden h-100 shadow" >
                                     <img src={item.image} className="card-img-top" />
                                     <div className="text-center mb-3">
