@@ -6,6 +6,18 @@ import CurrencyFormat from 'react-currency-format';
 
 const ProductCard = () => {
 
+    const showPrice = (number) => {
+        let priceConverted = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(number)
+        
+        return (
+            <>
+                <h5>{priceConverted}</h5>
+            </>
+        ) 
+
+    }
+
+
     const [model, setModel] = useState(false);
     const [tempdata, setTempData] = useState([]);
 
@@ -37,7 +49,7 @@ const ProductCard = () => {
                                     <div className="text-center mb-3">
                                         <h5 className="card-title mb-4 css-font-family" >{item.brand} {item.model}</h5>
 
-                                        <CurrencyFormat
+                                        {/* <CurrencyFormat
                                             value={item.price.toFixed(2)}
                                             displayType={'text'}
                                             thousandSeparator={true}
@@ -46,7 +58,10 @@ const ProductCard = () => {
                                                 <p className="font-price">
                                                     {value}
                                                 </p>}
-                                        />
+                                        /> */}
+
+                                        {showPrice(item.price)}
+
                                         <button className="btn mt-3 color-button"
                                             onClick={() => getData(item.brand, item.model, item.color, item.year, item.engine, item.potency, item.price, item.gearshift, item.fuel, item.image, item.description)}>
                                             Ver detalhes
