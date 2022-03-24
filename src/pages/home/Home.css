@@ -121,7 +121,7 @@ body{
     height: 25px;
 }
 
-.modal-content{
+.modal-content1{
     background: rgba( 0, 0, 0, 0.65 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 6.5px );
