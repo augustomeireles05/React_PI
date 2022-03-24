@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import '../../components/ProductCard/ProductCardModal.css'
 import CurrencyFormat from 'react-currency-format';
+import Button from '../../components/Button/Button'
 
 export default class ProductCardModal extends Component {
 
@@ -30,7 +31,7 @@ export default class ProductCardModal extends Component {
         return (
             <div className="modal show fade" style={modelStyle}>
                 <div className="modal-dialog modal-xl">
-                    <div className="row modal-content background-modal col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-center">
+                    <div className="row modal-content background-modal col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-center ms-0">
                         <div className="modal-header">
                             <h5 className="modal-title px-1 font-title-modal ms-2">{this.props.brand} {this.props.model}</h5>
                             <button type="button" className="btn-close me-2" onClick={this.props.hide}></button>
@@ -46,7 +47,7 @@ export default class ProductCardModal extends Component {
                                     <div className="background-datasheet border border-dark">
                                         <h4 className="text-center my-2">Ficha Técnica</h4>
                                     </div>
-                                    
+
                                     <div className="mt-2 border border-dark p-3 background-datasheet">
                                         <div className="row justify-content-center col-12 border border-dark mx-0 d-flex align-items-center">
                                             <p className="col-4 text-start fs-6 my-0">Modelo:</p>
@@ -90,7 +91,7 @@ export default class ProductCardModal extends Component {
                                                     {value}
                                                 </p>}
                                         /> */}
-                                            {/* INICIO: APLICAÇÃO SEM O FORMATO DE MOEDA BRASILEIRA */}
+                                            {/* FIM: APLICAÇÃO SEM O FORMATO DE MOEDA BRASILEIRA */}
 
                                             <p className="col-6 css-font-family-modal text-end fs-6 my-0 css-font-family-modal">
                                                 {this.priceConverted(this.props.price)}
@@ -114,24 +115,29 @@ export default class ProductCardModal extends Component {
                             </div>
                         </div>
 
-                        <div className="modal-footer">
-                            {/* <button type="button" className="btn btn-primary">Comprar</button> */}
-                            {/* {console.log(this.props.price > this.limitValue)} */}
+                        {
 
-                            <div className="">
-                                <Link to="/checkoutScheduling" className="btn btn-modal-buy">Agendar visita</Link>
-                            </div>
-                            <div className="">
-                                {
-                                    this.props.price < this.limitValue
-                                        ? <> <Link to="/cart" className="btn btn-modal-buy">Comprar</Link> </>
-                                        : ''
-                                    // <> <Link to="/checkoutScheduling" className="btn btn-modal-buy">Agendar visita</Link> </>
-                                }
-                            </div>
+                            this.props.price >= this.limitValue
+                                ? <>
+                                    <div className="modal-footer justify-content-center col-md-12 px-4 px-md-0">
+                                        <div className="col-12 col-sm-12 col-md-3 col-lg-2 justify-content-center">
+                                                <Button link="/checkoutScheduling" name="Agendar" />
+                                        </div>
+                                    </div>
+                                </>
+                                : <>
+                                    <div className="modal-footer d-grid gap-2 d-flex justify-content-center col-md-12 px-4 px-md-0">
+                                        <div className="col-12 col-sm-12 col-md-3 col-lg-2 justify-content-center">
+                                            <Button link="/checkoutScheduling" name="Agendar" />
+                                        </div>
+                                        <div className="col-12 col-sm-12 col-md-3 col-lg-2">
+                                            <Button to="/cart" name="Comprar" />
+                                        </div>
+                                    </div>
+                                </>
 
+                        }
 
-                        </div>
                     </div>
                 </div>
             </div>
