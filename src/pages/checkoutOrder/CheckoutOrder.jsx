@@ -125,13 +125,13 @@ function CheckoutOrder() {
           {/* Início modal adicionar endereço*/}
           <div className="modal fade" id="modal-endereco" tabIndex={-1} aria-labelledby="inicioModal" aria-hidden="true">
             <div className="modal-dialog">
-              <div className="modal-content background-modal-checkoutorder">
+              <div className="modal-content">
                 {/* header do modal */}
                 <div className="modal-header">
 
                   <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <h5 className="modal-title text-center text-dark" id="inicioModal">
+                <h5 className="modal-title text-center" id="inicioModal">
                   Cadastre um novo endereço
                 </h5>
                 {/* fim da header do modal */}
@@ -280,13 +280,13 @@ function CheckoutOrder() {
           {/* Início modal adicionar cartão*/}
           <div className="modal fade" id="modal-cartao" tabIndex={-1} aria-labelledby="inicioModal" aria-hidden="true">
             <div className="modal-dialog">
-              <div className="modal-content background-modal-checkoutorder">
+              <div className="modal-content">
                 {/* header do modal */}
                 <div className="modal-header">
 
                   <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <h5 className="modal-title text-center text-dark" id="inicioModal">
+                <h5 className="modal-title text-center" id="inicioModal">
                   Adicione um novo cartão
                 </h5>
                 {/* fim da header do modal */}
@@ -374,20 +374,6 @@ function CheckoutOrder() {
                   <img src={Boleto} width="30" alt="Boleto" />
                 </span>
               </div>
-            </div>
-
-            <div className="d-grid gap-2 d-md-block pt-2">
-              {/* <Button type="button" name="Voltar para Carrinho"> */}
-              <SupportButton link="/Cart" name="Voltar para o Carrinho"/>
-
-              <div className="mt-3"></div>
-
-                {/* <Link to="/cart"></Link> */}
-              {/* </Button> */}
-              {/* <Button type="button" name="Finalizar Compra"> */}
-                {/* <Link to="/orderResume"></Link> */}
-                <Button link="/orderResume" name="Finalizar Compra"/>
-              {/* </Button> */}
             </div>
             <div className="card-body">
               {/* <h5 className="card-title">Secondary card title</h5> */}

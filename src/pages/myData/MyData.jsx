@@ -104,7 +104,7 @@ function MyData() {
                                     </div>
 
 
-                                    <div className="col-12 col-md-6">
+                                    <div className="col-6 col-md-4">
                                         <div className="mb-3">
                                             {/* <Link className="btn btn-warning mt-6 d-block float-md-end" to="#" role="button">
                                                 SALVAR </Link> */}
@@ -159,7 +159,7 @@ function MyData() {
                                     </div>
 
 
-                                    <div className="col-12">
+                                    <div className="col-6 col-md-5">
                                         <div className="mb-3">
                                             {/* <Link className="btn btn-warning mt-6 d-block float-md-end" to="#" role="button">
                                                 MODIFICAR</Link> */}

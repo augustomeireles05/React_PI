@@ -309,25 +309,25 @@ function CheckoutScheduling() {
             <div className="row">
 
 
-            <div className="col-6 btn-responsividade ">
+              <div className="col-6 btn-responsividade ">
                 <div className=" col-12 d-grid gap-1 pt-3 justify-content-center  ">
                   <SupportButton link="/Cart" name="Voltar para o Carrinho" />
-                  
+
                 </div>
-                </div>
+              </div>
 
 
 
               <div className="col-6 btn-responsividade ">
                 <div className=" col-12 d-grid gap-1 pt-3 justify-content-center  ">
                   <Button link="/ShedulingDetails" name="Confirmar Agendamento" />
-                  
+
                 </div>
-                </div>
+              </div>
 
 
 
-                {/* <div className="col-4 btn-responsividade ">
+              {/* <div className="col-4 btn-responsividade ">
                 <div className=" col-12 d-grid gap-1 pt-3 justify-content-center  ">
                   <Link to="/cart">
                     <button
@@ -351,15 +351,15 @@ function CheckoutScheduling() {
                   </Link>
                 </div>
               </div> */}
-              </div>
             </div>
           </div>
-          {/*  FIM DO CARD DO RESUMO   */}
         </div>
+        {/*  FIM DO CARD DO RESUMO   */}
+      </div>
 
-        <Footer />
-      </>
-      );
+      <Footer />
+    </>
+  );
 }
 
-      export default CheckoutScheduling;
+export default CheckoutScheduling;
