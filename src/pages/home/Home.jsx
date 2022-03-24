@@ -209,7 +209,7 @@ function Home() {
                                     aria-hidden="true">
                                     {/* link entre Modal e Card */}
                                     <div className="modal-dialog modal-xl">
-                                        <div className="modal-content1 cores-modal">
+                                        <div className="modal-content cores-modal">
 
                                             <div className="modal-header cores-modal modal-mobily5 justify-content-center mt-1">
                                                 <h5>Mercedes AMG F1</h5>
@@ -375,7 +375,7 @@ function Home() {
                                     aria-hidden="true">
                                     {/* link entre Modal e Card */}
                                     <div className="modal-dialog modal-xl">
-                                        <div className="modal-content1 cores-modal">
+                                        <div className="modal-content cores-modal">
                                             <div className="modal-header cores-modal">
                                                 <h5 className="modal-title" id="exampleModalLabel">BUGATTI CHIRON
                                                 </h5>
@@ -520,7 +520,7 @@ function Home() {
                                     aria-hidden="true">
                                     {/* link entre Modal e Card */}
                                     <div className="modal-dialog modal-xl">
-                                        <div className="modal-content1 cores-modal">
+                                        <div className="modal-content cores-modal">
                                             <div className="modal-header cores-modal">
                                                 <h5 className="modal-title" id="exampleModalLabel">LAMBORGHINI HURACAN</h5>
                                                 <button type="button" className="btn-close btn-modal-close" data-bs-dismiss="modal"
