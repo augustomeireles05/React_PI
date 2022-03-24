@@ -33,8 +33,8 @@ export default class ProductCardModal extends Component {
                 <div className="modal-dialog modal-xl">
                     <div className="row modal-content background-modal col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-center ms-0">
                         <div className="modal-header">
-                            <h5 className="modal-title px-1 font-title-modal ms-2">{this.props.brand} {this.props.model}</h5>
-                            <button type="button" className="btn-close me-2" onClick={this.props.hide}></button>
+                            <h5 className="modal-title px-1 font-title-modal ms-2 text-light">{this.props.brand} {this.props.model}</h5>
+                            <button type="button" className="btn-close bg-light me-2" onClick={this.props.hide}></button>
                         </div>
 
                         <div className="d-flex justify-content-center">
