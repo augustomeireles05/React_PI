@@ -17,7 +17,7 @@ function schedulingDetails() {
 
             <Header />
 
-            <MainTittle tittle="RESUMO DO AGENDAMENTO"/>
+            <MainTittle tittle="Resumo do agendamento"/>
             <div className="container">
                 
                 <div className="row gx-5 gy-3 px-3">

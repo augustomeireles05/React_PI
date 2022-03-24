@@ -4,6 +4,7 @@ body {
     background: #E5E5E5;
 }
 
+
 .h2-register {
     background: black;
     color: white;
@@ -136,6 +137,13 @@ body {
 
     .redes-sociais {
         margin-left: 2.5em !important;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .trigger-colapse-register{
+        width:50%;
     }
 }
 

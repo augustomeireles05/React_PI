@@ -88,6 +88,7 @@ function WishList() {
                                                         {/* <Link to="#" /><img src="./img/img-header/favorite.png" alt="favotirar"
                                                                     className="favoritar"/><Link />
                                                             </div> */}
+    
                                                     </div>
                                                     <div className="card-footer">
                                                     <Button link="/" name="COMPRAR" />

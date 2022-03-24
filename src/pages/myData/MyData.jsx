@@ -19,21 +19,22 @@ function MyData() {
             <section>
 
 
-                <article className="page-content container">
+                <article className="page-content container mt-4">
                     { /* coluna Menu */}
-                    <div className=" row">
+                    <div className=" row g-5">
                         <div className=" d-flex justify-content-center d-none d-md-block col-md-3">
                             { /*responsividade menu*/}
                             <div className="column ms-3">
 
                                 { /*Navbar*/}
-                                <nav className=" navbar navbar-light mb-3 mt-0 pt-0 pb-2">
+                                {/* <nav className=" navbar navbar-light mb-3 mt-0 pt-0 pb-2"> */}
                                     {/* <div className="container-fluid d-block text-center"> */}
                                         <Subtittle menu="MENU"/>
 
-                                    {/* </div> */}
+                                    {/* </div>
+                                </nav> */}
                                 
-                                <SideBar></SideBar>
+                                <SideBar />
 
 
                                 {/* <div className="btn-group-vertical background-container-subject me-3 shadow" role="group" aria-label="Vertical button group">
@@ -53,11 +54,11 @@ function MyData() {
                                         <Link to="/" className="link-solution">SAIR</Link>
                                     </button>
                                 </div> */}
-                                </nav>
+                                
                             </div>
                         </div>
                         {/* fim do menu lateral */}
-                        <div className="col-9 ajusteFormulario">
+                        <div className="col-12 col-sm-12 col-md-9 ajusteFormulario">
                             {/* <div className=" text-center title col-12 ">
                                 <span>MEUS DADOS</span>
                             </div> */}
