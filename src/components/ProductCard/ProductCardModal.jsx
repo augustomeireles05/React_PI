@@ -131,7 +131,7 @@ export default class ProductCardModal extends Component {
                                             <Button link="/checkoutScheduling" name="Agendar" />
                                         </div>
                                         <div className="col-12 col-sm-12 col-md-3 col-lg-2">
-                                            <Button to="/cart" name="Comprar" />
+                                            <Button link="/cart" name="Comprar" />
                                         </div>
                                     </div>
                                 </>
