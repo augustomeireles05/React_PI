@@ -6,6 +6,18 @@ import CurrencyFormat from 'react-currency-format';
 
 const ProductCard = () => {
 
+    const showPrice = (number) => {
+        let priceConverted = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(number)
+        
+        return (
+            <>
+                <h6 className="font-price">{priceConverted}</h6>
+            </>
+        ) 
+
+    }
+
+
     const [model, setModel] = useState(false);
     const [tempdata, setTempData] = useState([]);
 
@@ -31,13 +43,14 @@ const ProductCard = () => {
 
                         return (
 
-                            <div className="row justify-content-around col-12 col-md-10 col-lg-3 mx-0 mb-4" key={index} style={{ width: 23 + 'em' }}>
+                            <div className="row justify-content-around col-12 col-md-10 col-lg-3 mx-0 mb-4" key={index} style={{ width: 22 + 'em' }}>
                                 <div className="card p-0 overflow-hidden h-100 shadow" >
                                     <img src={item.image} className="card-img-top" />
                                     <div className="text-center mb-3">
                                         <h5 className="card-title mb-4 css-font-family" >{item.brand} {item.model}</h5>
 
-                                        <CurrencyFormat
+                                        {/* INÍCIO: UTILIZANDO A BIBLIOTECA DO CURRENCY FORMAT */}
+                                        {/* <CurrencyFormat
                                             value={item.price.toFixed(2)}
                                             displayType={'text'}
                                             thousandSeparator={true}
@@ -46,7 +59,12 @@ const ProductCard = () => {
                                                 <p className="font-price">
                                                     {value}
                                                 </p>}
-                                        />
+                                        /> */}
+                                        {/* FIM: UTILIZANDO A BIBLIOTECA DO CURRENCY FORMAT */}
+                                        
+                                        {/* TRAZENDO O PREÇO FORMATADO */}
+                                        {showPrice(item.price)}
+
                                         <button className="btn mt-3 color-button"
                                             onClick={() => getData(item.brand, item.model, item.color, item.year, item.engine, item.potency, item.price, item.gearshift, item.fuel, item.image, item.description)}>
                                             Ver detalhes
