@@ -41,7 +41,7 @@ body{
 }
 
 .img-pedido{
-    width: 150px;
+    width: 40%;
     box-shadow: 2px 2px 5px #777777;
 }
 
@@ -49,10 +49,12 @@ body{
     font-size: 11px;
     border-bottom: #9B9B9B 1px solid;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .titulo-data-pgmt{
     font-size: 11px;
+    font-weight: bold;
 }
 
 
@@ -154,7 +156,7 @@ body{
 
 
 .accordion-button:not(.collapsed){
-    background-color: #fdffef;
+    /* background-color: #fdffef; */
     border-color: #fdffef;
     color: #000;
 }
@@ -181,5 +183,12 @@ body{
         display: none;
     }
     
+}
+
+@media (max-width: 392px) {
+    .img-pedido{
+        width: 100%;
+        box-shadow: 2px 2px 5px #777777;
+    }
 }
 
