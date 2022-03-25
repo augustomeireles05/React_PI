@@ -57,7 +57,7 @@ function Cart() {
                         {/* Inicio Card lado direito */}
                         <div className="row col-11 col-md-11 col-lg-12 col-xl-12 align-items-center bg-body rounded-3 shadow justify-content-center py-lg-3 m-auto">
                             {/* Inicio Div Imagem */}
-                            <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                            <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 pt-2 pt-md-0 pt-lg-0 pt-2 pt-md-2 pt-lg-0 pt-xl-0">
                                 <img src={imgCarrinho} className="img-fluid" />
                             </div>
                             {/* Fim Div Imagem */}
@@ -81,7 +81,7 @@ function Cart() {
                             {/* Fim Div Nome + Resumo */}
 
                             {/* Inicio Div Preco + Lixo */}
-                            <div className="row col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center p-0 mb-3 mb-md-0 mb-lg-0">
+                            <div className="row col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center p-0 mb-3 mb-md-0 mb-lg-0 mb-3 mb-md-4 mb-lg-0">
                                 {/* Inicio Preço */}
                                 <div className="col-9 col-sm-9 col-md-9 col-lg-10 col-xl-10">
                                     <p className="text-center m-0 price-style">R$ 790.000,00</p>

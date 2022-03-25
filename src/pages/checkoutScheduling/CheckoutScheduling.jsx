@@ -9,356 +9,349 @@ import Button from "../../components/Button/Button";
 import SupportButton from "../../components/Button/SupportButton";
 
 
+
+
+import Input from '../../components/Input/Input'
+import Label from '../../components/Input/Label'
+import Subtittle from '../../components/Subtittle/Subtittle'
+
+
+import Editar from '../../assets/images/CheckoutOrder/edit.png';
+import Lixeira from '../../assets/images/CheckoutOrder/trash.png';
+import Adicionar from '../../assets/images/CheckoutOrder/plus.png';
+import Boleto from '../../assets/images/CheckoutOrder/barcode.png';
+import Pix from '../../assets/images/CheckoutOrder/pix.png';
+
+
 function CheckoutScheduling() {
   return (
     <>
       <Header />
+
+
+
+      {/* INÍCIO DO TÍTULO DA PÁGINA */}
       <div className="title-page background font-text-bold">
-        <h3>Finalize seu Agendamento</h3>
-        <hr />
+        <Subtittle menu="Finalize seu Agendamento" />
       </div>
 
-      {/*  FIM DO TÍTULO DA PÁGINA  */}
+      {/* FIM DO TÍTULO DA PÁGINA */}
 
-      <div className="row background d-flex justify-content-center">
-        {/*  INÍCIO DO CARD ENDERECO  */}
+      <div className="row col-11 col-md-12 col-lg-11 col-xl-11 background d-flex justify-content-center m-auto g-5">
+        {/* INÍCIO DO CARD ENDERECO */}
         <div className="col-md-5 col-lg-5 row d-flex justify-content-center background">
-          <h4 className="mb-3 font-text" style={{ maxWidth: 30 + "rem" }}>
-            Meus Dados
-          </h4>
-          <div
-            className="card text-black bg-white mb-3 px-0"
-            style={{ maxWidth: 30 + "rem" }}
-          >
-            {/*  Início Meus dados  */}
 
-            <form className="card-header">
-              <div className="row meus-dados ">
-                <div className="col-6">
-                  <div className="mb-3 mt-2 ">
-                    <input
-                      placeholder="Nome do Cadastro"
-                      type="email"
-                      className="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                    />
-                  </div>
-                </div>
-                <div className="col-6">
-                  <div className="mb-3 mt-2">
-                    <input
-                      placeholder="Sobrenome do Cadastro"
-                      type="email"
-                      className="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                    />
-                  </div>
-                </div>
 
-                <div className="col-6">
-                  <div className="mb-3">
-                    <input
-                      placeholder="e-mail Cadastro"
-                      type="email"
-                      className="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                    />
-                  </div>
-                </div>
 
-                <div className="col-6">
-                  <div className="mb-3">
-                    <input
-                      placeholder="Telefone Cadastro"
-                      type="email"
-                      className="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                    />
-                  </div>
-                </div>
-              </div>
-            </form>
 
-            {/*  Fim Endereço 02  */}
-          </div>
 
-          {/*  FIM DO CARD ENDERECO  */}
 
-          {/*  Início modal adicionar endereço */}
-          <div
-            className="modal fade"
-            id="modal-endereco"
-            tabIndex={-1}
-            aria-labelledby="inicioModal"
-            aria-hidden="true"
-          >
+
+          <div className="modal fade" id="modal-endereco" tabIndex={-1} aria-labelledby="inicioModal" aria-hidden="true">
             <div className="modal-dialog">
-              <div className="modal-content">
-                {/*  header do modal  */}
+              <div className="modal-content background-modal-checkoutorder">
+                {/* header do modal */}
                 <div className="modal-header">
-                  <h5 className="modal-title text-center" id="inicioModal">
-                    ENDEREÇO
-                  </h5>
-                  <button
-                    type="button"
-                    className="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
+
+                  <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                {/*  fim da header do modal  */}
+                <h5 className="modal-title text-center text-dark" id="inicioModal">
+                  Cadastre um novo endereço
+                </h5>
+                {/* fim da header do modal */}
 
-                {/*  corpo do modal Endereço  */}
+                {/* corpo do modal Endereço */}
                 <div className="modal-body">
-                  <form className="formulario-cadastro container">
-                    <div className="row alinha-campos d-flex justify-content-start gy-2">
-                      <div className="cep col-sm-4">
-                        <input type="text" className="form-control" id="cep" />
+                  <div className="container">
+                    <div className="col-12 col-sm-12 col-md-12 px-0">
+                      <Label label="Logradouro" for="logradouro" />
+                      <Input type="text" aria-label="logradouro" id="logradouro" />
+                    </div>
+
+                    <div className="col-12 col-sm-12 col-md-12 row justify-content-between px-0 mx-0">
+                      <div className="col-12 col-sm-12 col-md-6 pe-md-2 ps-0 ps-md-0 pe-0">
+                        <Label label="Cidade" for="cidade" />
+                        <Input type="text" aria-label="cidade" id="cidade" />
                       </div>
 
-                      <div className="rua col-sm-8">
-                        <input type="text" className="form-control" id="rua" />
+                      <div className="col-12 col-sm-12 col-md-4 pe-md-2 ps-0 ps-md-0 pe-0">
+                        <Label label="Bairro" for="bairro" />
+                        <Input type="text" aria-label="bairro" id="bairro" />
+                      </div>
+
+                      <div className="col-12 col-sm-12 col-md-2 px-0">
+                        <Label label="UF" for="uf" />
+                        <Input type="text" aria-label="uf" id="uf" />
                       </div>
                     </div>
 
-                    <div className="row alinha-campos d-flex justify-content-start gy-2">
-                      <div className="numero col-sm-3">
-                        <input
-                          type="number"
-                          className="form-control"
-                          id="numero"
-                        />
+                    <div className="col-12 col-sm-12 col-md-12 row justify-content-between px-0 mx-0">
+                      <div className="col-12 col-sm-12 col-md-10 pe-md-2 ps-0 ps-md-0 pe-0">
+                        <Label label="Cep" for="cep" />
+                        <Input type="text" aria-label="cep" id="cep" />
                       </div>
-
-                      <div className="bairro col-sm-9">
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="bairro"
-                        />
+                      <div className="col-12 col-sm-12 col-md-2 px-0">
+                        <Label label="Nº" for="numero" />
+                        <Input type="text" aria-label="uf" id="numero" />
                       </div>
                     </div>
 
-                    <div className="row alinha-campos d-flex justify-content-start gy-2">
-                      <div className="uf col-sm-3">
-                        <select name="uf" id="UF" className="form-control">
-                          <option value="estado" defaultValue disabled>
-                            - UF -
-                          </option>
-                          <option value="ac">AC</option>
-                          <option value="al">AL</option>
-                          <option value="am">AM</option>
-                          <option value="ap">AP</option>
-                          <option value="ba">BA</option>
-                          <option value="ce">CE</option>
-                          <option value="df">DF</option>
-                          <option value="es">ES</option>
-                          <option value="go">GO</option>
-                          <option value="ma">MA</option>
-                          <option value="mt">MT</option>
-                          <option value="ms">MS</option>
-                          <option value="mg">MG</option>
-                          <option value="pa">PA</option>
-                          <option value="pb">PB</option>
-                          <option value="pr">PR</option>
-                          <option value="pe">PE</option>
-                          <option value="pi">PI</option>
-                          <option value="rj">RJ</option>
-                          <option value="rn">RN</option>
-                          <option value="ro">RO</option>
-                          <option value="rs">RS</option>
-                          <option value="rr">RR</option>
-                          <option value="sc">SC</option>
-                          <option value="se">SE</option>
-                          <option value="sp">SP</option>
-                          <option value="to">TO</option>
-                        </select>
-                      </div>
-
-                      <div className="cidade col-sm-9">
-                        <input
-                          type="text"
-                          name=""
-                          id="cidade"
-                          className="form-control input-cidade"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="complemento">
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="complemento"
-                      />
-                    </div>
-
-                    <div className="row justify-content-center">
-                      <button
-                        type="submit"
-                        className="botao-salvar button btn mt-4 col-sm-4"
-                      >
-                        GRAVAR
+                    <div className="col-12 col-sm-12 col-md-12 text-center mx-0 m-4">
+                      <button type="submit" className="col-12 col-md-4 btn-modal-checkoutorder pt-2 pb-2 pe-3 ps-3">
+                        Salvar
                       </button>
                     </div>
-                  </form>
-                </div>
-                {/*  fim do corpo do modal Endereço  */}
-              </div>
-            </div>
-          </div>
-          {/*  fim do modal adicionar endereço  */}
-          <hr />
-
-          <h4 className="mb-3 font-text" style={{ maxWidth: 30 + "rem" }}>
-            AGENDAMENTO
-          </h4>
-          <div
-            className="card text-black bg-white mb-3 px-0"
-            style={{ maxWidth: 30 + "rem" }}
-          >
-            {/*  Início Agendamento  */}
-            <div className=" col-md-12 card-header">
-              <div className="form-check font-text d-flex justify-content-between">
-                <div className="d-grid d-flex justify-content-start ">
-                  <p>Datas Disponiveis</p>
-                </div>
-                <div className="d-grid d-md-flex justify-content-end">
-                  <img className="btn " src="#" width="45" alt="" />
-                </div>
-              </div>
-            </div>
-
-            <div className="contaniner ">
-              <div className="row">
-                <div className="col-6 ">
-                  <div className="card-body font-text ">
-                    <p className="card-text">Confira Datas Disponiveis</p>
                   </div>
                 </div>
-                <div className="col-6 input-calendar">
-                  <input type="date" id="data" name="Agenda" className="calendar" />
+                {/* fim do corpo do modal Endereço */}
+              </div>
+            </div>
+          </div>
+          {/* fim do modal adicionar endereço */}
+
+          <div className="col-12 col-sm-12 col-md-12 col-lg-12 row justify-content-between align-items-center p-0 p-md-0">
+            <div className="col-10 col-sm-10 col-md-10 col-lg-10 ps-0">
+              <h4 className="mb-2 font-text">Formas de Pagamento</h4>
+            </div>
+            {/* INÍCIO DO BOTÃO DE ADICIONAR FORMA DE PAGAMENTO */}
+
+            <div className="col-2 col-sm-2 col-md-2 col-lg-2 text-end pe-0 pe-md-0">
+              {/* botão padrão que abre o modal Cartão */}
+              <button type="button" className="btn px-0 mb-2" data-bs-toggle="modal" data-bs-target="#modal-cartao">
+                <img src={Adicionar} width="30" alt="Adicionar" />
+              </button>
+              {/* fim do botão que abre o modal Cartão  */}
+            </div>
+            {/* FIM DO BOTÃO DE ADICIONAR FORMA DE PAGAMENTO */}
+          </div>
+
+
+          <div className="card text-black bg-white mb-3 px-0">
+            {/* Início Cartão 01 */}
+            <div className=" col-md-12 card-header">
+              <div className="form-check font-text d-flex justify-content-between">
+                <div className="d-grid d-flex justify-content-start">
+                  <input className="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" />
+                  <span className="space-input">(Crédito) Mastercard</span>
+                </div>
+                <div className="d-grid d-md-flex justify-content-end">
+                  <img className="btn " src={Editar} width="45" alt="Editar" data-bs-toggle="modal" data-bs-target="#modal-cartao" />
+                  <img className="btn " src={Lixeira} width="45" alt="Lixeira" />
                 </div>
               </div>
             </div>
-            <div className="card-body font-text card-header">
-              <p className="card-text"></p>
+
+            <div className="card-body font-text">
+              <h5 className="card-title">Secondary card title</h5>
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            {/* Fim Cartão 01 */}
+
+            {/* Início Cartão 02 */}
+            <div className=" col-md-12 card-header">
+              <div className="form-check font-text d-flex justify-content-between">
+                <div className="d-grid d-flex justify-content-start">
+                  <input className="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" />
+                  <span className="space-input">(Débito) Visa</span>
+                </div>
+                <div className="d-grid d-md-flex justify-content-end">
+                  <img className="btn " src={Editar} width="45" alt="Editar" data-bs-toggle="modal" data-bs-target="#modal-cartao" />
+                  <img className="btn " src={Lixeira} width="45" alt="Lixeira" />
+                </div>
+              </div>
+            </div>
+
+            <div className="card-body font-text margin-card">
+              <h5 className="card-title">Secondary card title</h5>
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            {/* Fim Cartão 02 */}
+          </div>
+
+
+
+          {/* Início modal adicionar cartão*/}
+          <div className="modal fade" id="modal-cartao" tabIndex={-1} aria-labelledby="inicioModal" aria-hidden="true">
+            <div className="modal-dialog">
+              <div className="modal-content background-modal-checkoutorder">
+                {/* header do modal */}
+                <div className="modal-header">
+
+                  <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <h5 className="modal-title text-center text-dark" id="inicioModal">
+                  Adicione um novo cartão
+                </h5>
+                {/* fim da header do modal */}
+
+
+
+                {/* corpo do modal Aicionar Cartão */}
+                <div className="modal-body">
+                  <div className="container">
+                    <div className="col-12 col-sm-12 col-md-12 px-0">
+                      <Label label="Número do cartão" for="cardnumber" />
+                      <Input type="text" aria-label="cardnumber" id="cardnumber" />
+                    </div>
+
+                    <div className="col-12 col-sm-12 col-md-12 row justify-content-between px-0 mx-0">
+                      <div className="col-12 col-sm-12 col-md-6 pe-md-2 ps-0 ps-md-0 pe-0">
+                        <Label label="Nome do titular" for="ownnername" />
+                        <Input type="text" aria-label="ownnername" id="ownnername" />
+                      </div>
+
+                      <div className="col-12 col-sm-12 col-md-4 pe-md-2 ps-0 ps-md-0 pe-0">
+                        <Label label="Data de validade" for="validdate" />
+                        <Input type="text" aria-label="validdate" id="validdate" />
+                      </div>
+
+                      <div className="col-12 col-sm-12 col-md-2 px-0">
+                        <Label label="CVV" for="cvv" />
+                        <Input type="text" aria-label="uf" id="cvv" />
+                      </div>
+                    </div>
+
+                    <div className="col-12 col-sm-12 col-md-12 row justify-content-between px-0 mx-0">
+                      <div className="col-12 col-sm-12 col-md-10 pe-md-2 ps-0 ps-md-0 pe-0">
+                        <Label label="CPF do titular" for="ownnercpf" />
+                        <Input type="text" aria-label="cep" id="ownnercpf" />
+                      </div>
+                      <div className="col-12 col-sm-12 col-md-2 px-0">
+                        <Label label="Bandeira" for="bandeira" />
+                        <Input type="text" aria-label="uf" id="bandeira" />
+                      </div>
+                    </div>
+
+                    <div className="col-12 col-sm-12 col-md-12 text-center mx-0 m-4">
+                      <button type="submit" className="col-12 col-md-4 btn-modal-checkoutorder pt-2 pb-2 pe-3 ps-3">
+                        Salvar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                {/* fim do corpo do modal Cartão */}
+              </div>
             </div>
           </div>
 
-          {/*  FIM DO BOTÃO DE ADICIONAR FORMA DE PAGAMENTO  */}
 
           <hr />
+
+          <div className="card text-black bg-white mb-3 font-text px-0">
+            {/* Início do Card do Pix */}
+            <div className="card-header">
+              <div className="form-check">
+                <input className="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" />
+                <span className="icon-payment">
+                  Pix
+                  <img src={Pix} width="30" alt="Pix" />
+                </span>
+              </div>
+            </div>
+            <div className="card-body">
+              <p className="card-text">
+                Vencimento em 30 minutos. Após o pagamento seu pedido será
+                processado.
+              </p>
+            </div>
+            {/* Fim do Card do Pix */}
+
+            {/* Início do Card do Boleto */}
+            <div className="card-header">
+              <div className="form-check">
+                <input className="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" />
+                <span className="icon-payment">
+                  Boleto
+                  <img src={Boleto} width="30" alt="Boleto" />
+                </span>
+              </div>
+            </div>
+
+            <div className="card-body">
+              {/* <h5 className="card-title">Secondary card title</h5> */}
+              <p className="card-text">
+                Vencimento em 1 dia útil. A data de entrega será alterada
+                devido ao tempo de processamento do Boleto.
+              </p>
+            </div>
+            {/* Fim do Card do Boleto */}
+          </div>
         </div>
 
-        {/*  INICIO DO CARD DO RESUMO   */}
-        <div className="col-md-6 col-lg-5 order-md-last">
-          <h4 className="d-flex justify-content-between align-items-center mb-3">
-            <span className="text-black font-text">Resumo Agendamento</span>
-            <span className="badge bg-primary rounded-pill">3</span>
+
+        {/* INICIO DO CARD DO RESUMO  */}
+        <div className="col-md-6 col-lg-5 order-md-last mt-0">
+
+          <div className="my-2 mb-3">
+            <h4 className=" font-text">Insira a data do agendamento</h4>
+          </div>
+
+
+          <div className="row col-12 col-md-12 col-lg-12 col-xl-12 p-2 bg-body m-0 rounded-3">
+
+            <div className="col-12 d-flex justify-content-center p-4">
+              <input type="date" className="" id="data" name="Agenda" className="calendar" />
+            </div>
+          </div>
+
+
+
+
+          <hr />
+
+
+          <h4 className="d-flex justify-content-between align-items-center mt-4 mb-3">
+            <span className="text-black">Resumo do Agendamento</span>
           </h4>
           <ul className="list-group mb-3">
-            <li className="list-group-item d-flex justify-content-between lh-sm">
+            <li className="list-group-item d-flex justify-content-between align-items-center gx-2">
               <div>
-                <h6 className="my-0 font-text">Nome do 1º Carro</h6>
-                <small className="text-mutedfont-text">
-                  Descrição do 1º Carro
+                <h6 className="my-2">Bugatti Chiron</h6>
+                <small className="col-8 col-md-7 col-lg-7">
+                  Descrição Breve do Bugatti Chiron
                 </small>
               </div>
-              <span className="text-muted font-text">R$ 2.500.000,00</span>
-            </li>
-            <li className="list-group-item d-flex justify-content-between lh-sm">
-              <div>
-                <h6 className="my-0 font-text">Nome do 2º Carro</h6>
-                <small className="text-muted font-text">
-                  Descrição do 2º Carro
-                </small>
+              <div className="col-4 col-md-5 col-lg-5 text-end">
+                <span className="text-muted font-md-text font-lg-text">R$ 22.000.000,00</span>
               </div>
-              <span className="text-muted font-text">R$ 1.250.500,00</span>
-            </li>
-            <li className="list-group-item d-flex justify-content-between lh-sm">
-              <div>
-                <h6 className="my-0 font-text">Nome do 3º Carro</h6>
-                <small className="text-muted font-text">
-                  Descrição do 3º Carro
-                </small>
-              </div>
-              <span className="text-muted font-text">R$ 948.600,00</span>
+              
             </li>
             <li className="list-group-item d-flex justify-content-between bg-light">
               <div className="text-success">
-                <h6 className="my-0 font-text">Taxa de Reserva</h6>
+                <h6 className="my-0 font-text">Valor do Agendamento</h6>
+                <small className="font-text">0,1 % do valor do veículo</small>
               </div>
-              <span className="text-success font-text">
-                {" "}
-                [ 2% valor do Veiculo]
-              </span>
+              <span className="text-success font-text">R$ 22.000,00</span>
             </li>
-
             <li className="list-group-item d-flex justify-content-between">
               <span className="font-text-bold">Total (R$)</span>
-              <strong className="font-text-bold">R$ 4.756.100,00</strong>
+              <strong className="font-text-bold">R$ 22.000,00</strong>
             </li>
           </ul>
-
-          <div className="container btn-responsividade">
-            <div className="row">
-
-
-              <div className="col-6 btn-responsividade ">
-                <div className=" col-12 d-grid gap-1 pt-3 justify-content-center  ">
-                  <SupportButton link="/Cart" name="Voltar para o Carrinho" />
-
-                </div>
-              </div>
-
-
-
-              <div className="col-6 btn-responsividade ">
-                <div className=" col-12 d-grid gap-1 pt-3 justify-content-center  ">
-                  <Button link="/SchedulingDetails" name="Confirmar Agendamento" />
-                </div>
-              </div>
-
-
-
-              {/* <div className="col-4 btn-responsividade ">
-                <div className=" col-12 d-grid gap-1 pt-3 justify-content-center  ">
-                  <Link to="/cart">
-                    <button
-                      className="btn button font-text vtcarrinho"
-                      type="button"
-                    >
-                      Voltar para o Carrinho
-                    </button>
-                  </Link>
-                </div>
-              </div>
-              <div className="col-8 btn-responsividade">
-                <div className="d-grid gap-2 pt-3 ">
-                  <Link to="/schedulingDetails">
-                    <button
-                      className="btn button font-text confi_agendamento"
-                      type="button"
-                    >
-                      Confirmar Agendamento
-                    </button>
-                  </Link>
-                </div>
-              </div> */}
+          <div className="d-grid gap-2 d-md-block pt-2">
+            <div className="col-sm-12">
+              <SupportButton link="/Cart" name="Voltar para o Estoque" />
+              <Button link="/orderResume" name="Finalizar Agendamento" />
             </div>
           </div>
+
+          {/* </Button> */}
         </div>
-        {/*  FIM DO CARD DO RESUMO   */}
+        {/* FIM DO CARD DO RESUMO  */}
       </div>
+
+
+
 
       <Footer />
     </>
-  );
+  )
 }
 
 export default CheckoutScheduling;
