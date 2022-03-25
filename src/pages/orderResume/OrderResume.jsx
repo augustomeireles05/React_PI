@@ -31,9 +31,9 @@ function OrderResume() {
                         </div>
 
                         {/* inicio da confirmação do pedido */}
-                        <div className="col-md rounded-1 mb-5">
+                        <div className="col-md-8 rounded-1 mb-5">
                             <Subtittle subtitulo="PEDIDO" />
-                            <div className="bg-white pb-2 p-md-2">
+                            <div className="bg-white pb-2 p-4">
                                 <div className="d-flex pedido-concluido justify-content-center flex-column mb-4">
 
                                     {/* <h4 className="titulo-principal text-center pb-2 mb-3 fs-3">STATUS DO PEDIDO</h4> */}
@@ -60,13 +60,9 @@ function OrderResume() {
 
                                     <div className="row resumo-produto mb-3">
                                         <h4 className="col-12 mb-2 pt-2">PRODUTO:</h4>
-                                        <div className="produtos d-flex justify-content-around">
-                                            <div className="produto col-7">
+                                        <div className="produtos d-flex justify-content-start">
+                                            <div className="produto col-12">
                                                 <p className="fs-6">PORSCHE 911 CARRERA 2021</p>
-                                            </div>
-
-                                            <div className="qtd col-5">
-                                                <p className="border-start-1 fs-6 text-end">QUANTIDADE: 01</p>
                                             </div>
                                         </div>
                                     </div>
@@ -74,7 +70,7 @@ function OrderResume() {
 
                                     <div className="row resumo-pgmt mb-3">
                                         <h3 className="mb-2 pt-2">FORMA DE PAGAMENTO:</h3>
-                                        <div className="d-flex justify-content-between w-100">
+                                        <div className="d-flex flex-column flex-lg-row  justify-content-between align-items-start w-100">
                                             <p className="text-start fs-6">CARTÃO DE CRÉDITO</p>
                                             <p className="text-center fs-6">9486.XXXX.XXXX.5030</p>
                                             <p className="text-end fs-6">3X DE R$ 133.383,33</p>
@@ -83,7 +79,8 @@ function OrderResume() {
 
                                     <div className="row resumo-endereco mb-3">
                                         <h3 className="mb-2 pt-2">ENDEREÇO DE ENTREGA:</h3>
-                                        <p className="fs-6"> RUA PRAÇA ROBERTO PEDRO GOMES Nº 101 MORUMBI SÃO PAULO/SP CEP: 12332-032</p>
+                                        <p className="fs-6"> RUA PRAÇA ROBERTO PEDRO GOMES Nº 101 MORUMBI SÃO PAULO/SP</p>
+                                        <p>CEP: 12332-032</p>
                                     </div>
 
                                     <div className="row data-pedido mb-3">
@@ -101,8 +98,10 @@ function OrderResume() {
                     </div>
                 
                 {/* fim da confirmação do pedido */}
-                <Footer />
+                
             </div>
+
+            <Footer />
         </>
     )
 }

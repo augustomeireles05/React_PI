@@ -334,7 +334,7 @@ function CheckoutOrder() {
 
                   <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <h5 className="modal-title text-center text-black" id="staticBackdropLabel">Editar Endereço</h5>
+                <h5 className="modal-title text-center text-black" id="staticBackdropLabel">Editar Cartão</h5>
 
 
                 {/* corpo do modal Cartão */}
