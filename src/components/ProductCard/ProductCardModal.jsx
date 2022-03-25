@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import '../../components/ProductCard/ProductCardModal.css'
 import CurrencyFormat from 'react-currency-format';
+import Button from '../../components/Button/Button'
 
 export default class ProductCardModal extends Component {
 
@@ -30,10 +31,10 @@ export default class ProductCardModal extends Component {
         return (
             <div className="modal show fade" style={modelStyle}>
                 <div className="modal-dialog modal-xl">
-                    <div className="row modal-content background-modal col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-center">
+                    <div className="row modal-content background-modal col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-center ms-0">
                         <div className="modal-header">
-                            <h5 className="modal-title px-1 font-title-modal ms-2">{this.props.brand} {this.props.model}</h5>
-                            <button type="button" className="btn-close me-2" onClick={this.props.hide}></button>
+                            <h5 className="modal-title px-1 font-title-modal ms-2 text-light">{this.props.brand} {this.props.model}</h5>
+                            <button type="button" className="btn-close bg-light me-2" onClick={this.props.hide}></button>
                         </div>
 
                         <div className="d-flex justify-content-center">
@@ -43,40 +44,40 @@ export default class ProductCardModal extends Component {
                                 </div>
 
                                 <div className="col-12 col-sm-12 col-md-12 col-lg-6">
-                                    <div className="background-datasheet border border-dark">
+                                    <div className=" border border-2  border-dark background-datasheet">
                                         <h4 className="text-center my-2">Ficha Técnica</h4>
                                     </div>
-                                    
-                                    <div className="mt-2 border border-dark p-3 background-datasheet">
-                                        <div className="row justify-content-center col-12 border border-dark mx-0 d-flex align-items-center">
+
+                                    <div className="mt-2 border border-2  border-dark p-3 background-datasheet">
+                                        <div className="row justify-content-center col-12 border border-2  border-dark mx-0 d-flex align-items-center background-datasheet-lighter">
                                             <p className="col-4 text-start fs-6 my-0">Modelo:</p>
                                             <p className="col-8 css-font-family-modal text-end fs-6 my-0">{this.props.model}</p>
                                         </div>
-                                        <div className="row justify-content-center col-12 border border-dark mx-0 d-flex align-items-center mt-2">
+                                        <div className="row justify-content-center col-12 border border-2  border-dark mx-0 d-flex align-items-center mt-2 background-datasheet-lighter">
                                             <p className="col-6 text-start fs-6 my-0">Cor:</p>
                                             <p className=" col-6 css-font-family-modal text-end fs-6 my-0 css-font-family-modal">{this.props.color}</p>
                                         </div>
-                                        <div className="row justify-content-center col-12 border border-dark mx-0 d-flex align-items-center mt-2">
+                                        <div className="row justify-content-center col-12 border border-2  border-dark mx-0 d-flex align-items-center mt-2 background-datasheet-lighter">
                                             <p className="col-9 text-start fs-6 my-0">Ano de Fabricação:</p>
                                             <p className="col-3 css-font-family-modal text-end fs-6 my-0 css-font-family-modal">{this.props.year}</p>
                                         </div>
-                                        <div className="row justify-content-center col-12 border border-dark mx-0 d-flex align-items-center mt-2">
+                                        <div className="row justify-content-center col-12 border border-2  border-dark mx-0 d-flex align-items-center mt-2 background-datasheet-lighter">
                                             <p className="col-3 text-start fs-6 my-0">Motor:</p>
                                             <p className="col-9 css-font-family-modal text-end fs-6 my-0 css-font-family-modal">{this.props.engine}</p>
                                         </div>
-                                        <div className="row justify-content-center col-12 border border-dark mx-0 d-flex align-items-center mt-2">
+                                        <div className="row justify-content-center col-12 border border-2  border-dark mx-0 d-flex align-items-center mt-2 background-datasheet-lighter">
                                             <p className="col-6 text-start fs-6 my-0">Potência:</p>
                                             <p className="col-6 css-font-family-modal text-end fs-6 my-0 css-font-family-modal">{this.props.potency}</p>
                                         </div>
-                                        <div className="row justify-content-center col-12 border border-dark mx-0 d-flex align-items-center mt-2">
+                                        <div className="row justify-content-center col-12 border border-2  border-dark mx-0 d-flex align-items-center mt-2 background-datasheet-lighter">
                                             <p className="col-3 text-start fs-6 my-0">Câmbio:</p>
                                             <p className="col-9 css-font-family-modal text-end fs-6 my-0 css-font-family-modal">{this.props.gearshift}</p>
                                         </div>
-                                        <div className="row justify-content-center col-12 border border-dark mx-0 d-flex align-items-center mt-2">
+                                        <div className="row justify-content-center col-12 border border-2  border-dark mx-0 d-flex align-items-center mt-2 background-datasheet-lighter">
                                             <p className="col-6 text-start fs-6 my-0">Combustível:</p>
                                             <p className="col-6 css-font-family-modal text-end fs-6 my-0 css-font-family-modal">{this.props.fuel}</p>
                                         </div>
-                                        <div className="row justify-content-center col-12 border border-dark mx-0 d-flex align-items-center mt-2">
+                                        <div className="row justify-content-center col-12 border border-2  border-dark mx-0 d-flex align-items-center mt-2 background-datasheet-lighter">
                                             <p className="col-6 text-start fs-6 my-0">Preço:</p>
 
                                             {/* INICIO: APLICAÇÃO SEM O FORMATO DE MOEDA BRASILEIRA */}
@@ -90,7 +91,7 @@ export default class ProductCardModal extends Component {
                                                     {value}
                                                 </p>}
                                         /> */}
-                                            {/* INICIO: APLICAÇÃO SEM O FORMATO DE MOEDA BRASILEIRA */}
+                                            {/* FIM: APLICAÇÃO SEM O FORMATO DE MOEDA BRASILEIRA */}
 
                                             <p className="col-6 css-font-family-modal text-end fs-6 my-0 css-font-family-modal">
                                                 {this.priceConverted(this.props.price)}
@@ -102,11 +103,11 @@ export default class ProductCardModal extends Component {
                                 </div>
 
                                 <div className="col-12 col-sm-12 col-md-12 col-lg-12 justify-content-center">
-                                    <div className="background-datasheet border border-dark mt-2">
+                                    <div className=" border border-2  border-dark mt-2 background-datasheet">
                                         <h4 className="text-center my-2">Descrição do veículo</h4>
                                     </div>
 
-                                    <div className="mt-2 border border-dark p-3 background-datasheet">
+                                    <div className="mt-2 border border-2  border-dark p-3 background-datasheet">
                                         <p className="css-font-family-modal">{this.props.description}</p>
                                     </div>
                                 </div>
@@ -114,24 +115,29 @@ export default class ProductCardModal extends Component {
                             </div>
                         </div>
 
-                        <div className="modal-footer">
-                            {/* <button type="button" className="btn btn-primary">Comprar</button> */}
-                            {/* {console.log(this.props.price > this.limitValue)} */}
+                        {
 
-                            <div className="">
-                                <Link to="/checkoutScheduling" className="btn btn-modal-buy">Agendar visita</Link>
-                            </div>
-                            <div className="">
-                                {
-                                    this.props.price < this.limitValue
-                                        ? <> <Link to="/cart" className="btn btn-modal-buy">Comprar</Link> </>
-                                        : ''
-                                    // <> <Link to="/checkoutScheduling" className="btn btn-modal-buy">Agendar visita</Link> </>
-                                }
-                            </div>
+                            this.props.price >= this.limitValue
+                                ? <>
+                                    <div className="modal-footer justify-content-center col-md-12 px-4 px-md-0">
+                                        <div className="col-12 col-sm-12 col-md-3 col-lg-2 justify-content-center">
+                                                <Button link="/checkoutScheduling" name="Agendar" />
+                                        </div>
+                                    </div>
+                                </>
+                                : <>
+                                    <div className="modal-footer d-grid gap-2 d-flex justify-content-center col-md-12 px-4 px-md-0">
+                                        <div className="col-12 col-sm-12 col-md-3 col-lg-2 justify-content-center">
+                                            <Button link="/checkoutScheduling" name="Agendar" />
+                                        </div>
+                                        <div className="col-12 col-sm-12 col-md-3 col-lg-2">
+                                            <Button link="/cart" name="Comprar" />
+                                        </div>
+                                    </div>
+                                </>
 
+                        }
 
-                        </div>
                     </div>
                 </div>
             </div>

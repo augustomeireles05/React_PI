@@ -64,9 +64,13 @@ function CheckoutOrder() {
                   <input className="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" />
                   <span className="space-input">Endereço 01</span>
                 </div>
-                <div className="d-grid d-md-flex justify-content-end">
-                  <img className="btn " src={Editar} width="45" alt="Editar" />
-                  <img className="btn " src={Lixeira} width="45" alt="Lixeira" />
+                <div className="d-flex d-md-flex justify-content-end">
+                  <button type="button" className="btn px-0 mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdropEdit">
+                    <img className="btn " src={Editar} width="45" alt="Editar" />
+                  </button>
+                  <button type="button" className="btn px-0 mb-2">
+                    <img className="btn " src={Lixeira} width="45" alt="Lixeira" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -96,7 +100,7 @@ function CheckoutOrder() {
                   <input className="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" />
                   <span className="space-input">Endereço 02</span>
                 </div>
-                <div className="d-grid d-md-flex justify-content-end">
+                <div className="d-flex d-md-flex justify-content-end">
                   <img className="btn " src={Editar} width="45" alt="Editar" />
                   <img className="btn " src={Lixeira} width="45" alt="Lixeira" />
                 </div>
@@ -185,6 +189,139 @@ function CheckoutOrder() {
           </div>
           {/* fim do modal adicionar endereço */}
 
+
+
+
+          {/* modal editar endereço */}
+          <div className="modal fade" id="staticBackdropEdit" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div className="modal-dialog">
+              <div className="modal-content background-modal-checkoutorder">
+                <div className="modal-header">
+
+                  <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <h5 className="modal-title text-center text-black" id="staticBackdropLabel">Editar Endereço</h5>
+                <div className="modal-body">
+
+                  {/* corpo do modal Editar Endereço */}
+                  <div className="modal-body">
+                    <div className="container">
+                      <div className="col-12 col-sm-12 col-md-12 px-0">
+                        <Label label="Logradouro" for="logradouro" />
+                        <Input type="text" aria-label="logradouro" id="logradouro" value="099 km 08 Gleba" />
+                      </div>
+
+                      <div className="col-12 col-sm-12 col-md-12 row justify-content-between px-0 mx-0">
+                        <div className="col-12 col-sm-12 col-md-6 pe-md-2 ps-0 ps-md-0 pe-0">
+                          <Label label="Cidade" for="cidade" />
+                          <Input type="text" aria-label="cidade" id="cidade" value="Camaçari" />
+                        </div>
+
+                        <div className="col-12 col-sm-12 col-md-4 pe-md-2 ps-0 ps-md-0 pe-0">
+                          <Label label="Bairro" for="bairro" />
+                          <Input type="text" aria-label="bairro" id="bairro" value="Catu de Abrantes" />
+                        </div>
+
+                        <div className="col-12 col-sm-12 col-md-2 px-0">
+                          <Label label="UF" for="uf" />
+                          <Input type="text" aria-label="uf" id="uf" value="BA" />
+                        </div>
+                      </div>
+
+                      <div className="col-12 col-sm-12 col-md-12 row justify-content-between px-0 mx-0">
+                        <div className="col-12 col-sm-12 col-md-10 pe-md-2 ps-0 ps-md-0 pe-0">
+                          <Label label="Cep" for="cep" />
+                          <Input type="text" aria-label="cep" id="cep" value="42841-000" />
+                        </div>
+                        <div className="col-12 col-sm-12 col-md-2 px-0">
+                          <Label label="Nº" for="numero" />
+                          <Input type="text" aria-label="uf" id="numero" value="32C" />
+                        </div>
+                      </div>
+
+                      <div className="col-12 col-sm-12 col-md-12 text-center mx-0 m-4">
+                        <button type="submit" className="col-12 col-md-4 btn-modal-checkoutorder pt-2 pb-2 pe-3 ps-3">
+                          Salvar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  {/* fim do corpo do modal Editar Endereço */}
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* fim do do modal editar endereço */}
+
+
+
+
+          {/* modal editar cartão */}
+          <div className="modal fade" id="staticBackdropEditCard" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div className="modal-dialog">
+              <div className="modal-content background-modal-checkoutorder">
+                <div className="modal-header">
+
+                  <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <h5 className="modal-title text-center text-black" id="staticBackdropLabel">Editar Endereço</h5>
+
+
+                {/* corpo do modal Cartão */}
+                <div className="modal-body">
+                  <div className="container">
+                    <div className="col-12 col-sm-12 col-md-12 px-0">
+                      <Label label="Número do cartão" for="cardnumber" />
+                      <Input type="text" aria-label="cardnumber" id="cardnumber" value="**** **** **** 0564" />
+                    </div>
+
+                    <div className="col-12 col-sm-12 col-md-12 row justify-content-between px-0 mx-0">
+                      <div className="col-12 col-sm-12 col-md-6 pe-md-2 ps-0 ps-md-0 pe-0">
+                        <Label label="Nome do titular" for="ownnername" />
+                        <Input type="text" aria-label="ownnername" id="ownnername" value="Maria Auxiliadora de Jesus" />
+                      </div>
+
+                      <div className="col-12 col-sm-12 col-md-4 pe-md-2 ps-0 ps-md-0 pe-0">
+                        <Label label="Data de validade" for="validdate" />
+                        <Input type="text" aria-label="validdate" id="validdate" value="03/30" />
+                      </div>
+
+                      <div className="col-12 col-sm-12 col-md-2 px-0">
+                        <Label label="CVV" for="cvv" />
+                        <Input type="text" aria-label="uf" id="cvv" value="xxx"/>
+                      </div>
+                    </div>
+
+                    <div className="col-12 col-sm-12 col-md-12 row justify-content-between px-0 mx-0">
+                      <div className="col-12 col-sm-12 col-md-10 pe-md-2 ps-0 ps-md-0 pe-0">
+                        <Label label="CPF do titular" for="ownnercpf" />
+                        <Input type="text" aria-label="cep" id="ownnercpf" value="099.345.666-09"/>
+                      </div>
+                      <div className="col-12 col-sm-12 col-md-2 px-0">
+                        <Label label="Bandeira" for="bandeira" />
+                        <Input type="text" aria-label="uf" id="bandeira" value="VISA"/>
+                      </div>
+                    </div>
+
+                    <div className="col-12 col-sm-12 col-md-12 text-center mx-0 m-4">
+                      <button type="submit" className="col-12 col-md-4 btn-modal-checkoutorder pt-2 pb-2 pe-3 ps-3">
+                        Salvar
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* fim do corpo do modal Cartão */}
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* fim do do modal editar Cartão */}
+
+
+
+
           <hr />
 
           <div className="col-12 col-sm-12 col-md-12 col-lg-12 row justify-content-between align-items-center p-0 p-md-0">
@@ -212,9 +349,14 @@ function CheckoutOrder() {
                   <input className="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" />
                   <span className="space-input">(Crédito) Mastercard</span>
                 </div>
-                <div className="d-grid d-md-flex justify-content-end">
-                  <img className="btn " src={Editar} width="45" alt="Editar" />
-                  <img className="btn " src={Lixeira} width="45" alt="Lixeira" />
+                <div className="d-flex d-md-flex justify-content-end">
+                  <button type="button" className="btn px-0 mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdropEditCard">
+                    <img className="btn " src={Editar} width="45" alt="Editar" />
+                  </button>
+
+                  <button type="button" className="btn px-0 mb-2">
+                    <img className="btn " src={Lixeira} width="45" alt="Lixeira" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -235,7 +377,7 @@ function CheckoutOrder() {
                   <input className="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" />
                   <span className="space-input">(Débito) Visa</span>
                 </div>
-                <div className="d-grid d-md-flex justify-content-end">
+                <div className="d-flex d-md-flex justify-content-end">
                   <img className="btn " src={Editar} width="45" alt="Editar" />
                   <img className="btn " src={Lixeira} width="45" alt="Lixeira" />
                 </div>
@@ -258,7 +400,7 @@ function CheckoutOrder() {
                   <input className="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" />
                   <span className="space-input">Paypal</span>
                 </div>
-                <div className="d-grid d-md-flex justify-content-end">
+                <div className="d-flex d-md-flex justify-content-end">
                   <img className="btn " src={Editar} width="45" alt="Editar" />
                   <img className="btn " src={Lixeira} width="45" alt="Lixeira" />
                 </div>
