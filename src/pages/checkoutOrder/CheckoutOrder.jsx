@@ -64,7 +64,7 @@ function CheckoutOrder() {
                   <input className="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" />
                   <span className="space-input">Endereço 01</span>
                 </div>
-                <div className="d-grid d-md-flex justify-content-end">
+                <div className="d-flex d-md-flex justify-content-end">
                   <button type="button" className="btn px-0 mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdropEdit">
                     <img className="btn " src={Editar} width="45" alt="Editar" />
                   </button>
@@ -100,7 +100,7 @@ function CheckoutOrder() {
                   <input className="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" />
                   <span className="space-input">Endereço 02</span>
                 </div>
-                <div className="d-grid d-md-flex justify-content-end">
+                <div className="d-flex d-md-flex justify-content-end">
                   <img className="btn " src={Editar} width="45" alt="Editar" />
                   <img className="btn " src={Lixeira} width="45" alt="Lixeira" />
                 </div>
@@ -349,7 +349,7 @@ function CheckoutOrder() {
                   <input className="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" />
                   <span className="space-input">(Crédito) Mastercard</span>
                 </div>
-                <div className="d-grid d-md-flex justify-content-end">
+                <div className="d-flex d-md-flex justify-content-end">
                   <button type="button" className="btn px-0 mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdropEditCard">
                     <img className="btn " src={Editar} width="45" alt="Editar" />
                   </button>
@@ -377,7 +377,7 @@ function CheckoutOrder() {
                   <input className="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" />
                   <span className="space-input">(Débito) Visa</span>
                 </div>
-                <div className="d-grid d-md-flex justify-content-end">
+                <div className="d-flex d-md-flex justify-content-end">
                   <img className="btn " src={Editar} width="45" alt="Editar" />
                   <img className="btn " src={Lixeira} width="45" alt="Lixeira" />
                 </div>
@@ -400,7 +400,7 @@ function CheckoutOrder() {
                   <input className="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" />
                   <span className="space-input">Paypal</span>
                 </div>
-                <div className="d-grid d-md-flex justify-content-end">
+                <div className="d-flex d-md-flex justify-content-end">
                   <img className="btn " src={Editar} width="45" alt="Editar" />
                   <img className="btn " src={Lixeira} width="45" alt="Lixeira" />
                 </div>
