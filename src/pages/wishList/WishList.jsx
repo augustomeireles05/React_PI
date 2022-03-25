@@ -3,7 +3,7 @@ import './WishList.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import Button from '../../components/Button/Button'
-import Subtittle from '../../components/Subtittle/Subtittle.jsx';
+import Subtittle from '../../components/Subtittle/Subtittle'
 
 import { Link } from 'react-router-dom'
 
@@ -11,7 +11,7 @@ import imgListaDesejos from '../../assets/images/newInventory/audi-tt.jpeg'
 import imagensLista from '../../assets/images/newInventory/Porsche-Panamera-4ES-Preto.jpg'
 import imagensLista2 from '../../assets/images/newInventory/Lamborghini-Aventor.jpg'
 import Sidebar from '../../components/Sidebar/Sidebar'
-import Subtittle from '../../components/Subtittle/Subtittle'
+
 
 
 function WishList() {
