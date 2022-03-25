@@ -17,276 +17,214 @@ import Boleto from "../../assets/images/Footer/codigo-de-barras.png";
 
 
 function Footer() {
-    return (
-      <>
-        <footer>
-          {/*Começo Footer */}
-          <div className="container mt-5 mb-5 pt-3">
-            {/*Começo Redes Sociais */}
+  return (
+    <>
+      <footer>
+        {/*Começo Footer */}
+        <div className="container mt-5 mb-5 pt-3">
+          {/*Começo Redes Sociais */}
 
-            <div className="row justify-content-center responsive-social-media pt-3">
-              <div className="col-2 col-md-1">
-                {/*Icon Facebook */}
-                <Link to="#" target="_blank">
-                  <img src={Facebook} width="30" height="30" alt="Facebook-Logo"/>
-                </Link>
-              </div>
-              <div className="col-2 col-md-1">
-                {/*Icon Twitter */}
-                <Link to="#" target="_blank">
-                  <img src={Twitter} width="30" height="30" alt="Twitter-Logo"/>
-                </Link>
-              </div>
-              <div className="col-2 col-md-1">
-                {/*Icon Instagram */}
-                <Link to="#" target="_blank">
-                  <img src={Instagram} width="30" height="30" alt="Instagram-Logo"/>
-                </Link>
-              </div>
-              <div className="col-2 col-md-1">
-                {/*Icon Linkedin */}
-                <Link to="#" target="_blank">
-                  <img src={Linkedin} width="30" height="30" alt="Linkedin-Logo"/>
-                </Link>
-              </div>
-              <div className="col-2 col-md-1">
-                {/*Icon YouTube */}
-                <Link to="#" target="_blank">
-                  <img src={Youtube} width="30" height="30" alt="Youtube-Logo"/>
-                </Link>
-              </div>
+          <div className="row justify-content-center responsive-social-media pt-3">
+            <div className="col-2 col-md-1">
+              {/*Icon Facebook */}
+              <a href="https://pt-br.facebook.com/" target="_blank" rel="noreferrer">
+                <img src={Facebook} width="30" height="30" alt="Facebook-Logo" />
+              </a>
+            </div>
+            <div className="col-2 col-md-1">
+              {/*Icon Twitter */}
+              <a href="https://twitter.com/login?lang=pt" target="_blank" rel="noreferrer">
+                <img src={Twitter} width="30" height="30" alt="Twitter-Logo" />
+              </a>
+            </div>
+            <div className="col-2 col-md-1">
+              {/*Icon Instagram */}
+              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                <img src={Instagram} width="30" height="30" alt="Instagram-Logo" />
+              </a>
+            </div>
+            <div className="col-2 col-md-1">
+              {/*Icon Linkedin */}
+              <a href="https://br.linkedin.com/" target="_blank" rel="noreferrer">
+                <img src={Linkedin} width="30" height="30" alt="Linkedin-Logo" />
+              </a>
+            </div>
+            <div className="col-2 col-md-1">
+              {/*Icon YouTube */}
+              <a href="https://www.youtube.com/?gl=br&hl=pt" target="_blank" rel="noreferrer">
+                <img src={Youtube} width="30" height="30" alt="Youtube-Logo" />
+              </a>
             </div>
           </div>
+        </div>
 
-          {/*Fim Redes Sociais */}
+        {/*Fim Redes Sociais */}
 
-          <div className="container">
-            {/*Começo Container Texto */}
-            <div className="row gy-5 text-start d-flex justify-content-center ms-3 responsive-footer">
-              <div className="col-md-3">
-                {/*Começo Institucional */}
-                <h5>INSTITUCIONAL</h5>
-                <br />
-                <ul className="nav flex-column text-start">
-                  <li className="nav-item mb-2">
-                    <Link
-                      to="#"
-                      className="nav-link p-0 text-muted"
-                      target="_blank"
-                    >
-                      SOBRE NÓS
-                    </Link>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <Link
-                      to="#"
-                      className="nav-link p-0 text-muted"
-                      target="_blank"
-                    >
-                      TRABALHE CONOSCO
-                    </Link>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <Link
-                      to="#"
-                      className="nav-link p-0 text-muted"
-                      target="_blank"
-                    >
-                      INVESTIDORES
-                    </Link>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <Link
-                      to="#"
-                      className="nav-link p-0 text-muted"
-                      target="_blank"
-                    >
-                      POLÍTICA DE PRIVACIDADE
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              {/*Fim Institucional */}
-
-              <div className="col-md-3">
-                {/*Começo Contato */}
-                <h5>CONTATO</h5>
-                <br />
-                <ul className="nav flex-column">
-                  <li className="nav-item mb-2">
-                    <Link
-                      to="#"
-                      className="nav-link p-0 text-muted"
-                      target="_blank"
-                    >
-                      TELEFONE: (11) 5555-5555
-                    </Link>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <Link
-                      to="#"
-                      className="nav-link p-0 text-muted"
-                      target="_blank"
-                    >
-                      WHATSAPP: (11) 9 5555-5555
-                    </Link>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <Link
-                      to="#"
-                      className="nav-link p-0 text-muted"
-                      target="_blank"
-                    >
-                      OUVIDORIA: 0800 555 5555
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              {/*Fim Contato */}
-
-              <div className="col-md-3">
-                {/*Começo Atendimento */}
-                <h5>ATENDIMENTO</h5>
-                <br />
-                <ul className="nav flex-column">
-                  <li className="nav-item mb-2">
-                    <Link
-                      to="#"
-                      className="nav-link p-0 text-muted"
-                      target="_blank"
-                    >
-                      AGENDAMENTO DE VISITAS
-                    </Link>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <Link
-                      to="#"
-                      className="nav-link p-0 text-muted"
-                      target="_blank"
-                    >
-                      CENTRAL DE ATENDIMENTO
-                    </Link>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <Link
-                      to="#"
-                      className="nav-link p-0 text-muted"
-                      target="_blank"
-                    >
-                      COMO COMPRAR NO SITE
-                    </Link>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <Link
-                      to="#"
-                      className="nav-link p-0 text-muted"
-                      target="_blank"
-                    >
-                      PRAZOS DE ENTREGA
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              {/*Fim Atendimento */}
-
-              <div className="col-md-3">
-                {/*Começo Minha Conta */}
-                <h5>MINHA CONTA</h5>
-                <br />
-                <ul className="nav flex-column">
-                  <li className="nav-item mb-2">
-                    <Link
-                      to="#"
-                      className="nav-link p-0 text-muted"
-                      target="_blank"
-                    >
-                      ALTERAR DADOS PESSOAIS
-                    </Link>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <Link
-                      to="#"
-                      className="nav-link p-0 text-muted"
-                      target="_blank"
-                    >
-                      EDITAR ENDEREÇOS
-                    </Link>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <Link
-                      to="#"
-                      className="nav-link p-0 text-muted"
-                      target="_blank"
-                    >
-                      ACOMPANHAR UM PEDIDO
-                    </Link>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <Link
-                      to="#"
-                      className="nav-link p-0 text-muted"
-                      target="_blank"
-                    >
-                      CRIAR UM CADASTRO
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              {/*Fim Minha Conta */}
-            </div>
-          </div>
-          <div className="formas-pagamento text-center">
-            {/*Começo Gaveta Formas de Pagamento */}
-            <details>
-              <summary>formas de pagamento</summary>
-              <ul>
-                <li>
-                  <img src={Visa} alt="Visa" width="60" height="50" />{" "}
-                  {/* Icon Visa */}
+        <div className="container">
+          {/*Começo Container Texto */}
+          <div className="row gy-5 text-start d-flex justify-content-center ms-3 responsive-footer">
+            <div className="col-md-3">
+              {/*Começo Institucional */}
+              <h5>INSTITUCIONAL</h5>
+              <br />
+              <ul className="nav flex-column text-start">
+                <li className="nav-item mb-2">
+                  <Link
+                    to="/aboutUs"
+                    className="nav-link p-0 text-muted"
+                    target="_blank"
+                  >
+                    SOBRE NÓS
+                  </Link>
                 </li>
-                <li>
-                  <img
-                    src={Mastercard}
-                    alt="MasterCard"
-                    width="60"
-                    height="50"
-                  />{" "}
-                  {/* Icon Mastercard */}
+                <li className="nav-item mb-2">
+                  <Link
+                    to="#"
+                    className="nav-link p-0 text-muted"
+                    target="_blank"
+                  >
+                    INVESTIDORES
+                  </Link>
                 </li>
-                <li>
-                  <img src={Hipercard} alt="HiperCard" width="60" height="50" />{" "}
-                  {/* Icon Hipercard */}
-                </li>
-                <li>
-                  <img src={Elo} alt="Elo" width="60" height="50" />{" "}
-                  {/* Icon Elo */}
-                </li>
-                <li>
-                  <img src={Apple} alt="Maestro" width="60" height="50" />{" "}
-                  {/* Icon ApplePay */}
-                </li>
-                <li>
-                  <img src={Boleto} alt="boleto" width="50" />{" "}
-                  {/* Icon Boleto */}
+                <li className="nav-item mb-2">
+                  <Link
+                    to="#"
+                    className="nav-link p-0 text-muted"
+                    target="_blank"
+                  >
+                    POLÍTICA DE PRIVACIDADE
+                  </Link>
                 </li>
               </ul>
-            </details>
-          </div>
+            </div>
 
-          {/*Fim Gaveta Formas de Pagamento */}
+            {/*Fim Institucional */}
 
-          {/*Começo Copyright */}
-          <div className="text-center p-2">
-            {/*Começo Copyright */}© 2021-2022 DEV CARS AUTOMOBILES.
+            <div className="col-md-3">
+              {/*Começo Contato */}
+              <h5>CONTATO</h5>
+              <br />
+              <ul className="nav flex-column">
+                <li className="nav-item mb-2">
+                  <a href="tel:+551137695678" className="nav-link p-0 text-muted">
+                    TELEFONE: (11) 3769-5678
+                  </a>
+                </li>
+                <li className="nav-item mb-2">
+                  <a href="tel:+5511955555555" className="nav-link p-0 text-muted">
+                    WHATSAPP: (11) 95555-5555
+                  </a>
+                </li>
+                <li className="nav-item mb-2">
+                  <a href="tel:+5508005555555" className="nav-link p-0 text-muted">
+                    OUVIDORIA: 0800 555 5555
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/*Fim Contato */}
+
+            <div className="col-md-3">
+              {/*Começo Atendimento */}
+              <h5>ATENDIMENTO</h5>
+              <br />
+              <ul className="nav flex-column">
+                <li className="nav-item mb-2">
+                  <Link to="#" className="nav-link p-0 text-muted" target="_blank">
+                    AGENDAMENTO DE VISITAS
+                  </Link>
+                </li>
+                <li className="nav-item mb-2">
+                  <Link to="/contact" className="nav-link p-0 text-muted" target="_blank" >
+                    CENTRAL DE ATENDIMENTO
+                  </Link>
+                </li>
+                <li className="nav-item mb-2">
+                  <Link to="#" className="nav-link p-0 text-muted" target="_blank">
+                    PRAZOS DE ENTREGA
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/*Fim Atendimento */}
+
+            <div className="col-md-3">
+              {/*Começo Minha Conta */}
+              <h5>MINHA CONTA</h5>
+              <br />
+              <ul className="nav flex-column">
+                <li className="nav-item mb-2">
+                  <Link to="/myData" className="nav-link p-0 text-muted" target="_blank">
+                    ALTERAR DADOS PESSOAIS
+                  </Link>
+                </li>
+                <li className="nav-item mb-2">
+                  <Link to="/myOrder" className="nav-link p-0 text-muted" target="_blank">
+                    ACOMPANHAR UM PEDIDO
+                  </Link>
+                </li>
+                <li className="nav-item mb-2">
+                  <Link to="/register" className="nav-link p-0 text-muted" target="_blank">
+                    CRIAR UM CADASTRO
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/*Fim Minha Conta */}
           </div>
-          {/*Fim Copyright */}
-        </footer>
-      </>
-    );
+          <br />
+        </div>
+        <div className="formas-pagamento text-center">
+          {/*Começo Gaveta Formas de Pagamento */}
+          <details>
+            <summary>formas de pagamento</summary>
+            <ul>
+              <li>
+                <img src={Visa} alt="Visa" width="40" height="30" />
+                {/* Icon Visa */}
+              </li>
+              <li>
+                <img
+                  src={Mastercard}
+                  alt="MasterCard"
+                  width="40"
+                  height="30"
+                />{" "}
+                {/* Icon Mastercard */}
+              </li>
+              <li>
+                <img src={Hipercard} alt="HiperCard" width="40" height="30" />
+                {/* Icon Hipercard */}
+              </li>
+              <li>
+                <img src={Elo} alt="Elo" width="40" height="30" />
+                {/* Icon Elo */}
+              </li>
+              <li>
+                <img src={Apple} alt="Maestro" width="50" height="40" />
+                {/* Icon Maestro */}
+              </li>
+              <li>
+                <img src={Boleto} alt="boleto" width="40"/>
+                {/* Icon Boleto */}
+              </li>
+            </ul>
+          </details>
+        </div>
+
+        {/*Fim Gaveta Formas de Pagamento */}
+        <br />
+        {/*Começo Copyright */}
+        <div className="text-center p-2">
+          {/*Começo Copyright */}© 2021-2022 DEV CARS AUTOMOBILES.
+        </div>
+        {/*Fim Copyright */}
+      </footer>
+    </>
+  );
 }
 
 export default Footer
