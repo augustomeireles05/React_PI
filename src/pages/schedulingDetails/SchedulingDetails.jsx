@@ -17,7 +17,7 @@ function schedulingDetails() {
 
             <Header />
 
-            <MainTittle tittle="RESUMO DO AGENDAMENTO"/>
+            <MainTittle tittle="RESUMO DO AGENDAMENTO "/>
             <div className="container">
                 
                 <div className="row gx-5 gy-3 px-3">
@@ -64,7 +64,7 @@ function schedulingDetails() {
                                         </div>
 
                                         <div className="qtd col-5">
-                                            <p className="qtd-produto1 text-end">QTD: 01</p>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -78,6 +78,17 @@ function schedulingDetails() {
                                     <h3 className="subtitulo col-6 pt-2">VALOR DO BEM</h3>
                                     <p className="col-6 text-end pt-2">R$400.150,00</p>
                                 </div>
+
+                                <div className="row valor-total mb-5">
+                                    <h3 className="subtitulo col-6 pt-2">TAXA DE AGENDAMENTO</h3>
+                                    <p className="col-6 text-end pt-2">R$8.150,00</p>
+                                </div>
+
+                                <div className="row valor-total mb-5">
+                                    <h3 className="subtitulo col-6 pt-2">VALOR TOTAL</h3>
+                                    <p className="col-6 text-end pt-2">R$408.300,00</p>
+                                </div>
+
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../../components/Button/Button'
 
 
 function SearchFilter() {
@@ -46,7 +47,8 @@ function SearchFilter() {
                     </div>
 
                     <div className="col-12 col-md-5 col-lg-2 text-center">
-                        <button type="submit" className="btn botao-buscar btn border-none py-2 ms-0 w-100">BUSCAR</button>
+                    <Button link="/inventory" name="BUSCAR" />
+                        {/* <button type="submit" className="btn botao-buscar btn border-none py-2 ms-0 w-100">BUSCAR</button> */}
                     </div>
                 </form>
 
