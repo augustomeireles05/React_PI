@@ -7,11 +7,11 @@
     background:linear-gradient(8deg, rgba(88, 87, 82, 0.411) 30%, rgb(193, 193, 189) 70%);
     border-radius: 4px;
     border: none;
-    padding: 20px 20px 20px 20px;
+    padding: 0px 10px 0px 10px;
     margin: 5px; 
     text-align: center;
     font-weight: bold; 
-    margin-left: 10px;  
+    /* margin-left: 10px;   */
 }
 
 .btn-secundario:hover{
@@ -39,6 +39,6 @@
     .btn-secundario {
         padding-top: 10px;
         padding-bottom: 10px;
-        margin-left: 20px;
+        /* margin-left: 20px; */
     }
 }

@@ -33,7 +33,7 @@ function OrderResume() {
                         {/* inicio da confirmação do pedido */}
                         <div className="col-md rounded-1 mb-5">
                             <Subtittle subtitulo="PEDIDO" />
-                            <div className="bg-white p-4 pb-2">
+                            <div className="bg-white pb-2 p-md-2">
                                 <div className="d-flex pedido-concluido justify-content-center flex-column mb-4">
 
                                     {/* <h4 className="titulo-principal text-center pb-2 mb-3 fs-3">STATUS DO PEDIDO</h4> */}
@@ -49,7 +49,7 @@ function OrderResume() {
                                     <p className="text-center numero-pedido">NÚMERO DO PEDIDO: 004742 </p>
                                 </div>
 
-                                <div className="detalhes-pedido">
+                                <div className="detalhes-pedido p-2">
                                     <div className="detalhes-pedido d-flex justify-content-center align-items-center mb-3">
                                         <h2 className="titulo-detalhes-pedido me-2 mb-0">DETALHES DO PEDIDO</h2>
                                         <Link to={"#"}>

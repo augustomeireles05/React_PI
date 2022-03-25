@@ -89,7 +89,7 @@ function Contact() {
                                             <textarea className="form-control m-0" rows="6" type="text" id="mensagem" aria-label="mensagem"></textarea>
                                                
 
-                                            <div className="d-grid gap-2 col-12 mx-auto">
+                                            <div className="d-grid gap-2 col-12 mx-auto mt-4">
                                                 <Button link="/" name="ENVIAR" />
                                             </div>          
                                         </div>

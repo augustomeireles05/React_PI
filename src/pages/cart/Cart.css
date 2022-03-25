@@ -12,102 +12,18 @@
     margin-bottom: -1em;
 }
 
+.font-cart {
+    font-family: 'Questrial', sans-serif;
+}
 .texto-alinhado {
     text-align: justify;
-}
-
-.text-shopping-cart {
     font-family: 'Questrial', sans-serif;
-    font-size: 1em;
-    text-align: justify;
+    font-size: 0.8em;
 }
 
-.resume-shopping-cart {
+.price-style {
     font-family: 'Questrial', sans-serif;
-    font-size: 0.7em;
-    text-align: justify;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgba(103, 96, 0, 0.898);
 }
-
-.fa-minus {
-    color: black;
-} 
-
-.size-icons-input {
-    color: black;
-    
-}
-
-.input-center {
-    text-align: center;
-}
-
-.trash-position {
-    display: flex;
-   align-items:flex-end ;
-
-}
-
-
-
-/* -- BEGIN RESONSIVE -- */
-
-    /* --  Início Responsividade para Iphone -- */
-
-    @media (max-width: 400px) {
-        .text-shopping-cart {
-            display: flex;
-            justify-content: center;
-
-            font-size: 1em;
-            font-weight: 600;
-            margin-top: 5%;
-        }
-    }
-
-
-
-    @media (max-width: 400px) {
-        .resume-shopping-cart {
-            /* display: flex; */
-            align-self: center;
-
-            font-size: 1em;
-            margin-top: 5%;
-        }
-    }
-
-    @media (max-width: 400px) {
-        .price-car {
-            display: flex;
-            text-align: justify;
-            font-size: 1.5em;
-        }
-    }
-
-    @media (max-width: 400px) {
-        .trash-position {
-            display: flex;
-            justify-content: center;
-
-            padding-top: 5%;
-        }
-    }
-
-    @media (max-width: 400px) {
-        .title-right-side {
-            display: flex;
-            justify-content: center;
-
-            padding-top: 5%;
-        }
-    }
-
-    @media (max-width: 400px) {
-        .price-car {
-            font-size: 1.5em;
-        }
-    }
-
-    /* --  Fim Responsividade para Iphone -- */
-
-/* -- END RESONSIVE -- */

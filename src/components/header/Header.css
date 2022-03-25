@@ -21,8 +21,16 @@
         padding-bottom: 2%;
         padding-right: 5%;
         
+        position: sticky;
+        top:0;
+        left: 0;
+        z-index: 4;
+
     }
 
+    .btn:focus{
+        box-shadow: none;
+    }
     .icons-header .icon-menu {
         padding-top: 70%;
     }
@@ -90,7 +98,11 @@
     }
 
     .modal-content1{
-        background-color: #000000;
+        background: rgba( 0, 0, 0, 0.65 );
+        box-shadow: 0 8px 32px 0 rgba(78, 78, 78, 0.37);
+        backdrop-filter: blur( 6.5px );
+        -webkit-backdrop-filter: blur( 6.5px );
+    
     }
 
     .modal-header{
@@ -148,6 +160,10 @@
             padding-right: 3%;  
 
         }  
+
+        .modal-content1{
+            height: 25vH;
+        }
         
     }
 
