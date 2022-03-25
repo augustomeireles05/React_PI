@@ -107,7 +107,7 @@ function Cart() {
 
                         <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 px-0 mt-3 d-flex justify-content-center d-md-flex justify-content-md-center">
                             <div className="col-11 col-md-11 col-lg-12 col-xl-12 d-lg-flex justify-content-lg-end">
-                                <Button link="" name="Continuar" />
+                                <Button link="/checkoutOrder" name="Continuar" />
                             </div>
                         </div>
 
