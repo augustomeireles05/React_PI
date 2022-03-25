@@ -35,8 +35,8 @@ const ProductCard = () => {
 
     return (
         <>
-            <section className="py-4 py-lg-5 col-12 col-sm-12 col-md-12 justify-content-around">
-                <div className="row justify-content-evenly align-item-center">
+            <section className="py-4 py-lg-5 col-12 col-sm-12 col-md-11 col-lg-11 justify-content-center m-auto">
+                <div className="row justify-content-around align-item-center">
 
 
                     {List.cardData.map((item, index) => {
