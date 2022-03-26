@@ -14,7 +14,7 @@ import SideBar from '../../components/Sidebar/Sidebar'
 function MyData() {
     return (
         <>
-             <Header/>
+            <Header />
 
             <section>
 
@@ -22,18 +22,18 @@ function MyData() {
                 <article className="page-content container mt-4">
                     { /* coluna Menu */}
                     <div className=" row g-5">
-                        <div className=" d-flex justify-content-center d-none d-md-block col-md-3">
+                        <div className="d-flex justify-content-center d-none d-md-block col-md-4">
                             { /*responsividade menu*/}
                             <div className="column ms-3">
 
                                 { /*Navbar*/}
                                 {/* <nav className=" navbar navbar-light mb-3 mt-0 pt-0 pb-2"> */}
-                                    {/* <div className="container-fluid d-block text-center"> */}
-                                        <Subtittle menu="MENU"/>
+                                {/* <div className="container-fluid d-block text-center"> */}
+                                <Subtittle menu="MENU" />
 
-                                    {/* </div>
+                                {/* </div>
                                 </nav> */}
-                                
+
                                 <SideBar />
 
 
@@ -54,23 +54,23 @@ function MyData() {
                                         <Link to="/" className="link-solution">SAIR</Link>
                                     </button>
                                 </div> */}
-                                
+
                             </div>
                         </div>
                         {/* fim do menu lateral */}
-                        <div className="col-12 col-sm-12 col-md-9 ajusteFormulario">
+                        <div className="col-12 col-sm-12 col-md-8 ajusteFormulario">
                             {/* <div className=" text-center title col-12 ">
                                 <span>MEUS DADOS</span>
                             </div> */}
-                            <Subtittle subtitulo="MEUS DADOS"/>
+                            <Subtittle subtitulo="MEUS DADOS" />
                             { /* 1 Formulario*/}
                             <form>
                                 <div className="row ajusteFormulario">
 
                                     <div className="col-12 inputsFormulario">
                                         <div className="mb-3">
-                                            <Label label="Nome completo" for="nome"/>
-                                            <Input type="text" aria-label="nome" id="nome"/>
+                                            <Label label="Nome completo" for="nome" />
+                                            <Input type="text" aria-label="nome" id="nome" />
                                         </div>
 
                                     </div>
@@ -79,8 +79,8 @@ function MyData() {
 
                                     <div className="col-12 col-md-6">
                                         <div className="mb-3">
-                                            <Label label="Email" for="email"/>
-                                            <Input type="email" aria-label="email" id="email"/>
+                                            <Label label="Email" for="email" />
+                                            <Input type="email" aria-label="email" id="email" />
                                         </div>
 
                                     </div>
@@ -88,8 +88,8 @@ function MyData() {
 
                                     <div className="col-12 col-md-6">
                                         <div className="mb-3">
-                                            <Label label="CPF" for="cpf"/>
-                                            <Input type="text" aria-label="cpf" id="cpf"/>
+                                            <Label label="CPF" for="cpf" />
+                                            <Input type="text" aria-label="cpf" id="cpf" />
                                         </div>
 
 
@@ -97,8 +97,8 @@ function MyData() {
 
                                     <div className="col-12 col-md-6">
                                         <div className="mb-3">
-                                            <Label label="Data de Nascimento" for="dtNascimento"/>
-                                            <Input type="date" aria-label="dtNascimento" id="dtNascimento"/>
+                                            <Label label="Data de Nascimento" for="dtNascimento" />
+                                            <Input type="date" aria-label="dtNascimento" id="dtNascimento" />
 
                                         </div>
 
@@ -106,15 +106,15 @@ function MyData() {
 
 
                                     <div className="col-12 col-md-6">
-                                        <div className="mb-3">
+                                        <div className="mb-3 mt-4 justify-content-end">
                                             {/* <Link className="btn btn-warning mt-6 d-block float-md-end" to="#" role="button">
                                                 SALVAR </Link> */}
-                                                
-                                            <Button link="" name="SALVAR" />    
+
+                                            <Button link="" name="SALVAR" />
                                         </div>
 
 
-                                        
+
 
                                     </div>
 
@@ -125,9 +125,9 @@ function MyData() {
 
                             </form>
 
-                          
-                            <Subtittle subtitulo="ALTERAR SENHA"/>
-                            
+
+                            <Subtittle subtitulo="ALTERAR SENHA" />
+
 
                             { /*2 FORMULARIO*/}
                             <form>
@@ -135,7 +135,7 @@ function MyData() {
                                     <div className="col-12 col-md-6">
                                         <div className="mb-3">
                                             <Input type="password" aria-label="password" />
-                                            <Label label="Informe sua senha atual"/>
+                                            <Label label="Informe sua senha atual" />
                                         </div>
 
                                     </div>
@@ -143,7 +143,7 @@ function MyData() {
                                     <div className="col-12 col-md-6">
                                         <div className="mb-3">
                                             <Input type="password" aria-label="password" />
-                                            <Label label="Informe sua nova senha"/>
+                                            <Label label="Informe sua nova senha" />
 
                                         </div>
                                     </div>
@@ -152,7 +152,7 @@ function MyData() {
                                     <div className="col-12 col-md-6">
                                         <div className="mb-3">
                                             <Input type="password" aria-label="password" />
-                                            <Label label="Confirme sua nova senha"/>
+                                            <Label label="Confirme sua nova senha" />
 
                                         </div>
 
@@ -160,12 +160,12 @@ function MyData() {
                                     </div>
 
 
-                                    <div className="col-12">
+                                    <div className="col-12 col-md-6">
                                         <div className="mb-3">
                                             {/* <Link className="btn btn-warning mt-6 d-block float-md-end" to="#" role="button">
                                                 MODIFICAR</Link> */}
-                                             
-                                            <Button link="" name="MODIFICAR" />   
+
+                                            <Button link="" name="MODIFICAR" />
                                         </div>
 
                                     </div>
@@ -187,8 +187,8 @@ function MyData() {
 
             </section >
 
-            
-             < Footer/>
+
+            < Footer />
 
         </>
     )

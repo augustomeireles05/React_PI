@@ -30,34 +30,34 @@ function Register() {
                 </div>
 
                 {/* colapse pessoa fisica */}
-                <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
 
                     <form className="col-12 col-md-10 mb-2 justify-content-start gy-3 dados-pessoais ps-md-5 pe-md-5 h-100 w-100">
                         <Subtitle menu="Dados Pessoais" />
 
-                        <div className="col-md-10 mb-3">
+                        <div className="col-md-12 mb-3">
                             <Label label="Nome" for="nome" />
                             <Input type="text" aria-label="Nome" id="Nome" />
                         </div>
 
 
                         <div className="row">
-                            <div className="col-12 col-md-10 col-lg-6 mb-3">
+                            <div className="col-12 col-md-12 col-lg-6 mb-3">
                                 <Label label="Email" for="emailPF" />
                                 <Input type="email" aria-label="emailPF" id="emailPF" />
                             </div>
-                            <div className="col-12 col-md-10 col-lg-6 mb-3">
+                            <div className="col-12 col-md-12 col-lg-6 mb-3">
                                 <Label label="CPF" for="cpf" />
                                 <Input type="text" aria-label="cpf" id="cpf" />
                             </div>
                         </div>
-                    
+
                         <div className="row">
-                            <div className="col-12 col-md-10 col-lg-6 mb-5">
+                            <div className="col-12 col-md-12 col-lg-6 mb-5">
                                 <Label label="Data de Nascimento" for="dtNascimento" />
                                 <Input type="date" aria-label="dtNascimento" id="dtNascimento" />
                             </div>
-                            <div className="col-12 col-md-10 col-lg-6 mb-3">
+                            <div className="col-12 col-md-12 col-lg-6 mb-3">
                                 <Label label="Telefone" for="telefonePF" />
                                 <Input type="text" aria-label="telefonePF" id="telefonePF" />
                             </div>
@@ -75,13 +75,13 @@ function Register() {
                         </div> */}
 
 
-                        <div className="col-12 col-md-10 col-lg-6 mb-3">
+                        <div className="col-12 col-md-12 col-lg-6 mb-3">
                             <Label label="Escolha um senha" for="password-register" />
                             <Input type="password" aria-label="password-register" id="password-register" />
                             {/* <span className="fs-6">Digite uma senha de 8-16 caracteres</span> */}
                         </div>
 
-                        <div className="col-12 col-md-10 col-lg-6 mb-3">
+                        <div className="col-12 col-md-12 col-lg-6 mb-3">
                             <Label label="Confirme sua nova senha" for="password-register-confirm" />
                             <Input type="password" aria-label="password-register-confirm" id="password-register-confirm" />
                         </div>
@@ -95,8 +95,10 @@ function Register() {
                             </div>
                         </div>
 
-                        <div className="col-12 col-md-6 col-lg-3 text-center mt-4 mb-3">
-                            <Button link="" name="CADASTRE-SE" />
+                        <div className="row justify-content-center justify-content-lg-start">
+                            <div className="col-12 col-md-6 col-lg-3 text-center mt-4 mb-3 ">
+                                <Button link="" name="CADASTRE-SE" />
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -112,38 +114,38 @@ function Register() {
                     <form className="col-12 col-md-10 mb-2 justify-content-start gy-3 dados-pessoais ps-md-5 pe-md-5 h-100 w-100">
                         <Subtitle menu="Dados Pessoais" />
 
-                        <div className="col-md-10 mb-3">
+                        <div className="col-md-12 mb-3">
                             <Label label="Razão Social" for="rzSocial" />
                             <Input type="text" aria-label="rzSocial" id="rzSocial" />
                         </div>
 
                         <div className="row">
-                            <div className="col-12 col-md-10 col-lg-6 mb-3">
+                            <div className="col-12 col-md-12 col-lg-6 mb-3">
                                 <Label label="Email" for="email" />
                                 <Input type="email" aria-label="email" id="email" />
                             </div>
-                            <div className="col-12 col-md-10 col-lg-6 mb-3">
+                            <div className="col-12 col-md-12 col-lg-6 mb-3">
                                 <Label label="CNPJ" for="cnpj" />
                                 <Input type="text" aria-label="cnpj" id="cnpj" />
                             </div>
                         </div>
-                        
+
 
 
                         <div className="row">
-                        <div className="col-12 col-md-10 col-lg-6 mb-5">
-                            <Label label="Inscrição Estadual" for="inscrEstadual" />
-                            <Input type="text" aria-label="inscrEstadual" id="inscrEstadual" />
-                        </div>
-                        <div className="col-12 col-md-10 col-lg-6 mb-5">
-                            <Label label="Telefone" for="telefonePJ" />
-                            <Input type="text" aria-label="telefonePJ" id="telefonePJ" />
-                        </div>
+                            <div className="col-12 col-md-12 col-lg-6 mb-5">
+                                <Label label="Inscrição Estadual" for="inscrEstadual" />
+                                <Input type="text" aria-label="inscrEstadual" id="inscrEstadual" />
+                            </div>
+                            <div className="col-12 col-md-12 col-lg-6 mb-5">
+                                <Label label="Telefone" for="telefonePJ" />
+                                <Input type="text" aria-label="telefonePJ" id="telefonePJ" />
+                            </div>
                         </div>
 
 
 
-                        
+
 
 
 
@@ -158,13 +160,13 @@ function Register() {
                         </div> */}
 
 
-                        <div className="col-12 col-md-10 col-lg-6 mb-3">
+                        <div className="col-12 col-md-12 col-lg-6 mb-3">
                             <Label label="Escolha um senha" for="password-register" />
                             <Input type="password" aria-label="password-register" id="password-register" />
                             {/* <span className="fs-6">Digite uma senha de 8-16 caracteres</span> */}
                         </div>
 
-                        <div className="col-12 col-md-10 col-lg-6 mb-3">
+                        <div className="col-12 col-md-12 col-lg-6 mb-3">
                             <Label label="Confirme sua nova senha" for="password-register-confirm" />
                             <Input type="password" aria-label="password-register-confirm" id="password-register-confirm" />
                         </div>
@@ -177,9 +179,10 @@ function Register() {
                                 </label>
                             </div>
                         </div>
-
-                        <div className="col-12 col-md-6 col-lg-3 text-center  mt-4 mb-3">
-                            <Button link="" name="CADASTRE-SE" />
+                        <div className="row justify-content-center justify-content-lg-start">
+                            <div className="col-12 col-md-6 col-lg-3 text-center mt-4 mb-3 ">
+                                <Button link="" name="CADASTRE-SE" />
+                            </div>
                         </div>
                     </form>
                 </div>
