@@ -46,6 +46,8 @@ import SSCTuatara from '../../assets/images/Home/SSC Tuatara.jpg'
 import Button from '../../components/Button/Button.jsx'
 import SupportButton from '../../components/Button/SupportButton';
 
+
+
 function Home() {
     return (
         <>
@@ -53,7 +55,7 @@ function Home() {
             <section>
                 <div className="row">
                     <div className="col-12">
-                        <div id="carousel-hipercarros" className="carousel slide carousel-dark carousel-hipercarros "
+                        <div id="carousel-hipercarros" className="carousel slide carousel-dark carousel-hipercarros background-color-black"
                             data-bs-ride="carousel-hipercarros">
                             <div className="carousel-indicators">
                                 <button type="button carousel-button-hover" data-bs-target="#carousel-hipercarros" data-bs-slide-to="0" className="active"
@@ -122,27 +124,56 @@ function Home() {
                             <div id="carousel-marcas" className="carousel slide logo_marcas" data-bs-ride="carousel-marcas">
                                 <div className="carousel-inner">
                                     <div className="carousel-item active logo-centralizado" data-bs-interval="3000">
-                                        <img className="icons-marcas ms-2 me-4" src={LogomarcaAstonMartin} height="50px" />
-                                        <img className="icons-marcas  me-4" src={LogomarcaAudi} height="50px" />
-                                        <img className="icons-marcas  me-4" src={LogomarcaBMW} height="50px" />
-                                        <img className="icons-marcas  me-4" src={LogomarcaBugatti} height="50px" />
-                                        <img className="icons-marcas  me-4" src={LogomarcaCrysler} height="50px" />
-                                        <img className="icons-marcas  me-4" src={LogomarcaFerrari} height="50px" />
-                                        <img className="icons-marcas  me-4" src={LogomarcaFord} height="50px" />
-                                        <img className="icons-marcas  me-4" src={LogomarcaJaguar} height="50px" />
-
-
+                                        <Link to="inventory"className="" > 
+                                            <img className="icons-marcas ms-2 me-4" src={LogomarcaAstonMartin} height="50px" />
+                                        </Link>
+                                        <Link to="inventory"className=""> 
+                                            <img className="icons-marcas  me-4" src={LogomarcaAudi} height="50px" />
+                                        </Link>    
+                                        <Link href="BMW" to="inventory"className=""> 
+                                            <img className="icons-marcas  me-4" src={LogomarcaBMW} height="50px" />
+                                        </Link>
+                                        <Link to="inventory"className=""> 
+                                            <img className="icons-marcas  me-4" src={LogomarcaBugatti} height="50px" />
+                                        </Link>
+                                        <Link to="inventory"className="" > 
+                                            <img className="icons-marcas  me-4" src={LogomarcaCrysler} height="50px" />
+                                        </Link>
+                                        <Link to="inventory"className="" > 
+                                            <img className="icons-marcas  me-4" src={LogomarcaFerrari} height="50px" />
+                                        </Link>
+                                        <Link to="inventory"className="" > 
+                                            <img className="icons-marcas  me-4" src={LogomarcaFord} height="50px" />
+                                        </Link>
+                                        <Link to="inventory"className="" > 
+                                            <img className="icons-marcas  me-4" src={LogomarcaJaguar} height="50px" />
+                                        </Link>
                                     </div>
                                     <div className="carousel-item fundo-marcas logo-centralizado2  logo-centralizado" data-bs-interval="3000">
-                                        <img className="icons-marcas ms-3 me-4" src={LogomarcaLamborghini} height="50px" />
-                                        <img className="icons-marcas ms-5 me-4" src={LogomarcaMclaren} height="50px" />
-                                        <img className="icons-marcas ms-5 me-4" src={LogomarcaMercedes} height="50px" />
-                                        <img className="icons-marcas ms-5 me-4" src={LogomarcaOpel} height="50px" />
-                                        <img className="icons-marcas ms-5 me-4" src={LogomarcaPagani} height="50px" />
-                                        <img className="icons-marcas ms-5 me-4" src={LogomarcaRollsRoyce} height="50px" />
-                                        <img className="icons-marcas ms-5 me-4" src={LogomarcaSubaru} height="50px" />
-                                        <img className="icons-marcas ms-5 me-4" src={LogomarcaVolvo} height="50px" />
-
+                                        <Link to="inventory"className="" >
+                                            <img className="icons-marcas ms-3 me-4" src={LogomarcaLamborghini} height="50px" />
+                                        </Link>
+                                        <Link to="inventory"className="" >
+                                            <img className="icons-marcas ms-5 me-4" src={LogomarcaMclaren} height="50px" />
+                                        </Link>
+                                        <Link to="inventory"className="" >
+                                            <img className="icons-marcas ms-5 me-4" src={LogomarcaMercedes} height="50px" />
+                                        </Link>
+                                        <Link to="inventory"className="" >
+                                            <img className="icons-marcas ms-5 me-4" src={LogomarcaOpel} height="50px" />
+                                        </Link>
+                                        <Link to="inventory"className="" >
+                                            <img className="icons-marcas ms-5 me-4" src={LogomarcaPagani} height="50px" />
+                                        </Link>
+                                        <Link to="inventory"className="" >
+                                            <img className="icons-marcas ms-5 me-4" src={LogomarcaRollsRoyce} height="50px" />
+                                        </Link>
+                                        <Link to="inventory"className="" >
+                                            <img className="icons-marcas ms-5 me-4" src={LogomarcaSubaru} height="50px" />
+                                        </Link>
+                                        <Link to="inventory"className="" >
+                                            <img className="icons-marcas ms-5 me-4" src={LogomarcaVolvo} height="50px" />
+                                        </Link>
 
                                     </div>
                                 </div>
@@ -211,26 +242,37 @@ function Home() {
                                     <div className="modal-dialog modal-xl">
                                         <div className="modal-content cores-modal">
 
-                                            <div className="modal-header cores-modal modal-mobily5 justify-content-center mt-1">
-                                                <h5>Mercedes AMG F1</h5>
+                                            <div className="modal-header cores-modal modal-mobily5 justify-content-center mt-1 ml-auto">
+                                               
+                                                <div className="col-2">
+                                                
+                                                </div> <h5 className="">Mercedes AMG F1 </h5>
                                                 <button type="button"
-                                                    className="btn-close btn-modal-close fecharmodal justify-flex-end "
+                                                    className="btn-close btn-modal-close fecharmodal  "
                                                     data-bs-dismiss="modal" aria-label="Close">
                                                 </button>
+                                                <div className="modal-header cores-modal modal-mobily5 justify-content-center mt-1">                                                
+                                                
+                                                </div>
                                             </div>
+
+                                            
+                                            
                                             <div className="modal-body">
                                                 <div className="container">
                                                     <div className="row">
                                                         <div className="col-5 modal-mobily">
                                                             <p> Vídeo 360° meramente ilustrativo</p>
-                                                            {/* <video className="img-modal" controns autoplay playbackRate=0.1;
-                                                        style="max-width: 102%; padding-top: 5px;">
-                                                        <source src="./videos/F1.mp4" type="video/mp4">
-                                                        Your browser does not support the video tag.
-                                                        </video> */}
-
+                                                             {/*<video> className="img-modal" controns autoplay playbackRate=0.1;
+                                                                style="max-width: 102%; padding-top: 5px;">
+                                                                <source src="./videos/F1.mp4" type="video/mp4">
+                                                                Your browser does not support the video tag.
+                                                            </video> 
+                                                            */}
                                                             <img src={ModalMercedesBenzAMGF12016}
-                                                                className="card-img img-modal" alt="..."></img>
+                                                                className="card-img img-modal" alt="...">
+
+                                                            </img>
                                                         </div>
 
                                                         <div className="col-12 col-lg-7 modal-mobily2">
@@ -258,7 +300,7 @@ function Home() {
                                                                 </li>
                                                             </ul>
                                                             <h3 className=" info-gerais">INFORMAÇÕES GERAIS</h3>
-                                                            <p className="alinhamento_paragrafo  info-gerais2">Cambio PDK de 8
+                                                            <p className="alinhamento_paragrafo  info-gerais2 mt-3 pe-2 ps-2">Cambio PDK de 8
                                                                 marchas e dupla embreagem, tração integral,
                                                                 modos E,
                                                                 Híbrido, Sport e Sport Plus, eixo traseiro direcional,
@@ -279,7 +321,7 @@ function Home() {
                                                         <div className="container">
                                                             <div className="row col-12">
                                                                 <div className="col-6">
-                                                                    <div id="carouselExampleControls " className="carousel slide logo_marcas"
+                                                                    <div id="carouselExampleControls " className="carousel slide carouselExampleControls"
                                                                         data-bs-ride="carousel">
                                                                         <div
                                                                             className="carousel-inner carosel-modal  row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4">
@@ -321,13 +363,11 @@ function Home() {
                                                                         </button>
                                                                     </div>
                                                                 </div>
-                                                                <div className="row col-xl-6 mt-6 col-md-12">
-                                                                    <div className="align-self-center modal-mobily3">
-                                                                        <SupportButton link="/checkoutScheduling" name="Agendar Visita" />
-                                                                    </div>
-                                                                </div>
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                    <div className="align-self-center mt-4 col-12 ">
+                                                        <SupportButton link="/checkoutScheduling" name="Agendar Visita" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -377,10 +417,18 @@ function Home() {
                                     <div className="modal-dialog modal-xl">
                                         <div className="modal-content cores-modal">
                                             <div className="modal-header cores-modal">
+                                            <div className="col-2">
+                                                
+                                                </div>
                                                 <h5 className="modal-title" id="exampleModalLabel">BUGATTI CHIRON
                                                 </h5>
                                                 <button type="button" className="btn-close btn-modal-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
+                                                    aria-label="Close">
+
+                                                </button>
+                                                <div className="modal-header cores-modal modal-mobily5 justify-content-center mt-1">                                                
+                                                
+                                                </div>
                                             </div>
                                             <div className="modal-body">
                                                 <div className="container">
@@ -422,7 +470,7 @@ function Home() {
                                                                 </li>
                                                             </ul>
                                                             <h3 className=" info-gerais">INFORMAÇÕES GERAIS</h3>
-                                                            <p className="alinhamento_paragrafo  info-gerais2">Cambio PDK de 8
+                                                            <p className="alinhamento_paragrafo  info-gerais2  mt-3">Cambio PDK de 8
                                                                 marchas e dupla embreagem, tração integral,
                                                                 modos E,
                                                                 Híbrido, Sport e Sport Plus, eixo traseiro direcional,
@@ -442,9 +490,7 @@ function Home() {
                                                         <div className="container">
                                                             <div className="row col-12">
                                                                 <div className="col-6">
-                                                                    <div id="carouselExampleControls"
-                                                                        className="carousel slide logo_marcas"
-                                                                        data-bs-ride="carousel">
+                                                                    <div id="carouselExampleControls" className="carousel slide carouselExampleControls">
                                                                         <div className="carousel-inner carosel-modal">
                                                                             <div className="carousel-item active">
                                                                                 <img src={BugattiChiron}
@@ -483,15 +529,13 @@ function Home() {
                                                                         </button>
                                                                     </div>
                                                                 </div>
-                                                                <div className="row col-xl-6 mt-6 col-md-12">
-                                                                    <div className="align-self-center modal-mobily3">
-                                                                        <SupportButton link="/checkoutScheduling" name="Agendar Visita" />
-                                                                    </div>
-                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div className="align-self-center mt-4 col-12 ">
+                                                        <SupportButton link="/checkoutScheduling" name="Agendar Visita" />
+                                                    </div>
                                             </div>
                                         </div>
                                     </div>
@@ -502,11 +546,12 @@ function Home() {
                                 <div className="col text-center btn" type="button" data-bs-toggle="modal"
                                     data-bs-target="#modal-produto-3">
                                     {/* link entre Modal e Card */}
+                                    
                                     <div href="#" className="text-decoration-none">
                                         <div className="card h-100 mb-5">
                                             <img src={LamborghiniHuracan} className="card-img" alt="..."></img>
                                             <div className="card-body">
-                                                <h5 className="card-title card-title-height">Lamborghini Huracan</h5>
+                                                <h5 className="card-title card-title-height">Lamborghini Huracan </h5>
                                                 <p className="card-text text-center"><strong>R$4.300.000,00</strong></p>
                                                 {/* <button className="btn mt-3 btn_buscar ms-0" role="button">DETALHES</button> */}
                                                 <Button link="#modal-produto-3" name="DETALHES" />
@@ -521,10 +566,19 @@ function Home() {
                                     {/* link entre Modal e Card */}
                                     <div className="modal-dialog modal-xl">
                                         <div className="modal-content cores-modal">
+                                            
                                             <div className="modal-header cores-modal">
-                                                <h5 className="modal-title" id="exampleModalLabel">LAMBORGHINI HURACAN</h5>
+                                            <div className="col-2">
+
+                                            </div>
+                                                <h5 className="modal-title" id="exampleModalLabel">LAMBORGHINI HURACAN </h5>
                                                 <button type="button" className="btn-close btn-modal-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
+                                                    aria-label="Close">
+
+                                                </button>
+                                                <div className="modal-header cores-modal modal-mobily5 justify-content-center mt-1">                                                
+                                                
+                                                </div>
                                             </div>
                                             <div className="modal-body">
                                                 <div className="container">
@@ -567,7 +621,7 @@ function Home() {
                                                             </ul>
 
                                                             <h3 className="info-gerais">INFORMAÇÕES GERAIS</h3>
-                                                            <p className="alinhamento_paragrafo">Cambio PDK de 8 marchas e dupla embreagem, tração integral,
+                                                            <p className="alinhamento_paragrafo  mt-3">Cambio PDK de 8 marchas e dupla embreagem, tração integral,
                                                                 modos E,
                                                                 Híbrido, Sport e Sport Plus, eixo traseiro direcional,
                                                                 controle de chassi 4D, suspensão pneumática, pacote Sport
@@ -586,13 +640,12 @@ function Home() {
                                                         <div className="container">
                                                             <div className="row col-12">
                                                                 <div className="col-6">
-                                                                    <div id="carouselExampleControls"
-                                                                        className="carousel slide logo_marcas"
-                                                                        data-bs-ride="carousel">
+                                                                    <div id="carouselExampleControls" className="carousel slide carouselExampleControls">
                                                                         <div className="carousel-inner carosel-modal">
                                                                             <div className="carousel-item active">
                                                                                 <img src={LamborghiniHuracan}
-                                                                                    className="d-block w-100" alt="..." width="5%"></img>
+                                                                                    className="d-block w-100" alt="..." width="5%">
+                                                                                </img>
                                                                             </div>
                                                                             <div className="carousel-item">
                                                                                 <img src={LamborghiniHuracan}
@@ -627,15 +680,13 @@ function Home() {
                                                                         </button>
                                                                     </div>
                                                                 </div>
-                                                                <div className="row col-xl-6 mt-6 col-md-12">
-                                                                    <div className="align-self-center modal-mobily3">
-                                                                        <SupportButton link="/checkoutScheduling" name="Agendar Visita" />
-                                                                    </div>
-                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div className="align-self-center mt-4 col-12 ">
+                                                        <SupportButton link="/checkoutScheduling" name="Agendar Visita" />
+                                                    </div>
                                             </div>
                                         </div>
                                     </div>
@@ -650,16 +701,19 @@ function Home() {
                                 <img src="..." className="d-block w-100" alt="..."></img>
                             </div>
                         </div>
-                        <button className="carousel-control-prev carousel-button-hover" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-                            data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button className="carousel-control-next carousel-button-hover" type="button" data-bs-target="#carouselExampleControlsNoTouching "
-                            data-bs-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Next</span>
-                        </button>
+                        {/* * Retirar o elemento de carrossel dos cards "Destaques".
+                        
+                            <button className="carousel-control-prev carousel-button-hover" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                                data-bs-slide="prev">
+                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Previous</span>
+                            </button>
+                            <button className="carousel-control-next carousel-button-hover" type="button" data-bs-target="#carouselExampleControlsNoTouching "
+                                data-bs-slide="next">
+                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Next</span>
+                            </button>
+                        */}
                     </div>
 
                 </div>
