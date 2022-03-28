@@ -46,7 +46,7 @@ function CheckoutOrder() {
             <div className="col-2 col-sm-2 col-md-2 col-lg-2 text-end pe-0 pe-md-0">
 
               <button type="button" className="btn px-0 mb-2" data-bs-toggle="modal" data-bs-target="#modal-endereco" >
-                <img src={Adicionar} width="30" alt="Adicionar" />
+                {/* <img src={Adicionar} width="30" alt="Adicionar" /> */}
               </button>
 
             </div>
@@ -488,26 +488,8 @@ function CheckoutOrder() {
             </div>
             {/* Fim Cartão 02 */}
 
-            {/* Início Cartão 03 */}
-            <div className=" col-md-12 card-header">
-              <div className="form-check font-text d-flex justify-content-between">
-                <div className="d-grid d-flex justify-content-start">
-                  <input className="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" />
-                  <span className="space-input">Paypal</span>
-                </div>
-
-              </div>
-            </div>
-
-            <div className="card-body font-text">
-              <h5 className="card-title">Secondary card title</h5>
-              <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-            {/* Fim Cartão 03 */}
-          </div>
+         
+          </div> 
 
 
 
