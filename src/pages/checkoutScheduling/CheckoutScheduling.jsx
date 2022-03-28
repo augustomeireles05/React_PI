@@ -39,7 +39,7 @@ function CheckoutScheduling() {
 
       <div className="row col-12 col-md-12 col-lg-11 col-xl-11 background d-flex justify-content-center m-auto m-sm-auto g-5">
         {/* INÍCIO DO CARD ENDERECO */}
-        <div className="col-md-5 col-lg-5 row d-flex justify-content-center background">
+        <div className="col-md-5 col-lg-5 row d-flex justify-content-center background me-md-2 me-lg-2 me-xl-2 p-0">
 
 
 
@@ -398,7 +398,7 @@ function CheckoutScheduling() {
 
 
         {/* INICIO DO CARD DO RESUMO  */}
-        <div className="col-11 col-md-6 col-lg-5 order-md-last mt-0 p-0">
+        <div className="col-12 col-md-6 col-lg-5 order-md-last mt-0 p-0">
 
           <div className="my-2 mb-3">
             <h4 className=" font-text">Insira a data do agendamento</h4>
