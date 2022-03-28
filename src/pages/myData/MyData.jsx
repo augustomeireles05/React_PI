@@ -22,13 +22,14 @@ function MyData() {
                 <article className="page-content container mt-4">
                     { /* coluna Menu */}
                     <div className=" row g-5">
-                        <div className="d-flex justify-content-center d-none d-md-block col-md-4">
+                        <div className="justify-content-center col-md-4 col-lg-4">
                             { /*responsividade menu*/}
-                            <div className="column ms-3">
+                            <div className="col-md-12 col-lg-12 me-0">
 
                                 { /*Navbar*/}
                                 {/* <nav className=" navbar navbar-light mb-3 mt-0 pt-0 pb-2"> */}
                                 {/* <div className="container-fluid d-block text-center"> */}
+                                <div className="col-md-12 col-lg-12 flex-row justify-content-center text-center">
                                 <Subtittle menu="MENU" />
 
                                 {/* </div>
@@ -36,7 +37,7 @@ function MyData() {
 
                                 <SideBar />
 
-
+</div>
                                 {/* <div className="btn-group-vertical background-container-subject me-3 shadow" role="group" aria-label="Vertical button group">
                                     <button type="button" className="btn button-menu-lateral sidebar-font border-button-sidebar-menu">
                                         <Link to="/myData" className="link-solution">MEUS DADOS</Link>
@@ -77,7 +78,7 @@ function MyData() {
 
 
 
-                                    <div className="col-12 col-md-6">
+                                    <div className="col-12 col-md-7">
                                         <div className="mb-3">
                                             <Label label="Email" for="email" />
                                             <Input type="email" aria-label="email" id="email" />
@@ -86,7 +87,7 @@ function MyData() {
                                     </div>
 
 
-                                    <div className="col-12 col-md-6">
+                                    <div className="col-12 col-md-5">
                                         <div className="mb-3">
                                             <Label label="CPF" for="cpf" />
                                             <Input type="text" aria-label="cpf" id="cpf" />
@@ -95,7 +96,7 @@ function MyData() {
 
                                     </div>
 
-                                    <div className="col-12 col-md-6">
+                                    <div className="col-12 col-md-7">
                                         <div className="mb-3">
                                             <Label label="Data de Nascimento" for="dtNascimento" />
                                             <Input type="date" aria-label="dtNascimento" id="dtNascimento" />
@@ -105,8 +106,8 @@ function MyData() {
                                     </div>
 
 
-                                    <div className="col-12 col-md-6">
-                                        <div className="mb-3 mt-4 justify-content-end">
+                                    <div className="d-flex justify-content-end col-md-12">
+                                        <div className="mb-3 mt-0 col-12 col-sm-12 col-md-4">
                                             {/* <Link className="btn btn-warning mt-6 d-block float-md-end" to="#" role="button">
                                                 SALVAR </Link> */}
 
@@ -123,56 +124,56 @@ function MyData() {
 
                             </form>
 
-
-                            <Subtittle subtitulo="ALTERAR SENHA" />
-
-
-                            { /*2 FORMULARIO*/}
-                            <form>
-                                <div className="row mb-5">
-                                    <div className="col-12 col-md-6">
-                                        <div className="mb-3">
-                                            <Input type="password" aria-label="password" />
-                                            <Label label="Informe sua senha atual" />
-                                        </div>
-
-                                    </div>
-
-                                    <div className="col-12 col-md-6">
-                                        <div className="mb-3">
-                                            <Input type="password" aria-label="password" />
-                                            <Label label="Informe sua nova senha" />
-
-                                        </div>
-                                    </div>
+                            <div className="mt-4">
+                                <Subtittle subtitulo="ALTERAR SENHA" />
 
 
-                                    <div className="col-12 col-md-6">
-                                        <div className="mb-3">
-                                            <Input type="password" aria-label="password" />
-                                            <Label label="Confirme sua nova senha" />
+                                { /*2 FORMULARIO*/}
+                                <form>
+                                    <div className="row mb-5">
+                                        <div className="col-12 col-md-6">
+                                            <div className="mb-3">
+                                                <Input type="password" aria-label="password" />
+                                                <Label label="Informe sua senha atual" />
+                                            </div>
 
                                         </div>
 
+                                        <div className="col-12 col-md-6">
+                                            <div className="mb-3">
+                                                <Input type="password" aria-label="password" />
+                                                <Label label="Informe sua nova senha" />
 
-                                    </div>
+                                            </div>
+                                        </div>
 
 
-                                    <div className="col-12 col-md-6">
-                                        <div className="mb-3">
-                                            {/* <Link className="btn btn-warning mt-6 d-block float-md-end" to="#" role="button">
+                                        <div className="col-12 col-md-6">
+                                            <div className="mb-3">
+                                                <Input type="password" aria-label="password" />
+                                                <Label label="Confirme sua nova senha" />
+
+                                            </div>
+
+
+                                        </div>
+
+
+                                        <div className="d-flex justify-content-end col-md-12">
+                                            <div className="mb-3 mt-0 col-12 col-sm-12 col-md-4">
+                                                {/* <Link className="btn btn-warning mt-6 d-block float-md-end" to="#" role="button">
                                                 MODIFICAR</Link> */}
 
-                                            <Button link="" name="MODIFICAR" />
+                                                <Button link="" name="MODIFICAR" />
+                                            </div>
+
                                         </div>
 
+
+
                                     </div>
-
-
-
-                                </div>
-                            </form>
-
+                                </form>
+                            </div>
                         </div>
                     </div>
 
