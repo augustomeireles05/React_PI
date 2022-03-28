@@ -270,7 +270,7 @@ function Home() {
                                                             </video> 
                                                             */}
                                                             <img src={ModalMercedesBenzAMGF12016}
-                                                                className="card-img img-modal" alt="...">
+                                                                className="card-img img-modal " alt="...">
 
                                                             </img>
                                                         </div>
@@ -300,7 +300,7 @@ function Home() {
                                                                 </li>
                                                             </ul>
                                                             <h3 className=" info-gerais">INFORMAÇÕES GERAIS</h3>
-                                                            <p className="alinhamento_paragrafo  info-gerais2 mt-3 pe-2 ps-2">Cambio PDK de 8
+                                                            <p className="alinhamento_paragrafo  info-gerais2  mt-2 border border-2  border-dark p-3 background-datasheet">Cambio PDK de 8
                                                                 marchas e dupla embreagem, tração integral,
                                                                 modos E,
                                                                 Híbrido, Sport e Sport Plus, eixo traseiro direcional,
@@ -366,8 +366,8 @@ function Home() {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="align-self-center mt-4 col-12 ">
-                                                        <SupportButton link="/checkoutScheduling" name="Agendar Visita" />
+                                                    <div className="align-self-center mt-4 col-12 btn btn-principal py-1 fw-normal  text-decoration-none">
+                                                        <Button link="/checkoutScheduling" name="Agendar Visita" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -534,7 +534,7 @@ function Home() {
                                                     </div>
                                                 </div>
                                                 <div className="align-self-center mt-4 col-12 ">
-                                                        <SupportButton link="/checkoutScheduling" name="Agendar Visita" />
+                                                        <Button link="/checkoutScheduling" name="Agendar Visita" />
                                                     </div>
                                             </div>
                                         </div>
@@ -621,7 +621,7 @@ function Home() {
                                                             </ul>
 
                                                             <h3 className="info-gerais">INFORMAÇÕES GERAIS</h3>
-                                                            <p className="alinhamento_paragrafo  mt-3">Cambio PDK de 8 marchas e dupla embreagem, tração integral,
+                                                            <p className="alinhamento_paragrafo  info-gerais2  mt-3">Cambio PDK de 8 marchas e dupla embreagem, tração integral,
                                                                 modos E,
                                                                 Híbrido, Sport e Sport Plus, eixo traseiro direcional,
                                                                 controle de chassi 4D, suspensão pneumática, pacote Sport
@@ -685,7 +685,7 @@ function Home() {
                                                     </div>
                                                 </div>
                                                 <div className="align-self-center mt-4 col-12 ">
-                                                        <SupportButton link="/checkoutScheduling" name="Agendar Visita" />
+                                                        <Button link="/checkoutScheduling" name="Agendar Visita" />
                                                     </div>
                                             </div>
                                         </div>
