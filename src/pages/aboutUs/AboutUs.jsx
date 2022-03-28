@@ -23,8 +23,8 @@ function AboutUs() {
                 <div className="container">
                     {/* A EMPRESA */}
                     <div className="container">
-                        <div className="row social">
-                            <div className="col-6 sobre_nos ">
+                        <div className="row social col-12">
+                            <div className="col-6 sobre_nos_center">
                                 <h3 className="texto-sobre-nos">A Empresa</h3>
                                 <p className="texto-sobre-nos">
                                     Fundada com o conceito de atender um nicho de mercado de carros exclusivos e top de linha,
@@ -35,7 +35,7 @@ function AboutUs() {
                                     de todos os veículos novos.
                                 </p>
                             </div>
-                            <div className="col-6 sobre_nos1_img">
+                            <div className="col-6 sobre_nos_center">
                                 <img src={Empresa} alt="Empresa" width="100%" />
                             </div>
                         </div>
@@ -44,11 +44,12 @@ function AboutUs() {
 
                     {/* Nossa Historia */}
                     <div className="container">
-                        <div className="row social">
-                            <div className="col-6 sobre_nos">
+                        <div className="row social sobre_nos col-12">
+                            <div className="col-6 sobre_nos_center">
                                 <img src={Executivo} alt="Executivo" width="100%" />
                             </div>
-                            <div className="col-6 sobre_nos1_img texto-sobre-nos">
+                            <div className="col-6
+                             texto-sobre-nos sobre_nos_center">
                                 <h3>A Nossa História</h3>
                                 <p className="texto-sobre-nos">
                                     A DevCar's originou-se atraves do programna QUERO SER DEV 7ºedit um projeto integrador formador de Desenvolvedores de
@@ -64,8 +65,8 @@ function AboutUs() {
                     <hr />
                     {/* Missao */}
                     <div className="container">
-                        <div className="row social">
-                            <div className="col-6 sobre_nos">
+                        <div className="row social col-12">
+                            <div className="col-6 sobre_nos_center">
                                 <h3 className="texto-sobre-nos">Missão</h3>
                                 <p className="texto-sobre-nos">
                                     Ser uma organização, capaz de realizar conexão com o desejo e
@@ -73,7 +74,7 @@ function AboutUs() {
                                     do sonho do consumidor, do colaborador e do fornecedor.
                                 </p>
                             </div>
-                            <div className="col-6 sobre_nos1_img">
+                        <div className="col-6 sobre_nos_center">
                                 <img src={Estoque} alt="Estoque" width="100%" />
                             </div>
                         </div>
@@ -86,7 +87,7 @@ function AboutUs() {
                         <div className="col-6 sobre_nos">
                             <img src={Helicoptero} alt="Helicoptero" width="100%" />
                         </div>
-                        <div className="col-6 sobre_nos1_img texto-sobre-nos">
+                        <div className="col-6 texto-sobre-nos sobre_nos_center">
                             <h3>Conforto e Praticidade</h3>
                             <p className="texto-sobre-nos" width="100%">
                                 A DevCar's disponibiliza de um equipado e sofisticado heliponto,
