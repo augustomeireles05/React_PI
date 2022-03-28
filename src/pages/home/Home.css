@@ -139,6 +139,7 @@ body{
 
 .img-modal {
     border: none;
+    height: 90%;
 }
 
 .img-modal:hover {
@@ -172,8 +173,9 @@ body{
 }
 
 .alinhamento_paragrafo{
-    text-align:justify;
-    font-size: 14px;
+    font-family: 'Questrial', sans-serif;
+    text-align:justify;   
+   
 }
 
 
@@ -266,6 +268,9 @@ body{
         text-align: start;
     }
       
+    .carouselExampleControls {
+        display: none;
+    }
   }
 
   
@@ -344,6 +349,9 @@ body{
         text-align: start;
     }
 
+    .carouselExampleControls {
+        display: none;
+    }
 
 }
 
@@ -423,6 +431,9 @@ body{
     }
     
 
+    .carouselExampleControls {
+        display: none;
+    }
 
     @media (max-width: 450px) {
     
@@ -496,6 +507,9 @@ body{
         }
     
 
+        .carouselExampleControls {
+            display: none;
+        }
         .search-icon {
             display: none;
         }
