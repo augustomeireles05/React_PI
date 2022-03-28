@@ -59,18 +59,18 @@ function CheckoutOrder() {
 
           <div className="card text-black bg-white mb-3 px-0">
 
-            <div className=" col-md-12 card-header">
-              <div className="form-check font-text d-flex justify-content-between">
-                <div className="d-grid d-flex justify-content-start">
+            {/* <div className=" col-md-12 card-header"> */}
+              {/* <div className="form-check font-text d-flex justify-content-between"> */}
+                {/* <div className="d-grid d-flex justify-content-start">
                   <input className="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" />
                   <span className="space-input">Meus Dados</span>
-                </div>
-                <div className="d-grid d-md-flex justify-content-end">
+                </div> */}
+                {/* <div className="d-grid d-md-flex justify-content-end">
                   <img className="btn " src={Editar} width="45" alt="Editar" />
                   <img className="btn " src={Lixeira} width="45" alt="Lixeira" />
-                </div>
-              </div>
-            </div>
+                </div> */}
+              {/* </div> */}
+            {/* </div> */}
 
             <div className="card-body">
               <h5 className="card-title font-text">Dados Pessoais</h5>
