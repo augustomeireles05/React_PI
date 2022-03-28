@@ -449,7 +449,7 @@ function CheckoutScheduling() {
           <div className="d-grid gap-2 d-md-block pt-2">
             <div className="col-sm-12">
               <SupportButton link="/Cart" name="Voltar para o Estoque" />
-              <Button link="/orderResume" name="Finalizar Agendamento" />
+              <Button link="/schedulingDetails" name="Finalizar Agendamento" />
             </div>
           </div>
 
