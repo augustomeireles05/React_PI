@@ -19,7 +19,7 @@ const lista = {
 
         {
             brand: "Lamborghini",
-            model: "Aventor",
+            model: "Aventador",
             color: "Preto",
             year: "2019",
             engine: "6.5 V12",
@@ -190,7 +190,7 @@ const lista = {
             inventory: "Disponível",
             enphasis: "Não",
             image: "https://i.ibb.co/dtd6c8Y/Porsche-Panamera-4-ES-Preto.jpg",
-            description: "O Porsche Panamera 4S tem o mesmo motor de 400 cavalos, mas vêm equipado com tração integral. Ele acelera de 0-100 em 5 segundos e vai até 282 km/h. Seu consumo é de mais ou menos 9 km/l. Os novíssimos motores V6 biturbo do Panamera 4S e V8 biturbo do Panamera Turbo são mais compactos e mais leves do que os modelos anteriores e estão equipados com VarioCam Plus. Os seus 2 turbocompressores estão agora instalados entre os bancos de cilindros. Dessa forma, o fluxo de gases de escape chega mais rapidamente ao compressor  para uma capacidade de resposta mais rápida. "
+            description: "O Porsche Panamera 4S tem o mesmo motor de 400 cavalos, mas vêm equipado com tração integral. Ele acelera de 0-100 em 5 segundos e vai até 282 km/h. Seu consumo é de mais ou menos 9 km/l. Os novíssimos motores V6 biturbo do Panamera 4S e V8 biturbo do Panamera Turbo são mais compactos e mais leves do que os modelos anteriores e estão equipados com VarioCam Plus. Os seus 2 turbocompressores estão agora instalados entre os bancos de cilindros. Dessa forma, o fluxo de gases de escape chega mais rapidamente ao compressor para uma capacidade de resposta mais rápida. "
         },
     
         {
