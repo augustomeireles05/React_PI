@@ -33,12 +33,12 @@ function CheckoutOrder() {
 
       <div className="row background d-flex justify-content-center">
         {/* INÍCIO DO CARD ENDERECO */}
-        <div className="col-md-5 col-lg-5 row d-flex justify-content-center background">
+        <div className="col-md-5 col-lg-5 row d-flex justify-content-center background mt-2">
 
 
           {/* INICIO DO CARD DOS MEUS DADOS */}
           <div className="col-12 col-sm-12 col-md-12 col-lg-12 row justify-content-between px-md-0 align-items-center">
-            <div className="col-10 col-sm-10 col-md-10 col-lg-10 ps-0">
+            <div className="col-10 col-sm-10 col-md-10 col-lg-10 ps-0 mb-2">
               <h4 className="font-text">Meus Dados</h4>
             </div>
 
@@ -443,7 +443,7 @@ function CheckoutOrder() {
               <div className="form-check font-text d-flex justify-content-between align-items-center">
                 <div className="d-grid d-flex justify-content-start">
                   <input className="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" />
-                  <span className="space-input">(Crédito) Mastercard</span>
+                  <span className="space-input">(Crédito) Visa</span>
                 </div>
                 <div className="d-flex d-md-flex justify-content-end">
                   <button type="button" className="btn px-0 mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdropEditCard">
@@ -459,8 +459,11 @@ function CheckoutOrder() {
 
             <div className="card-body font-text">
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Bandeira: MASTERCARD <br/>
+                Número do cartão: ****.****.****.0564 <br/>
+                Nome do titular: MARIA AUXILIADORA DE JESUS <br />
+                Data de validade: 03/30 <br/>
+                CPF: 099.***.***-09
               </p>
             </div>
             {/* Fim Cartão 01 */}
@@ -470,7 +473,7 @@ function CheckoutOrder() {
               <div className="form-check font-text d-flex justify-content-between">
                 <div className="d-grid d-flex justify-content-start">
                   <input className="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" />
-                  <span className="space-input">(Débito) Visa</span>
+                  <span className="space-input">(Débito) Mastercard</span>
                 </div>
                 <div className="d-flex d-md-flex justify-content-end">
                   <img className="btn " src={Editar} width="45" alt="Editar" />
@@ -480,10 +483,13 @@ function CheckoutOrder() {
             </div>
 
             <div className="card-body font-text margin-card">
-              <h5 className="card-title">Secondary card title</h5>
+              {/* <h5 className="card-title">Secondary card title</h5> */}
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Bandeira: MASTERCARD <br/>
+                Número do cartão: ****.****.****.0392 <br/>
+                Nome do titular: CRISTIANO RONALDO <br />
+                Data de validade: 11/28 <br/>
+                CPF: 099.***.***-11
               </p>
             </div>
             {/* Fim Cartão 02 */}
@@ -664,6 +670,9 @@ function CheckoutOrder() {
             {/* Fim do Card do Boleto */}
           </div>
         </div>
+
+
+
         {/* INICIO DO CARD DO RESUMO  */}
         <div className="col-md-6 col-lg-5 order-md-last mt-2">
           <h4 className="d-flex justify-content-between align-items-center mb-3">
@@ -671,24 +680,24 @@ function CheckoutOrder() {
           </h4>
           <ul className="list-group mb-3">
             <li className="list-group-item d-flex justify-content-between">
-              <div>
-                <h6 className="my-0">Nome do 1º Carro</h6>
-                <small className="">
-                  Descrição do 1º Carro
+              <div className="col-7 col-md-8 col-lg-8 format-resume">
+                <h6 className="my-0 mb-3 fw-bold">BMW X5 XDrive 45E M Sport</h6>
+                <small className="col-12 col-md-6 col-lg-12">
+                Modelo 45E M Sport na cor preta, com motor de 6 Cilindros em Linha, 3.0L Bi-Turbo + Elétrico e potência de 294 CV. Possui câmbio automático de 8 marchas e um sistema de combustível híbrido.
                 </small>
               </div>
-              <span className="text-muted font-text">R$ 2.500.000,00</span>
+              <span className="text-muted font-text">R$ 790.000,00</span>
             </li>
             <li className="list-group-item d-flex justify-content-between bg-light">
               <div className="text-success">
                 <h6 className="my-0 font-text">Preço do Frete</h6>
-                <small className="font-text">Cep</small>
+                <small className="font-text">Cep: 03145-050</small>
               </div>
-              <span className="text-success font-text">R$ 65.500,00</span>
+              <span className="text-success font-text">R$ 23.000,00</span>
             </li>
             <li className="list-group-item d-flex justify-content-between">
               <span className="font-text-bold">Total (R$)</span>
-              <strong className="font-text-bold">R$ 4.756.100,00</strong>
+              <strong className="font-text-bold">R$ 813.000,00</strong>
             </li>
           </ul>
           <div className="d-grid gap-2 d-md-block pt-2">

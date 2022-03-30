@@ -60,7 +60,7 @@ function schedulingDetails() {
                                     <h3 className="col-12 mb-2 pt-2 subtitulo">PRODUTO</h3>
                                     <div className="produtos d-flex justify-content-around">
                                         <div className="produto col-7">
-                                            <p className="nome-produto1">AUDI RS Q8 2021 AZUL</p>
+                                            <p className="nome-produto1">BUGATTI CHIRON</p>
                                         </div>
 
                                         <div className="qtd col-5">
@@ -76,17 +76,17 @@ function schedulingDetails() {
 
                                 <div className="row valor-total mb-5">
                                     <h3 className="subtitulo col-6 pt-2">VALOR DO BEM</h3>
-                                    <p className="col-6 text-end pt-2">R$400.150,00</p>
+                                    <p className="col-6 text-end pt-2">R$ 22.000.000,00</p>
                                 </div>
 
                                 <div className="row valor-total mb-5">
                                     <h3 className="subtitulo col-6 pt-2">TAXA DE AGENDAMENTO</h3>
-                                    <p className="col-6 text-end pt-2">R$8.150,00</p>
+                                    <p className="col-6 text-end pt-2">0,1 %</p>
                                 </div>
 
                                 <div className="row valor-total mb-5">
                                     <h3 className="subtitulo col-6 pt-2">VALOR TOTAL</h3>
-                                    <p className="col-6 text-end pt-2">R$408.300,00</p>
+                                    <p className="col-6 text-end pt-2">R$ 22.000,00</p>
                                 </div>
 
                             </div>

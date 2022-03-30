@@ -132,7 +132,7 @@ function CheckoutScheduling() {
               <div className="form-check font-text d-flex justify-content-between align-items-center">
                 <div className="d-grid d-flex justify-content-start">
                   <input className="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" />
-                  <span className="space-input">(Crédito) Mastercard</span>
+                  <span className="space-input">(Crédito) Visa</span>
                 </div>
                 <div className="d-flex d-md-flex justify-content-end">
                   <button type="button" className="btn px-0 mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdropEditCard">
@@ -146,10 +146,13 @@ function CheckoutScheduling() {
             </div>
 
             <div className="card-body font-text">
-              <h5 className="card-title">Secondary card title</h5>
+              {/* <h5 className="card-title">Secondary card title</h5> */}
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Bandeira: MASTERCARD <br/>
+                Número do cartão: ****.****.****.0564 <br/>
+                Nome do titular: MARIA AUXILIADORA DE JESUS <br />
+                Data de validade: 03/30 <br/>
+                CPF: 099.***.***-09
               </p>
             </div>
             {/* Fim Cartão 01 */}
@@ -159,7 +162,7 @@ function CheckoutScheduling() {
               <div className="form-check font-text d-flex justify-content-between align-items-center">
                 <div className="d-grid d-flex justify-content-start">
                   <input className="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" />
-                  <span className="space-input">(Débito) Visa</span>
+                  <span className="space-input">(Débito) Mastercard</span>
                 </div>
                 <div className="d-flex d-md-flex justify-content-end">
                   <button type="button" className="btn px-0 mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdropEdit">
@@ -175,8 +178,11 @@ function CheckoutScheduling() {
             <div className="card-body font-text margin-card">
               <h5 className="card-title">Secondary card title</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Bandeira: MASTERCARD <br/>
+                Número do cartão: ****.****.****.0392 <br/>
+                Nome do titular: CRISTIANO RONALDO <br />
+                Data de validade: 11/28 <br/>
+                CPF: 099.***.***-11
               </p>
             </div>
             {/* Fim Cartão 02 */}
@@ -422,14 +428,14 @@ function CheckoutScheduling() {
             <span className="text-black">Resumo do Agendamento</span>
           </h4>
           <ul className="list-group mb-3">
-            <li className="list-group-item d-flex justify-content-between align-items-center gx-2">
-              <div>
-                <h6 className="my-2">Bugatti Chiron</h6>
-                <small className="col-8 col-md-7 col-lg-7">
-                  Descrição Breve do Bugatti Chiron
+            <li className="list-group-item d-flex justify-content-between align-items-baseline gx-2">
+              <div className="format-resume-scheduling col-6 col-md-6">
+                <h6 className="my-2 fw-bold">Bugatti Chiron</h6>
+                <small className="col-6 col-md-7 col-lg-7">
+                O Chiron tem agora 1500 cavalos de potência e 163,1 kgf. m (1.600 N.m) de torque iniciando a 2.000 rpm. Como o Veyron, a carroceria é de fibra de carbono, a suspensão é independente e a tração é integral. Acelera de 0-100 km/h em 2,5 segundos, 0-200 km/h em menos de 6,5 segundos e 0-300 km/h em menos de 13,6 segundos.
                 </small>
               </div>
-              <div className="col-4 col-md-5 col-lg-5 text-end">
+              <div className="col-6 col-md-6 col-lg-5 text-end">
                 <span className="text-muted font-md-text font-lg-text">R$ 22.000.000,00</span>
               </div>
 

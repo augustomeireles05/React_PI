@@ -60,7 +60,9 @@ a button {
     margin-left: 2px;
 }
 
-
+.format-resume-scheduling {
+    text-align: justify;
+}
 
 
 /* -- RESPONSIVE - BEGIN HEADER -- */

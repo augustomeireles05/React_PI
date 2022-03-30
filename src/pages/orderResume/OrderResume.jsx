@@ -62,7 +62,7 @@ function OrderResume() {
                                         <h4 className="col-12 mb-2 pt-2">PRODUTO:</h4>
                                         <div className="produtos d-flex justify-content-start">
                                             <div className="produto col-12">
-                                                <p className="fs-6">PORSCHE 911 CARRERA 2021</p>
+                                                <p className="fs-6">BMW X5 XDrive 45E M Sport</p>
                                             </div>
                                         </div>
                                     </div>
@@ -72,14 +72,14 @@ function OrderResume() {
                                         <h3 className="mb-2 pt-2">FORMA DE PAGAMENTO:</h3>
                                         <div className="d-flex flex-column flex-lg-row  justify-content-between align-items-start w-100">
                                             <p className="text-start fs-6">CARTÃO DE CRÉDITO</p>
-                                            <p className="text-center fs-6">9486.XXXX.XXXX.5030</p>
-                                            <p className="text-end fs-6">3X DE R$ 133.383,33</p>
+                                            <p className="text-center fs-6">****.****.****.0564</p>
+                                            <p className="text-end fs-6">10 X DE R$ 81.300,00</p>
                                         </div>
                                     </div>
 
                                     <div className="row resumo-endereco mb-3">
                                         <h3 className="mb-2 pt-2">ENDEREÇO DE ENTREGA:</h3>
-                                        <p className="fs-6"> RUA PRAÇA ROBERTO PEDRO GOMES Nº 101 MORUMBI SÃO PAULO/SP</p>
+                                        <p className="fs-6"> PRAÇA ROBERTO PEDRO GOMES Nº 101 MORUMBI SÃO PAULO/SP</p>
                                         <p>CEP: 12332-032</p>
                                     </div>
 
@@ -90,7 +90,7 @@ function OrderResume() {
 
                                     <div className="row valor-total mb-5">
                                         <h3 className="col-6 pt-2">VALOR TOTAL</h3>
-                                        <p className="col-6 text-end pt-2 fs-6">R$400.149,99</p>
+                                        <p className="col-6 text-end pt-2 fs-6">R$ 813.000,00</p>
                                     </div>
                                 </div>
                             </div>
