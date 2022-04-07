@@ -44,20 +44,38 @@ function AboutUs() {
 
                 {/* Nossa Historia */}
                 <div className="container">
-                    <div className="row social col-sm-12 col-md-12 col-lg-12">
+                    <div className="d-none d-xs-none d-sm-none d-md-flex row social col-sm-12 col-md-12 col-lg-12">
                         <div className="col-sm-12 col-md-6 col-lg-6 sobre_nos_center">
                             <img src={Executivo} alt="Executivo" width="100%" />
                         </div>
                         <div className="col-sm-12 col-md-6 col-lg-6 sobre_nos_center">
                             <h3>A Nossa História</h3>
                             <p className="texto-sobre-nos">
-                                A DevCar's originou-se atraves do programna QUERO SER DEV 7ºedit um projeto integrador formador de Desenvolvedores de
-                                sistemas, da RaiaDrogasil<br /><br />
-                                Composta por:
+                                A DevCar's originou-se através do Programa QUERO SER DEV 7º Edição, um projeto integrador formado de Desenvolvedores de
+                                Sistemas, da RaiaDrogasil
+                                <br />
+                                Composto por:
                             </p>
                             <p className="texto-sobre-nos">
                                 Augusto Meireles, Larissa Bandeira, Lidia Maciel, Guilherme Viana e Wanderson Thiers.
                             </p>
+                        </div>
+                    </div>
+                    <div className="d-md-none d-lg-none row social col-sm-12 col-md-12 col-lg-12">
+                        <div className="col-sm-12 col-md-6 col-lg-6 sobre_nos_center">
+                            <h3>A Nossa História</h3>
+                            <p className="texto-sobre-nos">
+                                A DevCar's originou-se através do Programa QUERO SER DEV 7º Edição, um projeto integrador formado de Desenvolvedores de
+                                Sistemas, da RaiaDrogasil
+                                <br />
+                                Composto por:
+                            </p>
+                            <p className="texto-sobre-nos">
+                                Augusto Meireles, Larissa Bandeira, Lidia Maciel, Guilherme Viana e Wanderson Thiers.
+                            </p>
+                        </div>
+                        <div className="col-sm-12 col-md-6 col-lg-6 sobre_nos_center">
+                            <img src={Executivo} alt="Executivo" width="100%" />
                         </div>
                     </div>
                 </div>
@@ -79,27 +97,47 @@ function AboutUs() {
                     </div>
                 </div>
                 <hr />
-            </div>
-            {/* Nossa Historia */}
-            <div className="container">
-                <div className="row social col-sm-12 col-md-12 col-lg-12">
-                    <div className="col-sm-12 col-md-6 col-lg-6 sobre_nos_center">
-                        <img src={Helicoptero} alt="Helicoptero" width="100%" />
+                <div className="container">
+                    <div className="d-none d-xs-none d-sm-none d-md-flex row social col-sm-12 col-md-12 col-lg-12">
+                        <div className="col-sm-12 col-md-6 col-lg-6 sobre_nos_center">
+                            <img src={Helicoptero} alt="Helicoptero" width="100%" />
+                        </div>
+                        <div className="col-sm-12 col-md-6 col-lg-6 sobre_nos_center">
+                            <h3>Conforto e Praticidade</h3>
+                            <p className="texto-sobre-nos" width="100%">
+                                A DevCar's disponibiliza de um equipado e sofisticado heliponto,
+                                Trazendo maior comodidade e agilidade a nossos clientes
+                            </p>
+                            <p> Endereço: Avenida Corifeu de Azevedo Marques, 3097 </p>
+                            <p> Bairro: Vila Butantã </p>
+                            <p> CEP: 05339-900</p>
+                            <p> <strong> Latitude: -23.5698526</strong> </p>
+                            <p> <strong>Longitude: -46.7413329</strong></p>
+                        </div>
                     </div>
-                    <div className="col-sm-12 col-md-6 col-lg-6 sobre_nos_center">
-                        <h3>Conforto e Praticidade</h3>
-                        <p className="texto-sobre-nos" width="100%">
-                            A DevCar's disponibiliza de um equipado e sofisticado heliponto,
-                            Trazendo maior comodidade e agilidade a nossos clientes
-                        </p>
-                        <p> Endereço: Avenida Corifeu de Azevedo Marques, 3097 </p>
-                        <p> Bairro: Vila Butantã </p>
-                        <p> CEP: 05339-900</p>
-                        <p> <strong> Latitude: -23.5698526</strong> </p>
-                        <p> <strong>Longitude: -46.7413329</strong></p>
+                    <div className="d-md-none d-lg-none row social col-sm-12 col-md-12 col-lg-12">
+                        <div className="col-sm-12 col-md-6 col-lg-6 sobre_nos_center">
+                            <h3 className="texto-sobre-nos">Conforto e Praticidade</h3>
+                            <p className="texto-sobre-nos" width="100%">
+                                A DevCar's disponibiliza de um equipado e sofisticado heliponto,
+                                Trazendo maior comodidade e agilidade as nossos clientes.
+                            </p>
+                            <p> Endereço: Avenida Corifeu de Azevedo Marques, 3097 </p>
+                        </div>
+                        <div className="col-sm-12 col-md-6 col-lg-6 sobre_nos_center">
+                            <img src={Helicoptero} alt="Helicoptero" width="100%" />
+                        </div>
+                        <div className="col-sm-12 col-md-6 col-lg-6 sobre_nos_center">
+                            <p> Bairro: Vila Butantã </p>
+                            <p> CEP: 05339-900</p>
+                            <p> <strong> Latitude: -23.5698526</strong> </p>
+                            <p> <strong>Longitude: -46.7413329</strong></p>
+                        </div>
                     </div>
                 </div>
             </div>
+            {/* Nossa Historia */}
+
             <Footer />
         </>
     )
