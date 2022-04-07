@@ -273,34 +273,34 @@ function CheckoutScheduling() {
                   <div className="container">
                     <div className="col-12 col-sm-12 col-md-12 px-0">
                       <Label label="Número do cartão" for="cardnumber" />
-                      <Input type="text" aria-label="cardnumber" id="cardnumber" value="**** **** **** 0564" />
+                      <Input type="text" aria-label="cardnumber" id="cardnumber" defaultValue="**** **** **** 0564" />
                     </div>
 
                     <div className="col-12 col-sm-12 col-md-12 row justify-content-between px-0 mx-0">
                       <div className="col-12 col-sm-12 col-md-6 pe-md-2 ps-0 ps-md-0 pe-0">
                         <Label label="Nome do titular" for="ownnername" />
-                        <Input type="text" aria-label="ownnername" id="ownnername" value="Maria Auxiliadora de Jesus" />
+                        <Input type="text" aria-label="ownnername" id="ownnername" defaultValue="Maria Auxiliadora de Jesus" />
                       </div>
 
                       <div className="col-12 col-sm-12 col-md-4 pe-md-2 ps-0 ps-md-0 pe-0">
                         <Label label="Data de validade" for="validdate" />
-                        <Input type="text" aria-label="validdate" id="validdate" value="03/30" />
+                        <Input type="text" aria-label="validdate" id="validdate" defaultValue="03/30" />
                       </div>
 
                       <div className="col-12 col-sm-12 col-md-2 px-0">
                         <Label label="CVV" for="cvv" />
-                        <Input type="text" aria-label="uf" id="cvv" value="xxx" />
+                        <Input type="text" aria-label="uf" id="cvv" defaultValue="xxx" />
                       </div>
                     </div>
 
                     <div className="col-12 col-sm-12 col-md-12 row justify-content-between px-0 mx-0">
                       <div className="col-12 col-sm-12 col-md-10 pe-md-2 ps-0 ps-md-0 pe-0">
                         <Label label="CPF do titular" for="ownnercpf" />
-                        <Input type="text" aria-label="cep" id="ownnercpf" value="099.345.666-09" />
+                        <Input type="text" aria-label="cep" id="ownnercpf" defaultValue="099.345.666-09" />
                       </div>
                       <div className="col-12 col-sm-12 col-md-2 px-0">
                         <Label label="Bandeira" for="bandeira" />
-                        <Input type="text" aria-label="uf" id="bandeira" value="VISA" />
+                        <Input type="text" aria-label="uf" id="bandeira" defaultValue="VISA" />
                       </div>
                     </div>
 
