@@ -13,7 +13,7 @@ function SearchFilter() {
 
                     <div className="col-md-4 col-lg-3 col-12 ">
                         <select id="inputState" className="form-select bg-filter">
-                            <option selected>Selecione a Marca</option>
+                            <option defaultValue>Selecione a Marca</option>
                             <option>Ferrari</option>
                             <option>Bentley</option>
                             <option>Porsche</option>
@@ -26,7 +26,7 @@ function SearchFilter() {
                     </div>
                     <div className="col-md-4 col-lg-4 ">
                         <select id="inputState" className="form-select bg-filter">
-                            <option selected>Selecione o Modelo</option>
+                            <option defaultValue>Selecione o Modelo</option>
                             <option>aaaaa</option>
                             <option>bbbbb</option>
                             <option>ccccc</option>
@@ -36,7 +36,7 @@ function SearchFilter() {
                     </div>
                     <div className="col-md-4 col-lg-3 ">
                         <select id="inputState" className="form-select bg-filter">
-                            <option selected>Selecione o Ano</option>
+                            <option defaultValue>Selecione o Ano</option>
                             <option>2022</option>
                             <option>2021</option>
                             <option>2020</option>
