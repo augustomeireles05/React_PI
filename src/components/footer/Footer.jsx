@@ -79,11 +79,20 @@ function Footer() {
                 </li>
                 <li className="nav-item mb-2">
                   <Link
-                    to="#"
+                    to="/"
                     className="nav-link p-0 text-muted"
                     target="_blank"
                   >
-                    POLÍTICA DE PRIVACIDADE
+                    HOME
+                  </Link>
+                </li>
+                <li className="nav-item mb-2">
+                  <Link
+                    to="/product"
+                    className="nav-link p-0 text-muted"
+                    target="_blank"
+                  >
+                    PRODUTOS
                   </Link>
                 </li>
               </ul>
@@ -122,7 +131,7 @@ function Footer() {
               <br />
               <ul className="nav flex-column">
                 <li className="nav-item mb-2">
-                  <Link to="#" className="nav-link p-0 text-muted" target="_blank">
+                  <Link to="/contact" className="nav-link p-0 text-muted" target="_blank">
                     AGENDAMENTO DE VISITAS
                   </Link>
                 </li>
@@ -132,7 +141,7 @@ function Footer() {
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link to="#" className="nav-link p-0 text-muted" target="_blank">
+                  <Link to="/contact" className="nav-link p-0 text-muted" target="_blank">
                     PRAZOS DE ENTREGA
                   </Link>
                 </li>

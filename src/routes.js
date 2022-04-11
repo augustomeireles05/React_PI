@@ -16,7 +16,6 @@ import Register from './pages/register/Register'
 import SchedulingDetails from './pages/schedulingDetails/SchedulingDetails'
 import WishList from './pages/wishList/WishList'
 
-
 export const Routes = () => {
     return (
         <Switch>
@@ -36,7 +35,6 @@ export const Routes = () => {
             <Route path="/register" component={Register} />
             <Route path="/schedulingDetails" component={SchedulingDetails} />
             <Route path="/wishList" component={WishList} />
-
         </Switch>
     )
 }
