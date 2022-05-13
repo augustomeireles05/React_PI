@@ -135,7 +135,7 @@ function Header() {
                 <div className="icons-header">
                     <div className="icon-logo">
                         <Link to="/">
-                            <img src={Mainlogo} width="120" />
+                            <img src={Mainlogo} width="120" data-bs-dismiss="offcanvas"/>
                         </Link>
                     </div>
                 </div>
