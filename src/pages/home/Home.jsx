@@ -745,7 +745,7 @@ function Home() {
             </section>
 
             <Footer />
-
+            
         </>
     )
 }

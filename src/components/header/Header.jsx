@@ -145,13 +145,13 @@ function Header() {
                 <div className="icons-header right-icons-header">
 
                     {/*INÍCIO DO ÍCONE DE PESQUISA*/}
-                    <div className="icons-position-header search-icon">
+                    <div className="icons-position-header search-icon" title="Buscar Veiculo">
                         <img src={Searchicon} className="icons-header" data-bs-toggle="modal" width="30" data-bs-target="#modalPesquisa" role="button" />
                     </div>
                     {/*FIM DO ÍCONE DE PESQUISA*/}
 
                     {/*INÍCIO DO ÍCONE DE FAVORITOS*/}
-                    <div className="icons-position-header favorite-icon">
+                    <div className="icons-position-header favorite-icon" title="Favoritos">
                         <Link to="/wishList">
                             <img src={Favoriteicon} width="30" />
                         </Link>
@@ -159,7 +159,7 @@ function Header() {
                     {/*FIM DO ÍCONE DE FAVORITOS*/}
 
                     {/*INÍCIO DO ÍCONE DE LOGIN*/}
-                    <div className="icons-position-header user-icon">
+                    <div className="icons-position-header user-icon" title="Login">
                         <Link to="/Login">
                             <img src={Loginnicon} width="30" />
                         </Link>
@@ -167,7 +167,7 @@ function Header() {
                     {/*FIM DO ÍCONE DE LOGIN*/}
 
                     {/*INÍCIO DO ÍCONE DE CARRINHO*/}
-                    <div className="icons-position-header garage-icon">
+                    <div className="icons-position-header garage-icon" title="Carrinho">
                         <Link to="/cart">
                             <img src={Garageicon} width="30" />
                         </Link>
