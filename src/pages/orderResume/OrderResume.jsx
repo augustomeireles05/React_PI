@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './OrderResume.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
@@ -10,7 +9,7 @@ import Subtittle from '../../components/Subtittle/Subtittle'
 
 import Awardicon from '../../assets/images/OrderDetails/certificado-de-garantia.png'
 import Checkedicon from '../../assets/images/OrderDetails/checked.png'
-import PrintNfe from '../../assets/images/OrderDetails/printer.png'
+
 
 function OrderResume() {
     return (
@@ -52,10 +51,6 @@ function OrderResume() {
                                 <div className="detalhes-pedido p-2">
                                     <div className="detalhes-pedido d-flex justify-content-center align-items-center mb-3">
                                         <h2 className="titulo-detalhes-pedido me-2 mb-0">DETALHES DO PEDIDO</h2>
-                                        <Link to={"#"}>
-                                            <img src={PrintNfe} alt="imprimir resumo do pedido"
-                                                className="print" />
-                                        </Link>
                                     </div>
 
                                     <div className="row resumo-produto mb-3">

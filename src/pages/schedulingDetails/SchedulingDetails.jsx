@@ -1,5 +1,4 @@
 import './SchedulingDetails.css'
-import { Link } from 'react-router-dom'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 
@@ -9,7 +8,6 @@ import MainTittle from '../../components/Tittle/MainTittle'
 
 import Awardicon from '../../assets/images/OrderDetails/certificado-de-garantia.png'
 import Checkedicon from '../../assets/images/OrderDetails/checked.png'
-import PrintNfe from '../../assets/images/OrderDetails/printer.png'
 
 function schedulingDetails() {
     return (
@@ -50,10 +48,6 @@ function schedulingDetails() {
                             <div className="detalhes-pedido">
                                 <div className="detalhes-pedido d-flex justify-content-center align-items-center mb-3">
                                     <h2 className="titulo-detalhes-agendamento me-2 mb-0">DETALHES DO AGENDAMENTO</h2>
-                                    <Link to={"/"}>
-                                        <img src={PrintNfe} alt="imprimir resumo do pedido"
-                                            className="print" />
-                                    </Link>
                                 </div>
 
                                 <div className="row resumo-produto mb-3">

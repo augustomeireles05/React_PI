@@ -4,6 +4,13 @@
 
     margin: 0;
 }
+
+.noticia {
+    display: grid;
+    place-items: center;
+    text-align: justify;
+}
+
 body{
     background-color: #E0E0E0;
     width: 100%;
@@ -98,7 +105,11 @@ body{
     text-align: center;
 }
 .texto_midia{
-    margin-top: 10%;
+    margin-top: 20px;
+}
+
+.titulo-noticia {
+    font-size: 30px;
 }
 
 .logo-centralizado{
@@ -179,7 +190,7 @@ body{
 
 .imagens-midia{
     justify-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 
